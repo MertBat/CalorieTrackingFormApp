@@ -224,7 +224,7 @@ namespace CalorieTrackingApp.UI
                 {
                     socialMediaPost.PostPicture = null;
                 }
-                
+
                 socialMediaPost.PostDescription = txtPostDetail.Text;
                 socialMediaPost.PostDate = DateTime.Now;
                 socialMediaPost.AccountId = _account.Id;
@@ -262,6 +262,11 @@ namespace CalorieTrackingApp.UI
         private void mainMenu_navBtn_Click(object sender, EventArgs e)
         {
             Navigations.GotoMainMenu(_account, this);
+        }
+
+        private void lblProfileNameTop1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Navigations.GotoProfile(_account, this);
         }
     }
 }

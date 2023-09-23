@@ -30,14 +30,6 @@ namespace CalorieTrackingApp.UI
             mainMenu.Dock = DockStyle.Fill;
             mainMenu.Show();
         }
-
-        private void SubMenuMDI_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            DialogResult res = MessageBox.Show("Programı kapatmak istediğinize emin misiniz?", "Bilgi", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk);
-            if (res == DialogResult.No)
-            {
-                e.Cancel = true;
-            }
-        }
+        
     }
 }

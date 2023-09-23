@@ -39,6 +39,9 @@ namespace CalorieTrackingApp.UI
         string[] exercise = new string[] { "1-Hafif Aktivite", "2-Orta Aktivite", "3-Yüksek Aktivite" };
         private void SignUpFillForm_Load(object sender, EventArgs e)
         {
+
+
+
             weightHistoryRepository = new WeightHistoryRepository();
             userRepository = new UserDetailRepository();
             accountRepository = new AccountRepository();
@@ -58,6 +61,7 @@ namespace CalorieTrackingApp.UI
 
         UserDetail user;
         bool dontEntry = false;
+        byte[] DefaultImage;
         private void btnSave_Click(object sender, EventArgs e)
         {
 
@@ -73,7 +77,12 @@ namespace CalorieTrackingApp.UI
                 }
                 else
                 {
-                    string DefaultImagePath = Path.Combine(Application.StartupPath, "default.jpg");
+                    Bitmap bitmap = CalorieTrackingApp.UI.Properties.Resources.profile;
+                    using (MemoryStream stream = new MemoryStream())
+                    {
+                        bitmap.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+                        DefaultImage = stream.ToArray();
+                    }
                     Calculate();
                     user = new UserDetail();
                     user.Height = (double)nudHeightEntry.Value;
@@ -92,7 +101,7 @@ namespace CalorieTrackingApp.UI
                     user.TargetCalorieIntake = gunlukKaloriIhtiyaci;
                     user.Gender = rbMan.Checked ? (Gender)Enum.Parse(typeof(Gender), rbMan.Text) : (Gender)Enum.Parse(typeof(Gender), rbWoman.Text);
                     user.BirthDate = dpBirthdate.Value;
-                    user.Picture = imagePath != null ? File.ReadAllBytes(imagePath) : File.ReadAllBytes(DefaultImagePath);
+                    user.Picture = imagePath != null ? File.ReadAllBytes(imagePath) : DefaultImage;
                     userRepository.Add(user);
                     SignUpSuccess signUpSuccess = new SignUpSuccess(account, user);
                     this.Hide();

@@ -39,7 +39,6 @@
             IsMdiContainer = true;
             Name = "SubMenuMDI";
             Text = "Calorie Tracking";
-            FormClosing += SubMenuMDI_FormClosing;
             Load += SubMenuMDI_Load;
             ResumeLayout(false);
         }

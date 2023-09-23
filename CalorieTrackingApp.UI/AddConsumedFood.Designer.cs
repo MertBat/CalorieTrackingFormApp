@@ -207,6 +207,7 @@
             lblProfileNameTop1.TabIndex = 43;
             lblProfileNameTop1.TabStop = true;
             lblProfileNameTop1.Text = "Kullanıcı Adı";
+            lblProfileNameTop1.LinkClicked += lblProfileNameTop1_LinkClicked;
             // 
             // btnAddNewFood
             // 

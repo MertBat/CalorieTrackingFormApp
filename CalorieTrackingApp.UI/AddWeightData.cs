@@ -44,7 +44,7 @@ namespace CalorieTrackingApp.UI
             userDetail = userDetails.GetAll().Where(u => u.AccountId == account.Id).FirstOrDefault();
 
 
-            dtpDate.Value = DateTime.Now;
+            //dtpDate.Value = DateTime.Now;
             weightHistory = WeightHistoryRepository.GetAll().First(a => a.AccountID == account.Id && a.WeightDate.Day == account.RegisterDate.Day && a.WeightDate.Month == account.RegisterDate.Month);  //Kayıt Olurken Girilen Kilo Çekildi
             double baslangicKilo = weightHistory.Weight;
 

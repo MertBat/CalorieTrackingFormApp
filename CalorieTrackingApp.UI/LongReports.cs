@@ -228,5 +228,11 @@ namespace CalorieTrackingApp.UI
         {
             Navigations.GotoMainMenu(_account, this);
         }
+
+        private void lblProfileNameTop1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Navigations.GotoProfile(_account, this);
+
+        }
     }
 }

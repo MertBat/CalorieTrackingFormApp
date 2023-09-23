@@ -221,6 +221,7 @@
             lblProfileNameTop1.TabIndex = 45;
             lblProfileNameTop1.TabStop = true;
             lblProfileNameTop1.Text = "Kullanıcı Adı";
+            lblProfileNameTop1.LinkClicked += lblProfileNameTop1_LinkClicked;
             // 
             // btnForward
             // 
@@ -298,6 +299,7 @@
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(465, 340);
             listBox1.TabIndex = 15;
+            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // groupBox6
             // 

@@ -78,8 +78,13 @@ namespace CalorieTrackingApp.UI.Helper
 
         public static void GotoExit(Account account, Form frm)
         {
-            frm.MdiParent.Close();
-            frm.Close();
+            DialogResult res = MessageBox.Show("Programı kapatmak istediğinize emin misiniz?", "Bilgi", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk);
+            if (res == DialogResult.Yes)
+            {
+                frm.MdiParent.Close();
+                frm.Close();
+            }
+            
         }
         public static void CloseMDIs(Form form)
         {

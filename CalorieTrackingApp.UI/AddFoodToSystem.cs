@@ -1,14 +1,18 @@
 ﻿using CalorieTrackingApp.BLL.Repositories;
 using CalorieTrackingApp.DAL.Context;
 using CalorieTrackingApp.DATA.Entities;
+using CalorieTrackingApp.DATA.Enums;
+using Microsoft.EntityFrameworkCore.Metadata.Conventions;
 using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,7 +25,7 @@ namespace CalorieTrackingApp.UI
         private FoodRepository foodRepository;
         Account account;
         string imagePath = null;
-        string DefaultImage;
+        byte[] DefaultImage;
         public AddFoodToSystem()
         {
             InitializeComponent();
@@ -37,13 +41,17 @@ namespace CalorieTrackingApp.UI
 
         private void AddFoodToSystem_Load(object sender, EventArgs e)
         {
-            DefaultImage = Path.Combine(Application.StartupPath, "DefaultFood.png");
+            Bitmap bitmap = CalorieTrackingApp.UI.Properties.Resources.DefaultFood;
+            using (MemoryStream stream = new MemoryStream())
+            {
+                bitmap.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
+                DefaultImage = stream.ToArray();
+            }
             db = new ProjectContext();
             foodRepository = new FoodRepository();
             BringTheUpdatedFoodList();
             textBox1.Text = defaultText; // Varsayılan metni ayarla
             ClearFoodDetails();
-
         }
 
         private string filterText = "";
@@ -109,76 +117,81 @@ namespace CalorieTrackingApp.UI
                 }
                 isEditMode = true;
             }
-
-
         }
 
         private bool isEditMode = false;
 
         private void btnNewFoodSave_Click(object sender, EventArgs e)
         {
-            if (!isEditMode)
+            if (nudCalorieValue.Value != 0 && txtFoodName.Text != "")
             {
-                // Yeni yemek ekleme işlemi
-
-                Food newFood = new Food
+                if (!isEditMode)
                 {
-                    Name = txtFoodName.Text,
-                    StandartPortion = 100,
-                    PortionCalorie = (double)nudCalorieValue.Value,
-                    PortionProtein = (double)nudProtein.Value,
-                    PortionFat = (double)nudFat.Value,
-                    PortionCarb = (double)nudCarb.Value,
-                    Photo = imagePath != null ? File.ReadAllBytes(imagePath) : File.ReadAllBytes(DefaultImage)
+                    // Yeni yemek ekleme işlemi
+                    Food newFood = new Food
+                    {
+                        Name = txtFoodName.Text,
+                        StandartPortion = 100,
+                        PortionCalorie = (double)nudCalorieValue.Value,
+                        PortionProtein = (double)nudProtein.Value,
+                        PortionFat = (double)nudFat.Value,
+                        PortionCarb = (double)nudCarb.Value,
+                        Photo = imagePath != null ? File.ReadAllBytes(imagePath) : DefaultImage
 
-                };
+                    };
 
-                foodRepository.Add(newFood);
-                MessageBox.Show("Yemek başarıyla kaydedildi.");
-                BringTheUpdatedFoodList();
-                groupBox2.Text = "Yeni Yemek Ekle";
+                    foodRepository.Add(newFood);
+                    MessageBox.Show("Yemek başarıyla kaydedildi.");
+                    BringTheUpdatedFoodList();
+                    groupBox2.Text = "Yeni Yemek Ekle";
+                }
+
+                else
+                {
+                    // Yemek Düzenleme ve Guncelleme işlemi
+                    if (listBox1.SelectedIndex != -1)
+                    {
+                        string selectedFoodName = listBox1.SelectedItem.ToString();
+                        Food selectedFood = foodRepository.GetByName(selectedFoodName);
+
+                        if (selectedFood != null)
+                        {
+                            // Kullanıcı tarafından yapılan güncellemeleri al
+                            string updatedName = txtFoodName.Text;
+                            double updatedPortion = 100;
+                            double updatedCalorie = (double)nudCalorieValue.Value;
+                            double updatedProtein = (double)nudProtein.Value;
+                            double updatedFat = (double)nudFat.Value;
+                            double updatedCarb = (double)nudCarb.Value;
+
+                            // Veritabanında güncelleme yap
+                            selectedFood.Name = updatedName;
+                            selectedFood.StandartPortion = updatedPortion;
+                            selectedFood.PortionCalorie = updatedCalorie;
+                            selectedFood.PortionProtein = updatedProtein;
+                            selectedFood.PortionFat = updatedFat;
+                            selectedFood.PortionCarb = updatedCarb;
+                            selectedFood.Photo = imagePath != null ? File.ReadAllBytes(imagePath) : DefaultImage;
+
+                            foodRepository.Update(selectedFood);
+                            BringTheUpdatedFoodList();
+                        }
+                    }
+                    MessageBox.Show("Yemek başarıyla güncellendi.");
+                    groupBox2.Text = "Yeni Yemek Ekle";
+                    isEditMode = false; // Düzenleme modunu devre dışı bırak
+                }
+
+                // Kontrolleri temizle
+                ClearFoodDetails();
+                btnNewFoodSave.Text = "Sisteme Kaydet"; // Buton metnini geri döndür
+                pictureBox1.Image = null;
             }
-
             else
             {
-                // Yemek Düzenleme ve Guncelleme işlemi
-                if (listBox1.SelectedIndex != -1)
-                {
-                    string selectedFoodName = listBox1.SelectedItem.ToString();
-                    Food selectedFood = foodRepository.GetByName(selectedFoodName);
-
-                    if (selectedFood != null)
-                    {
-                        // Kullanıcı tarafından yapılan güncellemeleri al
-                        string updatedName = txtFoodName.Text;
-                        double updatedPortion = 100;
-                        double updatedCalorie = (double)nudCalorieValue.Value;
-                        double updatedProtein = (double)nudProtein.Value;
-                        double updatedFat = (double)nudFat.Value;
-                        double updatedCarb = (double)nudCarb.Value;
-
-                        // Veritabanında güncelleme yap
-                        selectedFood.Name = updatedName;
-                        selectedFood.StandartPortion = updatedPortion;
-                        selectedFood.PortionCalorie = updatedCalorie;
-                        selectedFood.PortionProtein = updatedProtein;
-                        selectedFood.PortionFat = updatedFat;
-                        selectedFood.PortionCarb = updatedCarb;
-                        selectedFood.Photo = imagePath != null ? File.ReadAllBytes(imagePath) : File.ReadAllBytes(DefaultImage);
-
-                        foodRepository.Update(selectedFood);
-                        BringTheUpdatedFoodList();
-                    }
-                }
-                MessageBox.Show("Yemek başarıyla güncellendi.");
-                groupBox2.Text = "Yeni Yemek Ekle";
-                isEditMode = false; // Düzenleme modunu devre dışı bırak
+                MessageBox.Show("Yemek adı ve kalori değeri boş geçilemez");
             }
 
-            // Kontrolleri temizle
-            ClearFoodDetails();
-            btnNewFoodSave.Text = "Sisteme Kaydet"; // Buton metnini geri döndür
-            pictureBox1.Image = null;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)

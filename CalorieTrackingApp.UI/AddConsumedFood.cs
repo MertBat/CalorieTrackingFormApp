@@ -11,6 +11,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -80,15 +81,16 @@ namespace CalorieTrackingApp.UI
             {
                 string selectedFoodName = listBox1.SelectedItem.ToString();
                 Food selectedFood = foodRepository.GetByName(selectedFoodName);
+                nudPortionNumber.Value = 1;
 
                 double portionNum = (double)nudPortionNumber.Value;
                 if (selectedFood != null)
                 {
                     lblFoodName.Text = selectedFoodName;
-                    lblCalorie.Text = Math.Round(selectedFood.PortionCalorie * portionNum,2).ToString();
-                    lblCarb.Text = Math.Round(selectedFood.PortionCarb * portionNum,2).ToString();
-                    lblFat.Text = Math.Round(selectedFood.PortionFat * portionNum,2).ToString();
-                    lblProtein.Text = Math.Round(selectedFood.PortionProtein * portionNum,2).ToString();
+                    lblCalorie.Text = Math.Round(selectedFood.PortionCalorie * portionNum, 2).ToString();
+                    lblCarb.Text = Math.Round(selectedFood.PortionCarb * portionNum, 2).ToString();
+                    lblFat.Text = Math.Round(selectedFood.PortionFat * portionNum, 2).ToString();
+                    lblProtein.Text = Math.Round(selectedFood.PortionProtein * portionNum, 2).ToString();
 
                     // Resmi yükle
                     if (selectedFood.Photo != null)
@@ -97,6 +99,10 @@ namespace CalorieTrackingApp.UI
                         {
                             pictureBox1.Image = Image.FromStream(ms);
                         }
+                    }
+                    else
+                    {
+                        pictureBox1.Image = CalorieTrackingApp.UI.Properties.Resources.DefaultFood;
                     }
 
                     GraphicsPath obj = new GraphicsPath();
@@ -168,8 +174,7 @@ namespace CalorieTrackingApp.UI
                     ConsumedTime = date,
                     Portion = (double)nudPortionNumber.Value,
                     Photo = selectedFood.Photo,
-                    //AccountID = account.Id,
-                    AccountID = 1,
+                    AccountID = account.Id,
                     MealCategory = mealCategory
 
                 };
@@ -269,6 +274,12 @@ namespace CalorieTrackingApp.UI
 
         private void topBar_groupBox_Enter(object sender, EventArgs e)
         {
+
+        }
+
+        private void lblProfileNameTop1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Navigations.GotoProfile(account, this);
 
         }
     }

@@ -20,7 +20,6 @@ namespace CalorieTrackingApp.DATA.Entities
         public double PortionCalorie { get; set; }
         public byte[]? Photo { get; set; }
 
-        public MealType MealType { get; set; }
         public List<ConsumedFood> ConsumedFoods { get; set; }
     }
 }

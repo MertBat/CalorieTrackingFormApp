@@ -39,10 +39,11 @@ namespace CalorieTrackingApp.UI
 
         private void DailyReport_Load(object sender, EventArgs e)
         {
-            dateTimePicker1.MaxDate= DateTime.Now;
+            dateTimePicker1.MaxDate = DateTime.Now;
             BasicTools.TopDetailFiller(topBar_groupBox.Controls, account.Id);
             db = new ProjectContext();
             cFoodRepository = new ConsumedFoodRepository();
+            FoodRepository = new FoodRepository();
             BringTheUpdatedFoodList();
             FillTheMacrosPart();
             FillTheMacrosForBreakfast();
@@ -63,12 +64,14 @@ namespace CalorieTrackingApp.UI
                                   where cf.ConsumedDate.Day == selectedDate.Day &&
                                         cf.ConsumedDate.Month == selectedDate.Month &&
                                         cf.MealCategory == DATA.Enums.MealCategory.Breakfast
-                                  select string.Concat(f.Name, " - ", cf.MealCategory)).ToList();
+                                  select string.Concat(f.Name, " - ", cf.MealCategory, " - ", f.PortionCalorie * cf.ConsumedCount,"cal")).ToList();
                 listBox1.DataSource = cfoodNames;
                 groupBox3.BackColor = Color.FromArgb(200, 200, 200);
                 groupBox2.BackColor = default;
                 groupBox4.BackColor = default;
                 groupBox5.BackColor = default;
+                button6.Enabled = true;
+
             }
 
             else if (rbLuch.Checked)
@@ -78,12 +81,14 @@ namespace CalorieTrackingApp.UI
                                   where cf.ConsumedDate.Day == selectedDate.Day &&
                                         cf.ConsumedDate.Month == selectedDate.Month &&
                                         cf.MealCategory == DATA.Enums.MealCategory.Lunch
-                                  select string.Concat(f.Name, " - ", cf.MealCategory)).ToList();
+                                  select string.Concat(f.Name, " - ", cf.MealCategory, " - ", f.PortionCalorie * cf.ConsumedCount, "cal")).ToList();
                 listBox1.DataSource = cfoodNames;
                 groupBox2.BackColor = Color.FromArgb(200, 200, 200);
                 groupBox5.BackColor = default;
                 groupBox3.BackColor = default;
                 groupBox4.BackColor = default;
+                button6.Enabled = true;
+
             }
 
             else if (rbDinner.Checked)
@@ -93,30 +98,31 @@ namespace CalorieTrackingApp.UI
                                   where cf.ConsumedDate.Day == selectedDate.Day &&
                                         cf.ConsumedDate.Month == selectedDate.Month &&
                                         cf.MealCategory == DATA.Enums.MealCategory.Dinner
-                                  select string.Concat(f.Name, " - ", cf.MealCategory)).ToList();
+                                  select string.Concat(f.Name, " - ", cf.MealCategory, " - ", f.PortionCalorie * cf.ConsumedCount, "cal")).ToList();
 
                 listBox1.DataSource = cfoodNames;
                 groupBox4.BackColor = Color.FromArgb(200, 200, 200);
                 groupBox2.BackColor = default;
                 groupBox3.BackColor = default;
                 groupBox5.BackColor = default;
+                button6.Enabled = true;
 
 
             }
 
             else if (rbAll.Checked)
             {
-
                 var cfoodNames = (from cf in db.ConsumedFoods
                                   join f in db.Foods on cf.FoodID equals f.Id
                                   where cf.ConsumedDate.Day == selectedDate.Day &&
                                         cf.ConsumedDate.Month == selectedDate.Month
-                                  select string.Concat(f.Name, " - ", cf.MealCategory)).ToList();
+                                  select string.Concat(f.Name, " - ", cf.MealCategory," - ",f.PortionCalorie * cf.ConsumedCount, "cal")).ToList();
                 listBox1.DataSource = cfoodNames;
                 groupBox5.BackColor = Color.FromArgb(200, 200, 200);
                 groupBox2.BackColor = default;
                 groupBox3.BackColor = default;
                 groupBox4.BackColor = default;
+                button6.Enabled = false;
             }
 
             else
@@ -160,8 +166,8 @@ namespace CalorieTrackingApp.UI
             {
                 if (rbDinner.Checked)
                 {
-                    string selectedFoodName = listBox1.SelectedItem.ToString();
-                    ConsumedFood selectedFoodObject = cFoodRepository.GetAll().FirstOrDefault(x => x.MealCategory == DATA.Enums.MealCategory.Dinner);
+                    Food food = FoodRepository.GetAll().FirstOrDefault(x => x.Name == listBox1.SelectedItem.ToString().Split('-')[0].Trim());
+                    ConsumedFood selectedFoodObject = cFoodRepository.GetAll().FirstOrDefault(x => x.MealCategory == DATA.Enums.MealCategory.Dinner && x.FoodID == food.Id);
 
                     if (selectedFoodObject != null)
                     {
@@ -178,8 +184,9 @@ namespace CalorieTrackingApp.UI
 
                 if (rbLuch.Checked)
                 {
-                    string selectedFoodName = listBox1.SelectedItem.ToString();
-                    ConsumedFood selectedFoodObject = cFoodRepository.GetAll().FirstOrDefault(x => x.MealCategory == DATA.Enums.MealCategory.Lunch);
+
+                    Food food = FoodRepository.GetAll().FirstOrDefault(x => x.Name == listBox1.SelectedItem.ToString().Split('-')[0].Trim());
+                    ConsumedFood selectedFoodObject = cFoodRepository.GetAll().FirstOrDefault(x => x.MealCategory == DATA.Enums.MealCategory.Lunch && x.FoodID == food.Id);
 
                     if (selectedFoodObject != null)
                     {
@@ -196,8 +203,8 @@ namespace CalorieTrackingApp.UI
 
                 if (rbBreakfast.Checked)
                 {
-                    string selectedFoodName = listBox1.SelectedItem.ToString();
-                    ConsumedFood selectedFoodObject = cFoodRepository.GetAll().FirstOrDefault(x => x.MealCategory == DATA.Enums.MealCategory.Breakfast);
+                    Food food = FoodRepository.GetAll().FirstOrDefault(x => x.Name == listBox1.SelectedItem.ToString().Split('-')[0].Trim());
+                    ConsumedFood selectedFoodObject = cFoodRepository.GetAll().FirstOrDefault(x => x.MealCategory == DATA.Enums.MealCategory.Breakfast && x.FoodID == food.Id);
 
                     if (selectedFoodObject != null)
                     {
@@ -406,6 +413,15 @@ namespace CalorieTrackingApp.UI
             Navigations.GotoExit(account, this);
         }
 
+        private void lblProfileNameTop1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Navigations.GotoProfile(account, this);
 
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
