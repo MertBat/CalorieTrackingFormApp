@@ -78,6 +78,7 @@
             label21 = new Label();
             pbProfilePicture = new PictureBox();
             pbEdit = new PictureBox();
+            label1 = new Label();
             navigation_groupBox.SuspendLayout();
             topBar_groupBox.SuspendLayout();
             groupBox1.SuspendLayout();
@@ -166,7 +167,6 @@
             // 
             mainMenu_navBtn.BackColor = SystemColors.ButtonFace;
             mainMenu_navBtn.Cursor = Cursors.Hand;
-            mainMenu_navBtn.Enabled = false;
             mainMenu_navBtn.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             mainMenu_navBtn.ForeColor = Color.Black;
             mainMenu_navBtn.Location = new Point(8, 46);
@@ -180,6 +180,7 @@
             // 
             // topBar_groupBox
             // 
+            topBar_groupBox.Controls.Add(label1);
             topBar_groupBox.Controls.Add(lblTopName);
             topBar_groupBox.Controls.Add(label2);
             topBar_groupBox.Location = new Point(152, 12);
@@ -192,7 +193,7 @@
             // lblTopName
             // 
             lblTopName.AutoSize = true;
-            lblTopName.Location = new Point(144, 59);
+            lblTopName.Location = new Point(170, 84);
             lblTopName.Name = "lblTopName";
             lblTopName.Size = new Size(17, 24);
             lblTopName.TabIndex = 6;
@@ -201,7 +202,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(6, 59);
+            label2.Location = new Point(32, 84);
             label2.Name = "label2";
             label2.Size = new Size(132, 24);
             label2.TabIndex = 5;
@@ -268,13 +269,13 @@
             // numTargetCalorie
             // 
             numTargetCalorie.BorderStyle = BorderStyle.None;
-            numTargetCalorie.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            numTargetCalorie.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             numTargetCalorie.Increment = new decimal(new int[] { 10, 0, 0, 0 });
             numTargetCalorie.Location = new Point(88, 360);
             numTargetCalorie.Maximum = new decimal(new int[] { 8000, 0, 0, 0 });
             numTargetCalorie.Minimum = new decimal(new int[] { 100, 0, 0, 0 });
             numTargetCalorie.Name = "numTargetCalorie";
-            numTargetCalorie.Size = new Size(113, 27);
+            numTargetCalorie.Size = new Size(113, 29);
             numTargetCalorie.TabIndex = 54;
             numTargetCalorie.TextAlign = HorizontalAlignment.Center;
             numTargetCalorie.Value = new decimal(new int[] { 500, 0, 0, 0 });
@@ -283,13 +284,13 @@
             // numTargetWeight
             // 
             numTargetWeight.DecimalPlaces = 1;
-            numTargetWeight.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            numTargetWeight.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             numTargetWeight.Increment = new decimal(new int[] { 5, 0, 0, 65536 });
             numTargetWeight.Location = new Point(88, 259);
             numTargetWeight.Maximum = new decimal(new int[] { 200, 0, 0, 0 });
             numTargetWeight.Minimum = new decimal(new int[] { 40, 0, 0, 0 });
             numTargetWeight.Name = "numTargetWeight";
-            numTargetWeight.Size = new Size(113, 31);
+            numTargetWeight.Size = new Size(113, 33);
             numTargetWeight.TabIndex = 53;
             numTargetWeight.TextAlign = HorizontalAlignment.Center;
             numTargetWeight.Value = new decimal(new int[] { 90, 0, 0, 0 });
@@ -299,13 +300,13 @@
             // numWeight
             // 
             numWeight.DecimalPlaces = 1;
-            numWeight.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            numWeight.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             numWeight.Increment = new decimal(new int[] { 5, 0, 0, 65536 });
             numWeight.Location = new Point(410, 76);
             numWeight.Maximum = new decimal(new int[] { 300, 0, 0, 0 });
             numWeight.Minimum = new decimal(new int[] { 30, 0, 0, 0 });
             numWeight.Name = "numWeight";
-            numWeight.Size = new Size(113, 31);
+            numWeight.Size = new Size(113, 33);
             numWeight.TabIndex = 51;
             numWeight.TextAlign = HorizontalAlignment.Center;
             numWeight.Value = new decimal(new int[] { 90, 0, 0, 0 });
@@ -314,12 +315,12 @@
             // 
             // numHeight
             // 
-            numHeight.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            numHeight.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             numHeight.Location = new Point(88, 76);
             numHeight.Maximum = new decimal(new int[] { 300, 0, 0, 0 });
             numHeight.Minimum = new decimal(new int[] { 90, 0, 0, 0 });
             numHeight.Name = "numHeight";
-            numHeight.Size = new Size(113, 31);
+            numHeight.Size = new Size(113, 33);
             numHeight.TabIndex = 50;
             numHeight.TextAlign = HorizontalAlignment.Center;
             numHeight.Value = new decimal(new int[] { 90, 0, 0, 0 });
@@ -339,7 +340,7 @@
             // 
             // lblCalorie
             // 
-            lblCalorie.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCalorie.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblCalorie.Location = new Point(378, 364);
             lblCalorie.Name = "lblCalorie";
             lblCalorie.Size = new Size(160, 37);
@@ -380,7 +381,7 @@
             // 
             // lblRemainTarget
             // 
-            lblRemainTarget.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblRemainTarget.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblRemainTarget.Location = new Point(378, 265);
             lblRemainTarget.Name = "lblRemainTarget";
             lblRemainTarget.Size = new Size(160, 37);
@@ -420,7 +421,7 @@
             // 
             // lblBMICondition
             // 
-            lblBMICondition.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblBMICondition.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblBMICondition.Location = new Point(378, 163);
             lblBMICondition.Name = "lblBMICondition";
             lblBMICondition.Size = new Size(160, 37);
@@ -440,7 +441,7 @@
             // 
             // lblBMI
             // 
-            lblBMI.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblBMI.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblBMI.Location = new Point(65, 163);
             lblBMI.Name = "lblBMI";
             lblBMI.Size = new Size(160, 37);
@@ -521,10 +522,10 @@
             // 
             // dtBDay
             // 
-            dtBDay.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            dtBDay.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             dtBDay.Location = new Point(51, 367);
             dtBDay.Name = "dtBDay";
-            dtBDay.Size = new Size(348, 31);
+            dtBDay.Size = new Size(348, 33);
             dtBDay.TabIndex = 59;
             dtBDay.Visible = false;
             // 
@@ -586,10 +587,10 @@
             // linkLabel4
             // 
             linkLabel4.AutoSize = true;
-            linkLabel4.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            linkLabel4.Location = new Point(200, 273);
+            linkLabel4.Font = new Font("Century Gothic", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            linkLabel4.Location = new Point(165, 274);
             linkLabel4.Name = "linkLabel4";
-            linkLabel4.Size = new Size(151, 25);
+            linkLabel4.Size = new Size(112, 18);
             linkLabel4.TabIndex = 39;
             linkLabel4.TabStop = true;
             linkLabel4.Text = "Şifreyi Değiştir";
@@ -618,10 +619,10 @@
             // lblEMail
             // 
             lblEMail.AutoSize = true;
-            lblEMail.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblEMail.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblEMail.Location = new Point(51, 184);
             lblEMail.Name = "lblEMail";
-            lblEMail.Size = new Size(19, 25);
+            lblEMail.Size = new Size(17, 24);
             lblEMail.TabIndex = 36;
             lblEMail.Text = "-";
             // 
@@ -676,6 +677,16 @@
             pbEdit.TabIndex = 10;
             pbEdit.TabStop = false;
             pbEdit.Click += pbProfilePicture_Click_1;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(36, 29);
+            label1.Name = "label1";
+            label1.Size = new Size(231, 39);
+            label1.TabIndex = 7;
+            label1.Text = "Kullanıcı Profili";
             // 
             // Profile
             // 
@@ -762,5 +773,6 @@
         private Button btnEditAccount;
         private DateTimePicker dtBDay;
         private PictureBox pbEdit;
+        private Label label1;
     }
 }

@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpForm));
             SignUp_GroupBox = new GroupBox();
+            btnBack = new Button();
             pictureBox1 = new PictureBox();
             pbpass = new PictureBox();
-            lklblTurnBack = new LinkLabel();
             PassStatus = new Label();
             pbpassStr = new ProgressBar();
             btn_SignUp = new Button();
@@ -55,9 +56,9 @@
             // SignUp_GroupBox
             // 
             SignUp_GroupBox.BackColor = Color.Transparent;
+            SignUp_GroupBox.Controls.Add(btnBack);
             SignUp_GroupBox.Controls.Add(pictureBox1);
             SignUp_GroupBox.Controls.Add(pbpass);
-            SignUp_GroupBox.Controls.Add(lklblTurnBack);
             SignUp_GroupBox.Controls.Add(PassStatus);
             SignUp_GroupBox.Controls.Add(pbpassStr);
             SignUp_GroupBox.Controls.Add(btn_SignUp);
@@ -80,6 +81,20 @@
             SignUp_GroupBox.TabStop = false;
             SignUp_GroupBox.Text = "Kayıt Ol";
             SignUp_GroupBox.Enter += SignUp_GroupBox_Enter;
+            // 
+            // btnBack
+            // 
+            btnBack.BackColor = Color.Transparent;
+            btnBack.BackgroundImage = (Image)resources.GetObject("btnBack.BackgroundImage");
+            btnBack.BackgroundImageLayout = ImageLayout.Stretch;
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.Location = new Point(12, 620);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(48, 44);
+            btnBack.TabIndex = 56;
+            btnBack.UseVisualStyleBackColor = false;
+            btnBack.Visible = false;
+            btnBack.Click += btnBack_Click;
             // 
             // pictureBox1
             // 
@@ -110,18 +125,6 @@
             pbpass.TabStop = false;
             pbpass.MouseDown += pbpass_MouseDown;
             pbpass.MouseUp += pbpass_MouseUp;
-            // 
-            // lklblTurnBack
-            // 
-            lklblTurnBack.AutoSize = true;
-            lklblTurnBack.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lklblTurnBack.Location = new Point(22, 634);
-            lklblTurnBack.Name = "lklblTurnBack";
-            lklblTurnBack.Size = new Size(78, 21);
-            lklblTurnBack.TabIndex = 8;
-            lklblTurnBack.TabStop = true;
-            lklblTurnBack.Text = "Geri Dön";
-            lklblTurnBack.LinkClicked += lklblTurnBack_LinkClicked;
             // 
             // PassStatus
             // 
@@ -288,8 +291,8 @@
         private Label label4;
         private Label PassStatus;
         private ProgressBar pbpassStr;
-        private LinkLabel lklblTurnBack;
         private PictureBox pictureBox1;
         private PictureBox pbpass;
+        private Button btnBack;
     }
 }
