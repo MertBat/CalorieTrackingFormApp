@@ -214,7 +214,7 @@
             // 
             // pbProfilePictureTop
             // 
-            pbProfilePictureTop.Location = new Point(808, 20);
+            pbProfilePictureTop.Location = new Point(843, 20);
             pbProfilePictureTop.Name = "pbProfilePictureTop";
             pbProfilePictureTop.Size = new Size(104, 104);
             pbProfilePictureTop.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -254,7 +254,7 @@
             lblProfileNameTop1.AutoSize = true;
             lblProfileNameTop1.LinkBehavior = LinkBehavior.HoverUnderline;
             lblProfileNameTop1.LinkColor = Color.FromArgb(0, 0, 64);
-            lblProfileNameTop1.Location = new Point(918, 57);
+            lblProfileNameTop1.Location = new Point(953, 57);
             lblProfileNameTop1.Name = "lblProfileNameTop1";
             lblProfileNameTop1.Size = new Size(136, 24);
             lblProfileNameTop1.TabIndex = 3;
@@ -266,7 +266,7 @@
             // 
             btnYemekEkle.BackColor = Color.DarkSalmon;
             btnYemekEkle.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnYemekEkle.Location = new Point(427, 76);
+            btnYemekEkle.Location = new Point(470, 46);
             btnYemekEkle.Name = "btnYemekEkle";
             btnYemekEkle.Size = new Size(193, 46);
             btnYemekEkle.TabIndex = 2;
@@ -278,7 +278,7 @@
             // 
             btnSuKaydet.BackColor = Color.DeepSkyBlue;
             btnSuKaydet.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSuKaydet.Location = new Point(535, 26);
+            btnSuKaydet.Location = new Point(669, 46);
             btnSuKaydet.Name = "btnSuKaydet";
             btnSuKaydet.Size = new Size(149, 46);
             btnSuKaydet.TabIndex = 1;
@@ -291,7 +291,7 @@
             addWeight_btn.BackColor = SystemColors.ControlDark;
             addWeight_btn.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             addWeight_btn.ForeColor = SystemColors.ActiveCaptionText;
-            addWeight_btn.Location = new Point(368, 27);
+            addWeight_btn.Location = new Point(307, 46);
             addWeight_btn.Name = "addWeight_btn";
             addWeight_btn.Size = new Size(157, 46);
             addWeight_btn.TabIndex = 0;
@@ -324,35 +324,35 @@
             groupBox4.Size = new Size(645, 122);
             groupBox4.TabIndex = 15;
             groupBox4.TabStop = false;
-            groupBox4.Text = "İstatistikler";
+            groupBox4.Text = "Gün İstatistikleri";
             // 
             // lblKaloriAcigi
             // 
             lblKaloriAcigi.AutoSize = true;
-            lblKaloriAcigi.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKaloriAcigi.Location = new Point(497, 63);
+            lblKaloriAcigi.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblKaloriAcigi.Location = new Point(497, 66);
             lblKaloriAcigi.Name = "lblKaloriAcigi";
-            lblKaloriAcigi.Size = new Size(102, 28);
+            lblKaloriAcigi.Size = new Size(92, 25);
             lblKaloriAcigi.TabIndex = 20;
             lblKaloriAcigi.Text = "490kcal";
             // 
             // lblGunlukAlinanKalori
             // 
             lblGunlukAlinanKalori.AutoSize = true;
-            lblGunlukAlinanKalori.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGunlukAlinanKalori.Location = new Point(290, 65);
+            lblGunlukAlinanKalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblGunlukAlinanKalori.Location = new Point(290, 68);
             lblGunlukAlinanKalori.Name = "lblGunlukAlinanKalori";
-            lblGunlukAlinanKalori.Size = new Size(115, 28);
+            lblGunlukAlinanKalori.Size = new Size(104, 25);
             lblGunlukAlinanKalori.TabIndex = 19;
             lblGunlukAlinanKalori.Text = "1330kcal";
             // 
             // lblGunlukKaloriHedef
             // 
             lblGunlukKaloriHedef.AutoSize = true;
-            lblGunlukKaloriHedef.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGunlukKaloriHedef.Location = new Point(57, 66);
+            lblGunlukKaloriHedef.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblGunlukKaloriHedef.Location = new Point(57, 69);
             lblGunlukKaloriHedef.Name = "lblGunlukKaloriHedef";
-            lblGunlukKaloriHedef.Size = new Size(115, 28);
+            lblGunlukKaloriHedef.Size = new Size(104, 25);
             lblGunlukKaloriHedef.TabIndex = 18;
             lblGunlukKaloriHedef.Text = "1820kcal";
             // 
@@ -360,7 +360,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(497, 28);
+            label6.Location = new Point(497, 31);
             label6.Name = "label6";
             label6.Size = new Size(109, 22);
             label6.TabIndex = 17;
@@ -382,9 +382,9 @@
             label4.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
             label4.Location = new Point(12, 31);
             label4.Name = "label4";
-            label4.Size = new Size(193, 22);
+            label4.Size = new Size(205, 22);
             label4.TabIndex = 15;
-            label4.Text = "Günlük Kalori Hedefi";
+            label4.Text = "Günlük Kalori Hedefin";
             // 
             // groupBox3
             // 
@@ -405,38 +405,38 @@
             // lblYag
             // 
             lblYag.AutoSize = true;
-            lblYag.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblYag.Location = new Point(320, 63);
+            lblYag.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblYag.Location = new Point(347, 66);
             lblYag.Name = "lblYag";
-            lblYag.Size = new Size(123, 28);
+            lblYag.Size = new Size(57, 25);
             lblYag.TabIndex = 17;
-            lblYag.Text = "40gr/28gr";
+            lblYag.Text = "28gr";
             // 
             // lblProtein
             // 
             lblProtein.AutoSize = true;
-            lblProtein.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProtein.Location = new Point(161, 63);
+            lblProtein.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblProtein.Location = new Point(217, 66);
             lblProtein.Name = "lblProtein";
-            lblProtein.Size = new Size(149, 28);
+            lblProtein.Size = new Size(69, 25);
             lblProtein.TabIndex = 16;
-            lblProtein.Text = "120gr/108gr";
+            lblProtein.Text = "108gr";
             // 
             // lblKarbonhidrat
             // 
             lblKarbonhidrat.AutoSize = true;
-            lblKarbonhidrat.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKarbonhidrat.Location = new Point(18, 63);
+            lblKarbonhidrat.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblKarbonhidrat.Location = new Point(68, 66);
             lblKarbonhidrat.Name = "lblKarbonhidrat";
-            lblKarbonhidrat.Size = new Size(123, 28);
+            lblKarbonhidrat.Size = new Size(57, 25);
             lblKarbonhidrat.TabIndex = 15;
-            lblKarbonhidrat.Text = "60gr/48gr";
+            lblKarbonhidrat.Text = "48gr";
             // 
             // label9
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(357, 28);
+            label9.Location = new Point(352, 31);
             label9.Name = "label9";
             label9.Size = new Size(47, 22);
             label9.TabIndex = 14;
@@ -446,7 +446,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(194, 28);
+            label8.Location = new Point(213, 31);
             label8.Name = "label8";
             label8.Size = new Size(73, 22);
             label8.TabIndex = 13;
@@ -456,7 +456,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(14, 28);
+            label7.Location = new Point(37, 31);
             label7.Name = "label7";
             label7.Size = new Size(131, 22);
             label7.TabIndex = 12;
@@ -484,75 +484,75 @@
             groupBox2.Size = new Size(1127, 118);
             groupBox2.TabIndex = 4;
             groupBox2.TabStop = false;
-            groupBox2.Text = "Kalori Açığı Geçmişi";
+            groupBox2.Text = "Son 7 Günün Kalori Açığı Geçmişi";
             // 
             // lblGun7Kalori
             // 
             lblGun7Kalori.AutoSize = true;
-            lblGun7Kalori.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun7Kalori.Location = new Point(952, 74);
+            lblGun7Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblGun7Kalori.Location = new Point(958, 73);
             lblGun7Kalori.Name = "lblGun7Kalori";
-            lblGun7Kalori.Size = new Size(112, 28);
+            lblGun7Kalori.Size = new Size(101, 25);
             lblGun7Kalori.TabIndex = 42;
             lblGun7Kalori.Text = "-132kcal";
             // 
             // lblGun6Kalori
             // 
             lblGun6Kalori.AutoSize = true;
-            lblGun6Kalori.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun6Kalori.Location = new Point(794, 76);
+            lblGun6Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblGun6Kalori.Location = new Point(800, 75);
             lblGun6Kalori.Name = "lblGun6Kalori";
-            lblGun6Kalori.Size = new Size(112, 28);
+            lblGun6Kalori.Size = new Size(101, 25);
             lblGun6Kalori.TabIndex = 41;
             lblGun6Kalori.Text = "-341kcal";
             // 
             // lblGun5Kalori
             // 
             lblGun5Kalori.AutoSize = true;
-            lblGun5Kalori.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun5Kalori.Location = new Point(667, 75);
+            lblGun5Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblGun5Kalori.Location = new Point(673, 74);
             lblGun5Kalori.Name = "lblGun5Kalori";
-            lblGun5Kalori.Size = new Size(90, 28);
+            lblGun5Kalori.Size = new Size(81, 25);
             lblGun5Kalori.TabIndex = 40;
             lblGun5Kalori.Text = "+4kcal";
             // 
             // lblGun4Kalori
             // 
             lblGun4Kalori.AutoSize = true;
-            lblGun4Kalori.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun4Kalori.Location = new Point(513, 76);
+            lblGun4Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblGun4Kalori.Location = new Point(519, 75);
             lblGun4Kalori.Name = "lblGun4Kalori";
-            lblGun4Kalori.Size = new Size(116, 28);
+            lblGun4Kalori.Size = new Size(105, 25);
             lblGun4Kalori.TabIndex = 39;
             lblGun4Kalori.Text = "+332kcal";
             // 
             // lblGun3Kalori
             // 
             lblGun3Kalori.AutoSize = true;
-            lblGun3Kalori.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun3Kalori.Location = new Point(349, 74);
+            lblGun3Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblGun3Kalori.Location = new Point(355, 73);
             lblGun3Kalori.Name = "lblGun3Kalori";
-            lblGun3Kalori.Size = new Size(112, 28);
+            lblGun3Kalori.Size = new Size(101, 25);
             lblGun3Kalori.TabIndex = 38;
             lblGun3Kalori.Text = "-214kcal";
             // 
             // lblGun2Kalori
             // 
             lblGun2Kalori.AutoSize = true;
-            lblGun2Kalori.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun2Kalori.Location = new Point(203, 74);
+            lblGun2Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblGun2Kalori.Location = new Point(209, 73);
             lblGun2Kalori.Name = "lblGun2Kalori";
-            lblGun2Kalori.Size = new Size(103, 28);
+            lblGun2Kalori.Size = new Size(93, 25);
             lblGun2Kalori.TabIndex = 37;
             lblGun2Kalori.Text = "+22kcal";
             // 
             // lblGun1Kalori
             // 
             lblGun1Kalori.AutoSize = true;
-            lblGun1Kalori.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun1Kalori.Location = new Point(53, 72);
+            lblGun1Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblGun1Kalori.Location = new Point(59, 71);
             lblGun1Kalori.Name = "lblGun1Kalori";
-            lblGun1Kalori.Size = new Size(112, 28);
+            lblGun1Kalori.Size = new Size(101, 25);
             lblGun1Kalori.TabIndex = 36;
             lblGun1Kalori.Text = "-424kcal";
             // 
@@ -653,7 +653,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(182, 23);
+            label3.Location = new Point(173, 33);
             label3.Name = "label3";
             label3.Size = new Size(132, 22);
             label3.TabIndex = 41;
@@ -663,7 +663,7 @@
             // 
             lblAksamYemegiYuzde.AutoSize = true;
             lblAksamYemegiYuzde.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblAksamYemegiYuzde.Location = new Point(468, 208);
+            lblAksamYemegiYuzde.Location = new Point(471, 218);
             lblAksamYemegiYuzde.Name = "lblAksamYemegiYuzde";
             lblAksamYemegiYuzde.Size = new Size(47, 22);
             lblAksamYemegiYuzde.TabIndex = 40;
@@ -673,7 +673,7 @@
             // 
             lblAksamYemegi.AutoSize = true;
             lblAksamYemegi.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblAksamYemegi.Location = new Point(182, 208);
+            lblAksamYemegi.Location = new Point(185, 218);
             lblAksamYemegi.Name = "lblAksamYemegi";
             lblAksamYemegi.Size = new Size(85, 23);
             lblAksamYemegi.TabIndex = 39;
@@ -683,7 +683,7 @@
             // 
             label38.AutoSize = true;
             label38.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label38.Location = new Point(30, 208);
+            label38.Location = new Point(33, 218);
             label38.Name = "label38";
             label38.Size = new Size(150, 22);
             label38.TabIndex = 38;
@@ -691,7 +691,7 @@
             // 
             // dinner_progressBar
             // 
-            dinner_progressBar.Location = new Point(30, 244);
+            dinner_progressBar.Location = new Point(33, 254);
             dinner_progressBar.Name = "dinner_progressBar";
             dinner_progressBar.Size = new Size(485, 18);
             dinner_progressBar.TabIndex = 37;
@@ -700,7 +700,7 @@
             // 
             lblOgleYemegiYuzde.AutoSize = true;
             lblOgleYemegiYuzde.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblOgleYemegiYuzde.Location = new Point(468, 128);
+            lblOgleYemegiYuzde.Location = new Point(471, 138);
             lblOgleYemegiYuzde.Name = "lblOgleYemegiYuzde";
             lblOgleYemegiYuzde.Size = new Size(47, 22);
             lblOgleYemegiYuzde.TabIndex = 36;
@@ -710,7 +710,7 @@
             // 
             lblOgleYemegi.AutoSize = true;
             lblOgleYemegi.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblOgleYemegi.Location = new Point(182, 128);
+            lblOgleYemegi.Location = new Point(185, 138);
             lblOgleYemegi.Name = "lblOgleYemegi";
             lblOgleYemegi.Size = new Size(85, 23);
             lblOgleYemegi.TabIndex = 35;
@@ -720,7 +720,7 @@
             // 
             label35.AutoSize = true;
             label35.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label35.Location = new Point(30, 128);
+            label35.Location = new Point(33, 138);
             label35.Name = "label35";
             label35.Size = new Size(133, 22);
             label35.TabIndex = 34;
@@ -728,7 +728,7 @@
             // 
             // lunch_progressBar
             // 
-            lunch_progressBar.Location = new Point(30, 164);
+            lunch_progressBar.Location = new Point(33, 174);
             lunch_progressBar.Name = "lunch_progressBar";
             lunch_progressBar.Size = new Size(485, 18);
             lunch_progressBar.TabIndex = 33;
@@ -737,7 +737,7 @@
             // 
             lblKahvaltiYuzde.AutoSize = true;
             lblKahvaltiYuzde.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblKahvaltiYuzde.Location = new Point(468, 50);
+            lblKahvaltiYuzde.Location = new Point(471, 60);
             lblKahvaltiYuzde.Name = "lblKahvaltiYuzde";
             lblKahvaltiYuzde.Size = new Size(47, 22);
             lblKahvaltiYuzde.TabIndex = 32;
@@ -747,7 +747,7 @@
             // 
             lblKahvalti.AutoSize = true;
             lblKahvalti.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblKahvalti.Location = new Point(182, 50);
+            lblKahvalti.Location = new Point(185, 60);
             lblKahvalti.Name = "lblKahvalti";
             lblKahvalti.Size = new Size(85, 23);
             lblKahvalti.TabIndex = 31;
@@ -757,7 +757,7 @@
             // 
             label30.AutoSize = true;
             label30.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label30.Location = new Point(30, 50);
+            label30.Location = new Point(33, 60);
             label30.Name = "label30";
             label30.Size = new Size(90, 22);
             label30.TabIndex = 30;
@@ -765,7 +765,7 @@
             // 
             // breakfast_progressBar
             // 
-            breakfast_progressBar.Location = new Point(30, 86);
+            breakfast_progressBar.Location = new Point(33, 96);
             breakfast_progressBar.Name = "breakfast_progressBar";
             breakfast_progressBar.Size = new Size(485, 18);
             breakfast_progressBar.TabIndex = 0;

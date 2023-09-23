@@ -167,7 +167,6 @@
             topBar_groupBox.Controls.Add(dtpConsumeDate);
             topBar_groupBox.Controls.Add(pbProfilePictureTop);
             topBar_groupBox.Controls.Add(lblProfileNameTop1);
-            topBar_groupBox.Controls.Add(btnAddNewFood);
             topBar_groupBox.Controls.Add(lblProfileNameTop2);
             topBar_groupBox.Controls.Add(label2);
             topBar_groupBox.Controls.Add(label1);
@@ -181,9 +180,9 @@
             // 
             // dtpConsumeDate
             // 
-            dtpConsumeDate.Location = new Point(420, 88);
+            dtpConsumeDate.Location = new Point(443, 58);
             dtpConsumeDate.Name = "dtpConsumeDate";
-            dtpConsumeDate.Size = new Size(350, 33);
+            dtpConsumeDate.Size = new Size(324, 33);
             dtpConsumeDate.TabIndex = 45;
             dtpConsumeDate.ValueChanged += dtpConsumeDate_ValueChanged;
             // 
@@ -212,12 +211,12 @@
             // btnAddNewFood
             // 
             btnAddNewFood.BackColor = Color.DarkTurquoise;
-            btnAddNewFood.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAddNewFood.Location = new Point(455, 36);
+            btnAddNewFood.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAddNewFood.Location = new Point(14, 516);
             btnAddNewFood.Name = "btnAddNewFood";
-            btnAddNewFood.Size = new Size(284, 46);
+            btnAddNewFood.Size = new Size(415, 46);
             btnAddNewFood.TabIndex = 7;
-            btnAddNewFood.Text = "+ Listeye Yeni Yemek Ekle";
+            btnAddNewFood.Text = "+ Sisteme Yeni Yemek Ekle";
             btnAddNewFood.UseVisualStyleBackColor = false;
             btnAddNewFood.Click += btnAddNewFood_Click;
             // 
@@ -254,6 +253,7 @@
             groupBox1.Controls.Add(listBox1);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(btnAddNewFood);
             groupBox1.Location = new Point(148, 148);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(449, 573);
@@ -267,7 +267,7 @@
             listBox1.ItemHeight = 24;
             listBox1.Location = new Point(14, 74);
             listBox1.Name = "listBox1";
-            listBox1.Size = new Size(415, 484);
+            listBox1.Size = new Size(415, 436);
             listBox1.TabIndex = 10;
             listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
@@ -294,7 +294,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(839, 636);
+            label5.Location = new Point(856, 654);
             label5.Name = "label5";
             label5.Size = new Size(91, 24);
             label5.TabIndex = 9;
@@ -302,7 +302,7 @@
             // 
             // nudPortionNumber
             // 
-            nudPortionNumber.Location = new Point(706, 632);
+            nudPortionNumber.Location = new Point(723, 650);
             nudPortionNumber.Maximum = new decimal(new int[] { 10, 0, 0, 0 });
             nudPortionNumber.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudPortionNumber.Name = "nudPortionNumber";
@@ -313,7 +313,7 @@
             // 
             // btnSaveToConsumedFood
             // 
-            btnSaveToConsumedFood.Location = new Point(952, 624);
+            btnSaveToConsumedFood.Location = new Point(969, 642);
             btnSaveToConsumedFood.Name = "btnSaveToConsumedFood";
             btnSaveToConsumedFood.Size = new Size(189, 50);
             btnSaveToConsumedFood.TabIndex = 16;
@@ -336,7 +336,7 @@
             // rbDinner
             // 
             rbDinner.AutoSize = true;
-            rbDinner.Location = new Point(466, 44);
+            rbDinner.Location = new Point(465, 44);
             rbDinner.Name = "rbDinner";
             rbDinner.Size = new Size(97, 28);
             rbDinner.TabIndex = 18;
@@ -347,7 +347,7 @@
             // rbLunch
             // 
             rbLunch.AutoSize = true;
-            rbLunch.Location = new Point(286, 44);
+            rbLunch.Location = new Point(287, 44);
             rbLunch.Name = "rbLunch";
             rbLunch.Size = new Size(79, 28);
             rbLunch.TabIndex = 17;
@@ -358,7 +358,7 @@
             // rbBreakfast
             // 
             rbBreakfast.AutoSize = true;
-            rbBreakfast.Location = new Point(68, 45);
+            rbBreakfast.Location = new Point(93, 44);
             rbBreakfast.Name = "rbBreakfast";
             rbBreakfast.Size = new Size(111, 28);
             rbBreakfast.TabIndex = 16;
@@ -390,9 +390,9 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(231, 80);
+            pictureBox1.Location = new Point(253, 100);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(195, 133);
+            pictureBox1.Size = new Size(143, 133);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 40;
             pictureBox1.TabStop = false;
@@ -411,7 +411,7 @@
             // 
             lblFat.AutoSize = true;
             lblFat.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblFat.Location = new Point(512, 291);
+            lblFat.Location = new Point(531, 291);
             lblFat.Name = "lblFat";
             lblFat.Size = new Size(94, 32);
             lblFat.TabIndex = 36;
@@ -420,7 +420,7 @@
             // label15
             // 
             label15.AutoSize = true;
-            label15.Location = new Point(531, 251);
+            label15.Location = new Point(550, 251);
             label15.Name = "label15";
             label15.Size = new Size(51, 24);
             label15.TabIndex = 35;
@@ -430,7 +430,7 @@
             // 
             lblProtein.AutoSize = true;
             lblProtein.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProtein.Location = new Point(393, 292);
+            lblProtein.Location = new Point(412, 292);
             lblProtein.Name = "lblProtein";
             lblProtein.Size = new Size(94, 32);
             lblProtein.TabIndex = 34;
@@ -439,7 +439,7 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(400, 252);
+            label13.Location = new Point(419, 252);
             label13.Name = "label13";
             label13.Size = new Size(79, 24);
             label13.TabIndex = 33;
@@ -449,7 +449,7 @@
             // 
             lblCarb.AutoSize = true;
             lblCarb.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCarb.Location = new Point(253, 291);
+            lblCarb.Location = new Point(272, 291);
             lblCarb.Name = "lblCarb";
             lblCarb.Size = new Size(94, 32);
             lblCarb.TabIndex = 32;
@@ -458,7 +458,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(229, 251);
+            label11.Location = new Point(248, 251);
             label11.Name = "label11";
             label11.Size = new Size(140, 24);
             label11.TabIndex = 31;
@@ -468,7 +468,7 @@
             // 
             lblCalorie.AutoSize = true;
             lblCalorie.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCalorie.Location = new Point(49, 291);
+            lblCalorie.Location = new Point(74, 292);
             lblCalorie.Name = "lblCalorie";
             lblCalorie.Size = new Size(101, 32);
             lblCalorie.TabIndex = 30;
@@ -477,7 +477,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(68, 251);
+            label8.Location = new Point(93, 252);
             label8.Name = "label8";
             label8.Size = new Size(64, 24);
             label8.TabIndex = 29;

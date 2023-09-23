@@ -110,9 +110,9 @@
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(257, 601);
+            btnUpdate.Location = new Point(254, 601);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(145, 47);
+            btnUpdate.Size = new Size(168, 47);
             btnUpdate.TabIndex = 10;
             btnUpdate.Text = "Düzenle";
             btnUpdate.UseVisualStyleBackColor = true;
@@ -120,7 +120,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(59, 601);
+            btnDelete.Location = new Point(53, 601);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(168, 47);
             btnDelete.TabIndex = 11;
@@ -141,7 +141,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(70, 177);
+            label1.Location = new Point(78, 201);
             label1.Name = "label1";
             label1.Size = new Size(128, 24);
             label1.TabIndex = 2;
@@ -149,16 +149,16 @@
             // 
             // txtFoodName
             // 
-            txtFoodName.Location = new Point(70, 211);
+            txtFoodName.Location = new Point(78, 235);
             txtFoodName.Name = "txtFoodName";
             txtFoodName.Size = new Size(413, 33);
             txtFoodName.TabIndex = 3;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(171, 43);
+            pictureBox1.Location = new Point(194, 38);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(193, 131);
+            pictureBox1.Size = new Size(170, 155);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -167,7 +167,7 @@
             // 
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            linkLabel1.Location = new Point(372, 101);
+            linkLabel1.Location = new Point(380, 107);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(111, 21);
             linkLabel1.TabIndex = 5;
@@ -178,7 +178,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(53, 270);
+            label2.Location = new Point(125, 292);
             label2.Name = "label2";
             label2.Size = new Size(187, 24);
             label2.TabIndex = 6;
@@ -195,7 +195,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(246, 333);
+            label3.Location = new Point(251, 351);
             label3.Name = "label3";
             label3.Size = new Size(69, 24);
             label3.TabIndex = 10;
@@ -220,7 +220,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(68, 431);
+            label5.Location = new Point(73, 452);
             label5.Name = "label5";
             label5.Size = new Size(79, 24);
             label5.TabIndex = 13;
@@ -236,7 +236,7 @@
             // 
             // nudCalorieValue
             // 
-            nudCalorieValue.Location = new Point(223, 362);
+            nudCalorieValue.Location = new Point(228, 380);
             nudCalorieValue.Margin = new Padding(5);
             nudCalorieValue.Maximum = new decimal(new int[] { 3000, 0, 0, 0 });
             nudCalorieValue.Name = "nudCalorieValue";
@@ -246,7 +246,7 @@
             // nudProtein
             // 
             nudProtein.DecimalPlaces = 2;
-            nudProtein.Location = new Point(53, 463);
+            nudProtein.Location = new Point(58, 484);
             nudProtein.Margin = new Padding(9, 8, 9, 8);
             nudProtein.Name = "nudProtein";
             nudProtein.Size = new Size(118, 33);
@@ -255,7 +255,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(264, 431);
+            label6.Location = new Point(269, 452);
             label6.Name = "label6";
             label6.Size = new Size(51, 24);
             label6.TabIndex = 18;
@@ -264,7 +264,7 @@
             // nudFat
             // 
             nudFat.DecimalPlaces = 2;
-            nudFat.Location = new Point(225, 463);
+            nudFat.Location = new Point(230, 484);
             nudFat.Margin = new Padding(15, 13, 15, 13);
             nudFat.Name = "nudFat";
             nudFat.Size = new Size(136, 33);
@@ -273,7 +273,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(399, 431);
+            label7.Location = new Point(404, 452);
             label7.Name = "label7";
             label7.Size = new Size(140, 24);
             label7.TabIndex = 20;
@@ -282,7 +282,7 @@
             // nudCarb
             // 
             nudCarb.DecimalPlaces = 2;
-            nudCarb.Location = new Point(407, 463);
+            nudCarb.Location = new Point(412, 484);
             nudCarb.Margin = new Padding(26, 21, 26, 21);
             nudCarb.Name = "nudCarb";
             nudCarb.Size = new Size(122, 33);
@@ -291,7 +291,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(248, 270);
+            label9.Location = new Point(318, 292);
             label9.Name = "label9";
             label9.Size = new Size(111, 24);
             label9.TabIndex = 24;

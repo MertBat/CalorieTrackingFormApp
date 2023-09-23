@@ -350,10 +350,10 @@
             // label33
             // 
             label33.AutoSize = true;
-            label33.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label33.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label33.Location = new Point(352, 324);
             label33.Name = "label33";
-            label33.Size = new Size(201, 25);
+            label33.Size = new Size(194, 25);
             label33.TabIndex = 45;
             label33.Text = "Hedef Kalori Açığı";
             // 
@@ -370,10 +370,10 @@
             // Label32
             // 
             Label32.AutoSize = true;
-            Label32.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            Label32.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             Label32.Location = new Point(32, 324);
             Label32.Name = "Label32";
-            Label32.Size = new Size(229, 25);
+            Label32.Size = new Size(220, 25);
             Label32.TabIndex = 43;
             Label32.Text = "Günlük Kalori Hedefi";
             Label32.TextAlign = ContentAlignment.TopCenter;
@@ -391,10 +391,10 @@
             // label31
             // 
             label31.AutoSize = true;
-            label31.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label31.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label31.Location = new Point(352, 223);
             label31.Name = "label31";
-            label31.Size = new Size(201, 25);
+            label31.Size = new Size(192, 25);
             label31.TabIndex = 41;
             label31.Text = "Hedefe Kalan Kilo";
             // 
@@ -411,10 +411,10 @@
             // label30
             // 
             label30.AutoSize = true;
-            label30.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label30.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label30.Location = new Point(80, 223);
             label30.Name = "label30";
-            label30.Size = new Size(121, 25);
+            label30.Size = new Size(114, 25);
             label30.TabIndex = 39;
             label30.Text = "Hedef Kilo";
             // 
@@ -431,10 +431,10 @@
             // label22
             // 
             label22.AutoSize = true;
-            label22.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label22.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label22.Location = new Point(383, 130);
             label22.Name = "label22";
-            label22.Size = new Size(140, 25);
+            label22.Size = new Size(136, 25);
             label22.TabIndex = 37;
             label22.Text = "BMI Durumu";
             // 
@@ -451,10 +451,10 @@
             // label20
             // 
             label20.AutoSize = true;
-            label20.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label20.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label20.Location = new Point(118, 130);
             label20.Name = "label20";
-            label20.Size = new Size(52, 25);
+            label20.Size = new Size(49, 25);
             label20.TabIndex = 35;
             label20.Text = "BMI";
             // 
@@ -471,10 +471,10 @@
             // label19
             // 
             label19.AutoSize = true;
-            label19.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label19.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label19.Location = new Point(432, 37);
             label19.Name = "label19";
-            label19.Size = new Size(52, 25);
+            label19.Size = new Size(48, 25);
             label19.TabIndex = 33;
             label19.Text = "Kilo";
             // 
@@ -491,10 +491,10 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label8.Location = new Point(117, 40);
             label8.Name = "label8";
-            label8.Size = new Size(52, 25);
+            label8.Size = new Size(49, 25);
             label8.TabIndex = 31;
             label8.Text = "Boy";
             // 
@@ -576,10 +576,10 @@
             // label27
             // 
             label27.AutoSize = true;
-            label27.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label27.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label27.Location = new Point(53, 332);
             label27.Name = "label27";
-            label27.Size = new Size(152, 25);
+            label27.Size = new Size(146, 25);
             label27.TabIndex = 40;
             label27.Text = "Doğum Tarihi";
             // 
@@ -608,10 +608,10 @@
             // label25
             // 
             label25.AutoSize = true;
-            label25.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label25.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label25.Location = new Point(51, 239);
             label25.Name = "label25";
-            label25.Size = new Size(61, 25);
+            label25.Size = new Size(54, 25);
             label25.TabIndex = 37;
             label25.Text = "Şifre";
             // 
@@ -628,10 +628,10 @@
             // label23
             // 
             label23.AutoSize = true;
-            label23.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label23.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label23.Location = new Point(51, 146);
             label23.Name = "label23";
-            label23.Size = new Size(79, 25);
+            label23.Size = new Size(75, 25);
             label23.TabIndex = 35;
             label23.Text = "E-Mail";
             // 
@@ -648,10 +648,10 @@
             // label21
             // 
             label21.AutoSize = true;
-            label21.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label21.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label21.Location = new Point(51, 53);
             label21.Name = "label21";
-            label21.Size = new Size(113, 25);
+            label21.Size = new Size(112, 25);
             label21.TabIndex = 33;
             label21.Text = "Ad Soyad";
             // 

@@ -61,9 +61,9 @@ namespace CalorieTrackingApp.UI
                 lblWeight.Text = userDetail.LastWeight.ToString() + "Kg";
                 lblBMI.Text = userDetail.BMI.ToString();
                 lblBMICondition.Text = BMICondition(userDetail.BMI);
-                lblTargetWeight.Text = Math.Round(userDetail.TargetWeight,2).ToString() + "Kg";
-                lblRemainTarget.Text = Math.Round(userDetail.TargetWeight - userDetail.LastWeight,2).ToString();
-                lblDailyGoal.Text = Math.Round(userDetail.TargetCalorieIntake,2).ToString() + "Kcal";
+                lblTargetWeight.Text = Math.Round(userDetail.TargetWeight, 2).ToString() + "Kg";
+                lblRemainTarget.Text = Math.Round(userDetail.TargetWeight - userDetail.LastWeight, 2).ToString();
+                lblDailyGoal.Text = Math.Round(userDetail.TargetCalorieIntake, 2).ToString() + "Kcal";
                 lblBDay.Text = $"{userDetail.BirthDate.Day}/{userDetail.BirthDate.Month}/{userDetail.BirthDate.Year}";
             }
             lblName.Text = _account.Name;
