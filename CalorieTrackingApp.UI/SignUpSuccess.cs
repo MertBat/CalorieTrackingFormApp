@@ -43,6 +43,7 @@ namespace CalorieTrackingApp.UI
             pbUserPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
             pbUserPhoto.Image = ByteArrayToImage(userDetail.Picture);
             lblUserName.Text = account.Name;
+            lblTargetWeight.Text = userDetail.TargetWeight.ToString();
 
         }
 
@@ -75,6 +76,11 @@ namespace CalorieTrackingApp.UI
 
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTargetWeight_Click(object sender, EventArgs e)
         {
 
         }

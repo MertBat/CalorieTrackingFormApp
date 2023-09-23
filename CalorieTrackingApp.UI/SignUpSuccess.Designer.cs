@@ -60,9 +60,9 @@
             groupBox1.Controls.Add(btnLoginScreen);
             groupBox1.Controls.Add(lblUserName);
             groupBox1.Controls.Add(pbUserPhoto);
-            groupBox1.Location = new Point(619, 9);
+            groupBox1.Location = new Point(611, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(508, 763);
+            groupBox1.Size = new Size(516, 761);
             groupBox1.TabIndex = 40;
             groupBox1.TabStop = false;
             groupBox1.Text = "Kayıt Başarılı";
@@ -71,7 +71,7 @@
             // 
             label16.AutoSize = true;
             label16.ForeColor = Color.Green;
-            label16.Location = new Point(100, 220);
+            label16.Location = new Point(107, 220);
             label16.Name = "label16";
             label16.Size = new Size(313, 24);
             label16.TabIndex = 54;
@@ -126,7 +126,7 @@
             // 
             lblTargetWater.AutoSize = true;
             lblTargetWater.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTargetWater.Location = new Point(77, 325);
+            lblTargetWater.Location = new Point(90, 325);
             lblTargetWater.Name = "lblTargetWater";
             lblTargetWater.Size = new Size(75, 32);
             lblTargetWater.TabIndex = 54;
@@ -137,7 +137,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(31, 288);
+            label11.Location = new Point(44, 288);
             label11.Name = "label11";
             label11.Size = new Size(150, 22);
             label11.TabIndex = 53;
@@ -147,7 +147,7 @@
             // 
             lblTargetCalorie.AutoSize = true;
             lblTargetCalorie.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTargetCalorie.Location = new Point(265, 204);
+            lblTargetCalorie.Location = new Point(272, 204);
             lblTargetCalorie.Name = "lblTargetCalorie";
             lblTargetCalorie.Size = new Size(131, 32);
             lblTargetCalorie.TabIndex = 52;
@@ -158,7 +158,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(270, 169);
+            label7.Location = new Point(277, 169);
             label7.Name = "label7";
             label7.Size = new Size(119, 22);
             label7.TabIndex = 51;
@@ -168,7 +168,7 @@
             // 
             lblStandartCalorie.AutoSize = true;
             lblStandartCalorie.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblStandartCalorie.Location = new Point(48, 204);
+            lblStandartCalorie.Location = new Point(62, 204);
             lblStandartCalorie.Name = "lblStandartCalorie";
             lblStandartCalorie.Size = new Size(131, 32);
             lblStandartCalorie.TabIndex = 48;
@@ -179,7 +179,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(37, 169);
+            label13.Location = new Point(51, 169);
             label13.Name = "label13";
             label13.Size = new Size(143, 22);
             label13.TabIndex = 47;
@@ -189,7 +189,7 @@
             // 
             lblRemainingOnTarget.AutoSize = true;
             lblRemainingOnTarget.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblRemainingOnTarget.Location = new Point(303, 94);
+            lblRemainingOnTarget.Location = new Point(321, 94);
             lblRemainingOnTarget.Name = "lblRemainingOnTarget";
             lblRemainingOnTarget.Size = new Size(63, 32);
             lblRemainingOnTarget.TabIndex = 46;
@@ -201,7 +201,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(273, 59);
+            label5.Location = new Point(291, 59);
             label5.Name = "label5";
             label5.Size = new Size(135, 22);
             label5.TabIndex = 45;
@@ -211,18 +211,19 @@
             // 
             lblTargetWeight.AutoSize = true;
             lblTargetWeight.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTargetWeight.Location = new Point(156, 94);
+            lblTargetWeight.Location = new Point(182, 94);
             lblTargetWeight.Name = "lblTargetWeight";
             lblTargetWeight.Size = new Size(78, 32);
             lblTargetWeight.TabIndex = 44;
             lblTargetWeight.Text = "77kg";
             lblTargetWeight.TextAlign = ContentAlignment.TopCenter;
+            lblTargetWeight.Click += lblTargetWeight_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(138, 59);
+            label3.Location = new Point(164, 59);
             label3.Name = "label3";
             label3.Size = new Size(100, 22);
             label3.TabIndex = 43;
@@ -232,7 +233,7 @@
             // 
             lblBMI.AutoSize = true;
             lblBMI.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblBMI.Location = new Point(37, 94);
+            lblBMI.Location = new Point(66, 94);
             lblBMI.Name = "lblBMI";
             lblBMI.Size = new Size(67, 32);
             lblBMI.TabIndex = 42;
@@ -243,7 +244,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(48, 59);
+            label8.Location = new Point(77, 59);
             label8.Name = "label8";
             label8.Size = new Size(43, 22);
             label8.TabIndex = 41;
