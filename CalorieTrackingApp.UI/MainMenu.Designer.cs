@@ -371,7 +371,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(50, 29);
+            label1.Location = new Point(45, 31);
             label1.Name = "label1";
             label1.Size = new Size(180, 39);
             label1.TabIndex = 4;
@@ -781,7 +781,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(168, 23);
+            label3.Location = new Point(220, 23);
             label3.Name = "label3";
             label3.Size = new Size(132, 22);
             label3.TabIndex = 41;
@@ -801,7 +801,7 @@
             // 
             lblAksamYemegi.AutoSize = true;
             lblAksamYemegi.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblAksamYemegi.Location = new Point(185, 218);
+            lblAksamYemegi.Location = new Point(248, 217);
             lblAksamYemegi.Name = "lblAksamYemegi";
             lblAksamYemegi.Size = new Size(85, 23);
             lblAksamYemegi.TabIndex = 39;
@@ -811,7 +811,7 @@
             // 
             label38.AutoSize = true;
             label38.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label38.Location = new Point(33, 218);
+            label38.Location = new Point(49, 218);
             label38.Name = "label38";
             label38.Size = new Size(150, 22);
             label38.TabIndex = 38;
@@ -819,9 +819,9 @@
             // 
             // dinner_progressBar
             // 
-            dinner_progressBar.Location = new Point(33, 254);
+            dinner_progressBar.Location = new Point(49, 254);
             dinner_progressBar.Name = "dinner_progressBar";
-            dinner_progressBar.Size = new Size(485, 18);
+            dinner_progressBar.Size = new Size(469, 18);
             dinner_progressBar.TabIndex = 37;
             // 
             // lblOgleYemegiYuzde
@@ -838,7 +838,7 @@
             // 
             lblOgleYemegi.AutoSize = true;
             lblOgleYemegi.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblOgleYemegi.Location = new Point(185, 138);
+            lblOgleYemegi.Location = new Point(248, 137);
             lblOgleYemegi.Name = "lblOgleYemegi";
             lblOgleYemegi.Size = new Size(85, 23);
             lblOgleYemegi.TabIndex = 35;
@@ -848,7 +848,7 @@
             // 
             label35.AutoSize = true;
             label35.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label35.Location = new Point(33, 138);
+            label35.Location = new Point(49, 138);
             label35.Name = "label35";
             label35.Size = new Size(133, 22);
             label35.TabIndex = 34;
@@ -856,9 +856,9 @@
             // 
             // lunch_progressBar
             // 
-            lunch_progressBar.Location = new Point(33, 174);
+            lunch_progressBar.Location = new Point(49, 174);
             lunch_progressBar.Name = "lunch_progressBar";
-            lunch_progressBar.Size = new Size(485, 18);
+            lunch_progressBar.Size = new Size(469, 18);
             lunch_progressBar.TabIndex = 33;
             // 
             // lblKahvaltiYuzde
@@ -875,7 +875,7 @@
             // 
             lblKahvalti.AutoSize = true;
             lblKahvalti.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblKahvalti.Location = new Point(189, 60);
+            lblKahvalti.Location = new Point(248, 59);
             lblKahvalti.Name = "lblKahvalti";
             lblKahvalti.Size = new Size(85, 23);
             lblKahvalti.TabIndex = 31;
@@ -885,7 +885,7 @@
             // 
             label30.AutoSize = true;
             label30.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label30.Location = new Point(33, 60);
+            label30.Location = new Point(49, 59);
             label30.Name = "label30";
             label30.Size = new Size(90, 22);
             label30.TabIndex = 30;
@@ -893,9 +893,9 @@
             // 
             // breakfast_progressBar
             // 
-            breakfast_progressBar.Location = new Point(33, 96);
+            breakfast_progressBar.Location = new Point(49, 96);
             breakfast_progressBar.Name = "breakfast_progressBar";
-            breakfast_progressBar.Size = new Size(485, 18);
+            breakfast_progressBar.Size = new Size(469, 18);
             breakfast_progressBar.TabIndex = 0;
             // 
             // groupBox6
