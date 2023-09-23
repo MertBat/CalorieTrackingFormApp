@@ -232,5 +232,9 @@ namespace CalorieTrackingApp.UI
             }
         }
 
+        private void btnSocial_MouseHover(object sender, EventArgs e)
+        {
+
+        }
     }
 }
