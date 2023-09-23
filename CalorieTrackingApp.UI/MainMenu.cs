@@ -144,7 +144,7 @@ namespace CalorieTrackingApp.UI
         private void FillTheCaloriesPart()
         {
             consumedFoods = ConsumedFoodRepository.GetAll().Where(a => a.ConsumedDate.Day == DateTime.Now.Day && a.ConsumedDate.Month == DateTime.Now.Month && a.AccountID == account.Id).ToList(); // Tarih kısmı değişecek
-            lblGunlukKaloriHedef.Text = Math.Round(userDetail.TargetCalorieIntake, 1).ToString();
+            lblGunlukKaloriHedef.Text = Math.Round(userDetail.TargetCalorieIntake, 0).ToString() + " cal";
 
             double gunlukKalori = 0;
             foreach (var food in consumedFoods)
@@ -153,8 +153,8 @@ namespace CalorieTrackingApp.UI
                 gunlukKalori += (_food.PortionCalorie * food.Portion);  //O günkü yemeklerin kalorileri toplandı.
             }
 
-            lblGunlukAlinanKalori.Text = Math.Round(gunlukKalori, 1).ToString() + "kcal";
-            lblKaloriAcigi.Text = Math.Round((userDetail.TargetCalorieIntake - gunlukKalori), 1).ToString() + "kcal";
+            lblGunlukAlinanKalori.Text = Math.Round(gunlukKalori, 1).ToString() + "cal";
+            lblKaloriAcigi.Text = Math.Round((userDetail.TargetCalorieIntake - gunlukKalori), 0).ToString() + " cal";
         }
 
         private void FillTheMacrosPart()
@@ -225,7 +225,7 @@ namespace CalorieTrackingApp.UI
                 if (label != null && kaloriLabel != null)
                 {
                     label.Text = date.ToString("dd/MM/yy");
-                    kaloriLabel.Text = Math.Round((userDetail.TargetCalorieIntake - gunlukKalori), 1) + "kcal";
+                    kaloriLabel.Text = Math.Round((userDetail.TargetCalorieIntake - gunlukKalori), 0) + " cal";
                 }
 
                 date = date.AddDays(-1);

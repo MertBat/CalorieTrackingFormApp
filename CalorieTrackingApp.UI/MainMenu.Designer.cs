@@ -207,7 +207,7 @@
             topBar_groupBox.Controls.Add(addWeight_btn);
             topBar_groupBox.Location = new Point(148, 12);
             topBar_groupBox.Name = "topBar_groupBox";
-            topBar_groupBox.Size = new Size(1127, 130);
+            topBar_groupBox.Size = new Size(1123, 130);
             topBar_groupBox.TabIndex = 1;
             topBar_groupBox.TabStop = false;
             topBar_groupBox.Text = "TopBar";
@@ -340,7 +340,7 @@
             // 
             lblGunlukAlinanKalori.AutoSize = true;
             lblGunlukAlinanKalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGunlukAlinanKalori.Location = new Point(290, 68);
+            lblGunlukAlinanKalori.Location = new Point(282, 66);
             lblGunlukAlinanKalori.Name = "lblGunlukAlinanKalori";
             lblGunlukAlinanKalori.Size = new Size(104, 25);
             lblGunlukAlinanKalori.TabIndex = 19;
@@ -350,7 +350,7 @@
             // 
             lblGunlukKaloriHedef.AutoSize = true;
             lblGunlukKaloriHedef.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGunlukKaloriHedef.Location = new Point(57, 69);
+            lblGunlukKaloriHedef.Location = new Point(63, 66);
             lblGunlukKaloriHedef.Name = "lblGunlukKaloriHedef";
             lblGunlukKaloriHedef.Size = new Size(104, 25);
             lblGunlukKaloriHedef.TabIndex = 18;
@@ -360,17 +360,17 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.Location = new Point(497, 31);
+            label6.Location = new Point(436, 31);
             label6.Name = "label6";
-            label6.Size = new Size(109, 22);
+            label6.Size = new Size(198, 22);
             label6.TabIndex = 17;
-            label6.Text = "Kalori Açığı";
+            label6.Text = "Bugünün Kalori Açığı";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(254, 31);
+            label5.Location = new Point(235, 31);
             label5.Name = "label5";
             label5.Size = new Size(186, 22);
             label5.TabIndex = 16;
@@ -380,7 +380,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(12, 31);
+            label4.Location = new Point(14, 31);
             label4.Name = "label4";
             label4.Size = new Size(205, 22);
             label4.TabIndex = 15;
@@ -490,7 +490,7 @@
             // 
             lblGun7Kalori.AutoSize = true;
             lblGun7Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun7Kalori.Location = new Point(958, 73);
+            lblGun7Kalori.Location = new Point(953, 75);
             lblGun7Kalori.Name = "lblGun7Kalori";
             lblGun7Kalori.Size = new Size(101, 25);
             lblGun7Kalori.TabIndex = 42;
@@ -500,7 +500,7 @@
             // 
             lblGun6Kalori.AutoSize = true;
             lblGun6Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun6Kalori.Location = new Point(800, 75);
+            lblGun6Kalori.Location = new Point(815, 75);
             lblGun6Kalori.Name = "lblGun6Kalori";
             lblGun6Kalori.Size = new Size(101, 25);
             lblGun6Kalori.TabIndex = 41;
@@ -510,7 +510,7 @@
             // 
             lblGun5Kalori.AutoSize = true;
             lblGun5Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun5Kalori.Location = new Point(673, 74);
+            lblGun5Kalori.Location = new Point(687, 74);
             lblGun5Kalori.Name = "lblGun5Kalori";
             lblGun5Kalori.Size = new Size(81, 25);
             lblGun5Kalori.TabIndex = 40;
@@ -520,7 +520,7 @@
             // 
             lblGun4Kalori.AutoSize = true;
             lblGun4Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun4Kalori.Location = new Point(519, 75);
+            lblGun4Kalori.Location = new Point(534, 75);
             lblGun4Kalori.Name = "lblGun4Kalori";
             lblGun4Kalori.Size = new Size(105, 25);
             lblGun4Kalori.TabIndex = 39;
@@ -530,7 +530,7 @@
             // 
             lblGun3Kalori.AutoSize = true;
             lblGun3Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun3Kalori.Location = new Point(355, 73);
+            lblGun3Kalori.Location = new Point(372, 73);
             lblGun3Kalori.Name = "lblGun3Kalori";
             lblGun3Kalori.Size = new Size(101, 25);
             lblGun3Kalori.TabIndex = 38;
@@ -540,7 +540,7 @@
             // 
             lblGun2Kalori.AutoSize = true;
             lblGun2Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun2Kalori.Location = new Point(209, 73);
+            lblGun2Kalori.Location = new Point(220, 75);
             lblGun2Kalori.Name = "lblGun2Kalori";
             lblGun2Kalori.Size = new Size(93, 25);
             lblGun2Kalori.TabIndex = 37;
@@ -550,7 +550,7 @@
             // 
             lblGun1Kalori.AutoSize = true;
             lblGun1Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun1Kalori.Location = new Point(59, 71);
+            lblGun1Kalori.Location = new Point(70, 73);
             lblGun1Kalori.Name = "lblGun1Kalori";
             lblGun1Kalori.Size = new Size(101, 25);
             lblGun1Kalori.TabIndex = 36;
@@ -560,7 +560,7 @@
             // 
             lblGun7.AutoSize = true;
             lblGun7.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblGun7.Location = new Point(974, 39);
+            lblGun7.Location = new Point(993, 37);
             lblGun7.Name = "lblGun7";
             lblGun7.Size = new Size(61, 22);
             lblGun7.TabIndex = 35;
@@ -570,7 +570,7 @@
             // 
             lblGun6.AutoSize = true;
             lblGun6.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblGun6.Location = new Point(799, 41);
+            lblGun6.Location = new Point(814, 41);
             lblGun6.Name = "lblGun6";
             lblGun6.Size = new Size(102, 22);
             lblGun6.TabIndex = 34;
@@ -580,7 +580,7 @@
             // 
             lblGun5.AutoSize = true;
             lblGun5.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblGun5.Location = new Point(677, 40);
+            lblGun5.Location = new Point(701, 41);
             lblGun5.Name = "lblGun5";
             lblGun5.Size = new Size(67, 22);
             lblGun5.TabIndex = 33;
@@ -590,7 +590,7 @@
             // 
             lblGun4.AutoSize = true;
             lblGun4.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblGun4.Location = new Point(523, 41);
+            lblGun4.Location = new Point(538, 41);
             lblGun4.Name = "lblGun4";
             lblGun4.Size = new Size(100, 22);
             lblGun4.TabIndex = 32;
@@ -600,7 +600,7 @@
             // 
             lblGun3.AutoSize = true;
             lblGun3.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblGun3.Location = new Point(355, 39);
+            lblGun3.Location = new Point(372, 39);
             lblGun3.Name = "lblGun3";
             lblGun3.Size = new Size(107, 22);
             lblGun3.TabIndex = 31;
@@ -610,7 +610,7 @@
             // 
             lblGun2.AutoSize = true;
             lblGun2.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblGun2.Location = new Point(237, 39);
+            lblGun2.Location = new Point(248, 41);
             lblGun2.Name = "lblGun2";
             lblGun2.Size = new Size(38, 22);
             lblGun2.TabIndex = 30;
@@ -620,7 +620,7 @@
             // 
             lblGun1.AutoSize = true;
             lblGun1.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblGun1.Location = new Point(65, 37);
+            lblGun1.Location = new Point(76, 39);
             lblGun1.Name = "lblGun1";
             lblGun1.Size = new Size(90, 22);
             lblGun1.TabIndex = 29;
@@ -653,7 +653,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(173, 33);
+            label3.Location = new Point(168, 23);
             label3.Name = "label3";
             label3.Size = new Size(132, 22);
             label3.TabIndex = 41;
@@ -747,7 +747,7 @@
             // 
             lblKahvalti.AutoSize = true;
             lblKahvalti.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblKahvalti.Location = new Point(185, 60);
+            lblKahvalti.Location = new Point(189, 60);
             lblKahvalti.Name = "lblKahvalti";
             lblKahvalti.Size = new Size(85, 23);
             lblKahvalti.TabIndex = 31;
@@ -880,7 +880,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1276, 725);
+            ClientSize = new Size(1285, 725);
             Controls.Add(groupBox6);
             Controls.Add(groupBox5);
             Controls.Add(groupBox2);

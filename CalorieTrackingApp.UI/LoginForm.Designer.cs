@@ -46,6 +46,8 @@
             // LoginGroupBox
             // 
             LoginGroupBox.BackColor = Color.Transparent;
+            LoginGroupBox.BackgroundImage = Properties.Resources.output_onlinepngtools;
+            LoginGroupBox.BackgroundImageLayout = ImageLayout.Stretch;
             LoginGroupBox.Controls.Add(pbpass);
             LoginGroupBox.Controls.Add(txtLoginPassword);
             LoginGroupBox.Controls.Add(lklblRegister);
@@ -56,22 +58,22 @@
             LoginGroupBox.Controls.Add(label2);
             LoginGroupBox.Controls.Add(txtLoginUsername);
             LoginGroupBox.Controls.Add(label1);
-            LoginGroupBox.Location = new Point(540, 89);
+            LoginGroupBox.FlatStyle = FlatStyle.Popup;
+            LoginGroupBox.Location = new Point(564, 45);
             LoginGroupBox.Name = "LoginGroupBox";
-            LoginGroupBox.Size = new Size(477, 551);
+            LoginGroupBox.Size = new Size(438, 646);
             LoginGroupBox.TabIndex = 0;
             LoginGroupBox.TabStop = false;
-            LoginGroupBox.Text = "Kullanıcı Girişi";
             // 
             // pbpass
             // 
             pbpass.BackColor = Color.White;
             pbpass.BackgroundImageLayout = ImageLayout.None;
             pbpass.Image = Properties.Resources.eye;
-            pbpass.Location = new Point(373, 233);
+            pbpass.Location = new Point(381, 282);
             pbpass.Margin = new Padding(3, 2, 3, 2);
             pbpass.Name = "pbpass";
-            pbpass.Size = new Size(28, 28);
+            pbpass.Size = new Size(29, 28);
             pbpass.SizeMode = PictureBoxSizeMode.StretchImage;
             pbpass.TabIndex = 9;
             pbpass.TabStop = false;
@@ -80,7 +82,7 @@
             // 
             // txtLoginPassword
             // 
-            txtLoginPassword.Location = new Point(31, 230);
+            txtLoginPassword.Location = new Point(39, 279);
             txtLoginPassword.Name = "txtLoginPassword";
             txtLoginPassword.Size = new Size(373, 33);
             txtLoginPassword.TabIndex = 2;
@@ -88,7 +90,7 @@
             // lklblRegister
             // 
             lklblRegister.AutoSize = true;
-            lklblRegister.Location = new Point(295, 483);
+            lklblRegister.Location = new Point(279, 557);
             lklblRegister.Name = "lklblRegister";
             lklblRegister.Size = new Size(88, 24);
             lklblRegister.TabIndex = 6;
@@ -99,7 +101,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(31, 483);
+            label3.Location = new Point(59, 557);
             label3.Name = "label3";
             label3.Size = new Size(200, 24);
             label3.TabIndex = 8;
@@ -107,30 +109,32 @@
             // 
             // btnEntry
             // 
-            btnEntry.Location = new Point(123, 381);
+            btnEntry.Location = new Point(109, 459);
             btnEntry.Name = "btnEntry";
             btnEntry.Size = new Size(223, 47);
             btnEntry.TabIndex = 3;
             btnEntry.Text = "Giriş Yap";
             btnEntry.UseVisualStyleBackColor = true;
             btnEntry.Click += btnEntry_Click;
+            btnEntry.Enter += btnEntry_Enter;
             // 
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
             linkLabel1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            linkLabel1.Location = new Point(144, 334);
+            linkLabel1.Location = new Point(130, 412);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(181, 21);
             linkLabel1.TabIndex = 5;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Şifrenizi mi Unuttunuz?";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
+            linkLabel1.Enter += linkLabel1_Enter;
             // 
             // chkRememberMe
             // 
             chkRememberMe.AutoSize = true;
-            chkRememberMe.Location = new Point(34, 284);
+            chkRememberMe.Location = new Point(42, 333);
             chkRememberMe.Name = "chkRememberMe";
             chkRememberMe.Size = new Size(142, 28);
             chkRememberMe.TabIndex = 4;
@@ -141,7 +145,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(31, 196);
+            label2.Location = new Point(39, 245);
             label2.Name = "label2";
             label2.Size = new Size(55, 24);
             label2.TabIndex = 2;
@@ -149,7 +153,7 @@
             // 
             // txtLoginUsername
             // 
-            txtLoginUsername.Location = new Point(34, 150);
+            txtLoginUsername.Location = new Point(42, 199);
             txtLoginUsername.Name = "txtLoginUsername";
             txtLoginUsername.Size = new Size(370, 33);
             txtLoginUsername.TabIndex = 1;
@@ -157,7 +161,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(31, 117);
+            label1.Location = new Point(39, 166);
             label1.Name = "label1";
             label1.Size = new Size(141, 24);
             label1.TabIndex = 0;
