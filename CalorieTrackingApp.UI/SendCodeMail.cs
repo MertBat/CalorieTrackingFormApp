@@ -34,7 +34,7 @@ namespace CalorieTrackingApp.UI
         private void SendCodeMail_Load(object sender, EventArgs e)
         {
             random = new Random();
-            second = 60;
+            second = 600;
             btnConfirmation.Enabled = false;
 
             for (int i = 0; i < 5; i++)
@@ -77,7 +77,7 @@ namespace CalorieTrackingApp.UI
                 MessageBox.Show("Zamanınız Doldu! Tekrar Gönderiniz");
                 btnSend.Enabled = true;
                 btnConfirmation.Enabled = false;
-                second = 60;
+                second = 600;
                 lblSecond.BackColor = SystemColors.Control;
                 lblSecond.Text = (second).ToString();
             }
@@ -97,7 +97,6 @@ namespace CalorieTrackingApp.UI
 
         private void SendCode()
         {
-
             try
             {
                 string smtpServer = "smtp.office365.com"; //SMTP sunucusu adresi
@@ -109,19 +108,26 @@ namespace CalorieTrackingApp.UI
                 MailMessage mail = new MailMessage();
                 mail.From = new MailAddress(senderEmail);
                 mail.To.Add(recipientEmail);
-                mail.Subject = "Doğrulama kodu"; //E-posta konusu
-                mail.Body = @"
-                (        )   (    (                 (                         )  (        )          
-   (     (      )\ )  ( /(   )\ ) )\ )        *   ) )\ )    (        (     ( /(  )\ )  ( /(  (       
-   )\    )\    (()/(  )\()) (()/((()/( (    ` )  /((()/(    )\       )\    )\())(()/(  )\()) )\ )    
- (((_)((((_)(   /(_))((_)\   /(_))/(_)))\    ( )(_))/(_))((((_)(   (((_) |((_)\  /(_))((_)\ (()/(    
- )\___ )\ _ )\ (_))    ((_) (_)) (_)) ((_)  (_(_())(_))   )\ _ )\  )\___ |_ ((_)(_))   _((_) /(_))_  
-((/ __|(_)_\(_)| |    / _ \ | _ \|_ _|| __| |_   _|| _ \  (_)_\(_)((/ __|| |/ / |_ _| | \| |(_)) __| 
- | (__  / _ \  | |__ | (_) ||   / | | | _|    | |  |   /   / _ \   | (__   ' <   | |  | .` |  | (_ | 
-  \___|/_/ \_\ |____| \___/ |_|_\|___||___|   |_|  |_|_\  /_/ \_\   \___| _|\_\ |___| |_|\_|   \___| 
-                                                                                                     
+                mail.Subject = "Hesap Doğrulama"; //E-posta konusu
 
-Dogrulama Kodunuz: " + code; //E-posta içeriği
+                // E-posta içeriği HTML formatında
+                mail.IsBodyHtml = true;
+                mail.Body = @"<!DOCTYPE html>
+                        <html lang='tr'>
+                        <head>
+                            <meta charset='UTF-8'>
+                            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+                            <title>Hesap Doğrulama</title>
+                        </head>
+                        <body style='font-family: Arial, sans-serif;'>
+                            <h2 style='color: #333;'>Hesap Doğrulama</h2>
+                            <p style='color: #666;'>Merhaba,</p>
+                            <p style='color: #666;'>Hesabınızı doğrulamak için aşağıdaki doğrulama kodunu kullanın:</p>
+                            <p style='background-color: #f4f4f4; padding: 10px; font-size: 20px; border: 1px solid #ddd; display: inline-block;'>" + code + @"</p>
+                            <p style='color: #666;'>Bu kod sadece 10 dakika boyunca geçerlidir.</p>
+                            <p style='color: #666;'>İyi günler dileriz.</p>
+                        </body>
+                        </html>";
 
                 SmtpClient smtpClient = new SmtpClient(smtpServer, port);
                 smtpClient.UseDefaultCredentials = false;
@@ -129,14 +135,13 @@ Dogrulama Kodunuz: " + code; //E-posta içeriği
                 smtpClient.EnableSsl = true;
 
                 smtpClient.Send(mail);
-                
             }
             catch (Exception ex)
             {
                 Console.WriteLine("E-posta gönderirken bir hata oluştu: " + ex.Message);
             }
-
         }
+
 
         private void btnSend_Click(object sender, EventArgs e)
         {

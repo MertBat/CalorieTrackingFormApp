@@ -70,7 +70,6 @@ namespace CalorieTrackingApp.UI
 
         private void SendCode()
         {
-
             try
             {
                 string smtpServer = "smtp.office365.com"; //SMTP sunucusu adresi
@@ -82,19 +81,46 @@ namespace CalorieTrackingApp.UI
                 MailMessage mail = new MailMessage();
                 mail.From = new MailAddress(senderEmail);
                 mail.To.Add(recipientEmail);
-                mail.Subject = "Doğrulama Kodu"; //E-posta konusu
-                mail.Body = @"
-                (        )   (    (                 (                         )  (        )          
-   (     (      )\ )  ( /(   )\ ) )\ )        *   ) )\ )    (        (     ( /(  )\ )  ( /(  (       
-   )\    )\    (()/(  )\()) (()/((()/( (    ` )  /((()/(    )\       )\    )\())(()/(  )\()) )\ )    
- (((_)((((_)(   /(_))((_)\   /(_))/(_)))\    ( )(_))/(_))((((_)(   (((_) |((_)\  /(_))((_)\ (()/(    
- )\___ )\ _ )\ (_))    ((_) (_)) (_)) ((_)  (_(_())(_))   )\ _ )\  )\___ |_ ((_)(_))   _((_) /(_))_  
-((/ __|(_)_\(_)| |    / _ \ | _ \|_ _|| __| |_   _|| _ \  (_)_\(_)((/ __|| |/ / |_ _| | \| |(_)) __| 
- | (__  / _ \  | |__ | (_) ||   / | | | _|    | |  |   /   / _ \   | (__   ' <   | |  | .` |  | (_ | 
-  \___|/_/ \_\ |____| \___/ |_|_\|___||___|   |_|  |_|_\  /_/ \_\   \___| _|\_\ |___| |_|\_|   \___| 
-                                                                                                     
+                mail.Subject = "Hesap Doğrulama Kodu"; //E-posta konusu
 
-Dogrulama Kodunuz: " + code; //E-posta içeriği
+                // E-posta içeriği HTML formatında
+                mail.IsBodyHtml = true;
+                mail.Body = @"<!DOCTYPE html>
+                        <html lang='tr'>
+                        <head>
+                            <meta charset='UTF-8'>
+                            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+                            <title>Hesap Doğrulama</title>
+                            <style>
+                                body {
+                                    font-family: Arial, sans-serif;
+                                    color: #333;
+                                }
+                                .container {
+                                    background-color: #f4f4f4;
+                                    padding: 20px;
+                                    border: 1px solid #ddd;
+                                }
+                                .code {
+                                    font-size: 20px;
+                                    padding: 10px;
+                                    border: 1px solid #ddd;
+                                    display: inline-block;
+                                    background-color: #fff;
+                                }
+                            </style>
+                        </head>
+                        <body>
+                            <div class='container'>
+                                <h2>Hesap Doğrulama</h2>
+                                <p>Merhaba,</p>
+                                <p>Hesabınızı doğrulamak için aşağıdaki doğrulama kodunu kullanın:</p>
+                                <div class='code'>" + code + @"</div>
+                                <p>Bu kod sadece 10 dakika boyunca geçerlidir.</p>
+                                <p>İyi günler dileriz.</p>
+                            </div>
+                        </body>
+                        </html>";
 
                 SmtpClient smtpClient = new SmtpClient(smtpServer, port);
                 smtpClient.UseDefaultCredentials = false;
@@ -107,8 +133,8 @@ Dogrulama Kodunuz: " + code; //E-posta içeriği
             {
                 MessageBox.Show("E-posta gönderirken bir hata oluştu: " + ex.Message);
             }
-
         }
+
 
         private void btnSend_Click(object sender, EventArgs e)
         {
@@ -133,9 +159,9 @@ Dogrulama Kodunuz: " + code; //E-posta içeriği
                 lblSecond.BackColor = SystemColors.Control;
                 lblSecond.Text = (second).ToString();
             }
-            else if (second == 15)
+            else if (second == 60)
             {
-                lblSecond.BackColor = Color.Red;
+                lblSecond.ForeColor = Color.Red;
             }
         }
     }
