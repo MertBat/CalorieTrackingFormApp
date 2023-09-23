@@ -1,0 +1,866 @@
+﻿namespace CalorieTrackingApp.UI
+{
+    partial class DailyReport
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            navigation_groupBox = new GroupBox();
+            button3 = new Button();
+            button2 = new Button();
+            button1 = new Button();
+            reports_navBtn = new Button();
+            mainMenu_navBtn = new Button();
+            topBar_groupBox = new GroupBox();
+            pbProfilePictureTop = new PictureBox();
+            lblProfileNameTop1 = new LinkLabel();
+            btnForward = new Button();
+            btnBack = new Button();
+            dateTimePicker1 = new DateTimePicker();
+            lblProfileNameTop2 = new Label();
+            label2 = new Label();
+            label1 = new Label();
+            groupBox1 = new GroupBox();
+            listBox1 = new ListBox();
+            groupBox6 = new GroupBox();
+            rbAll = new RadioButton();
+            rbDinner = new RadioButton();
+            rbLuch = new RadioButton();
+            rbBreakfast = new RadioButton();
+            button6 = new Button();
+            groupBox3 = new GroupBox();
+            lblYagKahvalti = new Label();
+            label15 = new Label();
+            lblProteinKahvalti = new Label();
+            label13 = new Label();
+            lblKarbonhidratKahvalti = new Label();
+            label11 = new Label();
+            lblKaloriKahvalti = new Label();
+            label8 = new Label();
+            groupBox2 = new GroupBox();
+            lblYagOgleYemegi = new Label();
+            label5 = new Label();
+            lblProteinOgleYemegi = new Label();
+            label7 = new Label();
+            lblKarbonhidratOgleYemegi = new Label();
+            label17 = new Label();
+            lblKaloriOgleYemegi = new Label();
+            label19 = new Label();
+            groupBox4 = new GroupBox();
+            lblYagAksamYemegi = new Label();
+            label21 = new Label();
+            lblProteinAksamYemegi = new Label();
+            label23 = new Label();
+            lblKarbonhidratAksamYemegi = new Label();
+            label25 = new Label();
+            lblKaloriAksamYemegi = new Label();
+            label27 = new Label();
+            groupBox5 = new GroupBox();
+            lblYag = new Label();
+            label29 = new Label();
+            lblProtein = new Label();
+            label31 = new Label();
+            lblKarbonhidrat = new Label();
+            label33 = new Label();
+            lblKalori = new Label();
+            label35 = new Label();
+            navigation_groupBox.SuspendLayout();
+            topBar_groupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbProfilePictureTop).BeginInit();
+            groupBox1.SuspendLayout();
+            groupBox6.SuspendLayout();
+            groupBox3.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox4.SuspendLayout();
+            groupBox5.SuspendLayout();
+            SuspendLayout();
+            // 
+            // navigation_groupBox
+            // 
+            navigation_groupBox.Controls.Add(button3);
+            navigation_groupBox.Controls.Add(button2);
+            navigation_groupBox.Controls.Add(button1);
+            navigation_groupBox.Controls.Add(reports_navBtn);
+            navigation_groupBox.Controls.Add(mainMenu_navBtn);
+            navigation_groupBox.Location = new Point(5, 14);
+            navigation_groupBox.Margin = new Padding(5);
+            navigation_groupBox.Name = "navigation_groupBox";
+            navigation_groupBox.Padding = new Padding(5);
+            navigation_groupBox.Size = new Size(131, 714);
+            navigation_groupBox.TabIndex = 1;
+            navigation_groupBox.TabStop = false;
+            navigation_groupBox.Text = "NavBar";
+            // 
+            // button3
+            // 
+            button3.BackColor = SystemColors.ButtonFace;
+            button3.Cursor = Cursors.Hand;
+            button3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button3.ForeColor = SystemColors.ActiveCaptionText;
+            button3.Location = new Point(9, 601);
+            button3.Name = "button3";
+            button3.Size = new Size(115, 106);
+            button3.TabIndex = 4;
+            button3.Text = "Çıkış Yap";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.ButtonFace;
+            button2.Cursor = Cursors.Hand;
+            button2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button2.ForeColor = SystemColors.ActiveCaptionText;
+            button2.Location = new Point(8, 382);
+            button2.Name = "button2";
+            button2.Size = new Size(115, 106);
+            button2.TabIndex = 3;
+            button2.Text = "Sosyal";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ButtonFace;
+            button1.Cursor = Cursors.Hand;
+            button1.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.ForeColor = SystemColors.ActiveCaptionText;
+            button1.Location = new Point(8, 271);
+            button1.Name = "button1";
+            button1.Size = new Size(115, 106);
+            button1.TabIndex = 2;
+            button1.Text = "Uzun Vade Raporlar";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // reports_navBtn
+            // 
+            reports_navBtn.BackColor = SystemColors.ButtonShadow;
+            reports_navBtn.Enabled = false;
+            reports_navBtn.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            reports_navBtn.ForeColor = Color.DarkBlue;
+            reports_navBtn.Location = new Point(8, 158);
+            reports_navBtn.Name = "reports_navBtn";
+            reports_navBtn.Size = new Size(115, 106);
+            reports_navBtn.TabIndex = 1;
+            reports_navBtn.Text = "Gün Raporu";
+            reports_navBtn.UseVisualStyleBackColor = false;
+            // 
+            // mainMenu_navBtn
+            // 
+            mainMenu_navBtn.BackColor = SystemColors.Control;
+            mainMenu_navBtn.Cursor = Cursors.Hand;
+            mainMenu_navBtn.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            mainMenu_navBtn.ForeColor = Color.Black;
+            mainMenu_navBtn.Location = new Point(8, 46);
+            mainMenu_navBtn.Name = "mainMenu_navBtn";
+            mainMenu_navBtn.Size = new Size(115, 106);
+            mainMenu_navBtn.TabIndex = 0;
+            mainMenu_navBtn.Text = "Ana Menü";
+            mainMenu_navBtn.UseVisualStyleBackColor = false;
+            mainMenu_navBtn.UseWaitCursor = true;
+            mainMenu_navBtn.Click += mainMenu_navBtn_Click;
+            // 
+            // topBar_groupBox
+            // 
+            topBar_groupBox.Controls.Add(pbProfilePictureTop);
+            topBar_groupBox.Controls.Add(lblProfileNameTop1);
+            topBar_groupBox.Controls.Add(btnForward);
+            topBar_groupBox.Controls.Add(btnBack);
+            topBar_groupBox.Controls.Add(dateTimePicker1);
+            topBar_groupBox.Controls.Add(lblProfileNameTop2);
+            topBar_groupBox.Controls.Add(label2);
+            topBar_groupBox.Controls.Add(label1);
+            topBar_groupBox.Location = new Point(148, 12);
+            topBar_groupBox.Name = "topBar_groupBox";
+            topBar_groupBox.Size = new Size(1127, 130);
+            topBar_groupBox.TabIndex = 2;
+            topBar_groupBox.TabStop = false;
+            topBar_groupBox.Text = "TopBar";
+            // 
+            // pbProfilePictureTop
+            // 
+            pbProfilePictureTop.Location = new Point(808, 20);
+            pbProfilePictureTop.Name = "pbProfilePictureTop";
+            pbProfilePictureTop.Size = new Size(104, 104);
+            pbProfilePictureTop.SizeMode = PictureBoxSizeMode.StretchImage;
+            pbProfilePictureTop.TabIndex = 46;
+            pbProfilePictureTop.TabStop = false;
+            // 
+            // lblProfileNameTop1
+            // 
+            lblProfileNameTop1.AutoSize = true;
+            lblProfileNameTop1.LinkBehavior = LinkBehavior.HoverUnderline;
+            lblProfileNameTop1.LinkColor = Color.FromArgb(0, 0, 64);
+            lblProfileNameTop1.Location = new Point(918, 61);
+            lblProfileNameTop1.Name = "lblProfileNameTop1";
+            lblProfileNameTop1.Size = new Size(136, 24);
+            lblProfileNameTop1.TabIndex = 45;
+            lblProfileNameTop1.TabStop = true;
+            lblProfileNameTop1.Text = "Kullanıcı Adı";
+            // 
+            // btnForward
+            // 
+            btnForward.Location = new Point(731, 52);
+            btnForward.Name = "btnForward";
+            btnForward.Size = new Size(35, 33);
+            btnForward.TabIndex = 44;
+            btnForward.Text = ">";
+            btnForward.UseVisualStyleBackColor = true;
+            btnForward.Click += btnForward_Click;
+            // 
+            // btnBack
+            // 
+            btnBack.Location = new Point(322, 52);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(35, 35);
+            btnBack.TabIndex = 43;
+            btnBack.Text = "<";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(363, 52);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(362, 33);
+            dateTimePicker1.TabIndex = 41;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
+            // 
+            // lblProfileNameTop2
+            // 
+            lblProfileNameTop2.AutoSize = true;
+            lblProfileNameTop2.Location = new Point(134, 88);
+            lblProfileNameTop2.Name = "lblProfileNameTop2";
+            lblProfileNameTop2.Size = new Size(136, 24);
+            lblProfileNameTop2.TabIndex = 6;
+            lblProfileNameTop2.Text = "Kullanıcı Adı";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(7, 88);
+            label2.Name = "label2";
+            label2.Size = new Size(132, 24);
+            label2.TabIndex = 5;
+            label2.Text = "Hoş geldiniz,";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(14, 34);
+            label1.Name = "label1";
+            label1.Size = new Size(206, 39);
+            label1.TabIndex = 4;
+            label1.Text = "Gün Raporu";
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(listBox1);
+            groupBox1.Controls.Add(groupBox6);
+            groupBox1.Controls.Add(button6);
+            groupBox1.Location = new Point(144, 150);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(501, 566);
+            groupBox1.TabIndex = 3;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Bugünkü Kayıtların";
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 24;
+            listBox1.Location = new Point(14, 146);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(465, 340);
+            listBox1.TabIndex = 15;
+            // 
+            // groupBox6
+            // 
+            groupBox6.Controls.Add(rbAll);
+            groupBox6.Controls.Add(rbDinner);
+            groupBox6.Controls.Add(rbLuch);
+            groupBox6.Controls.Add(rbBreakfast);
+            groupBox6.Location = new Point(14, 34);
+            groupBox6.Name = "groupBox6";
+            groupBox6.Size = new Size(465, 104);
+            groupBox6.TabIndex = 14;
+            groupBox6.TabStop = false;
+            groupBox6.Text = "Filitrele";
+            // 
+            // rbAll
+            // 
+            rbAll.AutoSize = true;
+            rbAll.Checked = true;
+            rbAll.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            rbAll.Location = new Point(364, 49);
+            rbAll.Name = "rbAll";
+            rbAll.Size = new Size(76, 26);
+            rbAll.TabIndex = 3;
+            rbAll.TabStop = true;
+            rbAll.Text = "Hepsi";
+            rbAll.UseVisualStyleBackColor = true;
+            rbAll.CheckedChanged += rbAll_CheckedChanged;
+            // 
+            // rbDinner
+            // 
+            rbDinner.AutoSize = true;
+            rbDinner.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            rbDinner.Location = new Point(244, 49);
+            rbDinner.Name = "rbDinner";
+            rbDinner.Size = new Size(90, 26);
+            rbDinner.TabIndex = 2;
+            rbDinner.TabStop = true;
+            rbDinner.Text = "Akşam";
+            rbDinner.UseVisualStyleBackColor = true;
+            rbDinner.CheckedChanged += rbDinner_CheckedChanged;
+            // 
+            // rbLuch
+            // 
+            rbLuch.AutoSize = true;
+            rbLuch.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            rbLuch.Location = new Point(149, 49);
+            rbLuch.Name = "rbLuch";
+            rbLuch.Size = new Size(73, 26);
+            rbLuch.TabIndex = 1;
+            rbLuch.TabStop = true;
+            rbLuch.Text = "Öğle";
+            rbLuch.UseVisualStyleBackColor = true;
+            rbLuch.CheckedChanged += rbLuch_CheckedChanged;
+            // 
+            // rbBreakfast
+            // 
+            rbBreakfast.AutoSize = true;
+            rbBreakfast.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            rbBreakfast.Location = new Point(15, 49);
+            rbBreakfast.Name = "rbBreakfast";
+            rbBreakfast.Size = new Size(103, 26);
+            rbBreakfast.TabIndex = 0;
+            rbBreakfast.TabStop = true;
+            rbBreakfast.Text = "Kahvaltı";
+            rbBreakfast.UseVisualStyleBackColor = true;
+            rbBreakfast.CheckedChanged += rbBreakfast_CheckedChanged;
+            // 
+            // button6
+            // 
+            button6.Location = new Point(144, 492);
+            button6.Name = "button6";
+            button6.Size = new Size(195, 50);
+            button6.TabIndex = 12;
+            button6.Text = "Sil";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(lblYagKahvalti);
+            groupBox3.Controls.Add(label15);
+            groupBox3.Controls.Add(lblProteinKahvalti);
+            groupBox3.Controls.Add(label13);
+            groupBox3.Controls.Add(lblKarbonhidratKahvalti);
+            groupBox3.Controls.Add(label11);
+            groupBox3.Controls.Add(lblKaloriKahvalti);
+            groupBox3.Controls.Add(label8);
+            groupBox3.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            groupBox3.Location = new Point(670, 159);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(605, 131);
+            groupBox3.TabIndex = 4;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Kahvaltı Özeti";
+            // 
+            // lblYagKahvalti
+            // 
+            lblYagKahvalti.AutoSize = true;
+            lblYagKahvalti.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblYagKahvalti.Location = new Point(480, 80);
+            lblYagKahvalti.Name = "lblYagKahvalti";
+            lblYagKahvalti.Size = new Size(76, 26);
+            lblYagKahvalti.TabIndex = 52;
+            lblYagKahvalti.Text = "4.76gr";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label15.Location = new Point(499, 40);
+            label15.Name = "label15";
+            label15.Size = new Size(47, 22);
+            label15.TabIndex = 51;
+            label15.Text = "Yağ";
+            // 
+            // lblProteinKahvalti
+            // 
+            lblProteinKahvalti.AutoSize = true;
+            lblProteinKahvalti.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblProteinKahvalti.Location = new Point(361, 80);
+            lblProteinKahvalti.Name = "lblProteinKahvalti";
+            lblProteinKahvalti.Size = new Size(76, 26);
+            lblProteinKahvalti.TabIndex = 50;
+            lblProteinKahvalti.Text = "6.28gr";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label13.Location = new Point(355, 40);
+            label13.Name = "label13";
+            label13.Size = new Size(73, 22);
+            label13.TabIndex = 49;
+            label13.Text = "Protein";
+            // 
+            // lblKarbonhidratKahvalti
+            // 
+            lblKarbonhidratKahvalti.AutoSize = true;
+            lblKarbonhidratKahvalti.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblKarbonhidratKahvalti.Location = new Point(178, 80);
+            lblKarbonhidratKahvalti.Name = "lblKarbonhidratKahvalti";
+            lblKarbonhidratKahvalti.Size = new Size(76, 26);
+            lblKarbonhidratKahvalti.TabIndex = 48;
+            lblKarbonhidratKahvalti.Text = "0.36gr";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label11.Location = new Point(157, 41);
+            label11.Name = "label11";
+            label11.Size = new Size(131, 22);
+            label11.TabIndex = 47;
+            label11.Text = "Karbonhidrat";
+            // 
+            // lblKaloriKahvalti
+            // 
+            lblKaloriKahvalti.AutoSize = true;
+            lblKaloriKahvalti.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblKaloriKahvalti.Location = new Point(17, 80);
+            lblKaloriKahvalti.Name = "lblKaloriKahvalti";
+            lblKaloriKahvalti.Size = new Size(83, 26);
+            lblKaloriKahvalti.TabIndex = 46;
+            lblKaloriKahvalti.Text = "72kcal";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label8.Location = new Point(36, 40);
+            label8.Name = "label8";
+            label8.Size = new Size(58, 22);
+            label8.TabIndex = 45;
+            label8.Text = "Kalori";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(lblYagOgleYemegi);
+            groupBox2.Controls.Add(label5);
+            groupBox2.Controls.Add(lblProteinOgleYemegi);
+            groupBox2.Controls.Add(label7);
+            groupBox2.Controls.Add(lblKarbonhidratOgleYemegi);
+            groupBox2.Controls.Add(label17);
+            groupBox2.Controls.Add(lblKaloriOgleYemegi);
+            groupBox2.Controls.Add(label19);
+            groupBox2.Location = new Point(670, 296);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(605, 131);
+            groupBox2.TabIndex = 5;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Öğle Yemeği Özeti";
+            // 
+            // lblYagOgleYemegi
+            // 
+            lblYagOgleYemegi.AutoSize = true;
+            lblYagOgleYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblYagOgleYemegi.Location = new Point(480, 80);
+            lblYagOgleYemegi.Name = "lblYagOgleYemegi";
+            lblYagOgleYemegi.Size = new Size(76, 26);
+            lblYagOgleYemegi.TabIndex = 52;
+            lblYagOgleYemegi.Text = "4.76gr";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(499, 40);
+            label5.Name = "label5";
+            label5.Size = new Size(47, 22);
+            label5.TabIndex = 51;
+            label5.Text = "Yağ";
+            // 
+            // lblProteinOgleYemegi
+            // 
+            lblProteinOgleYemegi.AutoSize = true;
+            lblProteinOgleYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblProteinOgleYemegi.Location = new Point(361, 81);
+            lblProteinOgleYemegi.Name = "lblProteinOgleYemegi";
+            lblProteinOgleYemegi.Size = new Size(76, 26);
+            lblProteinOgleYemegi.TabIndex = 50;
+            lblProteinOgleYemegi.Text = "6.28gr";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label7.Location = new Point(368, 41);
+            label7.Name = "label7";
+            label7.Size = new Size(73, 22);
+            label7.TabIndex = 49;
+            label7.Text = "Protein";
+            // 
+            // lblKarbonhidratOgleYemegi
+            // 
+            lblKarbonhidratOgleYemegi.AutoSize = true;
+            lblKarbonhidratOgleYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblKarbonhidratOgleYemegi.Location = new Point(221, 80);
+            lblKarbonhidratOgleYemegi.Name = "lblKarbonhidratOgleYemegi";
+            lblKarbonhidratOgleYemegi.Size = new Size(76, 26);
+            lblKarbonhidratOgleYemegi.TabIndex = 48;
+            lblKarbonhidratOgleYemegi.Text = "0.36gr";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label17.Location = new Point(197, 40);
+            label17.Name = "label17";
+            label17.Size = new Size(131, 22);
+            label17.TabIndex = 47;
+            label17.Text = "Karbonhidrat";
+            // 
+            // lblKaloriOgleYemegi
+            // 
+            lblKaloriOgleYemegi.AutoSize = true;
+            lblKaloriOgleYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblKaloriOgleYemegi.Location = new Point(17, 80);
+            lblKaloriOgleYemegi.Name = "lblKaloriOgleYemegi";
+            lblKaloriOgleYemegi.Size = new Size(83, 26);
+            lblKaloriOgleYemegi.TabIndex = 46;
+            lblKaloriOgleYemegi.Text = "72kcal";
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label19.Location = new Point(36, 40);
+            label19.Name = "label19";
+            label19.Size = new Size(58, 22);
+            label19.TabIndex = 45;
+            label19.Text = "Kalori";
+            // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(lblYagAksamYemegi);
+            groupBox4.Controls.Add(label21);
+            groupBox4.Controls.Add(lblProteinAksamYemegi);
+            groupBox4.Controls.Add(label23);
+            groupBox4.Controls.Add(lblKarbonhidratAksamYemegi);
+            groupBox4.Controls.Add(label25);
+            groupBox4.Controls.Add(lblKaloriAksamYemegi);
+            groupBox4.Controls.Add(label27);
+            groupBox4.Location = new Point(670, 439);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(605, 131);
+            groupBox4.TabIndex = 6;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Akşam Yemeği Özeti";
+            // 
+            // lblYagAksamYemegi
+            // 
+            lblYagAksamYemegi.AutoSize = true;
+            lblYagAksamYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblYagAksamYemegi.Location = new Point(480, 80);
+            lblYagAksamYemegi.Name = "lblYagAksamYemegi";
+            lblYagAksamYemegi.Size = new Size(76, 26);
+            lblYagAksamYemegi.TabIndex = 52;
+            lblYagAksamYemegi.Text = "4.76gr";
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label21.Location = new Point(499, 40);
+            label21.Name = "label21";
+            label21.Size = new Size(47, 22);
+            label21.TabIndex = 51;
+            label21.Text = "Yağ";
+            // 
+            // lblProteinAksamYemegi
+            // 
+            lblProteinAksamYemegi.AutoSize = true;
+            lblProteinAksamYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblProteinAksamYemegi.Location = new Point(361, 81);
+            lblProteinAksamYemegi.Name = "lblProteinAksamYemegi";
+            lblProteinAksamYemegi.Size = new Size(76, 26);
+            lblProteinAksamYemegi.TabIndex = 50;
+            lblProteinAksamYemegi.Text = "6.28gr";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label23.Location = new Point(368, 41);
+            label23.Name = "label23";
+            label23.Size = new Size(73, 22);
+            label23.TabIndex = 49;
+            label23.Text = "Protein";
+            // 
+            // lblKarbonhidratAksamYemegi
+            // 
+            lblKarbonhidratAksamYemegi.AutoSize = true;
+            lblKarbonhidratAksamYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblKarbonhidratAksamYemegi.Location = new Point(221, 80);
+            lblKarbonhidratAksamYemegi.Name = "lblKarbonhidratAksamYemegi";
+            lblKarbonhidratAksamYemegi.Size = new Size(76, 26);
+            lblKarbonhidratAksamYemegi.TabIndex = 48;
+            lblKarbonhidratAksamYemegi.Text = "0.36gr";
+            // 
+            // label25
+            // 
+            label25.AutoSize = true;
+            label25.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label25.Location = new Point(197, 40);
+            label25.Name = "label25";
+            label25.Size = new Size(131, 22);
+            label25.TabIndex = 47;
+            label25.Text = "Karbonhidrat";
+            // 
+            // lblKaloriAksamYemegi
+            // 
+            lblKaloriAksamYemegi.AutoSize = true;
+            lblKaloriAksamYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblKaloriAksamYemegi.Location = new Point(17, 80);
+            lblKaloriAksamYemegi.Name = "lblKaloriAksamYemegi";
+            lblKaloriAksamYemegi.Size = new Size(83, 26);
+            lblKaloriAksamYemegi.TabIndex = 46;
+            lblKaloriAksamYemegi.Text = "72kcal";
+            // 
+            // label27
+            // 
+            label27.AutoSize = true;
+            label27.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label27.Location = new Point(36, 40);
+            label27.Name = "label27";
+            label27.Size = new Size(58, 22);
+            label27.TabIndex = 45;
+            label27.Text = "Kalori";
+            // 
+            // groupBox5
+            // 
+            groupBox5.Controls.Add(lblYag);
+            groupBox5.Controls.Add(label29);
+            groupBox5.Controls.Add(lblProtein);
+            groupBox5.Controls.Add(label31);
+            groupBox5.Controls.Add(lblKarbonhidrat);
+            groupBox5.Controls.Add(label33);
+            groupBox5.Controls.Add(lblKalori);
+            groupBox5.Controls.Add(label35);
+            groupBox5.Location = new Point(670, 585);
+            groupBox5.Name = "groupBox5";
+            groupBox5.Size = new Size(605, 131);
+            groupBox5.TabIndex = 7;
+            groupBox5.TabStop = false;
+            groupBox5.Text = "Gün Özeti";
+            // 
+            // lblYag
+            // 
+            lblYag.AutoSize = true;
+            lblYag.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblYag.Location = new Point(480, 80);
+            lblYag.Name = "lblYag";
+            lblYag.Size = new Size(76, 26);
+            lblYag.TabIndex = 52;
+            lblYag.Text = "4.76gr";
+            // 
+            // label29
+            // 
+            label29.AutoSize = true;
+            label29.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label29.Location = new Point(499, 40);
+            label29.Name = "label29";
+            label29.Size = new Size(47, 22);
+            label29.TabIndex = 51;
+            label29.Text = "Yağ";
+            // 
+            // lblProtein
+            // 
+            lblProtein.AutoSize = true;
+            lblProtein.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblProtein.Location = new Point(361, 81);
+            lblProtein.Name = "lblProtein";
+            lblProtein.Size = new Size(76, 26);
+            lblProtein.TabIndex = 50;
+            lblProtein.Text = "6.28gr";
+            // 
+            // label31
+            // 
+            label31.AutoSize = true;
+            label31.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label31.Location = new Point(368, 41);
+            label31.Name = "label31";
+            label31.Size = new Size(73, 22);
+            label31.TabIndex = 49;
+            label31.Text = "Protein";
+            // 
+            // lblKarbonhidrat
+            // 
+            lblKarbonhidrat.AutoSize = true;
+            lblKarbonhidrat.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblKarbonhidrat.Location = new Point(221, 80);
+            lblKarbonhidrat.Name = "lblKarbonhidrat";
+            lblKarbonhidrat.Size = new Size(76, 26);
+            lblKarbonhidrat.TabIndex = 48;
+            lblKarbonhidrat.Text = "0.36gr";
+            // 
+            // label33
+            // 
+            label33.AutoSize = true;
+            label33.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label33.Location = new Point(197, 40);
+            label33.Name = "label33";
+            label33.Size = new Size(131, 22);
+            label33.TabIndex = 47;
+            label33.Text = "Karbonhidrat";
+            // 
+            // lblKalori
+            // 
+            lblKalori.AutoSize = true;
+            lblKalori.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            lblKalori.Location = new Point(17, 80);
+            lblKalori.Name = "lblKalori";
+            lblKalori.Size = new Size(83, 26);
+            lblKalori.TabIndex = 46;
+            lblKalori.Text = "72kcal";
+            // 
+            // label35
+            // 
+            label35.AutoSize = true;
+            label35.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
+            label35.Location = new Point(36, 40);
+            label35.Name = "label35";
+            label35.Size = new Size(58, 22);
+            label35.TabIndex = 45;
+            label35.Text = "Kalori";
+            // 
+            // DailyReport
+            // 
+            AutoScaleDimensions = new SizeF(12F, 24F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1288, 744);
+            Controls.Add(groupBox5);
+            Controls.Add(groupBox4);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBox1);
+            Controls.Add(topBar_groupBox);
+            Controls.Add(navigation_groupBox);
+            Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            Margin = new Padding(5);
+            Name = "DailyReport";
+            Text = "DailyReport";
+            Load += DailyReport_Load;
+            navigation_groupBox.ResumeLayout(false);
+            topBar_groupBox.ResumeLayout(false);
+            topBar_groupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pbProfilePictureTop).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox6.ResumeLayout(false);
+            groupBox6.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
+            groupBox5.ResumeLayout(false);
+            groupBox5.PerformLayout();
+            ResumeLayout(false);
+        }
+
+        #endregion
+
+        private GroupBox navigation_groupBox;
+        private Button button3;
+        private Button button2;
+        private Button button1;
+        private Button reports_navBtn;
+        private Button mainMenu_navBtn;
+        private GroupBox topBar_groupBox;
+        private DataGridView dataGridView2;
+        private Label lblProfileNameTop2;
+        private Label label2;
+        private Label label1;
+        private LinkLabel profileLinkLabel;
+        private GroupBox groupBox1;
+        private Button button6;
+        private GroupBox groupBox3;
+        private Label lblYagKahvalti;
+        private Label label15;
+        private Label lblProteinKahvalti;
+        private Label label13;
+        private Label lblKarbonhidratKahvalti;
+        private Label label11;
+        private Label lblKaloriKahvalti;
+        private Label label8;
+        private GroupBox groupBox2;
+        private Label lblYagOgleYemegi;
+        private Label label5;
+        private Label lblProteinOgleYemegi;
+        private Label label7;
+        private Label lblKarbonhidratOgleYemegi;
+        private Label label17;
+        private Label lblKaloriOgleYemegi;
+        private Label label19;
+        private GroupBox groupBox4;
+        private Label lblYagAksamYemegi;
+        private Label label21;
+        private Label lblProteinAksamYemegi;
+        private Label label23;
+        private Label lblKarbonhidratAksamYemegi;
+        private Label label25;
+        private Label lblKaloriAksamYemegi;
+        private Label label27;
+        private GroupBox groupBox5;
+        private Label lblYag;
+        private Label label29;
+        private Label lblProtein;
+        private Label label31;
+        private Label lblKarbonhidrat;
+        private Label label33;
+        private Label lblKalori;
+        private Label label35;
+        private GroupBox groupBox6;
+        private RadioButton rbAll;
+        private RadioButton rbDinner;
+        private RadioButton rbLuch;
+        private RadioButton rbBreakfast;
+        private DateTimePicker dateTimePicker1;
+        private Button btnForward;
+        private Button btnBack;
+        private ListBox listBox1;
+        private PictureBox pbProfilePictureTop;
+        private LinkLabel lblProfileNameTop1;
+    }
+}
