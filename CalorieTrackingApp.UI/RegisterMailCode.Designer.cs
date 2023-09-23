@@ -38,12 +38,13 @@
             txtCode = new TextBox();
             label1 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            label4 = new Label();
             SuspendLayout();
             // 
             // btnSend
             // 
             btnSend.Location = new Point(475, 107);
-            btnSend.Margin = new Padding(5, 5, 5, 5);
+            btnSend.Margin = new Padding(5);
             btnSend.Name = "btnSend";
             btnSend.Size = new Size(149, 34);
             btnSend.TabIndex = 14;
@@ -85,7 +86,7 @@
             // btnCancel
             // 
             btnCancel.Location = new Point(319, 154);
-            btnCancel.Margin = new Padding(5, 5, 5, 5);
+            btnCancel.Margin = new Padding(5);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(151, 51);
             btnCancel.TabIndex = 9;
@@ -96,7 +97,7 @@
             // btnConfirmation
             // 
             btnConfirmation.Location = new Point(144, 154);
-            btnConfirmation.Margin = new Padding(5, 5, 5, 5);
+            btnConfirmation.Margin = new Padding(5);
             btnConfirmation.Name = "btnConfirmation";
             btnConfirmation.Size = new Size(164, 51);
             btnConfirmation.TabIndex = 10;
@@ -107,7 +108,7 @@
             // txtCode
             // 
             txtCode.Location = new Point(148, 107);
-            txtCode.Margin = new Padding(5, 5, 5, 5);
+            txtCode.Margin = new Padding(5);
             txtCode.Name = "txtCode";
             txtCode.Size = new Size(317, 33);
             txtCode.TabIndex = 8;
@@ -128,11 +129,22 @@
             timer1.Interval = 1000;
             timer1.Tick += timer1_Tick;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(2, 300);
+            label4.Name = "label4";
+            label4.Size = new Size(15, 21);
+            label4.TabIndex = 15;
+            label4.Text = "-";
+            // 
             // RegisterMailCode
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(638, 321);
+            ClientSize = new Size(672, 323);
+            Controls.Add(label4);
             Controls.Add(btnSend);
             Controls.Add(lblSecond);
             Controls.Add(label3);
@@ -142,7 +154,7 @@
             Controls.Add(txtCode);
             Controls.Add(label1);
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "RegisterMailCode";
             Text = "RegisterMailCode";
             Load += RegisterMailCode_Load;
@@ -161,5 +173,6 @@
         private TextBox txtCode;
         private Label label1;
         private System.Windows.Forms.Timer timer1;
+        private Label label4;
     }
 }

@@ -46,9 +46,10 @@
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(191, 226);
+            btnSave.Location = new Point(286, 272);
+            btnSave.Margin = new Padding(5, 3, 5, 3);
             btnSave.Name = "btnSave";
-            btnSave.Size = new Size(74, 29);
+            btnSave.Size = new Size(111, 35);
             btnSave.TabIndex = 0;
             btnSave.Text = "Değiştir";
             btnSave.UseVisualStyleBackColor = true;
@@ -56,9 +57,10 @@
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(36, 226);
+            btnBack.Location = new Point(55, 272);
+            btnBack.Margin = new Padding(5, 3, 5, 3);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(74, 29);
+            btnBack.Size = new Size(111, 35);
             btnBack.TabIndex = 1;
             btnBack.Text = "Geri";
             btnBack.UseVisualStyleBackColor = true;
@@ -66,63 +68,70 @@
             // 
             // txtPass
             // 
-            txtPass.Location = new Point(36, 38);
+            txtPass.Location = new Point(55, 45);
+            txtPass.Margin = new Padding(5, 3, 5, 3);
             txtPass.Name = "txtPass";
-            txtPass.Size = new Size(229, 27);
+            txtPass.Size = new Size(342, 33);
             txtPass.TabIndex = 2;
             txtPass.UseSystemPasswordChar = true;
             // 
             // txtNewPass
             // 
-            txtNewPass.Location = new Point(36, 104);
+            txtNewPass.Location = new Point(55, 125);
+            txtNewPass.Margin = new Padding(5, 3, 5, 3);
             txtNewPass.Name = "txtNewPass";
-            txtNewPass.Size = new Size(229, 27);
+            txtNewPass.Size = new Size(342, 33);
             txtNewPass.TabIndex = 3;
             txtNewPass.UseSystemPasswordChar = true;
             // 
             // txtNewPass2
             // 
-            txtNewPass2.Location = new Point(36, 168);
+            txtNewPass2.Location = new Point(55, 202);
+            txtNewPass2.Margin = new Padding(5, 3, 5, 3);
             txtNewPass2.Name = "txtNewPass2";
-            txtNewPass2.Size = new Size(229, 27);
+            txtNewPass2.Size = new Size(342, 33);
             txtNewPass2.TabIndex = 4;
             txtNewPass2.UseSystemPasswordChar = true;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(36, 15);
+            label1.Location = new Point(55, 18);
+            label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
-            label1.Size = new Size(39, 20);
+            label1.Size = new Size(94, 24);
             label1.TabIndex = 5;
-            label1.Text = "Şifre";
+            label1.Text = "Eski Şifre:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(36, 81);
+            label2.Location = new Point(55, 98);
+            label2.Margin = new Padding(5, 0, 5, 0);
             label2.Name = "label2";
-            label2.Size = new Size(131, 20);
+            label2.Size = new Size(104, 24);
             label2.TabIndex = 6;
-            label2.Text = "Değiştirilecek şifre";
+            label2.Text = "Yeni Şifre:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(36, 145);
+            label3.Location = new Point(55, 174);
+            label3.Margin = new Padding(5, 0, 5, 0);
             label3.Name = "label3";
-            label3.Size = new Size(79, 20);
+            label3.Size = new Size(169, 24);
             label3.TabIndex = 7;
-            label3.Text = "şifre tekrar";
+            label3.Text = "Yeni Şifre Tekrar:";
             // 
             // pbpass
             // 
             pbpass.BackColor = Color.White;
             pbpass.BackgroundImageLayout = ImageLayout.None;
             pbpass.Image = Properties.Resources.eye;
-            pbpass.Location = new Point(243, 42);
+            pbpass.Location = new Point(365, 51);
+            pbpass.Margin = new Padding(5, 3, 5, 3);
             pbpass.Name = "pbpass";
-            pbpass.Size = new Size(18, 20);
+            pbpass.Size = new Size(27, 24);
             pbpass.SizeMode = PictureBoxSizeMode.StretchImage;
             pbpass.TabIndex = 8;
             pbpass.TabStop = false;
@@ -134,9 +143,10 @@
             pbNewPass.BackColor = Color.White;
             pbNewPass.BackgroundImageLayout = ImageLayout.None;
             pbNewPass.Image = Properties.Resources.eye;
-            pbNewPass.Location = new Point(243, 108);
+            pbNewPass.Location = new Point(365, 130);
+            pbNewPass.Margin = new Padding(5, 3, 5, 3);
             pbNewPass.Name = "pbNewPass";
-            pbNewPass.Size = new Size(18, 20);
+            pbNewPass.Size = new Size(27, 24);
             pbNewPass.SizeMode = PictureBoxSizeMode.StretchImage;
             pbNewPass.TabIndex = 9;
             pbNewPass.TabStop = false;
@@ -148,9 +158,10 @@
             pbNewPass2.BackColor = Color.White;
             pbNewPass2.BackgroundImageLayout = ImageLayout.None;
             pbNewPass2.Image = Properties.Resources.eye;
-            pbNewPass2.Location = new Point(243, 172);
+            pbNewPass2.Location = new Point(365, 206);
+            pbNewPass2.Margin = new Padding(5, 3, 5, 3);
             pbNewPass2.Name = "pbNewPass2";
-            pbNewPass2.Size = new Size(18, 20);
+            pbNewPass2.Size = new Size(27, 24);
             pbNewPass2.SizeMode = PictureBoxSizeMode.StretchImage;
             pbNewPass2.TabIndex = 10;
             pbNewPass2.TabStop = false;
@@ -159,9 +170,9 @@
             // 
             // PPasswordChange
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(305, 272);
+            ClientSize = new Size(458, 326);
             ControlBox = false;
             Controls.Add(pbNewPass2);
             Controls.Add(pbNewPass);
@@ -174,7 +185,9 @@
             Controls.Add(txtPass);
             Controls.Add(btnBack);
             Controls.Add(btnSave);
+            Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(5, 3, 5, 3);
             Name = "PPasswordChange";
             Text = "Şifre Değiştir";
             Load += PPasswordChange_Load;

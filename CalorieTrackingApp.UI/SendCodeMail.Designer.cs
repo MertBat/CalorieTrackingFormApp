@@ -30,14 +30,15 @@
         {
             components = new System.ComponentModel.Container();
             timer1 = new System.Windows.Forms.Timer(components);
-            label1 = new Label();
             txtCode = new TextBox();
             btnConfirmation = new Button();
-            label2 = new Label();
             label3 = new Label();
             lblSecond = new Label();
             btnCancel = new Button();
             btnSend = new Button();
+            label4 = new Label();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // timer1
@@ -45,49 +46,32 @@
             timer1.Interval = 1000;
             timer1.Tick += timer1_Tick;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(28, 22);
-            label1.Name = "label1";
-            label1.Size = new Size(253, 21);
-            label1.TabIndex = 0;
-            label1.Text = "Maile Gelen Kodu Doğrulayınız!";
-            // 
             // txtCode
             // 
-            txtCode.Location = new Point(94, 61);
+            txtCode.Location = new Point(211, 121);
+            txtCode.Margin = new Padding(5);
             txtCode.Name = "txtCode";
-            txtCode.Size = new Size(187, 23);
+            txtCode.Size = new Size(318, 33);
             txtCode.TabIndex = 1;
             // 
             // btnConfirmation
             // 
-            btnConfirmation.Location = new Point(91, 90);
+            btnConfirmation.Location = new Point(206, 167);
+            btnConfirmation.Margin = new Padding(5);
             btnConfirmation.Name = "btnConfirmation";
-            btnConfirmation.Size = new Size(96, 32);
+            btnConfirmation.Size = new Size(165, 51);
             btnConfirmation.TabIndex = 2;
             btnConfirmation.Text = "DOĞRULA";
             btnConfirmation.UseVisualStyleBackColor = true;
             btnConfirmation.Click += btnConfirmation_Click;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(52, 62);
-            label2.Name = "label2";
-            label2.Size = new Size(36, 19);
-            label2.TabIndex = 3;
-            label2.Text = "Kod:";
-            // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 145);
+            label3.Location = new Point(80, 255);
+            label3.Margin = new Padding(5, 0, 5, 0);
             label3.Name = "label3";
-            label3.Size = new Size(160, 15);
+            label3.Size = new Size(308, 24);
             label3.TabIndex = 4;
             label3.Text = "Dogrulama İçin Kalan Saniye:";
             // 
@@ -95,16 +79,18 @@
             // 
             lblSecond.AutoSize = true;
             lblSecond.BorderStyle = BorderStyle.FixedSingle;
-            lblSecond.Location = new Point(185, 145);
+            lblSecond.Location = new Point(398, 255);
+            lblSecond.Margin = new Padding(5, 0, 5, 0);
             lblSecond.Name = "lblSecond";
-            lblSecond.Size = new Size(2, 17);
+            lblSecond.Size = new Size(2, 26);
             lblSecond.TabIndex = 5;
             // 
             // btnCancel
             // 
-            btnCancel.Location = new Point(193, 90);
+            btnCancel.Location = new Point(381, 167);
+            btnCancel.Margin = new Padding(5);
             btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(88, 32);
+            btnCancel.Size = new Size(151, 51);
             btnCancel.TabIndex = 2;
             btnCancel.Text = "ÇIKIŞ YAP";
             btnCancel.UseVisualStyleBackColor = true;
@@ -112,27 +98,63 @@
             // 
             // btnSend
             // 
-            btnSend.Location = new Point(287, 60);
+            btnSend.Location = new Point(542, 119);
+            btnSend.Margin = new Padding(5);
             btnSend.Name = "btnSend";
-            btnSend.Size = new Size(50, 24);
+            btnSend.Size = new Size(133, 38);
             btnSend.TabIndex = 6;
-            btnSend.Text = "SEND";
+            btnSend.Text = "Gönder";
             btnSend.UseVisualStyleBackColor = true;
             btnSend.Click += btnSend_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(3, 306);
+            label4.Name = "label4";
+            label4.Size = new Size(15, 21);
+            label4.TabIndex = 16;
+            label4.Text = "-";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(152, 48);
+            label1.Margin = new Padding(5, 0, 5, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(415, 32);
+            label1.TabIndex = 17;
+            label1.Text = "Maile Gelen Kodu Doğrulayınız";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Century Gothic", 20.25F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(126, 119);
+            label2.Margin = new Padding(5, 0, 5, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(75, 33);
+            label2.TabIndex = 18;
+            label2.Text = "Kod:";
+            // 
             // SendCodeMail
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(352, 179);
+            ClientSize = new Size(727, 336);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(label4);
             Controls.Add(btnSend);
             Controls.Add(lblSecond);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(btnCancel);
             Controls.Add(btnConfirmation);
             Controls.Add(txtCode);
-            Controls.Add(label1);
+            Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            Margin = new Padding(5);
             Name = "SendCodeMail";
             Text = "SendCodeMail";
             Load += SendCodeMail_Load;
@@ -143,13 +165,14 @@
         #endregion
 
         private System.Windows.Forms.Timer timer1;
-        private Label label1;
         private TextBox txtCode;
         private Button btnConfirmation;
-        private Label label2;
         private Label label3;
         private Label lblSecond;
         private Button btnCancel;
         private Button btnSend;
+        private Label label4;
+        private Label label1;
+        private Label label2;
     }
 }

@@ -47,7 +47,7 @@ namespace CalorieTrackingApp.UI
 
         private void btnConfirmation_Click(object sender, EventArgs e)
         {
-            
+
             if (txtCode.Text == code)
             {
 
@@ -81,15 +81,15 @@ namespace CalorieTrackingApp.UI
                 lblSecond.BackColor = SystemColors.Control;
                 lblSecond.Text = (second).ToString();
             }
-            else if (second == 15)
+            else if (second == 60)
             {
-                lblSecond.BackColor = Color.Red;
+                lblSecond.ForeColor = Color.Red;
             }
 
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
-        { 
+        {
             (MdiParent as MdiPassword).Close();
         }
 
@@ -99,6 +99,7 @@ namespace CalorieTrackingApp.UI
         {
             try
             {
+                label4.Text = code;
                 string smtpServer = "smtp.office365.com"; //SMTP sunucusu adresi
                 int port = 587; //SMTP sunucusu port numarası
                 string senderEmail = "calorietracking@hotmail.com"; //Gönderen e-posta adresi

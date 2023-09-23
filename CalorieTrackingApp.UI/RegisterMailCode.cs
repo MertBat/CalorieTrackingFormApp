@@ -28,6 +28,7 @@ namespace CalorieTrackingApp.UI
         Random random;
         string code;
         int second;
+
         private void RegisterMailCode_Load(object sender, EventArgs e)
         {
 
@@ -38,7 +39,6 @@ namespace CalorieTrackingApp.UI
             for (int i = 0; i < 5; i++)
             {
                 code += Convert.ToString(random.Next(0, 10));
-
             }
 
 
@@ -72,6 +72,7 @@ namespace CalorieTrackingApp.UI
         {
             try
             {
+                label4.Text = code;
                 string smtpServer = "smtp.office365.com"; //SMTP sunucusu adresi
                 int port = 587; //SMTP sunucusu port numarası
                 string senderEmail = "calorietracking@hotmail.com"; //Gönderen e-posta adresi
@@ -155,7 +156,7 @@ namespace CalorieTrackingApp.UI
                 MessageBox.Show("Zamanınız Doldu! Tekrar Gönderiniz");
                 btnSend.Enabled = true;
                 btnConfirmation.Enabled = false;
-                second = 60;
+                second = 600;
                 lblSecond.BackColor = SystemColors.Control;
                 lblSecond.Text = (second).ToString();
             }
