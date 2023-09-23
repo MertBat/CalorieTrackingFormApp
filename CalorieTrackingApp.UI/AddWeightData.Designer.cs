@@ -62,7 +62,7 @@
             groupBox1.Controls.Add(dtpDate);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(891, 667);
+            groupBox1.Size = new Size(598, 643);
             groupBox1.TabIndex = 7;
             groupBox1.TabStop = false;
             // 
@@ -72,7 +72,7 @@
             groupBox2.Controls.Add(btnKaydet);
             groupBox2.Controls.Add(label4);
             groupBox2.Controls.Add(nudGuncelKilo);
-            groupBox2.Location = new Point(164, 414);
+            groupBox2.Location = new Point(24, 412);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(557, 206);
             groupBox2.TabIndex = 11;
@@ -129,7 +129,7 @@
             groupBox6.Controls.Add(lblHedefeKalanKilo);
             groupBox6.Controls.Add(label41);
             groupBox6.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            groupBox6.Location = new Point(164, 159);
+            groupBox6.Location = new Point(24, 157);
             groupBox6.Name = "groupBox6";
             groupBox6.Size = new Size(557, 236);
             groupBox6.TabIndex = 10;
@@ -139,7 +139,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(341, 64);
+            label8.Location = new Point(343, 64);
             label8.Name = "label8";
             label8.Size = new Size(31, 21);
             label8.TabIndex = 52;
@@ -149,7 +149,7 @@
             // 
             lblBaslangicKilo.AutoSize = true;
             lblBaslangicKilo.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblBaslangicKilo.Location = new Point(267, 57);
+            lblBaslangicKilo.Location = new Point(269, 56);
             lblBaslangicKilo.Name = "lblBaslangicKilo";
             lblBaslangicKilo.Size = new Size(68, 28);
             lblBaslangicKilo.TabIndex = 51;
@@ -158,7 +158,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(130, 63);
+            label10.Location = new Point(150, 63);
             label10.Name = "label10";
             label10.Size = new Size(122, 21);
             label10.TabIndex = 50;
@@ -167,7 +167,7 @@
             // lblDegisenKilo2
             // 
             lblDegisenKilo2.AutoSize = true;
-            lblDegisenKilo2.Location = new Point(341, 113);
+            lblDegisenKilo2.Location = new Point(343, 113);
             lblDegisenKilo2.Name = "lblDegisenKilo2";
             lblDegisenKilo2.Size = new Size(63, 21);
             lblDegisenKilo2.TabIndex = 49;
@@ -177,7 +177,7 @@
             // 
             lblDegisenKilo.AutoSize = true;
             lblDegisenKilo.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblDegisenKilo.Location = new Point(267, 106);
+            lblDegisenKilo.Location = new Point(282, 106);
             lblDegisenKilo.Name = "lblDegisenKilo";
             lblDegisenKilo.Size = new Size(55, 28);
             lblDegisenKilo.TabIndex = 48;
@@ -186,7 +186,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(138, 114);
+            label7.Location = new Point(158, 114);
             label7.Name = "label7";
             label7.Size = new Size(114, 21);
             label7.TabIndex = 47;
@@ -195,7 +195,7 @@
             // lblHedefeKalanKilo2
             // 
             lblHedefeKalanKilo2.AutoSize = true;
-            lblHedefeKalanKilo2.Location = new Point(341, 163);
+            lblHedefeKalanKilo2.Location = new Point(343, 163);
             lblHedefeKalanKilo2.Name = "lblHedefeKalanKilo2";
             lblHedefeKalanKilo2.Size = new Size(136, 21);
             lblHedefeKalanKilo2.TabIndex = 46;
@@ -205,7 +205,7 @@
             // 
             lblHedefeKalanKilo.AutoSize = true;
             lblHedefeKalanKilo.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblHedefeKalanKilo.Location = new Point(267, 155);
+            lblHedefeKalanKilo.Location = new Point(282, 156);
             lblHedefeKalanKilo.Name = "lblHedefeKalanKilo";
             lblHedefeKalanKilo.Size = new Size(55, 28);
             lblHedefeKalanKilo.TabIndex = 45;
@@ -214,7 +214,7 @@
             // label41
             // 
             label41.AutoSize = true;
-            label41.Location = new Point(46, 163);
+            label41.Location = new Point(66, 163);
             label41.Name = "label41";
             label41.Size = new Size(206, 21);
             label41.TabIndex = 44;
@@ -223,7 +223,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(252, 100);
+            label2.Location = new Point(88, 101);
             label2.Name = "label2";
             label2.Size = new Size(59, 24);
             label2.TabIndex = 8;
@@ -233,7 +233,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(302, 31);
+            label1.Location = new Point(162, 29);
             label1.Name = "label1";
             label1.Size = new Size(279, 39);
             label1.TabIndex = 7;
@@ -241,16 +241,16 @@
             // 
             // dtpDate
             // 
-            dtpDate.Location = new Point(326, 95);
+            dtpDate.Location = new Point(162, 96);
             dtpDate.Name = "dtpDate";
-            dtpDate.Size = new Size(278, 33);
+            dtpDate.Size = new Size(325, 33);
             dtpDate.TabIndex = 6;
             // 
             // AddWeightData
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(920, 689);
+            ClientSize = new Size(624, 673);
             Controls.Add(groupBox1);
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(5);

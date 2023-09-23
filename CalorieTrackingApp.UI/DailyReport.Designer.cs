@@ -225,7 +225,7 @@
             // 
             // btnForward
             // 
-            btnForward.Location = new Point(731, 52);
+            btnForward.Location = new Point(694, 52);
             btnForward.Name = "btnForward";
             btnForward.Size = new Size(35, 33);
             btnForward.TabIndex = 44;
@@ -247,7 +247,7 @@
             // 
             dateTimePicker1.Location = new Point(363, 52);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(362, 33);
+            dateTimePicker1.Size = new Size(325, 33);
             dateTimePicker1.TabIndex = 41;
             dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
@@ -369,7 +369,7 @@
             // 
             // button6
             // 
-            button6.Location = new Point(144, 492);
+            button6.Location = new Point(153, 492);
             button6.Name = "button6";
             button6.Size = new Size(195, 50);
             button6.TabIndex = 12;

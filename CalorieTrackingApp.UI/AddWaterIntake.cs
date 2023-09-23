@@ -154,7 +154,7 @@ namespace CalorieTrackingApp.UI
             rb250.Checked = false;
             rb500.Checked = false;
             rb1000.Checked = false;
-            if (nudAlinanSu.Value ==0)
+            if (nudAlinanSu.Value == 0)
             {
                 rb250.Enabled = true;
                 rb500.Enabled = true;

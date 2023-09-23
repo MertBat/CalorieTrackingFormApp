@@ -66,7 +66,7 @@
             groupBox1.Controls.Add(dtpDate);
             groupBox1.Location = new Point(12, 6);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(891, 667);
+            groupBox1.Size = new Size(578, 667);
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Enter += groupBox1_Enter;
@@ -81,7 +81,7 @@
             groupBox2.Controls.Add(rb1000);
             groupBox2.Controls.Add(rb500);
             groupBox2.Controls.Add(rb250);
-            groupBox2.Location = new Point(168, 453);
+            groupBox2.Location = new Point(10, 453);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(557, 208);
             groupBox2.TabIndex = 11;
@@ -183,7 +183,7 @@
             groupBox6.Controls.Add(label39);
             groupBox6.Controls.Add(waterIntake_progressBar);
             groupBox6.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            groupBox6.Location = new Point(168, 143);
+            groupBox6.Location = new Point(10, 143);
             groupBox6.Name = "groupBox6";
             groupBox6.Size = new Size(557, 304);
             groupBox6.TabIndex = 10;
@@ -278,7 +278,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(240, 101);
+            label2.Location = new Point(83, 96);
             label2.Name = "label2";
             label2.Size = new Size(59, 24);
             label2.TabIndex = 8;
@@ -288,7 +288,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(306, 29);
+            label1.Location = new Point(148, 29);
             label1.Name = "label1";
             label1.Size = new Size(252, 39);
             label1.TabIndex = 7;
@@ -296,9 +296,9 @@
             // 
             // dtpDate
             // 
-            dtpDate.Location = new Point(314, 96);
+            dtpDate.Location = new Point(148, 90);
             dtpDate.Name = "dtpDate";
-            dtpDate.Size = new Size(278, 33);
+            dtpDate.Size = new Size(326, 33);
             dtpDate.TabIndex = 6;
             dtpDate.ValueChanged += dtpDate_ValueChanged;
             // 
@@ -306,7 +306,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(915, 685);
+            ClientSize = new Size(599, 685);
             Controls.Add(groupBox1);
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(5);

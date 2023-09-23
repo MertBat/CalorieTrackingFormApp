@@ -69,7 +69,7 @@ namespace CalorieTrackingApp.UI
                 sendCodeMail.MdiParent = (MdiParent as MdiPassword);
                 (MdiParent as MdiPassword).Size = new Size(sendCodeMail.Width, sendCodeMail.Height);
                 sendCodeMail.FormBorderStyle = FormBorderStyle.None;
-                sendCodeMail.Dock = DockStyle.Fill;            
+                sendCodeMail.Dock = DockStyle.Fill;
                 sendCodeMail.Show();
                 this.Close();
 
@@ -80,7 +80,7 @@ namespace CalorieTrackingApp.UI
                 MessageBox.Show("Cevap Doğrulanamadı.\nTekrar Giriniz!");
             }
 
-           
+
 
         }
         private void MdiChildOpen()

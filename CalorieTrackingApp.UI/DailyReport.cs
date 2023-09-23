@@ -64,7 +64,7 @@ namespace CalorieTrackingApp.UI
                                   where cf.ConsumedDate.Day == selectedDate.Day &&
                                         cf.ConsumedDate.Month == selectedDate.Month &&
                                         cf.MealCategory == DATA.Enums.MealCategory.Breakfast
-                                  select string.Concat(f.Name, " - ", cf.MealCategory, " - ", f.PortionCalorie * cf.ConsumedCount,"cal")).ToList();
+                                  select string.Concat(f.Name, " - ", cf.MealCategory, " - ", f.PortionCalorie * cf.ConsumedCount, "cal")).ToList();
                 listBox1.DataSource = cfoodNames;
                 groupBox3.BackColor = Color.FromArgb(200, 200, 200);
                 groupBox2.BackColor = default;
@@ -116,7 +116,7 @@ namespace CalorieTrackingApp.UI
                                   join f in db.Foods on cf.FoodID equals f.Id
                                   where cf.ConsumedDate.Day == selectedDate.Day &&
                                         cf.ConsumedDate.Month == selectedDate.Month
-                                  select string.Concat(f.Name, " - ", cf.MealCategory," - ",f.PortionCalorie * cf.ConsumedCount, "cal")).ToList();
+                                  select string.Concat(f.Name, " - ", cf.MealCategory, " - ", f.PortionCalorie * cf.ConsumedCount, "cal")).ToList();
                 listBox1.DataSource = cfoodNames;
                 groupBox5.BackColor = Color.FromArgb(200, 200, 200);
                 groupBox2.BackColor = default;

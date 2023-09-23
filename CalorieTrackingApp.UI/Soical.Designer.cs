@@ -210,7 +210,7 @@
             groupBox1.Controls.Add(pbPostPicture);
             groupBox1.Location = new Point(169, 148);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(418, 415);
+            groupBox1.Size = new Size(433, 581);
             groupBox1.TabIndex = 5;
             groupBox1.TabStop = false;
             groupBox1.Text = "Yeni Post";
@@ -218,10 +218,10 @@
             // txtPostDetail
             // 
             txtPostDetail.Font = new Font("Century Gothic", 12.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPostDetail.Location = new Point(24, 212);
+            txtPostDetail.Location = new Point(24, 248);
             txtPostDetail.MaxLength = 255;
             txtPostDetail.Name = "txtPostDetail";
-            txtPostDetail.Size = new Size(368, 114);
+            txtPostDetail.Size = new Size(368, 233);
             txtPostDetail.TabIndex = 1;
             txtPostDetail.Text = "";
             txtPostDetail.TextChanged += tbPostDetail_TextChanged;
@@ -231,7 +231,7 @@
             lbCounter.BackColor = Color.Transparent;
             lbCounter.Font = new Font("Century Gothic", 9F, FontStyle.Bold, GraphicsUnit.Point);
             lbCounter.ForeColor = Color.Black;
-            lbCounter.Location = new Point(328, 306);
+            lbCounter.Location = new Point(328, 484);
             lbCounter.Name = "lbCounter";
             lbCounter.Size = new Size(64, 20);
             lbCounter.TabIndex = 3;
@@ -241,9 +241,9 @@
             // btnPost
             // 
             btnPost.BackColor = Color.Transparent;
-            btnPost.Location = new Point(140, 343);
+            btnPost.Location = new Point(133, 505);
             btnPost.Name = "btnPost";
-            btnPost.Size = new Size(132, 52);
+            btnPost.Size = new Size(154, 52);
             btnPost.TabIndex = 2;
             btnPost.Text = "Paylaş";
             btnPost.UseVisualStyleBackColor = false;
@@ -253,9 +253,9 @@
             // 
             pbPostPicture.BorderStyle = BorderStyle.FixedSingle;
             pbPostPicture.Cursor = Cursors.Hand;
-            pbPostPicture.Location = new Point(77, 53);
+            pbPostPicture.Location = new Point(52, 47);
             pbPostPicture.Name = "pbPostPicture";
-            pbPostPicture.Size = new Size(264, 153);
+            pbPostPicture.Size = new Size(316, 195);
             pbPostPicture.SizeMode = PictureBoxSizeMode.StretchImage;
             pbPostPicture.TabIndex = 0;
             pbPostPicture.TabStop = false;
@@ -267,7 +267,7 @@
             flpPosts.FlowDirection = FlowDirection.RightToLeft;
             flpPosts.Location = new Point(608, 159);
             flpPosts.Name = "flpPosts";
-            flpPosts.Size = new Size(656, 570);
+            flpPosts.Size = new Size(667, 570);
             flpPosts.TabIndex = 6;
             // 
             // Soical
