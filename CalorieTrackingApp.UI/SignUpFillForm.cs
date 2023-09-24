@@ -172,6 +172,20 @@ namespace CalorieTrackingApp.UI
 
         OpenFileDialog ofd;
         string imagePath;
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            ofd = new OpenFileDialog();
+            ofd.Filter = "Image(png,jpg,gif)|*.png;*.jpg;*.gif";
+            DialogResult dr = ofd.ShowDialog();
+
+            if (dr == DialogResult.OK)
+            {
+                imagePath = ofd.FileName;
+                pbUserPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
+                pbUserPhoto.Image = Image.FromFile(ofd.FileName);
+            }
+        }
         private void lkChancePicture_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
@@ -207,5 +221,7 @@ namespace CalorieTrackingApp.UI
 
 
         }
+
+
     }
 }

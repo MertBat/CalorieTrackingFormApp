@@ -72,9 +72,9 @@
             groupBox1.Controls.Add(listBox1);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(textBox1);
-            groupBox1.Location = new Point(18, 21);
+            groupBox1.Location = new Point(21, 21);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(447, 565);
+            groupBox1.Size = new Size(442, 565);
             groupBox1.TabIndex = 9;
             groupBox1.TabStop = false;
             groupBox1.Text = "Yemek Listesi";
@@ -110,7 +110,7 @@
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(254, 601);
+            btnUpdate.Location = new Point(258, 599);
             btnUpdate.Name = "btnUpdate";
             btnUpdate.Size = new Size(168, 47);
             btnUpdate.TabIndex = 10;
@@ -120,7 +120,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(53, 601);
+            btnDelete.Location = new Point(57, 599);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(168, 47);
             btnDelete.TabIndex = 11;
@@ -141,7 +141,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(78, 201);
+            label1.Location = new Point(78, 205);
             label1.Name = "label1";
             label1.Size = new Size(128, 24);
             label1.TabIndex = 2;
@@ -149,16 +149,16 @@
             // 
             // txtFoodName
             // 
-            txtFoodName.Location = new Point(78, 235);
+            txtFoodName.Location = new Point(78, 239);
             txtFoodName.Name = "txtFoodName";
             txtFoodName.Size = new Size(413, 33);
             txtFoodName.TabIndex = 3;
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(194, 38);
+            pictureBox1.Location = new Point(209, 49);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(170, 155);
+            pictureBox1.Size = new Size(155, 144);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
@@ -178,7 +178,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(125, 292);
+            label2.Location = new Point(125, 296);
             label2.Name = "label2";
             label2.Size = new Size(187, 24);
             label2.TabIndex = 6;
@@ -291,7 +291,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(318, 292);
+            label9.Location = new Point(318, 296);
             label9.Name = "label9";
             label9.Size = new Size(111, 24);
             label9.TabIndex = 24;

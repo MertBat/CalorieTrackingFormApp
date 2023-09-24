@@ -38,10 +38,10 @@
             dtpConsumeDate = new DateTimePicker();
             pbProfilePictureTop = new PictureBox();
             lblProfileNameTop1 = new LinkLabel();
-            btnAddNewFood = new Button();
             lblProfileNameTop2 = new Label();
             label2 = new Label();
             label1 = new Label();
+            btnAddNewFood = new Button();
             groupBox1 = new GroupBox();
             listBox1 = new ListBox();
             label4 = new Label();
@@ -98,7 +98,7 @@
             button3.Cursor = Cursors.Hand;
             button3.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button3.ForeColor = SystemColors.ActiveCaptionText;
-            button3.Location = new Point(9, 601);
+            button3.Location = new Point(9, 597);
             button3.Name = "button3";
             button3.Size = new Size(115, 106);
             button3.TabIndex = 4;
@@ -208,18 +208,6 @@
             lblProfileNameTop1.Text = "Kullanıcı Adı";
             lblProfileNameTop1.LinkClicked += lblProfileNameTop1_LinkClicked;
             // 
-            // btnAddNewFood
-            // 
-            btnAddNewFood.BackColor = Color.DarkTurquoise;
-            btnAddNewFood.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAddNewFood.Location = new Point(14, 516);
-            btnAddNewFood.Name = "btnAddNewFood";
-            btnAddNewFood.Size = new Size(415, 46);
-            btnAddNewFood.TabIndex = 7;
-            btnAddNewFood.Text = "+ Sisteme Yeni Yemek Ekle";
-            btnAddNewFood.UseVisualStyleBackColor = false;
-            btnAddNewFood.Click += btnAddNewFood_Click;
-            // 
             // lblProfileNameTop2
             // 
             lblProfileNameTop2.AutoSize = true;
@@ -247,6 +235,18 @@
             label1.Size = new Size(365, 39);
             label1.TabIndex = 4;
             label1.Text = "Yenilen Yemek Kaydet";
+            // 
+            // btnAddNewFood
+            // 
+            btnAddNewFood.BackColor = Color.DarkTurquoise;
+            btnAddNewFood.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAddNewFood.Location = new Point(14, 516);
+            btnAddNewFood.Name = "btnAddNewFood";
+            btnAddNewFood.Size = new Size(415, 46);
+            btnAddNewFood.TabIndex = 7;
+            btnAddNewFood.Text = "+ Sisteme Yeni Yemek Ekle";
+            btnAddNewFood.UseVisualStyleBackColor = false;
+            btnAddNewFood.Click += btnAddNewFood_Click;
             // 
             // groupBox1
             // 
@@ -506,7 +506,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1288, 741);
+            ClientSize = new Size(1284, 725);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(btnSaveToConsumedFood);

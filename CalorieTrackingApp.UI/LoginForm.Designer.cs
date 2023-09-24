@@ -59,7 +59,7 @@
             LoginGroupBox.Controls.Add(txtLoginUsername);
             LoginGroupBox.Controls.Add(label1);
             LoginGroupBox.FlatStyle = FlatStyle.Popup;
-            LoginGroupBox.Location = new Point(564, 45);
+            LoginGroupBox.Location = new Point(723, 43);
             LoginGroupBox.Name = "LoginGroupBox";
             LoginGroupBox.Size = new Size(438, 646);
             LoginGroupBox.TabIndex = 0;
@@ -70,7 +70,7 @@
             pbpass.BackColor = Color.White;
             pbpass.BackgroundImageLayout = ImageLayout.None;
             pbpass.Image = Properties.Resources.eye;
-            pbpass.Location = new Point(381, 282);
+            pbpass.Location = new Point(378, 282);
             pbpass.Margin = new Padding(3, 2, 3, 2);
             pbpass.Name = "pbpass";
             pbpass.Size = new Size(29, 28);
@@ -173,7 +173,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bacgroundv1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1110, 730);
+            ClientSize = new Size(1285, 725);
             Controls.Add(LoginGroupBox);
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(5);

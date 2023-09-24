@@ -236,5 +236,32 @@ namespace CalorieTrackingApp.UI
         {
 
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Navigations.GotoConsumedFood(account, this);
+            FillTheCaloriesPart();
+            FillTheMacrosPart();
+            FillTheMealStatistic();
+            FillThePastOfCalorieDifference();
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            Navigations.GotoConsumedFood(account, this);
+            FillTheCaloriesPart();
+            FillTheMacrosPart();
+            FillTheMealStatistic();
+            FillThePastOfCalorieDifference();
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            Navigations.GotoConsumedFood(account, this);
+            FillTheCaloriesPart();
+            FillTheMacrosPart();
+            FillTheMealStatistic();
+            FillThePastOfCalorieDifference();
+        }
     }
 }

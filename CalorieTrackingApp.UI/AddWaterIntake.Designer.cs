@@ -296,7 +296,7 @@
             // 
             // dtpDate
             // 
-            dtpDate.Location = new Point(148, 90);
+            dtpDate.Location = new Point(148, 91);
             dtpDate.Name = "dtpDate";
             dtpDate.Size = new Size(326, 33);
             dtpDate.TabIndex = 6;

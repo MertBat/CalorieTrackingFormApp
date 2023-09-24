@@ -63,6 +63,36 @@ namespace CalorieTrackingApp.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addFood {
+            get {
+                object obj = ResourceManager.GetObject("addFood", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap addIcon {
+            get {
+                object obj = ResourceManager.GetObject("addIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap addPhoto {
+            get {
+                object obj = ResourceManager.GetObject("addPhoto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bacgroundv1 {
             get {
                 object obj = ResourceManager.GetObject("bacgroundv1", resourceCulture);
@@ -96,6 +126,16 @@ namespace CalorieTrackingApp.UI.Properties {
         internal static System.Drawing.Bitmap DefaultFood {
             get {
                 object obj = ResourceManager.GetObject("DefaultFood", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap defaultMale {
+            get {
+                object obj = ResourceManager.GetObject("defaultMale", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -216,6 +256,16 @@ namespace CalorieTrackingApp.UI.Properties {
         internal static System.Drawing.Bitmap report_button {
             get {
                 object obj = ResourceManager.GetObject("report button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap waterIntakeIcon {
+            get {
+                object obj = ResourceManager.GetObject("waterIntakeIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

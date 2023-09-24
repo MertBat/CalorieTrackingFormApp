@@ -55,23 +55,25 @@
             // 
             // groupBox1
             // 
+            groupBox1.BackColor = Color.Transparent;
+            groupBox1.BackgroundImage = Properties.Resources.output_onlinepngtools;
+            groupBox1.BackgroundImageLayout = ImageLayout.Stretch;
             groupBox1.Controls.Add(label16);
             groupBox1.Controls.Add(groupBox2);
             groupBox1.Controls.Add(btnLoginScreen);
             groupBox1.Controls.Add(lblUserName);
             groupBox1.Controls.Add(pbUserPhoto);
-            groupBox1.Location = new Point(611, 12);
+            groupBox1.Location = new Point(698, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(516, 761);
+            groupBox1.Size = new Size(494, 711);
             groupBox1.TabIndex = 40;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Kayıt Başarılı";
             // 
             // label16
             // 
             label16.AutoSize = true;
             label16.ForeColor = Color.Green;
-            label16.Location = new Point(107, 220);
+            label16.Location = new Point(107, 198);
             label16.Name = "label16";
             label16.Size = new Size(313, 24);
             label16.TabIndex = 54;
@@ -93,7 +95,7 @@
             groupBox2.Controls.Add(label3);
             groupBox2.Controls.Add(lblBMI);
             groupBox2.Controls.Add(label8);
-            groupBox2.Location = new Point(24, 267);
+            groupBox2.Location = new Point(20, 240);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(457, 403);
             groupBox2.TabIndex = 40;
@@ -252,7 +254,7 @@
             // 
             // btnLoginScreen
             // 
-            btnLoginScreen.Location = new Point(154, 685);
+            btnLoginScreen.Location = new Point(140, 649);
             btnLoginScreen.Name = "btnLoginScreen";
             btnLoginScreen.Size = new Size(210, 52);
             btnLoginScreen.TabIndex = 39;
@@ -264,7 +266,7 @@
             // 
             lblUserName.AutoSize = true;
             lblUserName.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblUserName.Location = new Point(188, 170);
+            lblUserName.Location = new Point(175, 151);
             lblUserName.Margin = new Padding(5, 0, 5, 0);
             lblUserName.Name = "lblUserName";
             lblUserName.Size = new Size(139, 25);
@@ -273,10 +275,12 @@
             // 
             // pbUserPhoto
             // 
-            pbUserPhoto.Location = new Point(188, 43);
+            pbUserPhoto.Image = Properties.Resources.defaultMale;
+            pbUserPhoto.Location = new Point(178, 23);
             pbUserPhoto.Margin = new Padding(5);
             pbUserPhoto.Name = "pbUserPhoto";
-            pbUserPhoto.Size = new Size(133, 122);
+            pbUserPhoto.Size = new Size(125, 122);
+            pbUserPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
             pbUserPhoto.TabIndex = 24;
             pbUserPhoto.TabStop = false;
             pbUserPhoto.Click += pictureBox1_Click;
@@ -287,7 +291,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bacgroundv1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1209, 803);
+            ClientSize = new Size(1285, 725);
             Controls.Add(groupBox1);
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             FormBorderStyle = FormBorderStyle.FixedSingle;

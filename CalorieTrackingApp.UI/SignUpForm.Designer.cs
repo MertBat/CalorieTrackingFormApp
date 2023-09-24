@@ -56,6 +56,8 @@
             // SignUp_GroupBox
             // 
             SignUp_GroupBox.BackColor = Color.Transparent;
+            SignUp_GroupBox.BackgroundImage = Properties.Resources.output_onlinepngtools;
+            SignUp_GroupBox.BackgroundImageLayout = ImageLayout.Stretch;
             SignUp_GroupBox.Controls.Add(btnBack);
             SignUp_GroupBox.Controls.Add(pictureBox1);
             SignUp_GroupBox.Controls.Add(pbpass);
@@ -74,12 +76,11 @@
             SignUp_GroupBox.Controls.Add(label2);
             SignUp_GroupBox.Controls.Add(txtSignUpMail);
             SignUp_GroupBox.Controls.Add(label1);
-            SignUp_GroupBox.Location = new Point(519, 32);
+            SignUp_GroupBox.Location = new Point(715, 27);
             SignUp_GroupBox.Name = "SignUp_GroupBox";
-            SignUp_GroupBox.Size = new Size(519, 670);
+            SignUp_GroupBox.Size = new Size(482, 670);
             SignUp_GroupBox.TabIndex = 0;
             SignUp_GroupBox.TabStop = false;
-            SignUp_GroupBox.Text = "Kayıt Ol";
             SignUp_GroupBox.Enter += SignUp_GroupBox_Enter;
             // 
             // btnBack
@@ -88,9 +89,9 @@
             btnBack.BackgroundImage = (Image)resources.GetObject("btnBack.BackgroundImage");
             btnBack.BackgroundImageLayout = ImageLayout.Stretch;
             btnBack.FlatStyle = FlatStyle.Flat;
-            btnBack.Location = new Point(12, 620);
+            btnBack.Location = new Point(67, 597);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(48, 44);
+            btnBack.Size = new Size(42, 38);
             btnBack.TabIndex = 56;
             btnBack.UseVisualStyleBackColor = false;
             btnBack.Visible = false;
@@ -101,7 +102,7 @@
             pictureBox1.BackColor = Color.White;
             pictureBox1.BackgroundImageLayout = ImageLayout.None;
             pictureBox1.Image = Properties.Resources.eye;
-            pictureBox1.Location = new Point(415, 306);
+            pictureBox1.Location = new Point(413, 316);
             pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(28, 28);
@@ -116,7 +117,7 @@
             pbpass.BackColor = Color.White;
             pbpass.BackgroundImageLayout = ImageLayout.None;
             pbpass.Image = Properties.Resources.eye;
-            pbpass.Location = new Point(415, 229);
+            pbpass.Location = new Point(412, 239);
             pbpass.Margin = new Padding(3, 2, 3, 2);
             pbpass.Name = "pbpass";
             pbpass.Size = new Size(28, 28);
@@ -130,7 +131,7 @@
             // 
             PassStatus.AutoSize = true;
             PassStatus.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
-            PassStatus.Location = new Point(46, 378);
+            PassStatus.Location = new Point(46, 388);
             PassStatus.Name = "PassStatus";
             PassStatus.Size = new Size(14, 20);
             PassStatus.TabIndex = 14;
@@ -138,14 +139,14 @@
             // 
             // pbpassStr
             // 
-            pbpassStr.Location = new Point(45, 352);
+            pbpassStr.Location = new Point(45, 362);
             pbpassStr.Name = "pbpassStr";
             pbpassStr.Size = new Size(400, 18);
             pbpassStr.TabIndex = 13;
             // 
             // btn_SignUp
             // 
-            btn_SignUp.Location = new Point(166, 592);
+            btn_SignUp.Location = new Point(152, 592);
             btn_SignUp.Name = "btn_SignUp";
             btn_SignUp.Size = new Size(194, 48);
             btn_SignUp.TabIndex = 7;
@@ -189,7 +190,7 @@
             // 
             // txtSignUpName
             // 
-            txtSignUpName.Location = new Point(44, 73);
+            txtSignUpName.Location = new Point(44, 78);
             txtSignUpName.Name = "txtSignUpName";
             txtSignUpName.Size = new Size(401, 33);
             txtSignUpName.TabIndex = 1;
@@ -197,7 +198,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(44, 37);
+            label4.Location = new Point(44, 42);
             label4.Name = "label4";
             label4.Size = new Size(121, 24);
             label4.TabIndex = 6;
@@ -205,7 +206,7 @@
             // 
             // txtSignUpPassRepeat
             // 
-            txtSignUpPassRepeat.Location = new Point(44, 303);
+            txtSignUpPassRepeat.Location = new Point(44, 313);
             txtSignUpPassRepeat.Name = "txtSignUpPassRepeat";
             txtSignUpPassRepeat.Size = new Size(401, 33);
             txtSignUpPassRepeat.TabIndex = 4;
@@ -214,7 +215,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(44, 267);
+            label3.Location = new Point(44, 281);
             label3.Name = "label3";
             label3.Size = new Size(125, 24);
             label3.TabIndex = 4;
@@ -222,7 +223,7 @@
             // 
             // txtSignUpPassword
             // 
-            txtSignUpPassword.Location = new Point(45, 226);
+            txtSignUpPassword.Location = new Point(45, 236);
             txtSignUpPassword.Name = "txtSignUpPassword";
             txtSignUpPassword.Size = new Size(401, 33);
             txtSignUpPassword.TabIndex = 3;
@@ -231,7 +232,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(45, 190);
+            label2.Location = new Point(45, 203);
             label2.Name = "label2";
             label2.Size = new Size(55, 24);
             label2.TabIndex = 2;
@@ -239,7 +240,7 @@
             // 
             // txtSignUpMail
             // 
-            txtSignUpMail.Location = new Point(45, 150);
+            txtSignUpMail.Location = new Point(45, 157);
             txtSignUpMail.Name = "txtSignUpMail";
             txtSignUpMail.Size = new Size(401, 33);
             txtSignUpMail.TabIndex = 2;
@@ -247,7 +248,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(46, 114);
+            label1.Location = new Point(46, 124);
             label1.Name = "label1";
             label1.Size = new Size(74, 24);
             label1.TabIndex = 0;
@@ -259,7 +260,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bacgroundv1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1110, 730);
+            ClientSize = new Size(1285, 725);
             Controls.Add(SignUp_GroupBox);
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(5, 4, 5, 4);

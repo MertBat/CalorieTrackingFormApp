@@ -188,7 +188,7 @@ namespace CalorieTrackingApp.UI
 
         private void btnEntry_Enter(object sender, EventArgs e)
         {
-            
+
         }
 
         private void linkLabel1_Enter(object sender, EventArgs e)

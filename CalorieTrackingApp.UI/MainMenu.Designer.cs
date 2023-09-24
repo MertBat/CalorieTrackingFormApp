@@ -84,6 +84,9 @@
             lblGun2 = new Label();
             lblGun1 = new Label();
             groupBox5 = new GroupBox();
+            pictureBox9 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            pictureBox7 = new PictureBox();
             label3 = new Label();
             lblAksamYemegiYuzde = new Label();
             lblAksamYemegi = new Label();
@@ -98,6 +101,7 @@
             label30 = new Label();
             breakfast_progressBar = new ProgressBar();
             groupBox6 = new GroupBox();
+            pictureBox6 = new PictureBox();
             lblGunlukSuIcilen = new Label();
             label11 = new Label();
             lblYuzdeSu = new Label();
@@ -120,7 +124,11 @@
             groupBox3.SuspendLayout();
             groupBox2.SuspendLayout();
             groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // navigation_groupBox
@@ -152,7 +160,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label15.Location = new Point(26, 677);
+            label15.Location = new Point(24, 657);
             label15.Name = "label15";
             label15.Size = new Size(80, 19);
             label15.TabIndex = 14;
@@ -162,7 +170,7 @@
             // 
             pictureBox5.Enabled = false;
             pictureBox5.Image = Properties.Resources.navLogout;
-            pictureBox5.Location = new Point(41, 615);
+            pictureBox5.Location = new Point(39, 595);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(51, 57);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -264,7 +272,7 @@
             btnExit.Cursor = Cursors.Hand;
             btnExit.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             btnExit.ForeColor = SystemColors.ActiveCaptionText;
-            btnExit.Location = new Point(9, 601);
+            btnExit.Location = new Point(7, 581);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(115, 106);
             btnExit.TabIndex = 4;
@@ -756,6 +764,9 @@
             // 
             // groupBox5
             // 
+            groupBox5.Controls.Add(pictureBox9);
+            groupBox5.Controls.Add(pictureBox8);
+            groupBox5.Controls.Add(pictureBox7);
             groupBox5.Controls.Add(label3);
             groupBox5.Controls.Add(lblAksamYemegiYuzde);
             groupBox5.Controls.Add(lblAksamYemegi);
@@ -777,11 +788,44 @@
             groupBox5.TabStop = false;
             groupBox5.Text = "Öğün İstatistikleri";
             // 
+            // pictureBox9
+            // 
+            pictureBox9.Image = Properties.Resources.addIcon;
+            pictureBox9.Location = new Point(30, 245);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(29, 28);
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox9.TabIndex = 44;
+            pictureBox9.TabStop = false;
+            pictureBox9.Click += pictureBox9_Click;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = Properties.Resources.addIcon;
+            pictureBox8.Location = new Point(30, 166);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(29, 28);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 43;
+            pictureBox8.TabStop = false;
+            pictureBox8.Click += pictureBox8_Click;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resources.addIcon;
+            pictureBox7.Location = new Point(30, 87);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(29, 28);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 42;
+            pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
+            // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(220, 23);
+            label3.Location = new Point(218, 25);
             label3.Name = "label3";
             label3.Size = new Size(132, 22);
             label3.TabIndex = 41;
@@ -791,7 +835,7 @@
             // 
             lblAksamYemegiYuzde.AutoSize = true;
             lblAksamYemegiYuzde.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblAksamYemegiYuzde.Location = new Point(471, 218);
+            lblAksamYemegiYuzde.Location = new Point(461, 219);
             lblAksamYemegiYuzde.Name = "lblAksamYemegiYuzde";
             lblAksamYemegiYuzde.Size = new Size(47, 22);
             lblAksamYemegiYuzde.TabIndex = 40;
@@ -801,7 +845,7 @@
             // 
             lblAksamYemegi.AutoSize = true;
             lblAksamYemegi.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblAksamYemegi.Location = new Point(248, 217);
+            lblAksamYemegi.Location = new Point(238, 218);
             lblAksamYemegi.Name = "lblAksamYemegi";
             lblAksamYemegi.Size = new Size(85, 23);
             lblAksamYemegi.TabIndex = 39;
@@ -811,7 +855,7 @@
             // 
             label38.AutoSize = true;
             label38.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label38.Location = new Point(49, 218);
+            label38.Location = new Point(66, 219);
             label38.Name = "label38";
             label38.Size = new Size(150, 22);
             label38.TabIndex = 38;
@@ -819,16 +863,16 @@
             // 
             // dinner_progressBar
             // 
-            dinner_progressBar.Location = new Point(49, 254);
+            dinner_progressBar.Location = new Point(66, 255);
             dinner_progressBar.Name = "dinner_progressBar";
-            dinner_progressBar.Size = new Size(469, 18);
+            dinner_progressBar.Size = new Size(442, 18);
             dinner_progressBar.TabIndex = 37;
             // 
             // lblOgleYemegiYuzde
             // 
             lblOgleYemegiYuzde.AutoSize = true;
             lblOgleYemegiYuzde.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblOgleYemegiYuzde.Location = new Point(471, 138);
+            lblOgleYemegiYuzde.Location = new Point(461, 139);
             lblOgleYemegiYuzde.Name = "lblOgleYemegiYuzde";
             lblOgleYemegiYuzde.Size = new Size(47, 22);
             lblOgleYemegiYuzde.TabIndex = 36;
@@ -838,7 +882,7 @@
             // 
             lblOgleYemegi.AutoSize = true;
             lblOgleYemegi.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblOgleYemegi.Location = new Point(248, 137);
+            lblOgleYemegi.Location = new Point(238, 138);
             lblOgleYemegi.Name = "lblOgleYemegi";
             lblOgleYemegi.Size = new Size(85, 23);
             lblOgleYemegi.TabIndex = 35;
@@ -848,7 +892,7 @@
             // 
             label35.AutoSize = true;
             label35.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label35.Location = new Point(49, 138);
+            label35.Location = new Point(66, 138);
             label35.Name = "label35";
             label35.Size = new Size(133, 22);
             label35.TabIndex = 34;
@@ -856,16 +900,16 @@
             // 
             // lunch_progressBar
             // 
-            lunch_progressBar.Location = new Point(49, 174);
+            lunch_progressBar.Location = new Point(66, 175);
             lunch_progressBar.Name = "lunch_progressBar";
-            lunch_progressBar.Size = new Size(469, 18);
+            lunch_progressBar.Size = new Size(442, 18);
             lunch_progressBar.TabIndex = 33;
             // 
             // lblKahvaltiYuzde
             // 
             lblKahvaltiYuzde.AutoSize = true;
             lblKahvaltiYuzde.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblKahvaltiYuzde.Location = new Point(471, 60);
+            lblKahvaltiYuzde.Location = new Point(461, 61);
             lblKahvaltiYuzde.Name = "lblKahvaltiYuzde";
             lblKahvaltiYuzde.Size = new Size(47, 22);
             lblKahvaltiYuzde.TabIndex = 32;
@@ -875,7 +919,7 @@
             // 
             lblKahvalti.AutoSize = true;
             lblKahvalti.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            lblKahvalti.Location = new Point(248, 59);
+            lblKahvalti.Location = new Point(238, 60);
             lblKahvalti.Name = "lblKahvalti";
             lblKahvalti.Size = new Size(85, 23);
             lblKahvalti.TabIndex = 31;
@@ -885,7 +929,7 @@
             // 
             label30.AutoSize = true;
             label30.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label30.Location = new Point(49, 59);
+            label30.Location = new Point(66, 60);
             label30.Name = "label30";
             label30.Size = new Size(90, 22);
             label30.TabIndex = 30;
@@ -893,13 +937,14 @@
             // 
             // breakfast_progressBar
             // 
-            breakfast_progressBar.Location = new Point(49, 96);
+            breakfast_progressBar.Location = new Point(66, 97);
             breakfast_progressBar.Name = "breakfast_progressBar";
-            breakfast_progressBar.Size = new Size(469, 18);
+            breakfast_progressBar.Size = new Size(442, 18);
             breakfast_progressBar.TabIndex = 0;
             // 
             // groupBox6
             // 
+            groupBox6.Controls.Add(pictureBox6);
             groupBox6.Controls.Add(lblGunlukSuIcilen);
             groupBox6.Controls.Add(label11);
             groupBox6.Controls.Add(lblYuzdeSu);
@@ -910,12 +955,23 @@
             groupBox6.Controls.Add(label39);
             groupBox6.Controls.Add(waterIntake_progressBar);
             groupBox6.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            groupBox6.Location = new Point(711, 419);
+            groupBox6.Location = new Point(709, 419);
             groupBox6.Name = "groupBox6";
             groupBox6.Size = new Size(560, 300);
             groupBox6.TabIndex = 6;
             groupBox6.TabStop = false;
             groupBox6.Text = "Su Alım İstatistikleri";
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Enabled = false;
+            pictureBox6.Image = Properties.Resources.waterIntakeIcon;
+            pictureBox6.Location = new Point(21, 50);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(57, 61);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 50;
+            pictureBox6.TabStop = false;
             // 
             // lblGunlukSuIcilen
             // 
@@ -950,17 +1006,18 @@
             // label43
             // 
             label43.AutoSize = true;
-            label43.Location = new Point(391, 75);
+            label43.Location = new Point(402, 75);
             label43.Name = "label43";
-            label43.Size = new Size(124, 21);
+            label43.Size = new Size(144, 21);
             label43.TabIndex = 46;
-            label43.Text = "daha içmelisin.";
+            label43.Text = "daha su içmelisin.";
             // 
             // lblGunlukSuHedefKalan
             // 
             lblGunlukSuHedefKalan.AutoSize = true;
             lblGunlukSuHedefKalan.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGunlukSuHedefKalan.Location = new Point(318, 71);
+            lblGunlukSuHedefKalan.ForeColor = Color.Blue;
+            lblGunlukSuHedefKalan.Location = new Point(334, 70);
             lblGunlukSuHedefKalan.Name = "lblGunlukSuHedefKalan";
             lblGunlukSuHedefKalan.Size = new Size(66, 28);
             lblGunlukSuHedefKalan.TabIndex = 45;
@@ -969,11 +1026,11 @@
             // label41
             // 
             label41.AutoSize = true;
-            label41.Location = new Point(44, 75);
+            label41.Location = new Point(84, 74);
             label41.Name = "label41";
-            label41.Size = new Size(269, 21);
+            label41.Size = new Size(249, 21);
             label41.TabIndex = 44;
-            label41.Text = "Bugünkü su hedefine ulaşmak için";
+            label41.Text = "Bugünkü hedefine ulaşmak için";
             // 
             // lblGunlukSuHedef
             // 
@@ -997,11 +1054,13 @@
             // 
             // waterIntake_progressBar
             // 
-            waterIntake_progressBar.BackColor = Color.MediumSpringGreen;
-            waterIntake_progressBar.ForeColor = Color.Red;
-            waterIntake_progressBar.Location = new Point(29, 164);
+            waterIntake_progressBar.BackColor = Color.Blue;
+            waterIntake_progressBar.ForeColor = Color.Blue;
+            waterIntake_progressBar.Location = new Point(21, 165);
+            waterIntake_progressBar.MarqueeAnimationSpeed = 50;
             waterIntake_progressBar.Name = "waterIntake_progressBar";
             waterIntake_progressBar.Size = new Size(485, 66);
+            waterIntake_progressBar.Style = ProgressBarStyle.Continuous;
             waterIntake_progressBar.TabIndex = 0;
             // 
             // MainMenu
@@ -1039,8 +1098,12 @@
             groupBox2.PerformLayout();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
         }
 
@@ -1125,5 +1188,9 @@
         private PictureBox pictureBox3;
         private Label label15;
         private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox8;
     }
 }
