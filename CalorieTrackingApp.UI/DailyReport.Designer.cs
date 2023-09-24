@@ -106,22 +106,6 @@
             label33 = new Label();
             lblKalori = new Label();
             label35 = new Label();
-            pictureBox15 = new PictureBox();
-            pictureBox16 = new PictureBox();
-            pictureBox17 = new PictureBox();
-            pictureBox18 = new PictureBox();
-            pictureBox19 = new PictureBox();
-            pictureBox20 = new PictureBox();
-            pictureBox21 = new PictureBox();
-            pictureBox22 = new PictureBox();
-            pictureBox23 = new PictureBox();
-            pictureBox24 = new PictureBox();
-            pictureBox25 = new PictureBox();
-            pictureBox26 = new PictureBox();
-            pictureBox27 = new PictureBox();
-            pictureBox28 = new PictureBox();
-            pictureBox29 = new PictureBox();
-            pictureBox30 = new PictureBox();
             navigation_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -145,22 +129,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox23).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox24).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox25).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox26).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox27).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox28).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox29).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox30).BeginInit();
             SuspendLayout();
             // 
             // navigation_groupBox
@@ -617,11 +585,7 @@
             // 
             // groupBox3
             // 
-            groupBox3.Controls.Add(pictureBox30);
-            groupBox3.Controls.Add(pictureBox18);
             groupBox3.Controls.Add(pictureBox6);
-            groupBox3.Controls.Add(pictureBox19);
-            groupBox3.Controls.Add(pictureBox20);
             groupBox3.Controls.Add(lblYagKahvalti);
             groupBox3.Controls.Add(label15);
             groupBox3.Controls.Add(lblProteinKahvalti);
@@ -653,7 +617,7 @@
             // 
             lblYagKahvalti.AutoSize = true;
             lblYagKahvalti.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblYagKahvalti.Location = new Point(512, 99);
+            lblYagKahvalti.Location = new Point(512, 95);
             lblYagKahvalti.Name = "lblYagKahvalti";
             lblYagKahvalti.Size = new Size(76, 26);
             lblYagKahvalti.TabIndex = 52;
@@ -663,7 +627,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label15.Location = new Point(527, 69);
+            label15.Location = new Point(527, 65);
             label15.Name = "label15";
             label15.Size = new Size(47, 22);
             label15.TabIndex = 51;
@@ -673,7 +637,7 @@
             // 
             lblProteinKahvalti.AutoSize = true;
             lblProteinKahvalti.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProteinKahvalti.Location = new Point(406, 100);
+            lblProteinKahvalti.Location = new Point(406, 96);
             lblProteinKahvalti.Name = "lblProteinKahvalti";
             lblProteinKahvalti.Size = new Size(76, 26);
             lblProteinKahvalti.TabIndex = 50;
@@ -683,7 +647,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(406, 69);
+            label13.Location = new Point(406, 65);
             label13.Name = "label13";
             label13.Size = new Size(73, 22);
             label13.TabIndex = 49;
@@ -693,7 +657,7 @@
             // 
             lblKarbonhidratKahvalti.AutoSize = true;
             lblKarbonhidratKahvalti.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKarbonhidratKahvalti.Location = new Point(280, 99);
+            lblKarbonhidratKahvalti.Location = new Point(280, 95);
             lblKarbonhidratKahvalti.Name = "lblKarbonhidratKahvalti";
             lblKarbonhidratKahvalti.Size = new Size(76, 26);
             lblKarbonhidratKahvalti.TabIndex = 48;
@@ -703,7 +667,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(249, 69);
+            label11.Location = new Point(249, 65);
             label11.Name = "label11";
             label11.Size = new Size(131, 22);
             label11.TabIndex = 47;
@@ -713,7 +677,7 @@
             // 
             lblKaloriKahvalti.AutoSize = true;
             lblKaloriKahvalti.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKaloriKahvalti.Location = new Point(140, 96);
+            lblKaloriKahvalti.Location = new Point(137, 89);
             lblKaloriKahvalti.Name = "lblKaloriKahvalti";
             lblKaloriKahvalti.Size = new Size(83, 26);
             lblKaloriKahvalti.TabIndex = 46;
@@ -723,7 +687,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(149, 69);
+            label8.Location = new Point(149, 65);
             label8.Name = "label8";
             label8.Size = new Size(58, 22);
             label8.TabIndex = 45;
@@ -731,10 +695,6 @@
             // 
             // groupBox2
             // 
-            groupBox2.Controls.Add(pictureBox29);
-            groupBox2.Controls.Add(pictureBox15);
-            groupBox2.Controls.Add(pictureBox16);
-            groupBox2.Controls.Add(pictureBox17);
             groupBox2.Controls.Add(pictureBox7);
             groupBox2.Controls.Add(lblYagOgleYemegi);
             groupBox2.Controls.Add(label5);
@@ -766,7 +726,7 @@
             // 
             lblYagOgleYemegi.AutoSize = true;
             lblYagOgleYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblYagOgleYemegi.Location = new Point(512, 97);
+            lblYagOgleYemegi.Location = new Point(512, 91);
             lblYagOgleYemegi.Name = "lblYagOgleYemegi";
             lblYagOgleYemegi.Size = new Size(76, 26);
             lblYagOgleYemegi.TabIndex = 52;
@@ -776,7 +736,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(527, 70);
+            label5.Location = new Point(527, 64);
             label5.Name = "label5";
             label5.Size = new Size(47, 22);
             label5.TabIndex = 51;
@@ -786,7 +746,7 @@
             // 
             lblProteinOgleYemegi.AutoSize = true;
             lblProteinOgleYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProteinOgleYemegi.Location = new Point(406, 96);
+            lblProteinOgleYemegi.Location = new Point(406, 90);
             lblProteinOgleYemegi.Name = "lblProteinOgleYemegi";
             lblProteinOgleYemegi.Size = new Size(76, 26);
             lblProteinOgleYemegi.TabIndex = 50;
@@ -796,7 +756,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(409, 69);
+            label7.Location = new Point(409, 63);
             label7.Name = "label7";
             label7.Size = new Size(73, 22);
             label7.TabIndex = 49;
@@ -806,7 +766,7 @@
             // 
             lblKarbonhidratOgleYemegi.AutoSize = true;
             lblKarbonhidratOgleYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKarbonhidratOgleYemegi.Location = new Point(280, 96);
+            lblKarbonhidratOgleYemegi.Location = new Point(280, 90);
             lblKarbonhidratOgleYemegi.Name = "lblKarbonhidratOgleYemegi";
             lblKarbonhidratOgleYemegi.Size = new Size(76, 26);
             lblKarbonhidratOgleYemegi.TabIndex = 48;
@@ -816,7 +776,7 @@
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label17.Location = new Point(249, 69);
+            label17.Location = new Point(249, 63);
             label17.Name = "label17";
             label17.Size = new Size(131, 22);
             label17.TabIndex = 47;
@@ -826,7 +786,7 @@
             // 
             lblKaloriOgleYemegi.AutoSize = true;
             lblKaloriOgleYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKaloriOgleYemegi.Location = new Point(137, 96);
+            lblKaloriOgleYemegi.Location = new Point(137, 90);
             lblKaloriOgleYemegi.Name = "lblKaloriOgleYemegi";
             lblKaloriOgleYemegi.Size = new Size(83, 26);
             lblKaloriOgleYemegi.TabIndex = 46;
@@ -836,7 +796,7 @@
             // 
             label19.AutoSize = true;
             label19.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label19.Location = new Point(149, 70);
+            label19.Location = new Point(149, 64);
             label19.Name = "label19";
             label19.Size = new Size(58, 22);
             label19.TabIndex = 45;
@@ -844,10 +804,6 @@
             // 
             // groupBox4
             // 
-            groupBox4.Controls.Add(pictureBox28);
-            groupBox4.Controls.Add(pictureBox21);
-            groupBox4.Controls.Add(pictureBox22);
-            groupBox4.Controls.Add(pictureBox23);
             groupBox4.Controls.Add(pictureBox8);
             groupBox4.Controls.Add(lblYagAksamYemegi);
             groupBox4.Controls.Add(label21);
@@ -879,7 +835,7 @@
             // 
             lblYagAksamYemegi.AutoSize = true;
             lblYagAksamYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblYagAksamYemegi.Location = new Point(512, 96);
+            lblYagAksamYemegi.Location = new Point(512, 90);
             lblYagAksamYemegi.Name = "lblYagAksamYemegi";
             lblYagAksamYemegi.Size = new Size(76, 26);
             lblYagAksamYemegi.TabIndex = 52;
@@ -889,7 +845,7 @@
             // 
             label21.AutoSize = true;
             label21.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label21.Location = new Point(527, 64);
+            label21.Location = new Point(527, 58);
             label21.Name = "label21";
             label21.Size = new Size(47, 22);
             label21.TabIndex = 51;
@@ -899,7 +855,7 @@
             // 
             lblProteinAksamYemegi.AutoSize = true;
             lblProteinAksamYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProteinAksamYemegi.Location = new Point(409, 96);
+            lblProteinAksamYemegi.Location = new Point(409, 90);
             lblProteinAksamYemegi.Name = "lblProteinAksamYemegi";
             lblProteinAksamYemegi.Size = new Size(76, 26);
             lblProteinAksamYemegi.TabIndex = 50;
@@ -909,7 +865,7 @@
             // 
             label23.AutoSize = true;
             label23.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label23.Location = new Point(409, 64);
+            label23.Location = new Point(409, 58);
             label23.Name = "label23";
             label23.Size = new Size(73, 22);
             label23.TabIndex = 49;
@@ -919,7 +875,7 @@
             // 
             lblKarbonhidratAksamYemegi.AutoSize = true;
             lblKarbonhidratAksamYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKarbonhidratAksamYemegi.Location = new Point(280, 96);
+            lblKarbonhidratAksamYemegi.Location = new Point(280, 90);
             lblKarbonhidratAksamYemegi.Name = "lblKarbonhidratAksamYemegi";
             lblKarbonhidratAksamYemegi.Size = new Size(76, 26);
             lblKarbonhidratAksamYemegi.TabIndex = 48;
@@ -929,7 +885,7 @@
             // 
             label25.AutoSize = true;
             label25.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label25.Location = new Point(249, 64);
+            label25.Location = new Point(249, 58);
             label25.Name = "label25";
             label25.Size = new Size(131, 22);
             label25.TabIndex = 47;
@@ -939,7 +895,7 @@
             // 
             lblKaloriAksamYemegi.AutoSize = true;
             lblKaloriAksamYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKaloriAksamYemegi.Location = new Point(139, 97);
+            lblKaloriAksamYemegi.Location = new Point(137, 90);
             lblKaloriAksamYemegi.Name = "lblKaloriAksamYemegi";
             lblKaloriAksamYemegi.Size = new Size(83, 26);
             lblKaloriAksamYemegi.TabIndex = 46;
@@ -949,7 +905,7 @@
             // 
             label27.AutoSize = true;
             label27.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label27.Location = new Point(151, 65);
+            label27.Location = new Point(149, 58);
             label27.Name = "label27";
             label27.Size = new Size(58, 22);
             label27.TabIndex = 45;
@@ -957,10 +913,6 @@
             // 
             // groupBox5
             // 
-            groupBox5.Controls.Add(pictureBox27);
-            groupBox5.Controls.Add(pictureBox24);
-            groupBox5.Controls.Add(pictureBox25);
-            groupBox5.Controls.Add(pictureBox26);
             groupBox5.Controls.Add(pictureBox9);
             groupBox5.Controls.Add(lblYag);
             groupBox5.Controls.Add(label29);
@@ -992,7 +944,7 @@
             // 
             lblYag.AutoSize = true;
             lblYag.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblYag.Location = new Point(512, 93);
+            lblYag.Location = new Point(512, 86);
             lblYag.Name = "lblYag";
             lblYag.Size = new Size(76, 26);
             lblYag.TabIndex = 52;
@@ -1002,7 +954,7 @@
             // 
             label29.AutoSize = true;
             label29.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label29.Location = new Point(527, 62);
+            label29.Location = new Point(527, 55);
             label29.Name = "label29";
             label29.Size = new Size(47, 22);
             label29.TabIndex = 51;
@@ -1012,7 +964,7 @@
             // 
             lblProtein.AutoSize = true;
             lblProtein.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProtein.Location = new Point(409, 93);
+            lblProtein.Location = new Point(409, 86);
             lblProtein.Name = "lblProtein";
             lblProtein.Size = new Size(76, 26);
             lblProtein.TabIndex = 50;
@@ -1022,7 +974,7 @@
             // 
             label31.AutoSize = true;
             label31.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label31.Location = new Point(412, 62);
+            label31.Location = new Point(412, 55);
             label31.Name = "label31";
             label31.Size = new Size(73, 22);
             label31.TabIndex = 49;
@@ -1032,7 +984,7 @@
             // 
             lblKarbonhidrat.AutoSize = true;
             lblKarbonhidrat.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKarbonhidrat.Location = new Point(280, 93);
+            lblKarbonhidrat.Location = new Point(280, 86);
             lblKarbonhidrat.Name = "lblKarbonhidrat";
             lblKarbonhidrat.Size = new Size(76, 26);
             lblKarbonhidrat.TabIndex = 48;
@@ -1042,7 +994,7 @@
             // 
             label33.AutoSize = true;
             label33.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label33.Location = new Point(249, 62);
+            label33.Location = new Point(249, 55);
             label33.Name = "label33";
             label33.Size = new Size(131, 22);
             label33.TabIndex = 47;
@@ -1052,7 +1004,7 @@
             // 
             lblKalori.AutoSize = true;
             lblKalori.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKalori.Location = new Point(139, 94);
+            lblKalori.Location = new Point(137, 84);
             lblKalori.Name = "lblKalori";
             lblKalori.Size = new Size(83, 26);
             lblKalori.TabIndex = 46;
@@ -1062,187 +1014,11 @@
             // 
             label35.AutoSize = true;
             label35.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label35.Location = new Point(151, 65);
+            label35.Location = new Point(149, 55);
             label35.Name = "label35";
             label35.Size = new Size(58, 22);
             label35.TabIndex = 45;
             label35.Text = "Kalori";
-            // 
-            // pictureBox15
-            // 
-            pictureBox15.Enabled = false;
-            pictureBox15.Image = Properties.Resources.fat;
-            pictureBox15.Location = new Point(535, 38);
-            pictureBox15.Name = "pictureBox15";
-            pictureBox15.Size = new Size(30, 31);
-            pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox15.TabIndex = 57;
-            pictureBox15.TabStop = false;
-            // 
-            // pictureBox16
-            // 
-            pictureBox16.Enabled = false;
-            pictureBox16.Image = Properties.Resources.protein;
-            pictureBox16.Location = new Point(428, 38);
-            pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(33, 31);
-            pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox16.TabIndex = 56;
-            pictureBox16.TabStop = false;
-            // 
-            // pictureBox17
-            // 
-            pictureBox17.Enabled = false;
-            pictureBox17.Image = Properties.Resources.carbohydrate;
-            pictureBox17.Location = new Point(298, 38);
-            pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(34, 31);
-            pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox17.TabIndex = 55;
-            pictureBox17.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            pictureBox18.Enabled = false;
-            pictureBox18.Image = Properties.Resources.fat;
-            pictureBox18.Location = new Point(535, 35);
-            pictureBox18.Name = "pictureBox18";
-            pictureBox18.Size = new Size(30, 31);
-            pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox18.TabIndex = 60;
-            pictureBox18.TabStop = false;
-            // 
-            // pictureBox19
-            // 
-            pictureBox19.Enabled = false;
-            pictureBox19.Image = Properties.Resources.protein;
-            pictureBox19.Location = new Point(428, 35);
-            pictureBox19.Name = "pictureBox19";
-            pictureBox19.Size = new Size(33, 31);
-            pictureBox19.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox19.TabIndex = 59;
-            pictureBox19.TabStop = false;
-            // 
-            // pictureBox20
-            // 
-            pictureBox20.Enabled = false;
-            pictureBox20.Image = Properties.Resources.carbohydrate;
-            pictureBox20.Location = new Point(298, 35);
-            pictureBox20.Name = "pictureBox20";
-            pictureBox20.Size = new Size(34, 31);
-            pictureBox20.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox20.TabIndex = 58;
-            pictureBox20.TabStop = false;
-            // 
-            // pictureBox21
-            // 
-            pictureBox21.Enabled = false;
-            pictureBox21.Image = Properties.Resources.fat;
-            pictureBox21.Location = new Point(535, 30);
-            pictureBox21.Name = "pictureBox21";
-            pictureBox21.Size = new Size(30, 31);
-            pictureBox21.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox21.TabIndex = 60;
-            pictureBox21.TabStop = false;
-            // 
-            // pictureBox22
-            // 
-            pictureBox22.Enabled = false;
-            pictureBox22.Image = Properties.Resources.protein;
-            pictureBox22.Location = new Point(428, 30);
-            pictureBox22.Name = "pictureBox22";
-            pictureBox22.Size = new Size(33, 31);
-            pictureBox22.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox22.TabIndex = 59;
-            pictureBox22.TabStop = false;
-            // 
-            // pictureBox23
-            // 
-            pictureBox23.Enabled = false;
-            pictureBox23.Image = Properties.Resources.carbohydrate;
-            pictureBox23.Location = new Point(298, 30);
-            pictureBox23.Name = "pictureBox23";
-            pictureBox23.Size = new Size(34, 31);
-            pictureBox23.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox23.TabIndex = 58;
-            pictureBox23.TabStop = false;
-            // 
-            // pictureBox24
-            // 
-            pictureBox24.Enabled = false;
-            pictureBox24.Image = Properties.Resources.fat;
-            pictureBox24.Location = new Point(535, 28);
-            pictureBox24.Name = "pictureBox24";
-            pictureBox24.Size = new Size(30, 31);
-            pictureBox24.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox24.TabIndex = 60;
-            pictureBox24.TabStop = false;
-            // 
-            // pictureBox25
-            // 
-            pictureBox25.Enabled = false;
-            pictureBox25.Image = Properties.Resources.protein;
-            pictureBox25.Location = new Point(428, 28);
-            pictureBox25.Name = "pictureBox25";
-            pictureBox25.Size = new Size(33, 31);
-            pictureBox25.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox25.TabIndex = 59;
-            pictureBox25.TabStop = false;
-            // 
-            // pictureBox26
-            // 
-            pictureBox26.Enabled = false;
-            pictureBox26.Image = Properties.Resources.carbohydrate;
-            pictureBox26.Location = new Point(298, 28);
-            pictureBox26.Name = "pictureBox26";
-            pictureBox26.Size = new Size(34, 31);
-            pictureBox26.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox26.TabIndex = 58;
-            pictureBox26.TabStop = false;
-            // 
-            // pictureBox27
-            // 
-            pictureBox27.Enabled = false;
-            pictureBox27.Image = Properties.Resources.calories;
-            pictureBox27.Location = new Point(166, 31);
-            pictureBox27.Name = "pictureBox27";
-            pictureBox27.Size = new Size(34, 31);
-            pictureBox27.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox27.TabIndex = 61;
-            pictureBox27.TabStop = false;
-            // 
-            // pictureBox28
-            // 
-            pictureBox28.Enabled = false;
-            pictureBox28.Image = Properties.Resources.calories;
-            pictureBox28.Location = new Point(166, 31);
-            pictureBox28.Name = "pictureBox28";
-            pictureBox28.Size = new Size(34, 31);
-            pictureBox28.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox28.TabIndex = 62;
-            pictureBox28.TabStop = false;
-            // 
-            // pictureBox29
-            // 
-            pictureBox29.Enabled = false;
-            pictureBox29.Image = Properties.Resources.calories;
-            pictureBox29.Location = new Point(164, 38);
-            pictureBox29.Name = "pictureBox29";
-            pictureBox29.Size = new Size(34, 31);
-            pictureBox29.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox29.TabIndex = 62;
-            pictureBox29.TabStop = false;
-            // 
-            // pictureBox30
-            // 
-            pictureBox30.Enabled = false;
-            pictureBox30.Image = Properties.Resources.calories;
-            pictureBox30.Location = new Point(164, 35);
-            pictureBox30.Name = "pictureBox30";
-            pictureBox30.Size = new Size(34, 31);
-            pictureBox30.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox30.TabIndex = 63;
-            pictureBox30.TabStop = false;
             // 
             // DailyReport
             // 
@@ -1291,22 +1067,6 @@
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox19).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox20).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox21).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox22).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox23).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox24).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox25).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox26).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox27).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox28).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox29).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox30).EndInit();
             ResumeLayout(false);
         }
 
@@ -1392,21 +1152,5 @@
         private PictureBox pictureBox10;
         private PictureBox pictureBox13;
         private PictureBox pictureBox14;
-        private PictureBox pictureBox18;
-        private PictureBox pictureBox19;
-        private PictureBox pictureBox20;
-        private PictureBox pictureBox15;
-        private PictureBox pictureBox16;
-        private PictureBox pictureBox17;
-        private PictureBox pictureBox21;
-        private PictureBox pictureBox22;
-        private PictureBox pictureBox23;
-        private PictureBox pictureBox24;
-        private PictureBox pictureBox25;
-        private PictureBox pictureBox26;
-        private PictureBox pictureBox30;
-        private PictureBox pictureBox29;
-        private PictureBox pictureBox28;
-        private PictureBox pictureBox27;
     }
 }

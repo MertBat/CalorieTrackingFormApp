@@ -66,7 +66,7 @@ namespace CalorieTrackingApp.UI
                                         cf.MealCategory == DATA.Enums.MealCategory.Breakfast
                                   select string.Concat(f.Name, " - ", cf.MealCategory, " - ", f.PortionCalorie * cf.ConsumedCount, "cal")).ToList();
                 listBox1.DataSource = cfoodNames;
-                groupBox3.BackColor = Color.FromArgb(200, 200, 200);
+                groupBox3.BackColor = Color.FromArgb(173, 216, 230);
                 groupBox2.BackColor = default;
                 groupBox4.BackColor = default;
                 groupBox5.BackColor = default;
@@ -83,7 +83,7 @@ namespace CalorieTrackingApp.UI
                                         cf.MealCategory == DATA.Enums.MealCategory.Lunch
                                   select string.Concat(f.Name, " - ", cf.MealCategory, " - ", f.PortionCalorie * cf.ConsumedCount, "cal")).ToList();
                 listBox1.DataSource = cfoodNames;
-                groupBox2.BackColor = Color.FromArgb(200, 200, 200);
+                groupBox2.BackColor = Color.FromArgb(173, 216, 230);
                 groupBox5.BackColor = default;
                 groupBox3.BackColor = default;
                 groupBox4.BackColor = default;
@@ -101,7 +101,7 @@ namespace CalorieTrackingApp.UI
                                   select string.Concat(f.Name, " - ", cf.MealCategory, " - ", f.PortionCalorie * cf.ConsumedCount, "cal")).ToList();
 
                 listBox1.DataSource = cfoodNames;
-                groupBox4.BackColor = Color.FromArgb(200, 200, 200);
+                groupBox4.BackColor = Color.FromArgb(173, 216, 230);
                 groupBox2.BackColor = default;
                 groupBox3.BackColor = default;
                 groupBox5.BackColor = default;
@@ -118,7 +118,7 @@ namespace CalorieTrackingApp.UI
                                         cf.ConsumedDate.Month == selectedDate.Month
                                   select string.Concat(f.Name, " - ", cf.MealCategory, " - ", f.PortionCalorie * cf.ConsumedCount, "cal")).ToList();
                 listBox1.DataSource = cfoodNames;
-                groupBox5.BackColor = Color.FromArgb(200, 200, 200);
+                groupBox5.BackColor = Color.FromArgb(173, 216, 230);
                 groupBox2.BackColor = default;
                 groupBox3.BackColor = default;
                 groupBox4.BackColor = default;
