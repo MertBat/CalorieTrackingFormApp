@@ -33,6 +33,8 @@ namespace CalorieTrackingApp.UI
         int second;
         private void SendCodeMail_Load(object sender, EventArgs e)
         {
+            this.BackColor= Color.FromArgb(254, 200, 77);
+            pictureBox1.BackColor = Color.FromArgb(254, 200, 77);
             random = new Random();
             second = 600;
             btnConfirmation.Enabled = false;

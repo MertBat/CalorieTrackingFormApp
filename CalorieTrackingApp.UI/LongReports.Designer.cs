@@ -55,34 +55,34 @@
             reports_navBtn = new Button();
             mainMenu_navBtn = new Button();
             gbfoodGraph = new GroupBox();
-            label17 = new Label();
-            label16 = new Label();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label4 = new Label();
+            lblX = new Label();
+            lblY = new Label();
+            lbl4000 = new Label();
+            lbl3000 = new Label();
+            lbl2000 = new Label();
+            lbl1000 = new Label();
+            lbl1 = new Label();
+            lbl2 = new Label();
             gbWaterGraph = new GroupBox();
             label20 = new Label();
-            label18 = new Label();
-            label10 = new Label();
-            label19 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            label13 = new Label();
-            label14 = new Label();
-            label15 = new Label();
+            lblX2 = new Label();
+            lbl1400 = new Label();
+            lblY2 = new Label();
+            lbl13000 = new Label();
+            lbl12000 = new Label();
+            lbl11000 = new Label();
+            lbl3 = new Label();
+            lbl4 = new Label();
             gbWeight = new GroupBox();
             label21 = new Label();
-            label22 = new Label();
-            label23 = new Label();
-            label24 = new Label();
-            label25 = new Label();
-            label26 = new Label();
-            label27 = new Label();
-            label28 = new Label();
-            label29 = new Label();
+            lblX3 = new Label();
+            lbl200 = new Label();
+            lblY3 = new Label();
+            lbl150 = new Label();
+            lbl100 = new Label();
+            lbl50 = new Label();
+            lbl5 = new Label();
+            lbl6 = new Label();
             sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
             topBar_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
@@ -409,14 +409,14 @@
             // 
             // gbfoodGraph
             // 
-            gbfoodGraph.Controls.Add(label17);
-            gbfoodGraph.Controls.Add(label16);
-            gbfoodGraph.Controls.Add(label9);
-            gbfoodGraph.Controls.Add(label8);
-            gbfoodGraph.Controls.Add(label7);
-            gbfoodGraph.Controls.Add(label5);
-            gbfoodGraph.Controls.Add(label6);
-            gbfoodGraph.Controls.Add(label4);
+            gbfoodGraph.Controls.Add(lblX);
+            gbfoodGraph.Controls.Add(lblY);
+            gbfoodGraph.Controls.Add(lbl4000);
+            gbfoodGraph.Controls.Add(lbl3000);
+            gbfoodGraph.Controls.Add(lbl2000);
+            gbfoodGraph.Controls.Add(lbl1000);
+            gbfoodGraph.Controls.Add(lbl1);
+            gbfoodGraph.Controls.Add(lbl2);
             gbfoodGraph.Location = new Point(144, 145);
             gbfoodGraph.Name = "gbfoodGraph";
             gbfoodGraph.RightToLeft = RightToLeft.Yes;
@@ -425,95 +425,103 @@
             gbfoodGraph.TabStop = false;
             gbfoodGraph.Text = "Yemek İstatistikleri";
             // 
-            // label17
+            // lblX
             // 
-            label17.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label17.Location = new Point(1061, 251);
-            label17.Name = "label17";
-            label17.Size = new Size(37, 15);
-            label17.TabIndex = 8;
-            label17.Text = "Gün";
+            lblX.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblX.Location = new Point(1061, 251);
+            lblX.Name = "lblX";
+            lblX.Size = new Size(37, 15);
+            lblX.TabIndex = 8;
+            lblX.Tag = "non";
+            lblX.Text = "Gün";
             // 
-            // label16
+            // lblY
             // 
-            label16.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label16.Location = new Point(5, 15);
-            label16.Name = "label16";
-            label16.Size = new Size(28, 15);
-            label16.TabIndex = 7;
-            label16.Text = "cal";
+            lblY.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblY.Location = new Point(5, 15);
+            lblY.Name = "lblY";
+            lblY.Size = new Size(28, 15);
+            lblY.TabIndex = 7;
+            lblY.Tag = "non";
+            lblY.Text = "cal";
             // 
-            // label9
+            // lbl4000
             // 
-            label9.AutoSize = true;
-            label9.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label9.Location = new Point(0, 42);
-            label9.Name = "label9";
-            label9.Size = new Size(31, 15);
-            label9.TabIndex = 6;
-            label9.Text = "4000";
+            lbl4000.AutoSize = true;
+            lbl4000.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl4000.Location = new Point(0, 42);
+            lbl4000.Name = "lbl4000";
+            lbl4000.Size = new Size(31, 15);
+            lbl4000.TabIndex = 6;
+            lbl4000.Tag = "non";
+            lbl4000.Text = "4000";
             // 
-            // label8
+            // lbl3000
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.Location = new Point(0, 87);
-            label8.Name = "label8";
-            label8.Size = new Size(31, 15);
-            label8.TabIndex = 5;
-            label8.Text = "3000";
+            lbl3000.AutoSize = true;
+            lbl3000.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl3000.Location = new Point(0, 87);
+            lbl3000.Name = "lbl3000";
+            lbl3000.Size = new Size(31, 15);
+            lbl3000.TabIndex = 5;
+            lbl3000.Tag = "non";
+            lbl3000.Text = "3000";
             // 
-            // label7
+            // lbl2000
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.Location = new Point(0, 135);
-            label7.Name = "label7";
-            label7.Size = new Size(31, 15);
-            label7.TabIndex = 4;
-            label7.Text = "2000";
+            lbl2000.AutoSize = true;
+            lbl2000.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl2000.Location = new Point(0, 135);
+            lbl2000.Name = "lbl2000";
+            lbl2000.Size = new Size(31, 15);
+            lbl2000.TabIndex = 4;
+            lbl2000.Tag = "non";
+            lbl2000.Text = "2000";
             // 
-            // label5
+            // lbl1000
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(0, 185);
-            label5.Name = "label5";
-            label5.Size = new Size(31, 15);
-            label5.TabIndex = 3;
-            label5.Text = "1000";
+            lbl1000.AutoSize = true;
+            lbl1000.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl1000.Location = new Point(0, 185);
+            lbl1000.Name = "lbl1000";
+            lbl1000.Size = new Size(31, 15);
+            lbl1000.TabIndex = 3;
+            lbl1000.Tag = "non";
+            lbl1000.Text = "1000";
             // 
-            // label6
+            // lbl1
             // 
-            label6.Location = new Point(0, 27);
-            label6.Name = "label6";
-            label6.Size = new Size(16, 219);
-            label6.TabIndex = 2;
-            label6.Text = "||||||||||||||";
-            label6.TextAlign = ContentAlignment.TopCenter;
+            lbl1.Location = new Point(0, 27);
+            lbl1.Name = "lbl1";
+            lbl1.Size = new Size(16, 219);
+            lbl1.TabIndex = 2;
+            lbl1.Tag = "non";
+            lbl1.Text = "||||||||||||||";
+            lbl1.TextAlign = ContentAlignment.TopCenter;
             // 
-            // label4
+            // lbl2
             // 
-            label4.BackColor = Color.Transparent;
-            label4.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(0, 219);
-            label4.Name = "label4";
-            label4.Size = new Size(1087, 47);
-            label4.TabIndex = 0;
-            label4.Text = "________________________________________________________________________________________________________________________________________________";
-            label4.TextAlign = ContentAlignment.TopCenter;
+            lbl2.BackColor = Color.Transparent;
+            lbl2.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl2.Location = new Point(0, 219);
+            lbl2.Name = "lbl2";
+            lbl2.Size = new Size(1087, 47);
+            lbl2.TabIndex = 0;
+            lbl2.Tag = "non";
+            lbl2.Text = "________________________________________________________________________________________________________________________________________________";
+            lbl2.TextAlign = ContentAlignment.TopCenter;
             // 
             // gbWaterGraph
             // 
             gbWaterGraph.Controls.Add(label20);
-            gbWaterGraph.Controls.Add(label18);
-            gbWaterGraph.Controls.Add(label10);
-            gbWaterGraph.Controls.Add(label19);
-            gbWaterGraph.Controls.Add(label11);
-            gbWaterGraph.Controls.Add(label12);
-            gbWaterGraph.Controls.Add(label13);
-            gbWaterGraph.Controls.Add(label14);
-            gbWaterGraph.Controls.Add(label15);
+            gbWaterGraph.Controls.Add(lblX2);
+            gbWaterGraph.Controls.Add(lbl1400);
+            gbWaterGraph.Controls.Add(lblY2);
+            gbWaterGraph.Controls.Add(lbl13000);
+            gbWaterGraph.Controls.Add(lbl12000);
+            gbWaterGraph.Controls.Add(lbl11000);
+            gbWaterGraph.Controls.Add(lbl3);
+            gbWaterGraph.Controls.Add(lbl4);
             gbWaterGraph.Location = new Point(144, 441);
             gbWaterGraph.Name = "gbWaterGraph";
             gbWaterGraph.Size = new Size(544, 309);
@@ -527,95 +535,104 @@
             label20.Name = "label20";
             label20.Size = new Size(17, 25);
             label20.TabIndex = 13;
+            label20.Tag = "non";
             // 
-            // label18
+            // lblX2
             // 
-            label18.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label18.Location = new Point(507, 281);
-            label18.Name = "label18";
-            label18.Size = new Size(37, 20);
-            label18.TabIndex = 10;
-            label18.Text = "Gün";
+            lblX2.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblX2.Location = new Point(507, 281);
+            lblX2.Name = "lblX2";
+            lblX2.Size = new Size(37, 20);
+            lblX2.TabIndex = 10;
+            lblX2.Tag = "non";
+            lblX2.Text = "Gün";
             // 
-            // label10
+            // lbl1400
             // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(0, 79);
-            label10.Name = "label10";
-            label10.Size = new Size(31, 15);
-            label10.TabIndex = 11;
-            label10.Text = "4000";
+            lbl1400.AutoSize = true;
+            lbl1400.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl1400.Location = new Point(0, 79);
+            lbl1400.Name = "lbl1400";
+            lbl1400.Size = new Size(31, 15);
+            lbl1400.TabIndex = 11;
+            lbl1400.Tag = "non";
+            lbl1400.Text = "4000";
             // 
-            // label19
+            // lblY2
             // 
-            label19.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label19.Location = new Point(16, 46);
-            label19.Name = "label19";
-            label19.Size = new Size(25, 15);
-            label19.TabIndex = 9;
-            label19.Text = "ml";
+            lblY2.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblY2.Location = new Point(16, 46);
+            lblY2.Name = "lblY2";
+            lblY2.Size = new Size(25, 15);
+            lblY2.TabIndex = 9;
+            lblY2.Tag = "non";
+            lblY2.Text = "ml";
             // 
-            // label11
+            // lbl13000
             // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label11.Location = new Point(0, 127);
-            label11.Name = "label11";
-            label11.Size = new Size(31, 15);
-            label11.TabIndex = 10;
-            label11.Text = "3000";
+            lbl13000.AutoSize = true;
+            lbl13000.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl13000.Location = new Point(0, 127);
+            lbl13000.Name = "lbl13000";
+            lbl13000.Size = new Size(31, 15);
+            lbl13000.TabIndex = 10;
+            lbl13000.Tag = "non";
+            lbl13000.Text = "3000";
             // 
-            // label12
+            // lbl12000
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.Location = new Point(0, 174);
-            label12.Name = "label12";
-            label12.Size = new Size(31, 15);
-            label12.TabIndex = 9;
-            label12.Text = "2000";
+            lbl12000.AutoSize = true;
+            lbl12000.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl12000.Location = new Point(0, 174);
+            lbl12000.Name = "lbl12000";
+            lbl12000.Size = new Size(31, 15);
+            lbl12000.TabIndex = 9;
+            lbl12000.Tag = "non";
+            lbl12000.Text = "2000";
             // 
-            // label13
+            // lbl11000
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label13.Location = new Point(0, 223);
-            label13.Name = "label13";
-            label13.Size = new Size(31, 15);
-            label13.TabIndex = 8;
-            label13.Text = "1000";
+            lbl11000.AutoSize = true;
+            lbl11000.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl11000.Location = new Point(0, 223);
+            lbl11000.Name = "lbl11000";
+            lbl11000.Size = new Size(31, 15);
+            lbl11000.TabIndex = 8;
+            lbl11000.Tag = "non";
+            lbl11000.Text = "1000";
             // 
-            // label14
+            // lbl3
             // 
-            label14.Location = new Point(6, 61);
-            label14.Name = "label14";
-            label14.Size = new Size(18, 240);
-            label14.TabIndex = 7;
-            label14.Text = "||||||||||||||";
+            lbl3.Location = new Point(6, 61);
+            lbl3.Name = "lbl3";
+            lbl3.Size = new Size(18, 240);
+            lbl3.TabIndex = 7;
+            lbl3.Tag = "non";
+            lbl3.Text = "||||||||||||||";
             // 
-            // label15
+            // lbl4
             // 
-            label15.BackColor = Color.Transparent;
-            label15.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label15.Location = new Point(14, 254);
-            label15.Name = "label15";
-            label15.Size = new Size(524, 47);
-            label15.TabIndex = 12;
-            label15.Text = "_____________________________________________________________________________";
-            label15.TextAlign = ContentAlignment.TopCenter;
+            lbl4.BackColor = Color.Transparent;
+            lbl4.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl4.Location = new Point(14, 254);
+            lbl4.Name = "lbl4";
+            lbl4.Size = new Size(524, 47);
+            lbl4.TabIndex = 12;
+            lbl4.Tag = "non";
+            lbl4.Text = "_____________________________________________________________________________";
+            lbl4.TextAlign = ContentAlignment.TopCenter;
             // 
             // gbWeight
             // 
             gbWeight.Controls.Add(label21);
-            gbWeight.Controls.Add(label22);
-            gbWeight.Controls.Add(label23);
-            gbWeight.Controls.Add(label24);
-            gbWeight.Controls.Add(label25);
-            gbWeight.Controls.Add(label26);
-            gbWeight.Controls.Add(label27);
-            gbWeight.Controls.Add(label28);
-            gbWeight.Controls.Add(label29);
+            gbWeight.Controls.Add(lblX3);
+            gbWeight.Controls.Add(lbl200);
+            gbWeight.Controls.Add(lblY3);
+            gbWeight.Controls.Add(lbl150);
+            gbWeight.Controls.Add(lbl100);
+            gbWeight.Controls.Add(lbl50);
+            gbWeight.Controls.Add(lbl5);
+            gbWeight.Controls.Add(lbl6);
             gbWeight.Location = new Point(694, 441);
             gbWeight.Name = "gbWeight";
             gbWeight.Size = new Size(571, 309);
@@ -629,83 +646,92 @@
             label21.Name = "label21";
             label21.Size = new Size(17, 25);
             label21.TabIndex = 22;
+            label21.Tag = "non";
             // 
-            // label22
+            // lblX3
             // 
-            label22.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label22.Location = new Point(517, 281);
-            label22.Name = "label22";
-            label22.Size = new Size(37, 20);
-            label22.TabIndex = 18;
-            label22.Text = "Gün";
+            lblX3.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblX3.Location = new Point(517, 281);
+            lblX3.Name = "lblX3";
+            lblX3.Size = new Size(37, 20);
+            lblX3.TabIndex = 18;
+            lblX3.Tag = "non";
+            lblX3.Text = "Gün";
             // 
-            // label23
+            // lbl200
             // 
-            label23.AutoSize = true;
-            label23.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label23.Location = new Point(18, 77);
-            label23.Name = "label23";
-            label23.Size = new Size(25, 15);
-            label23.TabIndex = 20;
-            label23.Text = "200";
+            lbl200.AutoSize = true;
+            lbl200.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl200.Location = new Point(18, 77);
+            lbl200.Name = "lbl200";
+            lbl200.Size = new Size(25, 15);
+            lbl200.TabIndex = 20;
+            lbl200.Tag = "non";
+            lbl200.Text = "200";
             // 
-            // label24
+            // lblY3
             // 
-            label24.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label24.Location = new Point(26, 46);
-            label24.Name = "label24";
-            label24.Size = new Size(25, 15);
-            label24.TabIndex = 16;
-            label24.Text = "kg";
+            lblY3.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lblY3.Location = new Point(26, 46);
+            lblY3.Name = "lblY3";
+            lblY3.Size = new Size(25, 15);
+            lblY3.TabIndex = 16;
+            lblY3.Tag = "non";
+            lblY3.Text = "kg";
             // 
-            // label25
+            // lbl150
             // 
-            label25.AutoSize = true;
-            label25.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label25.Location = new Point(18, 125);
-            label25.Name = "label25";
-            label25.Size = new Size(25, 15);
-            label25.TabIndex = 19;
-            label25.Text = "150";
+            lbl150.AutoSize = true;
+            lbl150.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl150.Location = new Point(18, 125);
+            lbl150.Name = "lbl150";
+            lbl150.Size = new Size(25, 15);
+            lbl150.TabIndex = 19;
+            lbl150.Tag = "non";
+            lbl150.Text = "150";
             // 
-            // label26
+            // lbl100
             // 
-            label26.AutoSize = true;
-            label26.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label26.Location = new Point(18, 172);
-            label26.Name = "label26";
-            label26.Size = new Size(25, 15);
-            label26.TabIndex = 17;
-            label26.Text = "100";
+            lbl100.AutoSize = true;
+            lbl100.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl100.Location = new Point(18, 172);
+            lbl100.Name = "lbl100";
+            lbl100.Size = new Size(25, 15);
+            lbl100.TabIndex = 17;
+            lbl100.Tag = "non";
+            lbl100.Text = "100";
             // 
-            // label27
+            // lbl50
             // 
-            label27.AutoSize = true;
-            label27.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
-            label27.Location = new Point(20, 221);
-            label27.Name = "label27";
-            label27.Size = new Size(19, 15);
-            label27.TabIndex = 15;
-            label27.Text = "50";
+            lbl50.AutoSize = true;
+            lbl50.Font = new Font("Century Gothic", 7.8F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl50.Location = new Point(20, 221);
+            lbl50.Name = "lbl50";
+            lbl50.Size = new Size(19, 15);
+            lbl50.TabIndex = 15;
+            lbl50.Tag = "non";
+            lbl50.Text = "50";
             // 
-            // label28
+            // lbl5
             // 
-            label28.Location = new Point(16, 61);
-            label28.Name = "label28";
-            label28.Size = new Size(18, 240);
-            label28.TabIndex = 14;
-            label28.Text = "||||||||||||||";
+            lbl5.Location = new Point(16, 61);
+            lbl5.Name = "lbl5";
+            lbl5.Size = new Size(18, 240);
+            lbl5.TabIndex = 14;
+            lbl5.Tag = "non";
+            lbl5.Text = "||||||||||||||";
             // 
-            // label29
+            // lbl6
             // 
-            label29.BackColor = Color.Transparent;
-            label29.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label29.Location = new Point(24, 254);
-            label29.Name = "label29";
-            label29.Size = new Size(524, 47);
-            label29.TabIndex = 21;
-            label29.Text = "_____________________________________________________________________________";
-            label29.TextAlign = ContentAlignment.TopCenter;
+            lbl6.BackColor = Color.Transparent;
+            lbl6.Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lbl6.Location = new Point(24, 254);
+            lbl6.Name = "lbl6";
+            lbl6.Size = new Size(524, 47);
+            lbl6.TabIndex = 21;
+            lbl6.Tag = "non";
+            lbl6.Text = "_____________________________________________________________________________";
+            lbl6.TextAlign = ContentAlignment.TopCenter;
             // 
             // sqlCommand1
             // 
@@ -767,33 +793,33 @@
         private GroupBox gbWaterGraph;
         private GroupBox gbWeight;
         private Microsoft.Data.SqlClient.SqlCommand sqlCommand1;
-        private Label label4;
-        private Label label6;
-        private Label label5;
-        private Label label9;
-        private Label label8;
-        private Label label7;
+        private Label lbl2;
+        private Label lbl1;
+        private Label lbl1000;
+        private Label lbl4000;
+        private Label lbl3000;
+        private Label lbl2000;
         private Button button1;
-        private Label label10;
-        private Label label11;
-        private Label label12;
-        private Label label13;
-        private Label label14;
-        private Label label15;
-        private Label label16;
-        private Label label17;
-        private Label label18;
-        private Label label19;
+        private Label lbl1400;
+        private Label lbl13000;
+        private Label lbl12000;
+        private Label lbl11000;
+        private Label lbl3;
+        private Label lbl4;
+        private Label lblY;
+        private Label lblX;
+        private Label lblX2;
+        private Label lblY2;
         private Label label20;
         private Label label21;
-        private Label label22;
-        private Label label23;
-        private Label label24;
-        private Label label25;
-        private Label label26;
-        private Label label27;
-        private Label label28;
-        private Label label29;
+        private Label lblX3;
+        private Label lbl200;
+        private Label lblY3;
+        private Label lbl150;
+        private Label lbl100;
+        private Label lbl50;
+        private Label lbl5;
+        private Label lbl6;
         private DateTimePicker dtpRapor;
         private Button btnShow;
         private PictureBox pbProfilePictureTop;

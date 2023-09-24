@@ -37,7 +37,9 @@ namespace CalorieTrackingApp.UI
             foodrep = new FoodRepository();
             consumedWaterRep = new ConsumedWaterRepository();
             weightHistoryRep = new WeightHistoryRepository();
-
+            FoodGraph(30);
+            WaterGraph(30);
+            Weight(30);
         }
         private void btnShow_Click_1(object sender, EventArgs e)
         {
@@ -75,6 +77,7 @@ namespace CalorieTrackingApp.UI
 
         public void FoodGraph(int day)
         {
+            ClearLabels(gbfoodGraph.Controls);
             List<int> calories = ConsumeFoodList(day);
             if (calories == null) { return; }
             int width = 40;
@@ -84,25 +87,25 @@ namespace CalorieTrackingApp.UI
 
                 int targetNumb = i * 200 / 4000;
 
-                Label lbl = new Label();
-                lbl.Size = new Size(10, targetNumb);
-                lbl.BackColor = Color.LightGreen;
-                lbl.Location = new Point(width, 90 + (150 - targetNumb));
-                lbl.BringToFront();
-                gbfoodGraph.Controls.Add(lbl);
+                Label label = new Label();
+                label.Size = new Size(10, targetNumb);
+                label.BackColor = Color.LightGreen;
+                label.Location = new Point(width, 90 + (150 - targetNumb));
+                label.BringToFront();
+                gbfoodGraph.Controls.Add(label);
 
-                Label lbl2 = new Label();
-                lbl2.Text = k.ToString();
-                lbl2.Size = new Size(30, 15);
+                Label label2 = new Label();
+                label2.Text = k.ToString();
+                label2.Size = new Size(30, 15);
                 Font newFont = new Font("Arial", 10, FontStyle.Regular);
-                lbl2.Font = newFont;
-                lbl2.Location = new Point(width - 15, 250);
-                lbl2.BringToFront();
-                gbfoodGraph.Controls.Add(lbl2);
+                label2.Font = newFont;
+                label2.Location = new Point(width - 15, 250);
+                label2.BringToFront();
+                gbfoodGraph.Controls.Add(label2);
                 width += 35;
                 k++;
             }
-            label4.SendToBack();
+            lbl2.SendToBack();
         }
 
         public List<int> ConsumeWaterList(int day)
@@ -129,6 +132,7 @@ namespace CalorieTrackingApp.UI
 
         public void WaterGraph(int day)
         {
+            ClearLabels(gbWaterGraph.Controls);
             List<int> miliLiters = ConsumeWaterList(day);
             if (miliLiters == null) { return; }
             int width = 40;
@@ -138,25 +142,25 @@ namespace CalorieTrackingApp.UI
 
                 int targetNumb = i * 200 / 4000;
 
-                Label lbl = new Label();
-                lbl.Size = new Size(4, targetNumb);
-                lbl.BackColor = Color.Blue;
-                lbl.Location = new Point(width, 125 + (150 - targetNumb));
-                lbl.BringToFront();
-                gbWaterGraph.Controls.Add(lbl);
+                Label label = new Label();
+                label.Size = new Size(4, targetNumb);
+                label.BackColor = Color.Blue;
+                label.Location = new Point(width, 125 + (150 - targetNumb));
+                label.BringToFront();
+                gbWaterGraph.Controls.Add(label);
 
-                Label lbl2 = new Label();
-                lbl2.Text = k.ToString();
-                lbl2.Size = new Size(17, 15);
+                Label label2 = new Label();
+                label2.Text = k.ToString();
+                label2.Size = new Size(17, 15);
                 Font newFont = new Font("Arial", 6, FontStyle.Regular);
-                lbl2.Font = newFont;
-                lbl2.Location = new Point(width - 3, 277);
-                lbl2.BringToFront();
-                gbWaterGraph.Controls.Add(lbl2);
+                label2.Font = newFont;
+                label2.Location = new Point(width - 3, 277);
+                label2.BringToFront();
+                gbWaterGraph.Controls.Add(label2);
                 width += 15;
                 k++;
             }
-            label15.SendToBack();
+            lbl4.SendToBack();
         }
 
         public List<int> WeightValues(int day)
@@ -179,6 +183,7 @@ namespace CalorieTrackingApp.UI
 
         public void Weight(int day)
         {
+            ClearLabels(gbWeight.Controls);
             List<int> kgs = WeightValues(day);
             if (kgs == null) { return; }
             int width = 42;
@@ -188,25 +193,41 @@ namespace CalorieTrackingApp.UI
 
                 int targetNumb = i * 200 / 200;
 
-                Label lbl = new Label();
-                lbl.Size = new Size(4, targetNumb);
-                lbl.BackColor = Color.Gray;
-                lbl.Location = new Point(width, 125 + (150 - targetNumb));
-                lbl.BringToFront();
-                gbWeight.Controls.Add(lbl);
+                Label label = new Label();
+                label.Size = new Size(4, targetNumb);
+                label.BackColor = Color.Gray;
+                label.Location = new Point(width, 125 + (150 - targetNumb));
+                label.BringToFront();
+                gbWeight.Controls.Add(label);
 
-                Label lbl2 = new Label();
-                lbl2.Text = k.ToString();
-                lbl2.Size = new Size(17, 15);
+                Label label2 = new Label();
+                label2.Text = k.ToString();
+                label2.Size = new Size(17, 15);
                 Font newFont = new Font("Arial", 6, FontStyle.Regular);
-                lbl2.Font = newFont;
-                lbl2.Location = new Point(width - 3, 277);
-                lbl2.BringToFront();
-                gbWeight.Controls.Add(lbl2);
+                label2.Font = newFont;
+                label2.Location = new Point(width - 3, 277);
+                label2.BringToFront();
+                gbWeight.Controls.Add(label2);
                 width += 15;
                 k++;
             }
-            label29.SendToBack();
+            lbl6.SendToBack();
+        }
+
+        private void ClearLabels(Control.ControlCollection controls)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                foreach (Control control in controls)
+                {
+
+                    if (control is Label && control.Tag != "non")
+                    {
+                        controls.Remove(control);
+                    }
+                }
+            }
+            
         }
 
         private void exit_navbar_Click(object sender, EventArgs e)

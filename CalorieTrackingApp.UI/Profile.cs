@@ -294,7 +294,7 @@ namespace CalorieTrackingApp.UI
         private void linkLabel4_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             PPasswordChange pcForm = new PPasswordChange(_account);
-            pcForm.Size = new Size(283, 243);
+            pcForm.Size = new Size(247, 626);
             pcForm.ShowDialog();
 
         }

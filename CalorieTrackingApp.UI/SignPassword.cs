@@ -30,6 +30,7 @@ namespace CalorieTrackingApp.UI
         AccountRepository accountRepository;
         private void SignPassword_Load(object sender, EventArgs e)
         {
+            this.BackColor= Color.FromArgb(254, 200, 77);
             accountRepository = new AccountRepository();
 
         }

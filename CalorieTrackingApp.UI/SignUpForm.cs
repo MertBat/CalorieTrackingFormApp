@@ -117,7 +117,7 @@ namespace CalorieTrackingApp.UI
 
 
 
-            if (txtSignUpMail.Text.EndsWith("@gmail.com") || txtSignUpMail.Text.EndsWith("@hotmail.com"))
+            if (txtSignUpMail.Text.EndsWith("@gmail.com") || txtSignUpMail.Text.EndsWith("@hotmail.com") || txtSignUpMail.Text.EndsWith("@hotmail.com.tr") || txtSignUpMail.Text.EndsWith("@outlook.com") || txtSignUpMail.Text.EndsWith("@yandex.com"))
             {
 
                 if (accDb.GetAll().FirstOrDefault(x => x.EMail.Contains(txtSignUpMail.Text)) != null)

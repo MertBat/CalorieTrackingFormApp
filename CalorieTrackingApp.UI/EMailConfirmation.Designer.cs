@@ -45,7 +45,7 @@
             // btnMail
             // 
             btnMail.Location = new Point(348, 126);
-            btnMail.Margin = new Padding(6, 6, 6, 6);
+            btnMail.Margin = new Padding(6);
             btnMail.Name = "btnMail";
             btnMail.Size = new Size(180, 54);
             btnMail.TabIndex = 27;
@@ -56,7 +56,7 @@
             // txtMail
             // 
             txtMail.Location = new Point(20, 79);
-            txtMail.Margin = new Padding(6, 6, 6, 6);
+            txtMail.Margin = new Padding(6);
             txtMail.Name = "txtMail";
             txtMail.Size = new Size(504, 33);
             txtMail.TabIndex = 26;
@@ -78,9 +78,9 @@
             grpUserInformation.Controls.Add(label9);
             grpUserInformation.Controls.Add(label5);
             grpUserInformation.Location = new Point(20, 205);
-            grpUserInformation.Margin = new Padding(6, 6, 6, 6);
+            grpUserInformation.Margin = new Padding(6);
             grpUserInformation.Name = "grpUserInformation";
-            grpUserInformation.Padding = new Padding(6, 6, 6, 6);
+            grpUserInformation.Padding = new Padding(6);
             grpUserInformation.Size = new Size(508, 227);
             grpUserInformation.TabIndex = 28;
             grpUserInformation.TabStop = false;
@@ -131,7 +131,7 @@
             // txtAnswer
             // 
             txtAnswer.Location = new Point(186, 454);
-            txtAnswer.Margin = new Padding(6, 6, 6, 6);
+            txtAnswer.Margin = new Padding(6);
             txtAnswer.Name = "txtAnswer";
             txtAnswer.Size = new Size(338, 33);
             txtAnswer.TabIndex = 29;
@@ -149,7 +149,7 @@
             // btnQuestion
             // 
             btnQuestion.Location = new Point(348, 500);
-            btnQuestion.Margin = new Padding(6, 6, 6, 6);
+            btnQuestion.Margin = new Padding(6);
             btnQuestion.Name = "btnQuestion";
             btnQuestion.Size = new Size(180, 54);
             btnQuestion.TabIndex = 27;
@@ -161,6 +161,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.Control;
             ClientSize = new Size(559, 204);
             Controls.Add(lblSecretQues);
             Controls.Add(txtAnswer);
@@ -170,7 +171,7 @@
             Controls.Add(txtMail);
             Controls.Add(label7);
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(6, 6, 6, 6);
+            Margin = new Padding(6);
             Name = "EMailConfirmation";
             Text = "EMailConfirmation";
             Load += EMailConfirmation_Load;

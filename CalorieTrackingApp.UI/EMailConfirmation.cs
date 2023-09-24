@@ -27,6 +27,7 @@ namespace CalorieTrackingApp.UI
         Account account;
         private void EMailConfirmation_Load(object sender, EventArgs e)
         {
+            this.BackColor = Color.FromArgb(254, 200, 77);
             accountRepository = new AccountRepository();
             securityQuestionRepository = new SecurityQuestionRepository();
             btnMail.Enabled = true;
@@ -48,7 +49,7 @@ namespace CalorieTrackingApp.UI
                     lblSecretQuestion.Text = security.QestionText;
                     btnMail.Enabled = false;
 
-                    (MdiParent as MdiPassword).Size = new Size(355, 405);
+                    (MdiParent as MdiPassword).Size = new Size(570, 620);
 
                 }
             }
