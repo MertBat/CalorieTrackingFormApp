@@ -40,7 +40,6 @@
             label1 = new Label();
             label4 = new Label();
             groupBox1 = new GroupBox();
-            pictureBox1 = new PictureBox();
             cmbExercise = new ComboBox();
             label8 = new Label();
             btnSave = new Button();
@@ -48,13 +47,14 @@
             nudWeightEntry = new NumericUpDown();
             nudHeightEntry = new NumericUpDown();
             pbUserPhoto = new PictureBox();
+            pictureBox1 = new PictureBox();
             groupBox2.SuspendLayout();
             groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudTargetWeight).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudWeightEntry).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudHeightEntry).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbUserPhoto).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -199,18 +199,6 @@
             groupBox1.TabIndex = 39;
             groupBox1.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = Properties.Resources.addPhoto;
-            pictureBox1.Location = new Point(312, 114);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(48, 47);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 40;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
             // cmbExercise
             // 
             cmbExercise.DropDownStyle = ComboBoxStyle.DropDownList;
@@ -287,6 +275,18 @@
             pbUserPhoto.TabIndex = 24;
             pbUserPhoto.TabStop = false;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = Properties.Resources.addPhoto;
+            pictureBox1.Location = new Point(309, 120);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(48, 47);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 40;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
             // SignUpFillForm
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
@@ -307,11 +307,11 @@
             groupBox2.PerformLayout();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudTargetWeight).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudWeightEntry).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudHeightEntry).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbUserPhoto).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
