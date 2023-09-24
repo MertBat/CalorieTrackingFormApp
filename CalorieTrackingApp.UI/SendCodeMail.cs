@@ -33,10 +33,10 @@ namespace CalorieTrackingApp.UI
         int second;
         private void SendCodeMail_Load(object sender, EventArgs e)
         {
-            this.BackColor= Color.FromArgb(254, 200, 77);
+            this.BackColor = Color.FromArgb(254, 200, 77);
             pictureBox1.BackColor = Color.FromArgb(254, 200, 77);
             random = new Random();
-            second = 600;
+            second = 60;
             btnConfirmation.Enabled = false;
 
             for (int i = 0; i < 5; i++)
@@ -79,7 +79,7 @@ namespace CalorieTrackingApp.UI
                 MessageBox.Show("Zamanınız Doldu! Tekrar Gönderiniz");
                 btnSend.Enabled = true;
                 btnConfirmation.Enabled = false;
-                second = 600;
+                second = 60;
                 lblSecond.BackColor = SystemColors.Control;
                 lblSecond.Text = (second).ToString();
             }
@@ -127,7 +127,7 @@ namespace CalorieTrackingApp.UI
                             <p style='color: #666;'>Merhaba,</p>
                             <p style='color: #666;'>Hesabınızı doğrulamak için aşağıdaki doğrulama kodunu kullanın:</p>
                             <p style='background-color: #f4f4f4; padding: 10px; font-size: 20px; border: 1px solid #ddd; display: inline-block;'>" + code + @"</p>
-                            <p style='color: #666;'>Bu kod sadece 10 dakika boyunca geçerlidir.</p>
+                            <p style='color: #666;'>Bu kod sadece 1 dakika boyunca geçerlidir.</p>
                             <p style='color: #666;'>İyi günler dileriz.</p>
                         </body>
                         </html>";

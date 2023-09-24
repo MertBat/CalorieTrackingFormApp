@@ -38,7 +38,7 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             IsMdiContainer = true;
             Name = "SubMenuMDI";
-            Text = "Calorie Tracking";
+            Text = "CalorieWiz";
             Load += SubMenuMDI_Load;
             ResumeLayout(false);
         }

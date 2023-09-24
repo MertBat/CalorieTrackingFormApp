@@ -331,7 +331,7 @@
             // 
             lblGunlukSuHedefKalan.AutoSize = true;
             lblGunlukSuHedefKalan.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGunlukSuHedefKalan.Location = new Point(317, 37);
+            lblGunlukSuHedefKalan.Location = new Point(324, 42);
             lblGunlukSuHedefKalan.Name = "lblGunlukSuHedefKalan";
             lblGunlukSuHedefKalan.Size = new Size(66, 28);
             lblGunlukSuHedefKalan.TabIndex = 45;
@@ -387,12 +387,13 @@
             // 
             dtpDate.Location = new Point(149, 214);
             dtpDate.Name = "dtpDate";
-            dtpDate.Size = new Size(326, 33);
+            dtpDate.Size = new Size(356, 33);
             dtpDate.TabIndex = 6;
             dtpDate.ValueChanged += dtpDate_ValueChanged;
             // 
             // AddWaterIntake
             // 
+            AcceptButton = btnKaydet;
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(596, 829);
@@ -400,7 +401,7 @@
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(5);
             Name = "AddWaterIntake";
-            Text = "AddWaterIntake";
+            Text = "Su Ekleme Ekranı";
             Load += AddWaterIntake_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

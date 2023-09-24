@@ -253,6 +253,7 @@
             // 
             // SignUpForm
             // 
+            AcceptButton = btn_SignUp;
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bacgroundv1;
@@ -262,7 +263,7 @@
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(5, 4, 5, 4);
             Name = "SignUpForm";
-            Text = "SignUpForm";
+            Text = "Kayıt Ekranı";
             Load += SignUpForm_Load;
             SignUp_GroupBox.ResumeLayout(false);
             SignUp_GroupBox.PerformLayout();

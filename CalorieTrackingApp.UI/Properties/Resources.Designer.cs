@@ -233,6 +233,16 @@ namespace CalorieTrackingApp.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap defaultFemale {
+            get {
+                object obj = ResourceManager.GetObject("defaultFemale", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap DefaultFood {
             get {
                 object obj = ResourceManager.GetObject("DefaultFood", resourceCulture);
@@ -296,6 +306,16 @@ namespace CalorieTrackingApp.UI.Properties {
         internal static System.Drawing.Bitmap fat {
             get {
                 object obj = ResourceManager.GetObject("fat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap giphy {
+            get {
+                object obj = ResourceManager.GetObject("giphy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -506,6 +526,16 @@ namespace CalorieTrackingApp.UI.Properties {
         internal static System.Drawing.Bitmap waterIntakeIcon {
             get {
                 object obj = ResourceManager.GetObject("waterIntakeIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap witch_hat {
+            get {
+                object obj = ResourceManager.GetObject("witch-hat", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

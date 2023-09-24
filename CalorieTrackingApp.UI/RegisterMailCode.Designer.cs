@@ -154,6 +154,7 @@
             // 
             // RegisterMailCode
             // 
+            AcceptButton = btnConfirmation;
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(672, 323);
@@ -170,7 +171,7 @@
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(5);
             Name = "RegisterMailCode";
-            Text = "RegisterMailCode";
+            Text = "Mail Doğrulama";
             Load += RegisterMailCode_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

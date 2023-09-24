@@ -14,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolBar;
 
 namespace CalorieTrackingApp.UI
 {
@@ -85,6 +86,10 @@ namespace CalorieTrackingApp.UI
         FoodRepository FoodRepository;
         private void MainMenu_Load(object sender, EventArgs e)
         {
+            //this.BackColor = Color.FromArgb(254, 200, 77);
+            //this.BackColor = Color.FromArgb(255, 189, 51);
+            //btnSocial.BackColor = Color.FromArgb(255, 189, 20);
+            btnSocial.FlatStyle = FlatStyle.System;
             ConsumedFoodRepository = new ConsumedFoodRepository();
             ConsumedWaterRepository = new ConsumedWaterRepository();
             FoodRepository = new FoodRepository();
@@ -144,7 +149,7 @@ namespace CalorieTrackingApp.UI
         private void FillTheCaloriesPart()
         {
             consumedFoods = ConsumedFoodRepository.GetAll().Where(a => a.ConsumedDate.Day == DateTime.Now.Day && a.ConsumedDate.Month == DateTime.Now.Month && a.AccountID == account.Id).ToList(); // Tarih kısmı değişecek
-            lblGunlukKaloriHedef.Text = Math.Round(userDetail.TargetCalorieIntake, 0).ToString() + " cal";
+            lblGunlukKaloriHedef.Text = Math.Round(userDetail.TargetCalorieIntake, 0).ToString() + "cal";
 
             double gunlukKalori = 0;
             foreach (var food in consumedFoods)
@@ -154,7 +159,7 @@ namespace CalorieTrackingApp.UI
             }
 
             lblGunlukAlinanKalori.Text = Math.Round(gunlukKalori, 1).ToString() + "cal";
-            lblKaloriAcigi.Text = Math.Round((userDetail.TargetCalorieIntake - gunlukKalori), 0).ToString() + " cal";
+            lblKaloriAcigi.Text = Math.Round((userDetail.TargetCalorieIntake - gunlukKalori), 0).ToString() + "cal";
         }
 
         private void FillTheMacrosPart()
@@ -225,7 +230,7 @@ namespace CalorieTrackingApp.UI
                 if (label != null && kaloriLabel != null)
                 {
                     label.Text = date.ToString("dd/MM/yy");
-                    kaloriLabel.Text = Math.Round((userDetail.TargetCalorieIntake - gunlukKalori), 0) + " cal";
+                    kaloriLabel.Text = Math.Round((userDetail.TargetCalorieIntake - gunlukKalori), 0) + "cal";
                 }
 
                 date = date.AddDays(-1);

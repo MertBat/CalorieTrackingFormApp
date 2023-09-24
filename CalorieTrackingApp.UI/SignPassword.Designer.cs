@@ -48,9 +48,9 @@
             grpPassword.Controls.Add(txtSignUpPass1);
             grpPassword.Controls.Add(label2);
             grpPassword.Location = new Point(27, 22);
-            grpPassword.Margin = new Padding(5, 5, 5, 5);
+            grpPassword.Margin = new Padding(5);
             grpPassword.Name = "grpPassword";
-            grpPassword.Padding = new Padding(5, 5, 5, 5);
+            grpPassword.Padding = new Padding(5);
             grpPassword.Size = new Size(595, 309);
             grpPassword.TabIndex = 26;
             grpPassword.TabStop = false;
@@ -69,7 +69,7 @@
             // prbPassStr
             // 
             prbPassStr.Location = new Point(12, 203);
-            prbPassStr.Margin = new Padding(5, 5, 5, 5);
+            prbPassStr.Margin = new Padding(5);
             prbPassStr.Name = "prbPassStr";
             prbPassStr.Size = new Size(547, 29);
             prbPassStr.TabIndex = 19;
@@ -77,7 +77,7 @@
             // txtSignUpPassRepeat
             // 
             txtSignUpPassRepeat.Location = new Point(10, 142);
-            txtSignUpPassRepeat.Margin = new Padding(5, 5, 5, 5);
+            txtSignUpPassRepeat.Margin = new Padding(5);
             txtSignUpPassRepeat.Name = "txtSignUpPassRepeat";
             txtSignUpPassRepeat.Size = new Size(546, 33);
             txtSignUpPassRepeat.TabIndex = 2;
@@ -95,7 +95,7 @@
             // txtSignUpPass1
             // 
             txtSignUpPass1.Location = new Point(10, 54);
-            txtSignUpPass1.Margin = new Padding(5, 5, 5, 5);
+            txtSignUpPass1.Margin = new Padding(5);
             txtSignUpPass1.Name = "txtSignUpPass1";
             txtSignUpPass1.Size = new Size(546, 33);
             txtSignUpPass1.TabIndex = 1;
@@ -114,7 +114,7 @@
             // btnPassReset
             // 
             btnPassReset.Location = new Point(296, 349);
-            btnPassReset.Margin = new Padding(5, 5, 5, 5);
+            btnPassReset.Margin = new Padding(5);
             btnPassReset.Name = "btnPassReset";
             btnPassReset.Size = new Size(326, 51);
             btnPassReset.TabIndex = 3;
@@ -130,9 +130,9 @@
             Controls.Add(btnPassReset);
             Controls.Add(grpPassword);
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "SignPassword";
-            Text = "SignPassword";
+            Text = "Şİfre Değiştir";
             Load += SignPassword_Load;
             grpPassword.ResumeLayout(false);
             grpPassword.PerformLayout();

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             LoginGroupBox = new GroupBox();
+            pictureBox1 = new PictureBox();
+            label4 = new Label();
             pbpass = new PictureBox();
             txtLoginPassword = new TextBox();
             lklblRegister = new LinkLabel();
@@ -40,6 +42,7 @@
             txtLoginUsername = new TextBox();
             label1 = new Label();
             LoginGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbpass).BeginInit();
             SuspendLayout();
             // 
@@ -48,6 +51,8 @@
             LoginGroupBox.BackColor = Color.Transparent;
             LoginGroupBox.BackgroundImage = Properties.Resources.output_onlinepngtools;
             LoginGroupBox.BackgroundImageLayout = ImageLayout.Stretch;
+            LoginGroupBox.Controls.Add(pictureBox1);
+            LoginGroupBox.Controls.Add(label4);
             LoginGroupBox.Controls.Add(pbpass);
             LoginGroupBox.Controls.Add(txtLoginPassword);
             LoginGroupBox.Controls.Add(lklblRegister);
@@ -64,6 +69,26 @@
             LoginGroupBox.Size = new Size(438, 646);
             LoginGroupBox.TabIndex = 0;
             LoginGroupBox.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.witch_hat;
+            pictureBox1.Location = new Point(279, 50);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(100, 100);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 11;
+            pictureBox1.TabStop = false;
+            // 
+            // label4
+            // 
+            label4.Font = new Font("Chiller", 48F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.SandyBrown;
+            label4.Location = new Point(0, 74);
+            label4.Name = "label4";
+            label4.Size = new Size(438, 76);
+            label4.TabIndex = 10;
+            label4.Text = " CalorieWiz    ";
             // 
             // pbpass
             // 
@@ -169,6 +194,7 @@
             // 
             // LoginForm
             // 
+            AcceptButton = btnEntry;
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bacgroundv1;
@@ -179,9 +205,11 @@
             Margin = new Padding(5);
             Name = "LoginForm";
             Text = "LoginForm";
+            FormClosing += LoginForm_FormClosing;
             Load += LoginForm_Load;
             LoginGroupBox.ResumeLayout(false);
             LoginGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbpass).EndInit();
             ResumeLayout(false);
         }
@@ -199,5 +227,7 @@
         private Label label3;
         private TextBox txtLoginPassword;
         private PictureBox pbpass;
+        private PictureBox pictureBox1;
+        private Label label4;
     }
 }

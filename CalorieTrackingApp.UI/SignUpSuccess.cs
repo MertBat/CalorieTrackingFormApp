@@ -34,16 +34,16 @@ namespace CalorieTrackingApp.UI
         private void SignUpSuccess_Load(object sender, EventArgs e)
         {
             lblBMI.Text = SignUpFillForm.bmi.ToString();
-            lblTargetCalorie.Text = userDetail.TargetWeight.ToString();
-            lblRemainingOnTarget.Text = (userDetail.LastWeight - userDetail.TargetWeight).ToString();
-            lblStandartCalorie.Text = Math.Round(SignUpFillForm.gunlukKaloriIhtiyaci, 2).ToString();
-            lblTargetCalorie.Text = Math.Round(SignUpFillForm.kiloVermeKalorisi, 2).ToString();
-            lblTargetWater.Text = userDetail.TargetWaterIntake.ToString();
-            lblTargetCalorieDifference.Text = "-500kcal";
+            lblTargetCalorie.Text = userDetail.TargetWeight.ToString() + "cal";
+            lblRemainingOnTarget.Text = (userDetail.LastWeight - userDetail.TargetWeight).ToString() + "kg";
+            lblStandartCalorie.Text = Math.Round(SignUpFillForm.gunlukKaloriIhtiyaci, 2).ToString() + "cal";
+            lblTargetCalorie.Text = Math.Round(SignUpFillForm.kiloVermeKalorisi, 2).ToString() + "cal";
+            lblTargetWater.Text = userDetail.TargetWaterIntake.ToString() + "LT";
+            lblTargetCalorieDifference.Text = "-500cal";
             pbUserPhoto.SizeMode = PictureBoxSizeMode.StretchImage;
             pbUserPhoto.Image = ByteArrayToImage(userDetail.Picture);
             lblUserName.Text = account.Name;
-            lblTargetWeight.Text = userDetail.TargetWeight.ToString();
+            lblTargetWeight.Text = userDetail.TargetWeight.ToString() + "kg";
 
         }
 

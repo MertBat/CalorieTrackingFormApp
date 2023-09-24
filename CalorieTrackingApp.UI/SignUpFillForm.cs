@@ -40,8 +40,6 @@ namespace CalorieTrackingApp.UI
         private void SignUpFillForm_Load(object sender, EventArgs e)
         {
 
-
-
             weightHistoryRepository = new WeightHistoryRepository();
             userRepository = new UserDetailRepository();
             accountRepository = new AccountRepository();
@@ -77,7 +75,8 @@ namespace CalorieTrackingApp.UI
                 }
                 else
                 {
-                    Bitmap bitmap = CalorieTrackingApp.UI.Properties.Resources.profile;
+                    Bitmap bitmap = rbMan.Checked ? CalorieTrackingApp.UI.Properties.Resources.defaultMale : CalorieTrackingApp.UI.Properties.Resources.defaultFemale;
+
                     using (MemoryStream stream = new MemoryStream())
                     {
                         bitmap.Save(stream, System.Drawing.Imaging.ImageFormat.Png);
@@ -222,6 +221,17 @@ namespace CalorieTrackingApp.UI
 
         }
 
+        private void rbMan_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbMan.Checked)
+            {
+                pbUserPhoto.Image = CalorieTrackingApp.UI.Properties.Resources.defaultMale;
+            }
+            else
+            {
+                pbUserPhoto.Image = CalorieTrackingApp.UI.Properties.Resources.defaultFemale;
+            }
 
+        }
     }
 }

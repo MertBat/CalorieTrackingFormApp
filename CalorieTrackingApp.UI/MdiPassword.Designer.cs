@@ -37,7 +37,7 @@
             ClientSize = new Size(632, 509);
             IsMdiContainer = true;
             Name = "MdiPassword";
-            Text = "MdiPassword";
+            Text = "Şİfre Değiştir";
             Load += MdiPassword_Load;
             ResumeLayout(false);
         }

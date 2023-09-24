@@ -108,6 +108,8 @@
             label30 = new Label();
             breakfast_progressBar = new ProgressBar();
             groupBox6 = new GroupBox();
+            pictureBox17 = new PictureBox();
+            pictureBox18 = new PictureBox();
             pictureBox6 = new PictureBox();
             lblGunlukSuIcilen = new Label();
             label11 = new Label();
@@ -118,8 +120,6 @@
             lblGunlukSuHedef = new Label();
             label39 = new Label();
             waterIntake_progressBar = new ProgressBar();
-            pictureBox17 = new PictureBox();
-            pictureBox18 = new PictureBox();
             navigation_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -144,9 +144,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // navigation_groupBox
@@ -352,6 +352,7 @@
             // 
             // topBar_groupBox
             // 
+            topBar_groupBox.BackgroundImageLayout = ImageLayout.None;
             topBar_groupBox.Controls.Add(pictureBox16);
             topBar_groupBox.Controls.Add(pictureBox15);
             topBar_groupBox.Controls.Add(pictureBox14);
@@ -729,143 +730,143 @@
             // 
             // lblGun7Kalori
             // 
-            lblGun7Kalori.AutoSize = true;
             lblGun7Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun7Kalori.Location = new Point(953, 75);
+            lblGun7Kalori.Location = new Point(949, 74);
             lblGun7Kalori.Name = "lblGun7Kalori";
-            lblGun7Kalori.Size = new Size(101, 25);
+            lblGun7Kalori.Size = new Size(119, 22);
             lblGun7Kalori.TabIndex = 42;
             lblGun7Kalori.Text = "-132kcal";
+            lblGun7Kalori.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblGun6Kalori
             // 
-            lblGun6Kalori.AutoSize = true;
             lblGun6Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun6Kalori.Location = new Point(815, 75);
+            lblGun6Kalori.Location = new Point(799, 74);
             lblGun6Kalori.Name = "lblGun6Kalori";
-            lblGun6Kalori.Size = new Size(101, 25);
+            lblGun6Kalori.Size = new Size(119, 22);
             lblGun6Kalori.TabIndex = 41;
             lblGun6Kalori.Text = "-341kcal";
+            lblGun6Kalori.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblGun5Kalori
             // 
-            lblGun5Kalori.AutoSize = true;
             lblGun5Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun5Kalori.Location = new Point(687, 74);
+            lblGun5Kalori.Location = new Point(649, 74);
             lblGun5Kalori.Name = "lblGun5Kalori";
-            lblGun5Kalori.Size = new Size(81, 25);
+            lblGun5Kalori.Size = new Size(119, 22);
             lblGun5Kalori.TabIndex = 40;
             lblGun5Kalori.Text = "+4kcal";
+            lblGun5Kalori.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblGun4Kalori
             // 
-            lblGun4Kalori.AutoSize = true;
             lblGun4Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun4Kalori.Location = new Point(534, 75);
+            lblGun4Kalori.Location = new Point(499, 74);
             lblGun4Kalori.Name = "lblGun4Kalori";
-            lblGun4Kalori.Size = new Size(105, 25);
+            lblGun4Kalori.Size = new Size(119, 22);
             lblGun4Kalori.TabIndex = 39;
             lblGun4Kalori.Text = "+332kcal";
+            lblGun4Kalori.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblGun3Kalori
             // 
-            lblGun3Kalori.AutoSize = true;
             lblGun3Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun3Kalori.Location = new Point(372, 73);
+            lblGun3Kalori.Location = new Point(349, 74);
             lblGun3Kalori.Name = "lblGun3Kalori";
-            lblGun3Kalori.Size = new Size(101, 25);
+            lblGun3Kalori.Size = new Size(119, 22);
             lblGun3Kalori.TabIndex = 38;
             lblGun3Kalori.Text = "-214kcal";
+            lblGun3Kalori.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblGun2Kalori
             // 
-            lblGun2Kalori.AutoSize = true;
             lblGun2Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun2Kalori.Location = new Point(220, 75);
+            lblGun2Kalori.Location = new Point(199, 74);
             lblGun2Kalori.Name = "lblGun2Kalori";
-            lblGun2Kalori.Size = new Size(93, 25);
+            lblGun2Kalori.Size = new Size(119, 22);
             lblGun2Kalori.TabIndex = 37;
             lblGun2Kalori.Text = "+22kcal";
+            lblGun2Kalori.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblGun1Kalori
             // 
-            lblGun1Kalori.AutoSize = true;
             lblGun1Kalori.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGun1Kalori.Location = new Point(70, 73);
+            lblGun1Kalori.Location = new Point(49, 74);
             lblGun1Kalori.Name = "lblGun1Kalori";
-            lblGun1Kalori.Size = new Size(101, 25);
+            lblGun1Kalori.Size = new Size(119, 22);
             lblGun1Kalori.TabIndex = 36;
             lblGun1Kalori.Text = "-424kcal";
+            lblGun1Kalori.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblGun7
             // 
-            lblGun7.AutoSize = true;
             lblGun7.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblGun7.Location = new Point(993, 37);
+            lblGun7.Location = new Point(950, 36);
             lblGun7.Name = "lblGun7";
-            lblGun7.Size = new Size(61, 22);
+            lblGun7.Size = new Size(119, 22);
             lblGun7.TabIndex = 35;
             lblGun7.Text = "Pazar";
+            lblGun7.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblGun6
             // 
-            lblGun6.AutoSize = true;
             lblGun6.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblGun6.Location = new Point(814, 41);
+            lblGun6.Location = new Point(800, 36);
             lblGun6.Name = "lblGun6";
-            lblGun6.Size = new Size(102, 22);
+            lblGun6.Size = new Size(119, 22);
             lblGun6.TabIndex = 34;
             lblGun6.Text = "Cumartesi";
+            lblGun6.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblGun5
             // 
-            lblGun5.AutoSize = true;
             lblGun5.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblGun5.Location = new Point(701, 41);
+            lblGun5.Location = new Point(650, 36);
             lblGun5.Name = "lblGun5";
-            lblGun5.Size = new Size(67, 22);
+            lblGun5.Size = new Size(119, 22);
             lblGun5.TabIndex = 33;
             lblGun5.Text = "Cuma";
+            lblGun5.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblGun4
             // 
-            lblGun4.AutoSize = true;
             lblGun4.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblGun4.Location = new Point(538, 41);
+            lblGun4.Location = new Point(500, 36);
             lblGun4.Name = "lblGun4";
-            lblGun4.Size = new Size(100, 22);
+            lblGun4.Size = new Size(119, 22);
             lblGun4.TabIndex = 32;
             lblGun4.Text = "Perşembe";
+            lblGun4.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblGun3
             // 
-            lblGun3.AutoSize = true;
             lblGun3.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblGun3.Location = new Point(372, 39);
+            lblGun3.Location = new Point(350, 36);
             lblGun3.Name = "lblGun3";
-            lblGun3.Size = new Size(107, 22);
+            lblGun3.Size = new Size(119, 22);
             lblGun3.TabIndex = 31;
             lblGun3.Text = "Çarşamba";
+            lblGun3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblGun2
             // 
-            lblGun2.AutoSize = true;
             lblGun2.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblGun2.Location = new Point(248, 41);
+            lblGun2.Location = new Point(200, 36);
             lblGun2.Name = "lblGun2";
-            lblGun2.Size = new Size(38, 22);
+            lblGun2.Size = new Size(119, 22);
             lblGun2.TabIndex = 30;
             lblGun2.Text = "Salı";
+            lblGun2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblGun1
             // 
-            lblGun1.AutoSize = true;
             lblGun1.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            lblGun1.Location = new Point(76, 39);
+            lblGun1.Location = new Point(50, 36);
             lblGun1.Name = "lblGun1";
-            lblGun1.Size = new Size(90, 22);
+            lblGun1.Size = new Size(119, 22);
             lblGun1.TabIndex = 29;
             lblGun1.Text = "Pazartesi";
+            lblGun1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // groupBox5
             // 
@@ -1069,6 +1070,28 @@
             groupBox6.TabStop = false;
             groupBox6.Text = "Su Alım İstatistikleri";
             // 
+            // pictureBox17
+            // 
+            pictureBox17.Enabled = false;
+            pictureBox17.Image = Properties.Resources.waterDone;
+            pictureBox17.Location = new Point(30, 138);
+            pictureBox17.Name = "pictureBox17";
+            pictureBox17.Size = new Size(32, 30);
+            pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox17.TabIndex = 56;
+            pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            pictureBox18.Enabled = false;
+            pictureBox18.Image = Properties.Resources.target;
+            pictureBox18.Location = new Point(387, 137);
+            pictureBox18.Name = "pictureBox18";
+            pictureBox18.Size = new Size(32, 30);
+            pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox18.TabIndex = 55;
+            pictureBox18.TabStop = false;
+            // 
             // pictureBox6
             // 
             pictureBox6.Enabled = false;
@@ -1170,28 +1193,6 @@
             waterIntake_progressBar.Style = ProgressBarStyle.Continuous;
             waterIntake_progressBar.TabIndex = 0;
             // 
-            // pictureBox17
-            // 
-            pictureBox17.Enabled = false;
-            pictureBox17.Image = Properties.Resources.waterDone;
-            pictureBox17.Location = new Point(30, 138);
-            pictureBox17.Name = "pictureBox17";
-            pictureBox17.Size = new Size(32, 30);
-            pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox17.TabIndex = 56;
-            pictureBox17.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            pictureBox18.Enabled = false;
-            pictureBox18.Image = Properties.Resources.target;
-            pictureBox18.Location = new Point(387, 137);
-            pictureBox18.Name = "pictureBox18";
-            pictureBox18.Size = new Size(32, 30);
-            pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox18.TabIndex = 55;
-            pictureBox18.TabStop = false;
-            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
@@ -1231,7 +1232,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
@@ -1239,9 +1239,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
         }
 

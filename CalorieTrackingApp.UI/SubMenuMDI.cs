@@ -30,6 +30,6 @@ namespace CalorieTrackingApp.UI
             mainMenu.Dock = DockStyle.Fill;
             mainMenu.Show();
         }
-        
+
     }
 }

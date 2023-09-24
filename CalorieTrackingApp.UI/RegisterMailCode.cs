@@ -34,7 +34,7 @@ namespace CalorieTrackingApp.UI
             this.BackColor = Color.FromArgb(254, 200, 77);
             pictureBox1.BackColor = Color.FromArgb(254, 200, 77);
             random = new Random();
-            second = 600;
+            second = 60;
             btnConfirmation.Enabled = false;
 
             for (int i = 0; i < 5; i++)
@@ -118,7 +118,7 @@ namespace CalorieTrackingApp.UI
                                 <p>Merhaba,</p>
                                 <p>Hesabınızı doğrulamak için aşağıdaki doğrulama kodunu kullanın:</p>
                                 <div class='code'>" + code + @"</div>
-                                <p>Bu kod sadece 10 dakika boyunca geçerlidir.</p>
+                                <p>Bu kod sadece 1 dakika boyunca geçerlidir.</p>
                                 <p>İyi günler dileriz.</p>
                             </div>
                         </body>
@@ -157,7 +157,7 @@ namespace CalorieTrackingApp.UI
                 MessageBox.Show("Zamanınız Doldu! Tekrar Gönderiniz");
                 btnSend.Enabled = true;
                 btnConfirmation.Enabled = false;
-                second = 600;
+                second = 60;
                 lblSecond.BackColor = SystemColors.Control;
                 lblSecond.Text = (second).ToString();
             }

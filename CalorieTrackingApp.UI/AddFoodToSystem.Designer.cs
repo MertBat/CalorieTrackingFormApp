@@ -53,11 +53,11 @@
             nudCarb = new NumericUpDown();
             label9 = new Label();
             groupBox2 = new GroupBox();
-            pictureBox2 = new PictureBox();
+            pictureBox7 = new PictureBox();
             pictureBox12 = new PictureBox();
             pictureBox11 = new PictureBox();
             pictureBox10 = new PictureBox();
-            pictureBox7 = new PictureBox();
+            pictureBox2 = new PictureBox();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).BeginInit();
@@ -69,11 +69,11 @@
             ((System.ComponentModel.ISupportInitialize)nudFat).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudCarb).BeginInit();
             groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -327,17 +327,16 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Yeni Yemek Ekle";
             // 
-            // pictureBox2
+            // pictureBox7
             // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.Image = Properties.Resources.addPhoto;
-            pictureBox2.Location = new Point(333, 123);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(46, 44);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 25;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
+            pictureBox7.Enabled = false;
+            pictureBox7.Image = Properties.Resources.calorieAdd;
+            pictureBox7.Location = new Point(274, 275);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(59, 57);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 47;
+            pictureBox7.TabStop = false;
             // 
             // pictureBox12
             // 
@@ -372,16 +371,17 @@
             pictureBox10.TabIndex = 44;
             pictureBox10.TabStop = false;
             // 
-            // pictureBox7
+            // pictureBox2
             // 
-            pictureBox7.Enabled = false;
-            pictureBox7.Image = Properties.Resources.calorieAdd;
-            pictureBox7.Location = new Point(274, 275);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(59, 57);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 47;
-            pictureBox7.TabStop = false;
+            pictureBox2.BackColor = Color.Transparent;
+            pictureBox2.Image = Properties.Resources.addPhoto;
+            pictureBox2.Location = new Point(333, 123);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(46, 44);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 25;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // AddFoodToSystem
             // 
@@ -396,7 +396,7 @@
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(5);
             Name = "AddFoodToSystem";
-            Text = "AddFoodToSystem";
+            Text = "Yemek Ekleme Ekranı";
             Load += AddFoodToSystem_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
@@ -411,11 +411,11 @@
             ((System.ComponentModel.ISupportInitialize)nudCarb).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 

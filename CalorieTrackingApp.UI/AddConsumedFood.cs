@@ -87,10 +87,10 @@ namespace CalorieTrackingApp.UI
                 if (selectedFood != null)
                 {
                     lblFoodName.Text = selectedFoodName;
-                    lblCalorie.Text = Math.Round(selectedFood.PortionCalorie * portionNum, 2).ToString();
-                    lblCarb.Text = Math.Round(selectedFood.PortionCarb * portionNum, 2).ToString();
-                    lblFat.Text = Math.Round(selectedFood.PortionFat * portionNum, 2).ToString();
-                    lblProtein.Text = Math.Round(selectedFood.PortionProtein * portionNum, 2).ToString();
+                    lblCalorie.Text = Math.Round(selectedFood.PortionCalorie * portionNum, 1).ToString() + "cal";
+                    lblCarb.Text = Math.Round(selectedFood.PortionCarb * portionNum, 1).ToString() + "gr";
+                    lblFat.Text = Math.Round(selectedFood.PortionFat * portionNum, 1).ToString() + "gr";
+                    lblProtein.Text = Math.Round(selectedFood.PortionProtein * portionNum, 1).ToString() + "gr";
 
                     // Resmi yükle
                     if (selectedFood.Photo != null)
@@ -125,10 +125,10 @@ namespace CalorieTrackingApp.UI
                 if (selectedFood != null)
                 {
                     double portionAmount = (double)nudPortionNumber.Value;
-                    lblCalorie.Text = (selectedFood.PortionCalorie * portionAmount).ToString();
-                    lblCarb.Text = (selectedFood.PortionCarb * portionAmount).ToString();
-                    lblFat.Text = (selectedFood.PortionFat * portionAmount).ToString();
-                    lblProtein.Text = (selectedFood.PortionProtein * portionAmount).ToString();
+                    lblCalorie.Text = Math.Round(selectedFood.PortionCalorie * portionAmount, 1).ToString() + "cal";
+                    lblCarb.Text = Math.Round(selectedFood.PortionCarb * portionAmount, 1).ToString() + "gr";
+                    lblFat.Text = Math.Round(selectedFood.PortionFat * portionAmount, 1).ToString() + "gr";
+                    lblProtein.Text = Math.Round(selectedFood.PortionProtein * portionAmount, 1).ToString() + "gr";
                 }
             }
         }

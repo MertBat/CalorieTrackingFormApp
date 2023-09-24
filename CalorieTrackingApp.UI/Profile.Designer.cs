@@ -47,6 +47,7 @@
             numWeight = new NumericUpDown();
             numHeight = new NumericUpDown();
             btnEditAnddone = new Button();
+
             lblCalorie = new Label();
             label33 = new Label();
             lblDailyGoal = new Label();

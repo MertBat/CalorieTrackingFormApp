@@ -333,7 +333,7 @@
             // 
             dtpConsumeDate.Location = new Point(443, 58);
             dtpConsumeDate.Name = "dtpConsumeDate";
-            dtpConsumeDate.Size = new Size(324, 33);
+            dtpConsumeDate.Size = new Size(356, 33);
             dtpConsumeDate.TabIndex = 45;
             dtpConsumeDate.ValueChanged += dtpConsumeDate_ValueChanged;
             // 
@@ -547,7 +547,7 @@
             // 
             pictureBox7.Enabled = false;
             pictureBox7.Image = Properties.Resources.calorieAdd;
-            pictureBox7.Location = new Point(94, 212);
+            pictureBox7.Location = new Point(78, 209);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(63, 61);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -590,7 +590,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.DefaultFood;
-            pictureBox1.Location = new Point(272, 97);
+            pictureBox1.Location = new Point(287, 97);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(93, 101);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -609,82 +609,82 @@
             // 
             // lblFat
             // 
-            lblFat.AutoSize = true;
             lblFat.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblFat.Location = new Point(516, 308);
             lblFat.Name = "lblFat";
-            lblFat.Size = new Size(75, 25);
+            lblFat.Size = new Size(79, 25);
             lblFat.TabIndex = 36;
             lblFat.Text = "4.76gr";
+            lblFat.TextAlign = ContentAlignment.TopCenter;
             // 
             // label15
             // 
-            label15.AutoSize = true;
             label15.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label15.Location = new Point(528, 287);
+            label15.Location = new Point(516, 287);
             label15.Name = "label15";
-            label15.Size = new Size(43, 21);
+            label15.Size = new Size(79, 21);
             label15.TabIndex = 35;
             label15.Text = "Yağ";
+            label15.TextAlign = ContentAlignment.TopCenter;
             // 
             // lblProtein
             // 
-            lblProtein.AutoSize = true;
             lblProtein.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblProtein.Location = new Point(399, 308);
             lblProtein.Name = "lblProtein";
-            lblProtein.Size = new Size(75, 25);
+            lblProtein.Size = new Size(79, 25);
             lblProtein.TabIndex = 34;
             lblProtein.Text = "6.28gr";
+            lblProtein.TextAlign = ContentAlignment.TopCenter;
             // 
             // label13
             // 
-            label13.AutoSize = true;
             label13.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(406, 287);
+            label13.Location = new Point(399, 287);
             label13.Name = "label13";
-            label13.Size = new Size(64, 21);
+            label13.Size = new Size(79, 21);
             label13.TabIndex = 33;
             label13.Text = "Protein";
+            label13.TextAlign = ContentAlignment.TopCenter;
             // 
             // lblCarb
             // 
-            lblCarb.AutoSize = true;
             lblCarb.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCarb.Location = new Point(272, 308);
+            lblCarb.Location = new Point(253, 308);
             lblCarb.Name = "lblCarb";
-            lblCarb.Size = new Size(75, 25);
+            lblCarb.Size = new Size(112, 25);
             lblCarb.TabIndex = 32;
             lblCarb.Text = "0.36gr";
+            lblCarb.TextAlign = ContentAlignment.TopCenter;
             // 
             // label11
             // 
-            label11.AutoSize = true;
             label11.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label11.Location = new Point(253, 287);
             label11.Name = "label11";
             label11.Size = new Size(113, 21);
             label11.TabIndex = 31;
             label11.Text = "Karbonhidrat";
+            label11.TextAlign = ContentAlignment.TopCenter;
             // 
             // lblCalorie
             // 
-            lblCalorie.AutoSize = true;
             lblCalorie.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCalorie.Location = new Point(72, 298);
+            lblCalorie.Location = new Point(58, 302);
             lblCalorie.Name = "lblCalorie";
             lblCalorie.Size = new Size(101, 32);
             lblCalorie.TabIndex = 30;
             lblCalorie.Text = "72kcal";
+            lblCalorie.TextAlign = ContentAlignment.TopCenter;
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(93, 274);
+            label8.Location = new Point(58, 277);
             label8.Name = "label8";
-            label8.Size = new Size(64, 24);
+            label8.Size = new Size(101, 24);
             label8.TabIndex = 29;
             label8.Text = "Kalori";
+            label8.TextAlign = ContentAlignment.TopCenter;
             // 
             // lblFoodName
             // 

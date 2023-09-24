@@ -222,6 +222,7 @@
             // 
             // PPasswordChange
             // 
+            AcceptButton = btnSave;
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(431, 587);

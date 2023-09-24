@@ -118,6 +118,9 @@ namespace CalorieTrackingApp.UI
         string incomingValue;
         private void LoginForm_Load(object sender, EventArgs e)
         {
+            this.Hide();
+            Intro1 intro = new Intro1(this);
+            intro.ShowDialog();
             accountRepository = new AccountRepository();
             txtLoginPassword.UseSystemPasswordChar = true;
             rememberMe = Path.Combine(Application.StartupPath, "BeniHatirla.txt");
@@ -194,6 +197,14 @@ namespace CalorieTrackingApp.UI
         private void linkLabel1_Enter(object sender, EventArgs e)
         {
         }
+
+        private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Hide();
+            Outro outro = new Outro(this);
+            outro.ShowDialog();
+        }
+
     }
 
 

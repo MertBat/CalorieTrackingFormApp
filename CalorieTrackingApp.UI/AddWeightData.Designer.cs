@@ -29,12 +29,17 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            pictureBox1 = new PictureBox();
+            pictureBox6 = new PictureBox();
             groupBox2 = new GroupBox();
             label3 = new Label();
             btnKaydet = new Button();
             label4 = new Label();
             nudGuncelKilo = new NumericUpDown();
             groupBox6 = new GroupBox();
+            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox2 = new PictureBox();
             label8 = new Label();
             lblBaslangicKilo = new Label();
             label10 = new Label();
@@ -46,20 +51,15 @@
             label41 = new Label();
             label1 = new Label();
             dtpDate = new DateTimePicker();
-            pictureBox6 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox3 = new PictureBox();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nudGuncelKilo).BeginInit();
             groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -75,6 +75,28 @@
             groupBox1.Size = new Size(581, 820);
             groupBox1.TabIndex = 7;
             groupBox1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Enabled = false;
+            pictureBox1.Image = Properties.Resources.date;
+            pictureBox1.Location = new Point(91, 253);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(50, 44);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 53;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Enabled = false;
+            pictureBox6.Image = Properties.Resources.addWeightPanel;
+            pictureBox6.Location = new Point(240, 32);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(115, 116);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 52;
+            pictureBox6.TabStop = false;
             // 
             // groupBox2
             // 
@@ -149,6 +171,39 @@
             groupBox6.TabStop = false;
             groupBox6.Text = "Kilo İstatistikleri";
             // 
+            // pictureBox3
+            // 
+            pictureBox3.Enabled = false;
+            pictureBox3.Image = Properties.Resources.done;
+            pictureBox3.Location = new Point(117, 108);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(30, 29);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 57;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Enabled = false;
+            pictureBox4.Image = Properties.Resources.target;
+            pictureBox4.Location = new Point(58, 157);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(30, 29);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 56;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Enabled = false;
+            pictureBox2.Image = Properties.Resources.start;
+            pictureBox2.Location = new Point(118, 62);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(30, 29);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 54;
+            pictureBox2.TabStop = false;
+            // 
             // label8
             // 
             label8.AutoSize = true;
@@ -162,7 +217,7 @@
             // 
             lblBaslangicKilo.AutoSize = true;
             lblBaslangicKilo.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblBaslangicKilo.Location = new Point(269, 56);
+            lblBaslangicKilo.Location = new Point(275, 58);
             lblBaslangicKilo.Name = "lblBaslangicKilo";
             lblBaslangicKilo.Size = new Size(68, 28);
             lblBaslangicKilo.TabIndex = 51;
@@ -190,7 +245,7 @@
             // 
             lblDegisenKilo.AutoSize = true;
             lblDegisenKilo.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblDegisenKilo.Location = new Point(278, 105);
+            lblDegisenKilo.Location = new Point(276, 106);
             lblDegisenKilo.Name = "lblDegisenKilo";
             lblDegisenKilo.Size = new Size(55, 28);
             lblDegisenKilo.TabIndex = 48;
@@ -218,7 +273,7 @@
             // 
             lblHedefeKalanKilo.AutoSize = true;
             lblHedefeKalanKilo.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblHedefeKalanKilo.Location = new Point(277, 156);
+            lblHedefeKalanKilo.Location = new Point(276, 156);
             lblHedefeKalanKilo.Name = "lblHedefeKalanKilo";
             lblHedefeKalanKilo.Size = new Size(55, 28);
             lblHedefeKalanKilo.TabIndex = 45;
@@ -247,63 +302,8 @@
             // 
             dtpDate.Location = new Point(159, 264);
             dtpDate.Name = "dtpDate";
-            dtpDate.Size = new Size(327, 33);
+            dtpDate.Size = new Size(370, 33);
             dtpDate.TabIndex = 6;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Enabled = false;
-            pictureBox6.Image = Properties.Resources.addWeightPanel;
-            pictureBox6.Location = new Point(240, 32);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(115, 116);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 52;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Enabled = false;
-            pictureBox1.Image = Properties.Resources.date;
-            pictureBox1.Location = new Point(91, 253);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(50, 44);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 53;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Enabled = false;
-            pictureBox2.Image = Properties.Resources.start;
-            pictureBox2.Location = new Point(118, 62);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(30, 29);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 54;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Enabled = false;
-            pictureBox4.Image = Properties.Resources.target;
-            pictureBox4.Location = new Point(58, 157);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(30, 29);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 56;
-            pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Enabled = false;
-            pictureBox3.Image = Properties.Resources.done;
-            pictureBox3.Location = new Point(117, 108);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(30, 29);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 57;
-            pictureBox3.TabStop = false;
             // 
             // AddWeightData
             // 
@@ -314,20 +314,20 @@
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(5);
             Name = "AddWeightData";
-            Text = "AddWeightData";
+            Text = "Kilo Verisi Değiştirme";
             Load += AddWeightData_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)nudGuncelKilo).EndInit();
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 

@@ -47,7 +47,7 @@ namespace CalorieTrackingApp.UI
             if (postsList == null)
             {
                 Label label = new Label();
-                label.Text = "Bugün için gösterilecek bir post yoktur.";
+                label.Text = "Gösterilecek bir post yoktur.";
                 label.Width = 250;
                 label.AutoSize = true;
                 flpPosts.Controls.Add(label);

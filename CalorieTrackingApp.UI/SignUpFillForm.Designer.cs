@@ -43,6 +43,7 @@
             label1 = new Label();
             label4 = new Label();
             groupBox1 = new GroupBox();
+            pictureBox4 = new PictureBox();
             pictureBox1 = new PictureBox();
             cmbExercise = new ComboBox();
             label8 = new Label();
@@ -51,17 +52,16 @@
             nudWeightEntry = new NumericUpDown();
             nudHeightEntry = new NumericUpDown();
             pbUserPhoto = new PictureBox();
-            pictureBox4 = new PictureBox();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudTargetWeight).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudWeightEntry).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudHeightEntry).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbUserPhoto).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -152,6 +152,7 @@
             rbMan.TabStop = true;
             rbMan.Text = "Male";
             rbMan.UseVisualStyleBackColor = true;
+            rbMan.CheckedChanged += rbMan_CheckedChanged;
             // 
             // label5
             // 
@@ -230,6 +231,16 @@
             groupBox1.Size = new Size(526, 798);
             groupBox1.TabIndex = 39;
             groupBox1.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.goBackButton;
+            pictureBox4.Location = new Point(89, 686);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(50, 48);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 58;
+            pictureBox4.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -319,18 +330,9 @@
             pbUserPhoto.TabIndex = 24;
             pbUserPhoto.TabStop = false;
             // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = Properties.Resources.goBackButton;
-            pictureBox4.Location = new Point(89, 686);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(50, 48);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 58;
-            pictureBox4.TabStop = false;
-            // 
             // SignUpFillForm
             // 
+            AcceptButton = btnSave;
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bacgroundv1;
@@ -342,7 +344,7 @@
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(5);
             Name = "SignUpFillForm";
-            Text = "Form1";
+            Text = "Kullanıcı Detayları";
             FormClosing += SignUpFillForm_FormClosing;
             Load += SignUpFillForm_Load;
             groupBox2.ResumeLayout(false);
@@ -351,12 +353,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudTargetWeight).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudWeightEntry).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudHeightEntry).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbUserPhoto).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
