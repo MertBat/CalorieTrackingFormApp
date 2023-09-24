@@ -44,25 +44,35 @@
             lblHedefeKalanKilo2 = new Label();
             lblHedefeKalanKilo = new Label();
             label41 = new Label();
-            label2 = new Label();
             label1 = new Label();
             dtpDate = new DateTimePicker();
+            pictureBox6 = new PictureBox();
+            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox3 = new PictureBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nudGuncelKilo).BeginInit();
             groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(pictureBox1);
+            groupBox1.Controls.Add(pictureBox6);
             groupBox1.Controls.Add(groupBox2);
             groupBox1.Controls.Add(groupBox6);
-            groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(dtpDate);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(598, 643);
+            groupBox1.Size = new Size(581, 820);
             groupBox1.TabIndex = 7;
             groupBox1.TabStop = false;
             // 
@@ -72,7 +82,7 @@
             groupBox2.Controls.Add(btnKaydet);
             groupBox2.Controls.Add(label4);
             groupBox2.Controls.Add(nudGuncelKilo);
-            groupBox2.Location = new Point(24, 412);
+            groupBox2.Location = new Point(10, 592);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(557, 206);
             groupBox2.TabIndex = 11;
@@ -119,6 +129,9 @@
             // 
             // groupBox6
             // 
+            groupBox6.Controls.Add(pictureBox3);
+            groupBox6.Controls.Add(pictureBox4);
+            groupBox6.Controls.Add(pictureBox2);
             groupBox6.Controls.Add(label8);
             groupBox6.Controls.Add(lblBaslangicKilo);
             groupBox6.Controls.Add(label10);
@@ -129,7 +142,7 @@
             groupBox6.Controls.Add(lblHedefeKalanKilo);
             groupBox6.Controls.Add(label41);
             groupBox6.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            groupBox6.Location = new Point(24, 157);
+            groupBox6.Location = new Point(10, 338);
             groupBox6.Name = "groupBox6";
             groupBox6.Size = new Size(557, 236);
             groupBox6.TabIndex = 10;
@@ -167,7 +180,7 @@
             // lblDegisenKilo2
             // 
             lblDegisenKilo2.AutoSize = true;
-            lblDegisenKilo2.Location = new Point(343, 113);
+            lblDegisenKilo2.Location = new Point(337, 112);
             lblDegisenKilo2.Name = "lblDegisenKilo2";
             lblDegisenKilo2.Size = new Size(63, 21);
             lblDegisenKilo2.TabIndex = 49;
@@ -177,7 +190,7 @@
             // 
             lblDegisenKilo.AutoSize = true;
             lblDegisenKilo.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblDegisenKilo.Location = new Point(282, 106);
+            lblDegisenKilo.Location = new Point(278, 105);
             lblDegisenKilo.Name = "lblDegisenKilo";
             lblDegisenKilo.Size = new Size(55, 28);
             lblDegisenKilo.TabIndex = 48;
@@ -186,7 +199,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(158, 114);
+            label7.Location = new Point(150, 111);
             label7.Name = "label7";
             label7.Size = new Size(114, 21);
             label7.TabIndex = 47;
@@ -195,7 +208,7 @@
             // lblHedefeKalanKilo2
             // 
             lblHedefeKalanKilo2.AutoSize = true;
-            lblHedefeKalanKilo2.Location = new Point(343, 163);
+            lblHedefeKalanKilo2.Location = new Point(340, 161);
             lblHedefeKalanKilo2.Name = "lblHedefeKalanKilo2";
             lblHedefeKalanKilo2.Size = new Size(136, 21);
             lblHedefeKalanKilo2.TabIndex = 46;
@@ -205,7 +218,7 @@
             // 
             lblHedefeKalanKilo.AutoSize = true;
             lblHedefeKalanKilo.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblHedefeKalanKilo.Location = new Point(282, 156);
+            lblHedefeKalanKilo.Location = new Point(277, 156);
             lblHedefeKalanKilo.Name = "lblHedefeKalanKilo";
             lblHedefeKalanKilo.Size = new Size(55, 28);
             lblHedefeKalanKilo.TabIndex = 45;
@@ -214,26 +227,17 @@
             // label41
             // 
             label41.AutoSize = true;
-            label41.Location = new Point(66, 163);
+            label41.Location = new Point(90, 162);
             label41.Name = "label41";
-            label41.Size = new Size(206, 21);
+            label41.Size = new Size(178, 21);
             label41.TabIndex = 44;
-            label41.Text = "Kilo hedefine ulaşmak için";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(88, 101);
-            label2.Name = "label2";
-            label2.Size = new Size(59, 24);
-            label2.TabIndex = 8;
-            label2.Text = "Tarih:";
+            label41.Text = "Hedefine ulaşmak için";
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(162, 29);
+            label1.Location = new Point(150, 185);
             label1.Name = "label1";
             label1.Size = new Size(279, 39);
             label1.TabIndex = 7;
@@ -241,16 +245,71 @@
             // 
             // dtpDate
             // 
-            dtpDate.Location = new Point(162, 96);
+            dtpDate.Location = new Point(159, 264);
             dtpDate.Name = "dtpDate";
-            dtpDate.Size = new Size(325, 33);
+            dtpDate.Size = new Size(327, 33);
             dtpDate.TabIndex = 6;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Enabled = false;
+            pictureBox6.Image = Properties.Resources.addWeightPanel;
+            pictureBox6.Location = new Point(240, 32);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(115, 116);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 52;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Enabled = false;
+            pictureBox1.Image = Properties.Resources.date;
+            pictureBox1.Location = new Point(91, 253);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(50, 44);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 53;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Enabled = false;
+            pictureBox2.Image = Properties.Resources.start;
+            pictureBox2.Location = new Point(118, 62);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(30, 29);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 54;
+            pictureBox2.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Enabled = false;
+            pictureBox4.Image = Properties.Resources.target;
+            pictureBox4.Location = new Point(58, 157);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(30, 29);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 56;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Enabled = false;
+            pictureBox3.Image = Properties.Resources.done;
+            pictureBox3.Location = new Point(117, 108);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(30, 29);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 57;
+            pictureBox3.TabStop = false;
             // 
             // AddWeightData
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(624, 673);
+            ClientSize = new Size(605, 844);
             Controls.Add(groupBox1);
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(5);
@@ -264,6 +323,11 @@
             ((System.ComponentModel.ISupportInitialize)nudGuncelKilo).EndInit();
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
         }
 
@@ -278,7 +342,6 @@
         private Label lblHedefeKalanKilo2;
         private Label lblHedefeKalanKilo;
         private Label label41;
-        private Label label2;
         private Label label1;
         private DateTimePicker dtpDate;
         private Label label3;
@@ -288,5 +351,10 @@
         private Label lblDegisenKilo2;
         private Label lblDegisenKilo;
         private Label label7;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox3;
     }
 }
