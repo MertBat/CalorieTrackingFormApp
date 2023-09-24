@@ -173,7 +173,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.bacgroundv1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1285, 725);
+            ClientSize = new Size(1192, 753);
             Controls.Add(LoginGroupBox);
             Font = new Font("Century Gothic", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
             Margin = new Padding(5);

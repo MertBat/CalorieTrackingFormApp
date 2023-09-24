@@ -148,11 +148,11 @@
             navigation_groupBox.Controls.Add(reportsMonth);
             navigation_groupBox.Controls.Add(reports_navBtn);
             navigation_groupBox.Controls.Add(mainMenu_navBtn);
-            navigation_groupBox.Location = new Point(5, 12);
+            navigation_groupBox.Location = new Point(5, -2);
             navigation_groupBox.Margin = new Padding(5);
             navigation_groupBox.Name = "navigation_groupBox";
             navigation_groupBox.Padding = new Padding(5);
-            navigation_groupBox.Size = new Size(131, 707);
+            navigation_groupBox.Size = new Size(131, 721);
             navigation_groupBox.TabIndex = 0;
             navigation_groupBox.TabStop = false;
             // 
@@ -342,9 +342,9 @@
             topBar_groupBox.Controls.Add(btnYemekEkle);
             topBar_groupBox.Controls.Add(btnSuKaydet);
             topBar_groupBox.Controls.Add(addWeight_btn);
-            topBar_groupBox.Location = new Point(148, 12);
+            topBar_groupBox.Location = new Point(148, -2);
             topBar_groupBox.Name = "topBar_groupBox";
-            topBar_groupBox.Size = new Size(1123, 130);
+            topBar_groupBox.Size = new Size(1123, 144);
             topBar_groupBox.TabIndex = 1;
             topBar_groupBox.TabStop = false;
             // 
@@ -402,7 +402,7 @@
             // 
             btnYemekEkle.BackColor = Color.DarkSalmon;
             btnYemekEkle.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnYemekEkle.Location = new Point(474, 46);
+            btnYemekEkle.Location = new Point(475, 57);
             btnYemekEkle.Name = "btnYemekEkle";
             btnYemekEkle.Size = new Size(193, 46);
             btnYemekEkle.TabIndex = 2;
@@ -414,7 +414,7 @@
             // 
             btnSuKaydet.BackColor = Color.DeepSkyBlue;
             btnSuKaydet.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSuKaydet.Location = new Point(673, 46);
+            btnSuKaydet.Location = new Point(674, 57);
             btnSuKaydet.Name = "btnSuKaydet";
             btnSuKaydet.Size = new Size(149, 46);
             btnSuKaydet.TabIndex = 1;
@@ -427,7 +427,7 @@
             addWeight_btn.BackColor = SystemColors.ControlDark;
             addWeight_btn.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             addWeight_btn.ForeColor = SystemColors.ActiveCaptionText;
-            addWeight_btn.Location = new Point(311, 46);
+            addWeight_btn.Location = new Point(312, 57);
             addWeight_btn.Name = "addWeight_btn";
             addWeight_btn.Size = new Size(157, 46);
             addWeight_btn.TabIndex = 0;
@@ -966,7 +966,7 @@
             // 
             pictureBox6.Enabled = false;
             pictureBox6.Image = Properties.Resources.waterIntakeIcon;
-            pictureBox6.Location = new Point(21, 50);
+            pictureBox6.Location = new Point(27, 54);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(57, 61);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -977,7 +977,7 @@
             // 
             lblGunlukSuIcilen.AutoSize = true;
             lblGunlukSuIcilen.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGunlukSuIcilen.Location = new Point(94, 124);
+            lblGunlukSuIcilen.Location = new Point(84, 134);
             lblGunlukSuIcilen.Name = "lblGunlukSuIcilen";
             lblGunlukSuIcilen.Size = new Size(66, 28);
             lblGunlukSuIcilen.TabIndex = 49;
@@ -987,7 +987,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(29, 128);
+            label11.Location = new Point(26, 136);
             label11.Name = "label11";
             label11.Size = new Size(62, 22);
             label11.TabIndex = 48;
@@ -1036,7 +1036,7 @@
             // 
             lblGunlukSuHedef.AutoSize = true;
             lblGunlukSuHedef.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGunlukSuHedef.Location = new Point(454, 129);
+            lblGunlukSuHedef.Location = new Point(464, 133);
             lblGunlukSuHedef.Name = "lblGunlukSuHedef";
             lblGunlukSuHedef.Size = new Size(66, 28);
             lblGunlukSuHedef.TabIndex = 43;
@@ -1046,7 +1046,7 @@
             // 
             label39.AutoSize = true;
             label39.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label39.Location = new Point(389, 133);
+            label39.Location = new Point(395, 137);
             label39.Name = "label39";
             label39.Size = new Size(71, 22);
             label39.TabIndex = 31;
@@ -1067,7 +1067,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1285, 725);
+            ClientSize = new Size(1284, 725);
             Controls.Add(groupBox6);
             Controls.Add(groupBox5);
             Controls.Add(groupBox2);
