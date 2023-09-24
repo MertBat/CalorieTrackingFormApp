@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             topBar_groupBox = new GroupBox();
+            pictureBox14 = new PictureBox();
             pbProfilePictureTop = new PictureBox();
             lblProfileNameTop2 = new Label();
             label2 = new Label();
@@ -83,8 +84,8 @@
             label28 = new Label();
             label29 = new Label();
             sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
-            pictureBox14 = new PictureBox();
             topBar_groupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbProfilePictureTop).BeginInit();
             groupBox1.SuspendLayout();
             navigation_groupBox.SuspendLayout();
@@ -96,7 +97,6 @@
             gbfoodGraph.SuspendLayout();
             gbWaterGraph.SuspendLayout();
             gbWeight.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // topBar_groupBox
@@ -113,6 +113,18 @@
             topBar_groupBox.Size = new Size(1127, 144);
             topBar_groupBox.TabIndex = 4;
             topBar_groupBox.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.BackColor = Color.Transparent;
+            pictureBox14.Enabled = false;
+            pictureBox14.Image = Properties.Resources.navGraphs;
+            pictureBox14.Location = new Point(11, 17);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(40, 43);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 45;
+            pictureBox14.TabStop = false;
             // 
             // pbProfilePictureTop
             // 
@@ -167,7 +179,7 @@
             // dtpRapor
             // 
             dtpRapor.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            dtpRapor.Location = new Point(20, 48);
+            dtpRapor.Location = new Point(21, 53);
             dtpRapor.Name = "dtpRapor";
             dtpRapor.Size = new Size(148, 27);
             dtpRapor.TabIndex = 9;
@@ -702,18 +714,6 @@
             sqlCommand1.Notification = null;
             sqlCommand1.Transaction = null;
             // 
-            // pictureBox14
-            // 
-            pictureBox14.BackColor = Color.Transparent;
-            pictureBox14.Enabled = false;
-            pictureBox14.Image = Properties.Resources.navGraphs;
-            pictureBox14.Location = new Point(11, 17);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(40, 43);
-            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox14.TabIndex = 45;
-            pictureBox14.TabStop = false;
-            // 
             // LongReports
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
@@ -731,6 +731,7 @@
             Load += LongReports_Load;
             topBar_groupBox.ResumeLayout(false);
             topBar_groupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbProfilePictureTop).EndInit();
             groupBox1.ResumeLayout(false);
             navigation_groupBox.ResumeLayout(false);
@@ -746,7 +747,6 @@
             gbWaterGraph.PerformLayout();
             gbWeight.ResumeLayout(false);
             gbWeight.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 
