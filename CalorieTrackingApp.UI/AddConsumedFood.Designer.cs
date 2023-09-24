@@ -64,6 +64,10 @@
             rbLunch = new RadioButton();
             rbBreakfast = new RadioButton();
             groupBox3 = new GroupBox();
+            pictureBox7 = new PictureBox();
+            pictureBox12 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            pictureBox10 = new PictureBox();
             pictureBox1 = new PictureBox();
             lblPortionNumber = new Label();
             lblFat = new Label();
@@ -76,10 +80,6 @@
             label8 = new Label();
             lblFoodName = new Label();
             label6 = new Label();
-            pictureBox10 = new PictureBox();
-            pictureBox11 = new PictureBox();
-            pictureBox12 = new PictureBox();
-            pictureBox7 = new PictureBox();
             navigation_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -92,11 +92,11 @@
             ((System.ComponentModel.ISupportInitialize)nudPortionNumber).BeginInit();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // navigation_groupBox
@@ -482,7 +482,7 @@
             // rbLunch
             // 
             rbLunch.AutoSize = true;
-            rbLunch.Location = new Point(287, 44);
+            rbLunch.Location = new Point(289, 44);
             rbLunch.Name = "rbLunch";
             rbLunch.Size = new Size(79, 28);
             rbLunch.TabIndex = 17;
@@ -493,7 +493,7 @@
             // rbBreakfast
             // 
             rbBreakfast.AutoSize = true;
-            rbBreakfast.Location = new Point(92, 46);
+            rbBreakfast.Location = new Point(93, 45);
             rbBreakfast.Name = "rbBreakfast";
             rbBreakfast.Size = new Size(111, 28);
             rbBreakfast.TabIndex = 16;
@@ -527,9 +527,53 @@
             groupBox3.Text = "Yemek Değerleri";
             groupBox3.Enter += groupBox3_Enter;
             // 
+            // pictureBox7
+            // 
+            pictureBox7.Enabled = false;
+            pictureBox7.Image = Properties.Resources.calorieAdd;
+            pictureBox7.Location = new Point(94, 212);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(63, 61);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 44;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            pictureBox12.Enabled = false;
+            pictureBox12.Image = Properties.Resources.fat;
+            pictureBox12.Location = new Point(529, 247);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(44, 40);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 43;
+            pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Enabled = false;
+            pictureBox11.Image = Properties.Resources.protein;
+            pictureBox11.Location = new Point(416, 245);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(44, 40);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 42;
+            pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Enabled = false;
+            pictureBox10.Image = Properties.Resources.carbohydrate;
+            pictureBox10.Location = new Point(286, 244);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(44, 40);
+            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox10.TabIndex = 41;
+            pictureBox10.TabStop = false;
+            // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(248, 98);
+            pictureBox1.Location = new Point(256, 97);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(138, 123);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -540,7 +584,7 @@
             // 
             lblPortionNumber.AutoSize = true;
             lblPortionNumber.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            lblPortionNumber.Location = new Point(274, 27);
+            lblPortionNumber.Location = new Point(278, 27);
             lblPortionNumber.Name = "lblPortionNumber";
             lblPortionNumber.Size = new Size(71, 21);
             lblPortionNumber.TabIndex = 37;
@@ -629,7 +673,7 @@
             // 
             lblFoodName.AutoSize = true;
             lblFoodName.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblFoodName.Location = new Point(318, 49);
+            lblFoodName.Location = new Point(322, 49);
             lblFoodName.Name = "lblFoodName";
             lblFoodName.Size = new Size(123, 32);
             lblFoodName.TabIndex = 28;
@@ -638,55 +682,11 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(193, 53);
+            label6.Location = new Point(197, 53);
             label6.Name = "label6";
             label6.Size = new Size(128, 24);
             label6.TabIndex = 27;
             label6.Text = "Yemek Adı:";
-            // 
-            // pictureBox10
-            // 
-            pictureBox10.Enabled = false;
-            pictureBox10.Image = Properties.Resources.carbohydrate;
-            pictureBox10.Location = new Point(286, 244);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(44, 40);
-            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox10.TabIndex = 41;
-            pictureBox10.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            pictureBox11.Enabled = false;
-            pictureBox11.Image = Properties.Resources.protein;
-            pictureBox11.Location = new Point(416, 245);
-            pictureBox11.Name = "pictureBox11";
-            pictureBox11.Size = new Size(44, 40);
-            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox11.TabIndex = 42;
-            pictureBox11.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            pictureBox12.Enabled = false;
-            pictureBox12.Image = Properties.Resources.fat;
-            pictureBox12.Location = new Point(529, 247);
-            pictureBox12.Name = "pictureBox12";
-            pictureBox12.Size = new Size(44, 40);
-            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox12.TabIndex = 43;
-            pictureBox12.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Enabled = false;
-            pictureBox7.Image = Properties.Resources.calorieAdd;
-            pictureBox7.Location = new Point(94, 212);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(63, 61);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 44;
-            pictureBox7.TabStop = false;
             // 
             // AddConsumedFood
             // 
@@ -723,11 +723,11 @@
             groupBox2.PerformLayout();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

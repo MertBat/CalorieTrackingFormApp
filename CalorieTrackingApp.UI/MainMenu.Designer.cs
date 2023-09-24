@@ -45,6 +45,9 @@
             reports_navBtn = new Button();
             mainMenu_navBtn = new Button();
             topBar_groupBox = new GroupBox();
+            pictureBox15 = new PictureBox();
+            pictureBox14 = new PictureBox();
+            pictureBox13 = new PictureBox();
             pbProfilePictureTop = new PictureBox();
             lblProfileNameTop2 = new Label();
             label2 = new Label();
@@ -121,6 +124,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             topBar_groupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbProfilePictureTop).BeginInit();
             groupBox1.SuspendLayout();
             groupBox4.SuspendLayout();
@@ -340,6 +346,9 @@
             // 
             // topBar_groupBox
             // 
+            topBar_groupBox.Controls.Add(pictureBox15);
+            topBar_groupBox.Controls.Add(pictureBox14);
+            topBar_groupBox.Controls.Add(pictureBox13);
             topBar_groupBox.Controls.Add(pbProfilePictureTop);
             topBar_groupBox.Controls.Add(lblProfileNameTop2);
             topBar_groupBox.Controls.Add(label2);
@@ -354,11 +363,47 @@
             topBar_groupBox.TabIndex = 1;
             topBar_groupBox.TabStop = false;
             // 
+            // pictureBox15
+            // 
+            pictureBox15.BackColor = Color.Transparent;
+            pictureBox15.Enabled = false;
+            pictureBox15.Image = Properties.Resources.addWeight;
+            pictureBox15.Location = new Point(369, 19);
+            pictureBox15.Name = "pictureBox15";
+            pictureBox15.Size = new Size(49, 51);
+            pictureBox15.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox15.TabIndex = 45;
+            pictureBox15.TabStop = false;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.BackColor = Color.Transparent;
+            pictureBox14.Enabled = false;
+            pictureBox14.Image = Properties.Resources.addFood2;
+            pictureBox14.Location = new Point(553, 22);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(40, 43);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 44;
+            pictureBox14.TabStop = false;
+            // 
+            // pictureBox13
+            // 
+            pictureBox13.BackColor = Color.Transparent;
+            pictureBox13.Enabled = false;
+            pictureBox13.Image = Properties.Resources.addWater;
+            pictureBox13.Location = new Point(728, 22);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(44, 44);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 43;
+            pictureBox13.TabStop = false;
+            // 
             // pbProfilePictureTop
             // 
-            pbProfilePictureTop.Location = new Point(843, 20);
+            pbProfilePictureTop.Location = new Point(854, 31);
             pbProfilePictureTop.Name = "pbProfilePictureTop";
-            pbProfilePictureTop.Size = new Size(104, 104);
+            pbProfilePictureTop.Size = new Size(86, 80);
             pbProfilePictureTop.SizeMode = PictureBoxSizeMode.StretchImage;
             pbProfilePictureTop.TabIndex = 42;
             pbProfilePictureTop.TabStop = false;
@@ -408,7 +453,7 @@
             // 
             btnYemekEkle.BackColor = Color.DarkSalmon;
             btnYemekEkle.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnYemekEkle.Location = new Point(475, 57);
+            btnYemekEkle.Location = new Point(475, 69);
             btnYemekEkle.Name = "btnYemekEkle";
             btnYemekEkle.Size = new Size(193, 46);
             btnYemekEkle.TabIndex = 2;
@@ -420,7 +465,7 @@
             // 
             btnSuKaydet.BackColor = Color.DeepSkyBlue;
             btnSuKaydet.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSuKaydet.Location = new Point(674, 57);
+            btnSuKaydet.Location = new Point(676, 69);
             btnSuKaydet.Name = "btnSuKaydet";
             btnSuKaydet.Size = new Size(149, 46);
             btnSuKaydet.TabIndex = 1;
@@ -433,7 +478,7 @@
             addWeight_btn.BackColor = SystemColors.ControlDark;
             addWeight_btn.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             addWeight_btn.ForeColor = SystemColors.ActiveCaptionText;
-            addWeight_btn.Location = new Point(312, 57);
+            addWeight_btn.Location = new Point(312, 69);
             addWeight_btn.Name = "addWeight_btn";
             addWeight_btn.Size = new Size(157, 46);
             addWeight_btn.TabIndex = 0;
@@ -1130,6 +1175,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             topBar_groupBox.ResumeLayout(false);
             topBar_groupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbProfilePictureTop).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox4.ResumeLayout(false);
@@ -1240,5 +1288,8 @@
         private PictureBox pictureBox10;
         private PictureBox pictureBox12;
         private PictureBox pictureBox11;
+        private PictureBox pictureBox13;
+        private PictureBox pictureBox14;
+        private PictureBox pictureBox15;
     }
 }

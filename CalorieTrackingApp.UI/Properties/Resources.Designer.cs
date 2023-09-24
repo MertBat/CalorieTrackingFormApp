@@ -73,6 +73,16 @@ namespace CalorieTrackingApp.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap addFood2 {
+            get {
+                object obj = ResourceManager.GetObject("addFood2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap addIcon {
             get {
                 object obj = ResourceManager.GetObject("addIcon", resourceCulture);
@@ -86,6 +96,26 @@ namespace CalorieTrackingApp.UI.Properties {
         internal static System.Drawing.Bitmap addPhoto {
             get {
                 object obj = ResourceManager.GetObject("addPhoto", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap addWater {
+            get {
+                object obj = ResourceManager.GetObject("addWater", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap addWeight {
+            get {
+                object obj = ResourceManager.GetObject("addWeight", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
