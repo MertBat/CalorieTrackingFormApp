@@ -128,9 +128,9 @@
             // 
             // pbProfilePictureTop
             // 
-            pbProfilePictureTop.Location = new Point(808, 20);
+            pbProfilePictureTop.Location = new Point(831, 37);
             pbProfilePictureTop.Name = "pbProfilePictureTop";
-            pbProfilePictureTop.Size = new Size(104, 104);
+            pbProfilePictureTop.Size = new Size(72, 70);
             pbProfilePictureTop.SizeMode = PictureBoxSizeMode.StretchImage;
             pbProfilePictureTop.TabIndex = 9;
             pbProfilePictureTop.TabStop = false;
