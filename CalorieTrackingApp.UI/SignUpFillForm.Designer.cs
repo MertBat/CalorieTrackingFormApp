@@ -33,6 +33,8 @@
             label6 = new Label();
             dpBirthdate = new DateTimePicker();
             groupBox2 = new GroupBox();
+            pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
             rbWoman = new RadioButton();
             rbMan = new RadioButton();
             label5 = new Label();
@@ -49,17 +51,17 @@
             nudWeightEntry = new NumericUpDown();
             nudHeightEntry = new NumericUpDown();
             pbUserPhoto = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
+            pictureBox4 = new PictureBox();
             groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudTargetWeight).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudWeightEntry).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudHeightEntry).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbUserPhoto).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -104,6 +106,26 @@
             groupBox2.TabIndex = 33;
             groupBox2.TabStop = false;
             groupBox2.Text = "Cinsiyet";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(96, 23);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(77, 77);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 3;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(286, 23);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(77, 77);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
             // 
             // rbWoman
             // 
@@ -187,6 +209,7 @@
             groupBox1.BackColor = Color.Transparent;
             groupBox1.BackgroundImage = Properties.Resources.output_onlinepngtools;
             groupBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            groupBox1.Controls.Add(pictureBox4);
             groupBox1.Controls.Add(pictureBox1);
             groupBox1.Controls.Add(cmbExercise);
             groupBox1.Controls.Add(label8);
@@ -240,7 +263,7 @@
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(179, 681);
+            btnSave.Location = new Point(188, 682);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(189, 52);
             btnSave.TabIndex = 39;
@@ -296,25 +319,15 @@
             pbUserPhoto.TabIndex = 24;
             pbUserPhoto.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBox4
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(286, 23);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(77, 77);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 2;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(96, 23);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(77, 77);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 3;
-            pictureBox3.TabStop = false;
+            pictureBox4.Image = Properties.Resources.goBackButton;
+            pictureBox4.Location = new Point(89, 686);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(50, 48);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 58;
+            pictureBox4.TabStop = false;
             // 
             // SignUpFillForm
             // 
@@ -334,6 +347,8 @@
             Load += SignUpFillForm_Load;
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -341,8 +356,7 @@
             ((System.ComponentModel.ISupportInitialize)nudWeightEntry).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudHeightEntry).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbUserPhoto).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -371,5 +385,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox3;
         private PictureBox pictureBox2;
+        private PictureBox pictureBox4;
     }
 }
