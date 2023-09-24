@@ -492,7 +492,7 @@
             // 
             lblGunlukKaloriHedef.AutoSize = true;
             lblGunlukKaloriHedef.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGunlukKaloriHedef.Location = new Point(63, 66);
+            lblGunlukKaloriHedef.Location = new Point(68, 66);
             lblGunlukKaloriHedef.Name = "lblGunlukKaloriHedef";
             lblGunlukKaloriHedef.Size = new Size(104, 25);
             lblGunlukKaloriHedef.TabIndex = 18;
@@ -522,7 +522,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(14, 31);
+            label4.Location = new Point(19, 31);
             label4.Name = "label4";
             label4.Size = new Size(205, 22);
             label4.TabIndex = 15;
@@ -562,7 +562,7 @@
             // 
             pictureBox11.Enabled = false;
             pictureBox11.Image = Properties.Resources.protein;
-            pictureBox11.Location = new Point(228, 24);
+            pictureBox11.Location = new Point(230, 24);
             pictureBox11.Name = "pictureBox11";
             pictureBox11.Size = new Size(44, 40);
             pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -573,7 +573,7 @@
             // 
             pictureBox10.Enabled = false;
             pictureBox10.Image = Properties.Resources.carbohydrate;
-            pictureBox10.Location = new Point(74, 23);
+            pictureBox10.Location = new Point(74, 24);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(44, 40);
             pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -594,7 +594,7 @@
             // 
             lblProtein.AutoSize = true;
             lblProtein.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProtein.Location = new Point(221, 88);
+            lblProtein.Location = new Point(220, 88);
             lblProtein.Name = "lblProtein";
             lblProtein.Size = new Size(69, 25);
             lblProtein.TabIndex = 16;
@@ -604,7 +604,7 @@
             // 
             lblKarbonhidrat.AutoSize = true;
             lblKarbonhidrat.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKarbonhidrat.Location = new Point(70, 87);
+            lblKarbonhidrat.Location = new Point(70, 88);
             lblKarbonhidrat.Name = "lblKarbonhidrat";
             lblKarbonhidrat.Size = new Size(57, 25);
             lblKarbonhidrat.TabIndex = 15;
@@ -634,7 +634,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(32, 66);
+            label7.Location = new Point(32, 67);
             label7.Name = "label7";
             label7.Size = new Size(131, 22);
             label7.TabIndex = 12;
@@ -1039,7 +1039,7 @@
             // 
             lblYuzdeSu.AutoSize = true;
             lblYuzdeSu.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblYuzdeSu.Location = new Point(256, 234);
+            lblYuzdeSu.Location = new Point(278, 244);
             lblYuzdeSu.Name = "lblYuzdeSu";
             lblYuzdeSu.Size = new Size(46, 28);
             lblYuzdeSu.TabIndex = 47;
@@ -1098,7 +1098,7 @@
             // 
             waterIntake_progressBar.BackColor = Color.Blue;
             waterIntake_progressBar.ForeColor = Color.Blue;
-            waterIntake_progressBar.Location = new Point(21, 165);
+            waterIntake_progressBar.Location = new Point(43, 175);
             waterIntake_progressBar.MarqueeAnimationSpeed = 50;
             waterIntake_progressBar.Name = "waterIntake_progressBar";
             waterIntake_progressBar.Size = new Size(485, 66);
@@ -1109,7 +1109,7 @@
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1284, 725);
+            ClientSize = new Size(1279, 738);
             Controls.Add(groupBox6);
             Controls.Add(groupBox5);
             Controls.Add(groupBox2);
