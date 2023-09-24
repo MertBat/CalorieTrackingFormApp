@@ -134,12 +134,39 @@ namespace CalorieTrackingApp.UI
                     dateLabel.Font = newFont3;
                     grp.Controls.Add(dateLabel);
 
+                    //DeleteIcon
+                    if(post.AccountId == _account.Id)
+                    {
+                        PictureBox picture2 = new PictureBox();
+                        picture2.Image = Properties.Resources.xIcon;
+                        picture2.SizeMode = PictureBoxSizeMode.StretchImage;
+                        picture2.Size = new Size(15,15);
+                        picture2.Location = new Point(580, 17);
+                        picture2.BringToFront();
+                        picture2.Click += new EventHandler(picture2_Click);
+                        picture2.Tag = post;
+                        grp.Controls.Add(picture2);
+                        
+                    }
+
                     //GroupBox
                     grp.Height = 260;
                     grp.Width = 600;
                     grp.Margin = new Padding(20, 0, 0, 10);
                     flpPosts.Controls.Add(grp);
                 }
+            }
+        }
+
+        private void picture2_Click(object? sender, EventArgs e)
+        {
+            PictureBox pictureBox = sender as PictureBox;
+            DialogResult res =  MessageBox.Show("Post u silmek istediğinize emin misiniz?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(res == DialogResult.Yes)
+            {
+                SocialMediaPost post = pictureBox.Tag as SocialMediaPost;
+                posts.Delete(post);
+                LoadPosts();
             }
         }
 
