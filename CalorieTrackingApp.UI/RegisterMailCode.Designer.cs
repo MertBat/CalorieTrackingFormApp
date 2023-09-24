@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterMailCode));
             btnSend = new Button();
             lblSecond = new Label();
             label3 = new Label();
@@ -39,6 +40,8 @@
             label1 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
             label4 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnSend
@@ -46,7 +49,7 @@
             btnSend.Location = new Point(475, 107);
             btnSend.Margin = new Padding(5);
             btnSend.Name = "btnSend";
-            btnSend.Size = new Size(149, 34);
+            btnSend.Size = new Size(141, 33);
             btnSend.TabIndex = 14;
             btnSend.Text = "Gönder";
             btnSend.UseVisualStyleBackColor = true;
@@ -56,7 +59,7 @@
             // 
             lblSecond.AutoSize = true;
             lblSecond.BorderStyle = BorderStyle.FixedSingle;
-            lblSecond.Location = new Point(418, 234);
+            lblSecond.Location = new Point(466, 230);
             lblSecond.Margin = new Padding(5, 0, 5, 0);
             lblSecond.Name = "lblSecond";
             lblSecond.Size = new Size(2, 26);
@@ -65,7 +68,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(100, 234);
+            label3.Location = new Point(148, 230);
             label3.Margin = new Padding(5, 0, 5, 0);
             label3.Name = "label3";
             label3.Size = new Size(308, 24);
@@ -75,11 +78,11 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(76, 108);
+            label2.Font = new Font("Century Gothic", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(86, 112);
             label2.Margin = new Padding(5, 0, 5, 0);
             label2.Name = "label2";
-            label2.Size = new Size(36, 19);
+            label2.Size = new Size(52, 23);
             label2.TabIndex = 11;
             label2.Text = "Kod:";
             // 
@@ -117,12 +120,12 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(115, 38);
+            label1.Location = new Point(67, 39);
             label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
-            label1.Size = new Size(415, 32);
+            label1.Size = new Size(455, 32);
             label1.TabIndex = 7;
-            label1.Text = "Maile Gelen Kodu Doğrulayınız";
+            label1.Text = "Mailinize Gelen Kodu Doğrulayınız";
             // 
             // timer1
             // 
@@ -139,11 +142,22 @@
             label4.TabIndex = 15;
             label4.Text = "-";
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(539, 22);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(77, 67);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 16;
+            pictureBox1.TabStop = false;
+            // 
             // RegisterMailCode
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(672, 323);
+            Controls.Add(pictureBox1);
             Controls.Add(label4);
             Controls.Add(btnSend);
             Controls.Add(lblSecond);
@@ -158,6 +172,7 @@
             Name = "RegisterMailCode";
             Text = "RegisterMailCode";
             Load += RegisterMailCode_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -174,5 +189,6 @@
         private Label label1;
         private System.Windows.Forms.Timer timer1;
         private Label label4;
+        private PictureBox pictureBox1;
     }
 }

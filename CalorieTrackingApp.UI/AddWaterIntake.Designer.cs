@@ -29,7 +29,12 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            pictureBox1 = new PictureBox();
+            pictureBox6 = new PictureBox();
             groupBox2 = new GroupBox();
+            pictureBox4 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
             btnRemove = new Button();
             btnKaydet = new Button();
             label4 = new Label();
@@ -39,6 +44,8 @@
             rb500 = new RadioButton();
             rb250 = new RadioButton();
             groupBox6 = new GroupBox();
+            pictureBox7 = new PictureBox();
+            pictureBox5 = new PictureBox();
             lblGunlukSuIcilen = new Label();
             label6 = new Label();
             lblYuzdeSu = new Label();
@@ -50,24 +57,17 @@
             waterIntake_progressBar = new ProgressBar();
             label1 = new Label();
             dtpDate = new DateTimePicker();
-            pictureBox6 = new PictureBox();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox7 = new PictureBox();
             groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudAlinanSu).BeginInit();
             groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -84,6 +84,28 @@
             groupBox1.TabIndex = 6;
             groupBox1.TabStop = false;
             groupBox1.Enter += groupBox1_Enter;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Enabled = false;
+            pictureBox1.Image = Properties.Resources.date;
+            pictureBox1.Location = new Point(81, 203);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(50, 44);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 52;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Enabled = false;
+            pictureBox6.Image = Properties.Resources.waterIntakeIcon;
+            pictureBox6.Location = new Point(237, 32);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(105, 101);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 51;
+            pictureBox6.TabStop = false;
             // 
             // groupBox2
             // 
@@ -104,6 +126,39 @@
             groupBox2.TabIndex = 11;
             groupBox2.TabStop = false;
             groupBox2.Text = "Su Alımı Ekle";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Enabled = false;
+            pictureBox4.Image = Properties.Resources.bigBottleWater;
+            pictureBox4.Location = new Point(413, 51);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(64, 62);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 55;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Enabled = false;
+            pictureBox3.Image = Properties.Resources.bottleWater;
+            pictureBox3.Location = new Point(252, 49);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(57, 65);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 54;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Enabled = false;
+            pictureBox2.Image = Properties.Resources.glassWater;
+            pictureBox2.Location = new Point(79, 49);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(58, 62);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 53;
+            pictureBox2.TabStop = false;
             // 
             // btnRemove
             // 
@@ -209,6 +264,30 @@
             groupBox6.TabStop = false;
             groupBox6.Text = "Su Alım İstatistikleri";
             // 
+            // pictureBox7
+            // 
+            pictureBox7.Enabled = false;
+            pictureBox7.Image = Properties.Resources.waterDone;
+            pictureBox7.Location = new Point(23, 96);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(32, 30);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 54;
+            pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Enabled = false;
+            pictureBox5.Image = Properties.Resources.target;
+            pictureBox5.Location = new Point(386, 98);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(32, 30);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 53;
+            pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
+            // 
             // lblGunlukSuIcilen
             // 
             lblGunlukSuIcilen.AutoSize = true;
@@ -312,83 +391,6 @@
             dtpDate.TabIndex = 6;
             dtpDate.ValueChanged += dtpDate_ValueChanged;
             // 
-            // pictureBox6
-            // 
-            pictureBox6.Enabled = false;
-            pictureBox6.Image = Properties.Resources.waterIntakeIcon;
-            pictureBox6.Location = new Point(237, 32);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(105, 101);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 51;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Enabled = false;
-            pictureBox1.Image = Properties.Resources.date;
-            pictureBox1.Location = new Point(81, 203);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(50, 44);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 52;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Enabled = false;
-            pictureBox2.Image = Properties.Resources.glassWater;
-            pictureBox2.Location = new Point(79, 49);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(58, 62);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 53;
-            pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Enabled = false;
-            pictureBox3.Image = Properties.Resources.bottleWater;
-            pictureBox3.Location = new Point(252, 49);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(57, 65);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 54;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Enabled = false;
-            pictureBox4.Image = Properties.Resources.bigBottleWater;
-            pictureBox4.Location = new Point(413, 51);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(64, 62);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 55;
-            pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Enabled = false;
-            pictureBox5.Image = Properties.Resources.target;
-            pictureBox5.Location = new Point(386, 98);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(32, 30);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 53;
-            pictureBox5.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Enabled = false;
-            pictureBox7.Image = Properties.Resources.waterDone;
-            pictureBox7.Location = new Point(23, 96);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(32, 30);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 54;
-            pictureBox7.TabStop = false;
-            // 
             // AddWaterIntake
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
@@ -402,18 +404,18 @@
             Load += AddWaterIntake_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudAlinanSu).EndInit();
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
         }
 

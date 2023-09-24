@@ -45,6 +45,7 @@
             reports_navBtn = new Button();
             mainMenu_navBtn = new Button();
             topBar_groupBox = new GroupBox();
+            pictureBox16 = new PictureBox();
             pictureBox15 = new PictureBox();
             pictureBox14 = new PictureBox();
             pictureBox13 = new PictureBox();
@@ -117,7 +118,8 @@
             lblGunlukSuHedef = new Label();
             label39 = new Label();
             waterIntake_progressBar = new ProgressBar();
-            pictureBox16 = new PictureBox();
+            pictureBox17 = new PictureBox();
+            pictureBox18 = new PictureBox();
             navigation_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -125,6 +127,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             topBar_groupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox15).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
@@ -142,7 +145,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).BeginInit();
             SuspendLayout();
             // 
             // navigation_groupBox
@@ -366,6 +370,17 @@
             topBar_groupBox.TabIndex = 1;
             topBar_groupBox.TabStop = false;
             // 
+            // pictureBox16
+            // 
+            pictureBox16.Enabled = false;
+            pictureBox16.Image = Properties.Resources.navMain;
+            pictureBox16.Location = new Point(6, 24);
+            pictureBox16.Name = "pictureBox16";
+            pictureBox16.Size = new Size(44, 45);
+            pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox16.TabIndex = 48;
+            pictureBox16.TabStop = false;
+            // 
             // pictureBox15
             // 
             pictureBox15.BackColor = Color.Transparent;
@@ -404,9 +419,9 @@
             // 
             // pbProfilePictureTop
             // 
-            pbProfilePictureTop.Location = new Point(854, 31);
+            pbProfilePictureTop.Location = new Point(858, 31);
             pbProfilePictureTop.Name = "pbProfilePictureTop";
-            pbProfilePictureTop.Size = new Size(86, 80);
+            pbProfilePictureTop.Size = new Size(82, 80);
             pbProfilePictureTop.SizeMode = PictureBoxSizeMode.StretchImage;
             pbProfilePictureTop.TabIndex = 42;
             pbProfilePictureTop.TabStop = false;
@@ -881,7 +896,7 @@
             // pictureBox9
             // 
             pictureBox9.Image = Properties.Resources.addIcon;
-            pictureBox9.Location = new Point(30, 245);
+            pictureBox9.Location = new Point(514, 245);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(29, 28);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -892,7 +907,7 @@
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.addIcon;
-            pictureBox8.Location = new Point(30, 166);
+            pictureBox8.Location = new Point(514, 165);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(29, 28);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -903,7 +918,7 @@
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.addIcon;
-            pictureBox7.Location = new Point(30, 87);
+            pictureBox7.Location = new Point(514, 87);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(29, 28);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -1034,6 +1049,8 @@
             // 
             // groupBox6
             // 
+            groupBox6.Controls.Add(pictureBox17);
+            groupBox6.Controls.Add(pictureBox18);
             groupBox6.Controls.Add(pictureBox6);
             groupBox6.Controls.Add(lblGunlukSuIcilen);
             groupBox6.Controls.Add(label11);
@@ -1067,7 +1084,7 @@
             // 
             lblGunlukSuIcilen.AutoSize = true;
             lblGunlukSuIcilen.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGunlukSuIcilen.Location = new Point(84, 134);
+            lblGunlukSuIcilen.Location = new Point(120, 140);
             lblGunlukSuIcilen.Name = "lblGunlukSuIcilen";
             lblGunlukSuIcilen.Size = new Size(66, 28);
             lblGunlukSuIcilen.TabIndex = 49;
@@ -1077,7 +1094,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(26, 136);
+            label11.Location = new Point(62, 142);
             label11.Name = "label11";
             label11.Size = new Size(62, 22);
             label11.TabIndex = 48;
@@ -1087,7 +1104,7 @@
             // 
             lblYuzdeSu.AutoSize = true;
             lblYuzdeSu.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblYuzdeSu.Location = new Point(278, 244);
+            lblYuzdeSu.Location = new Point(273, 255);
             lblYuzdeSu.Name = "lblYuzdeSu";
             lblYuzdeSu.Size = new Size(46, 28);
             lblYuzdeSu.TabIndex = 47;
@@ -1126,7 +1143,7 @@
             // 
             lblGunlukSuHedef.AutoSize = true;
             lblGunlukSuHedef.Font = new Font("Century Gothic", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblGunlukSuHedef.Location = new Point(464, 133);
+            lblGunlukSuHedef.Location = new Point(488, 138);
             lblGunlukSuHedef.Name = "lblGunlukSuHedef";
             lblGunlukSuHedef.Size = new Size(66, 28);
             lblGunlukSuHedef.TabIndex = 43;
@@ -1136,7 +1153,7 @@
             // 
             label39.AutoSize = true;
             label39.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label39.Location = new Point(395, 137);
+            label39.Location = new Point(419, 142);
             label39.Name = "label39";
             label39.Size = new Size(71, 22);
             label39.TabIndex = 31;
@@ -1146,23 +1163,34 @@
             // 
             waterIntake_progressBar.BackColor = Color.Blue;
             waterIntake_progressBar.ForeColor = Color.Blue;
-            waterIntake_progressBar.Location = new Point(43, 175);
+            waterIntake_progressBar.Location = new Point(30, 186);
             waterIntake_progressBar.MarqueeAnimationSpeed = 50;
             waterIntake_progressBar.Name = "waterIntake_progressBar";
-            waterIntake_progressBar.Size = new Size(485, 66);
+            waterIntake_progressBar.Size = new Size(498, 55);
             waterIntake_progressBar.Style = ProgressBarStyle.Continuous;
             waterIntake_progressBar.TabIndex = 0;
             // 
-            // pictureBox16
+            // pictureBox17
             // 
-            pictureBox16.Enabled = false;
-            pictureBox16.Image = Properties.Resources.navMain;
-            pictureBox16.Location = new Point(6, 24);
-            pictureBox16.Name = "pictureBox16";
-            pictureBox16.Size = new Size(44, 45);
-            pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox16.TabIndex = 48;
-            pictureBox16.TabStop = false;
+            pictureBox17.Enabled = false;
+            pictureBox17.Image = Properties.Resources.waterDone;
+            pictureBox17.Location = new Point(30, 138);
+            pictureBox17.Name = "pictureBox17";
+            pictureBox17.Size = new Size(32, 30);
+            pictureBox17.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox17.TabIndex = 56;
+            pictureBox17.TabStop = false;
+            // 
+            // pictureBox18
+            // 
+            pictureBox18.Enabled = false;
+            pictureBox18.Image = Properties.Resources.target;
+            pictureBox18.Location = new Point(387, 137);
+            pictureBox18.Name = "pictureBox18";
+            pictureBox18.Size = new Size(32, 30);
+            pictureBox18.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox18.TabIndex = 55;
+            pictureBox18.TabStop = false;
             // 
             // MainMenu
             // 
@@ -1189,6 +1217,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             topBar_groupBox.ResumeLayout(false);
             topBar_groupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox15).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
@@ -1211,7 +1240,8 @@
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox17).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox18).EndInit();
             ResumeLayout(false);
         }
 
@@ -1307,5 +1337,7 @@
         private PictureBox pictureBox14;
         private PictureBox pictureBox15;
         private PictureBox pictureBox16;
+        private PictureBox pictureBox17;
+        private PictureBox pictureBox18;
     }
 }

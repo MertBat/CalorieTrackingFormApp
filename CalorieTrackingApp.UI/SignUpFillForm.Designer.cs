@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpFillForm));
             button1 = new Button();
             label6 = new Label();
             dpBirthdate = new DateTimePicker();
             groupBox2 = new GroupBox();
+            pictureBox3 = new PictureBox();
+            pictureBox2 = new PictureBox();
             rbWoman = new RadioButton();
             rbMan = new RadioButton();
             label5 = new Label();
@@ -48,13 +51,17 @@
             nudWeightEntry = new NumericUpDown();
             nudHeightEntry = new NumericUpDown();
             pbUserPhoto = new PictureBox();
+            pictureBox4 = new PictureBox();
             groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudTargetWeight).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudWeightEntry).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudHeightEntry).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbUserPhoto).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -70,7 +77,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(46, 526);
+            label6.Location = new Point(46, 535);
             label6.Margin = new Padding(5, 0, 5, 0);
             label6.Name = "label6";
             label6.Size = new Size(223, 24);
@@ -79,7 +86,7 @@
             // 
             // dpBirthdate
             // 
-            dpBirthdate.Location = new Point(289, 520);
+            dpBirthdate.Location = new Point(289, 529);
             dpBirthdate.Margin = new Padding(5);
             dpBirthdate.Name = "dpBirthdate";
             dpBirthdate.Size = new Size(219, 33);
@@ -87,24 +94,47 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(pictureBox3);
+            groupBox2.Controls.Add(pictureBox2);
             groupBox2.Controls.Add(rbWoman);
             groupBox2.Controls.Add(rbMan);
-            groupBox2.Location = new Point(47, 402);
+            groupBox2.Location = new Point(47, 400);
             groupBox2.Margin = new Padding(5);
             groupBox2.Name = "groupBox2";
             groupBox2.Padding = new Padding(5);
-            groupBox2.Size = new Size(430, 84);
+            groupBox2.Size = new Size(430, 110);
             groupBox2.TabIndex = 33;
             groupBox2.TabStop = false;
             groupBox2.Text = "Cinsiyet";
             // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(96, 23);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(77, 77);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 3;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(286, 23);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(77, 77);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
+            // 
             // rbWoman
             // 
             rbWoman.AutoSize = true;
-            rbWoman.Location = new Point(262, 38);
+            rbWoman.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            rbWoman.Location = new Point(271, 49);
             rbWoman.Margin = new Padding(5);
             rbWoman.Name = "rbWoman";
-            rbWoman.Size = new Size(106, 28);
+            rbWoman.Size = new Size(80, 24);
             rbWoman.TabIndex = 1;
             rbWoman.TabStop = true;
             rbWoman.Text = "Female";
@@ -113,10 +143,11 @@
             // rbMan
             // 
             rbMan.AutoSize = true;
-            rbMan.Location = new Point(80, 38);
+            rbMan.Font = new Font("Century Gothic", 11.25F, FontStyle.Regular, GraphicsUnit.Point);
+            rbMan.Location = new Point(79, 49);
             rbMan.Margin = new Padding(5);
             rbMan.Name = "rbMan";
-            rbMan.Size = new Size(80, 28);
+            rbMan.Size = new Size(65, 24);
             rbMan.TabIndex = 0;
             rbMan.TabStop = true;
             rbMan.Text = "Male";
@@ -178,6 +209,7 @@
             groupBox1.BackColor = Color.Transparent;
             groupBox1.BackgroundImage = Properties.Resources.output_onlinepngtools;
             groupBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            groupBox1.Controls.Add(pictureBox4);
             groupBox1.Controls.Add(pictureBox1);
             groupBox1.Controls.Add(cmbExercise);
             groupBox1.Controls.Add(label8);
@@ -203,7 +235,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.addPhoto;
-            pictureBox1.Location = new Point(312, 114);
+            pictureBox1.Location = new Point(309, 120);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(48, 47);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -231,7 +263,7 @@
             // 
             // btnSave
             // 
-            btnSave.Location = new Point(179, 681);
+            btnSave.Location = new Point(188, 682);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(189, 52);
             btnSave.TabIndex = 39;
@@ -287,6 +319,16 @@
             pbUserPhoto.TabIndex = 24;
             pbUserPhoto.TabStop = false;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.goBackButton;
+            pictureBox4.Location = new Point(89, 686);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(50, 48);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 58;
+            pictureBox4.TabStop = false;
+            // 
             // SignUpFillForm
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
@@ -305,6 +347,8 @@
             Load += SignUpFillForm_Load;
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -312,6 +356,7 @@
             ((System.ComponentModel.ISupportInitialize)nudWeightEntry).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudHeightEntry).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbUserPhoto).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -338,5 +383,8 @@
         private ComboBox cmbExercise;
         private Label label8;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox4;
     }
 }

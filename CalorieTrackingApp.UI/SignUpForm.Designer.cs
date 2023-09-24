@@ -28,9 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUpForm));
             SignUp_GroupBox = new GroupBox();
-            btnBack = new Button();
+            pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             pbpass = new PictureBox();
             PassStatus = new Label();
@@ -49,6 +48,7 @@
             txtSignUpMail = new TextBox();
             label1 = new Label();
             SignUp_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbpass).BeginInit();
             SuspendLayout();
@@ -58,7 +58,7 @@
             SignUp_GroupBox.BackColor = Color.Transparent;
             SignUp_GroupBox.BackgroundImage = Properties.Resources.output_onlinepngtools;
             SignUp_GroupBox.BackgroundImageLayout = ImageLayout.Stretch;
-            SignUp_GroupBox.Controls.Add(btnBack);
+            SignUp_GroupBox.Controls.Add(pictureBox2);
             SignUp_GroupBox.Controls.Add(pictureBox1);
             SignUp_GroupBox.Controls.Add(pbpass);
             SignUp_GroupBox.Controls.Add(PassStatus);
@@ -83,19 +83,16 @@
             SignUp_GroupBox.TabStop = false;
             SignUp_GroupBox.Enter += SignUp_GroupBox_Enter;
             // 
-            // btnBack
+            // pictureBox2
             // 
-            btnBack.BackColor = Color.Transparent;
-            btnBack.BackgroundImage = (Image)resources.GetObject("btnBack.BackgroundImage");
-            btnBack.BackgroundImageLayout = ImageLayout.Stretch;
-            btnBack.FlatStyle = FlatStyle.Flat;
-            btnBack.Location = new Point(67, 597);
-            btnBack.Name = "btnBack";
-            btnBack.Size = new Size(42, 38);
-            btnBack.TabIndex = 56;
-            btnBack.UseVisualStyleBackColor = false;
-            btnBack.Visible = false;
-            btnBack.Click += btnBack_Click;
+            pictureBox2.Image = Properties.Resources.goBackButton;
+            pictureBox2.Location = new Point(60, 592);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(50, 48);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 57;
+            pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox1
             // 
@@ -146,7 +143,7 @@
             // 
             // btn_SignUp
             // 
-            btn_SignUp.Location = new Point(152, 592);
+            btn_SignUp.Location = new Point(160, 592);
             btn_SignUp.Name = "btn_SignUp";
             btn_SignUp.Size = new Size(194, 48);
             btn_SignUp.TabIndex = 7;
@@ -269,6 +266,7 @@
             Load += SignUpForm_Load;
             SignUp_GroupBox.ResumeLayout(false);
             SignUp_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbpass).EndInit();
             ResumeLayout(false);
@@ -294,6 +292,6 @@
         private ProgressBar pbpassStr;
         private PictureBox pictureBox1;
         private PictureBox pbpass;
-        private Button btnBack;
+        private PictureBox pictureBox2;
     }
 }

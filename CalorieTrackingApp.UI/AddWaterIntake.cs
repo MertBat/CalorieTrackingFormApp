@@ -162,5 +162,14 @@ namespace CalorieTrackingApp.UI
                 rb250.Checked = true;
             }
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
