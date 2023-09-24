@@ -163,6 +163,26 @@ namespace CalorieTrackingApp.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bigBottleWater {
+            get {
+                object obj = ResourceManager.GetObject("bigBottleWater", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bottleWater {
+            get {
+                object obj = ResourceManager.GetObject("bottleWater", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap calorieAdd {
             get {
                 object obj = ResourceManager.GetObject("calorieAdd", resourceCulture);
@@ -186,6 +206,16 @@ namespace CalorieTrackingApp.UI.Properties {
         internal static System.Drawing.Bitmap carbohydrate {
             get {
                 object obj = ResourceManager.GetObject("carbohydrate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap date {
+            get {
+                object obj = ResourceManager.GetObject("date", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,6 +276,16 @@ namespace CalorieTrackingApp.UI.Properties {
         internal static System.Drawing.Bitmap fat {
             get {
                 object obj = ResourceManager.GetObject("fat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap glassWater {
+            get {
+                object obj = ResourceManager.GetObject("glassWater", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

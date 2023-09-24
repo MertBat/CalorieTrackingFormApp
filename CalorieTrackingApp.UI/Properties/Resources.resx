@@ -127,6 +127,9 @@
   <data name="BackButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\5700554.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="glassWater" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\glassWater.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bg_test" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bg_test.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -144,6 +147,9 @@
   </data>
   <data name="profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="date" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\date.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bacgroundv1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bacgroundv1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,16 +211,22 @@
   <data name="allDay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\allDay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="calories" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calories.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="navSoical" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\navSoical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DefaultFood" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\4080032.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bottleWater" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bottleWater.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="dinnerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dinnerIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="calories" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calories.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bigBottleWater" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bigBottleWater.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
