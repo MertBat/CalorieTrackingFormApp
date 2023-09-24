@@ -493,7 +493,7 @@
             // rbBreakfast
             // 
             rbBreakfast.AutoSize = true;
-            rbBreakfast.Location = new Point(93, 44);
+            rbBreakfast.Location = new Point(92, 46);
             rbBreakfast.Name = "rbBreakfast";
             rbBreakfast.Size = new Size(111, 28);
             rbBreakfast.TabIndex = 16;

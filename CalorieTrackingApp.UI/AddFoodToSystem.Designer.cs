@@ -156,9 +156,9 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(209, 49);
+            pictureBox1.Location = new Point(212, 50);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(155, 144);
+            pictureBox1.Size = new Size(145, 142);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
