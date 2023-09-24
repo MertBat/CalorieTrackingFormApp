@@ -62,6 +62,7 @@
             rbBreakfast = new RadioButton();
             button6 = new Button();
             groupBox3 = new GroupBox();
+            pictureBox6 = new PictureBox();
             lblYagKahvalti = new Label();
             label15 = new Label();
             lblProteinKahvalti = new Label();
@@ -71,6 +72,7 @@
             lblKaloriKahvalti = new Label();
             label8 = new Label();
             groupBox2 = new GroupBox();
+            pictureBox7 = new PictureBox();
             lblYagOgleYemegi = new Label();
             label5 = new Label();
             lblProteinOgleYemegi = new Label();
@@ -80,6 +82,7 @@
             lblKaloriOgleYemegi = new Label();
             label19 = new Label();
             groupBox4 = new GroupBox();
+            pictureBox8 = new PictureBox();
             lblYagAksamYemegi = new Label();
             label21 = new Label();
             lblProteinAksamYemegi = new Label();
@@ -89,6 +92,7 @@
             lblKaloriAksamYemegi = new Label();
             label27 = new Label();
             groupBox5 = new GroupBox();
+            pictureBox9 = new PictureBox();
             lblYag = new Label();
             label29 = new Label();
             lblProtein = new Label();
@@ -97,10 +101,10 @@
             label33 = new Label();
             lblKalori = new Label();
             label35 = new Label();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox9 = new PictureBox();
+            pictureBox10 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            pictureBox12 = new PictureBox();
+            pictureBox13 = new PictureBox();
             navigation_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -112,13 +116,17 @@
             groupBox1.SuspendLayout();
             groupBox6.SuspendLayout();
             groupBox3.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox4.SuspendLayout();
-            groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
             SuspendLayout();
             // 
             // navigation_groupBox
@@ -339,9 +347,9 @@
             // 
             // pbProfilePictureTop
             // 
-            pbProfilePictureTop.Location = new Point(808, 20);
+            pbProfilePictureTop.Location = new Point(823, 32);
             pbProfilePictureTop.Name = "pbProfilePictureTop";
-            pbProfilePictureTop.Size = new Size(104, 104);
+            pbProfilePictureTop.Size = new Size(89, 85);
             pbProfilePictureTop.SizeMode = PictureBoxSizeMode.StretchImage;
             pbProfilePictureTop.TabIndex = 46;
             pbProfilePictureTop.TabStop = false;
@@ -439,6 +447,10 @@
             // 
             // groupBox6
             // 
+            groupBox6.Controls.Add(pictureBox13);
+            groupBox6.Controls.Add(pictureBox12);
+            groupBox6.Controls.Add(pictureBox11);
+            groupBox6.Controls.Add(pictureBox10);
             groupBox6.Controls.Add(rbAll);
             groupBox6.Controls.Add(rbDinner);
             groupBox6.Controls.Add(rbLuch);
@@ -455,7 +467,7 @@
             rbAll.AutoSize = true;
             rbAll.Checked = true;
             rbAll.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            rbAll.Location = new Point(364, 49);
+            rbAll.Location = new Point(378, 71);
             rbAll.Name = "rbAll";
             rbAll.Size = new Size(76, 26);
             rbAll.TabIndex = 3;
@@ -468,7 +480,7 @@
             // 
             rbDinner.AutoSize = true;
             rbDinner.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            rbDinner.Location = new Point(244, 49);
+            rbDinner.Location = new Point(245, 70);
             rbDinner.Name = "rbDinner";
             rbDinner.Size = new Size(90, 26);
             rbDinner.TabIndex = 2;
@@ -481,7 +493,7 @@
             // 
             rbLuch.AutoSize = true;
             rbLuch.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            rbLuch.Location = new Point(149, 49);
+            rbLuch.Location = new Point(150, 69);
             rbLuch.Name = "rbLuch";
             rbLuch.Size = new Size(73, 26);
             rbLuch.TabIndex = 1;
@@ -494,7 +506,7 @@
             // 
             rbBreakfast.AutoSize = true;
             rbBreakfast.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            rbBreakfast.Location = new Point(15, 49);
+            rbBreakfast.Location = new Point(20, 68);
             rbBreakfast.Name = "rbBreakfast";
             rbBreakfast.Size = new Size(103, 26);
             rbBreakfast.TabIndex = 0;
@@ -531,6 +543,17 @@
             groupBox3.TabIndex = 4;
             groupBox3.TabStop = false;
             groupBox3.Text = "Kahvaltı Özeti";
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Enabled = false;
+            pictureBox6.Image = Properties.Resources.morning;
+            pictureBox6.Location = new Point(30, 49);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(64, 69);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 53;
+            pictureBox6.TabStop = false;
             // 
             // lblYagKahvalti
             // 
@@ -630,6 +653,17 @@
             groupBox2.TabStop = false;
             groupBox2.Text = "Öğle Yemeği Özeti";
             // 
+            // pictureBox7
+            // 
+            pictureBox7.Enabled = false;
+            pictureBox7.Image = Properties.Resources.noon;
+            pictureBox7.Location = new Point(29, 50);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(64, 66);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 54;
+            pictureBox7.TabStop = false;
+            // 
             // lblYagOgleYemegi
             // 
             lblYagOgleYemegi.AutoSize = true;
@@ -727,6 +761,17 @@
             groupBox4.TabIndex = 6;
             groupBox4.TabStop = false;
             groupBox4.Text = "Akşam Yemeği Özeti";
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Enabled = false;
+            pictureBox8.Image = Properties.Resources.night;
+            pictureBox8.Location = new Point(31, 48);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(64, 63);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 55;
+            pictureBox8.TabStop = false;
             // 
             // lblYagAksamYemegi
             // 
@@ -826,6 +871,17 @@
             groupBox5.TabStop = false;
             groupBox5.Text = "Gün Özeti";
             // 
+            // pictureBox9
+            // 
+            pictureBox9.Enabled = false;
+            pictureBox9.Image = Properties.Resources.allDay;
+            pictureBox9.Location = new Point(31, 47);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(64, 63);
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox9.TabIndex = 56;
+            pictureBox9.TabStop = false;
+            // 
             // lblYag
             // 
             lblYag.AutoSize = true;
@@ -906,49 +962,49 @@
             label35.TabIndex = 45;
             label35.Text = "Kalori";
             // 
-            // pictureBox6
+            // pictureBox10
             // 
-            pictureBox6.Enabled = false;
-            pictureBox6.Image = Properties.Resources.morning;
-            pictureBox6.Location = new Point(30, 49);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(64, 69);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 53;
-            pictureBox6.TabStop = false;
+            pictureBox10.Enabled = false;
+            pictureBox10.Image = Properties.Resources.allDay;
+            pictureBox10.Location = new Point(400, 35);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(36, 36);
+            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox10.TabIndex = 57;
+            pictureBox10.TabStop = false;
             // 
-            // pictureBox7
+            // pictureBox11
             // 
-            pictureBox7.Enabled = false;
-            pictureBox7.Image = Properties.Resources.noon;
-            pictureBox7.Location = new Point(29, 50);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(64, 66);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 54;
-            pictureBox7.TabStop = false;
+            pictureBox11.Enabled = false;
+            pictureBox11.Image = Properties.Resources.morning;
+            pictureBox11.Location = new Point(58, 33);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(35, 38);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 58;
+            pictureBox11.TabStop = false;
             // 
-            // pictureBox8
+            // pictureBox12
             // 
-            pictureBox8.Enabled = false;
-            pictureBox8.Image = Properties.Resources.night;
-            pictureBox8.Location = new Point(31, 48);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(64, 63);
-            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.TabIndex = 55;
-            pictureBox8.TabStop = false;
+            pictureBox12.Enabled = false;
+            pictureBox12.Image = Properties.Resources.noon;
+            pictureBox12.Location = new Point(169, 32);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(40, 38);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 59;
+            pictureBox12.TabStop = false;
             // 
-            // pictureBox9
+            // pictureBox13
             // 
-            pictureBox9.Enabled = false;
-            pictureBox9.Image = Properties.Resources.allDay;
-            pictureBox9.Location = new Point(31, 47);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(64, 63);
-            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox9.TabIndex = 56;
-            pictureBox9.TabStop = false;
+            pictureBox13.Enabled = false;
+            pictureBox13.Image = Properties.Resources.night;
+            pictureBox13.Location = new Point(277, 33);
+            pictureBox13.Name = "pictureBox13";
+            pictureBox13.Size = new Size(39, 38);
+            pictureBox13.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox13.TabIndex = 60;
+            pictureBox13.TabStop = false;
             // 
             // DailyReport
             // 
@@ -982,16 +1038,20 @@
             groupBox6.PerformLayout();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             groupBox4.ResumeLayout(false);
             groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
             ResumeLayout(false);
         }
 
@@ -1072,5 +1132,9 @@
         private PictureBox pictureBox7;
         private PictureBox pictureBox8;
         private PictureBox pictureBox9;
+        private PictureBox pictureBox12;
+        private PictureBox pictureBox11;
+        private PictureBox pictureBox10;
+        private PictureBox pictureBox13;
     }
 }
