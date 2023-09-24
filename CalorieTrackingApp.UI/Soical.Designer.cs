@@ -35,6 +35,16 @@
             label1 = new Label();
             lblProfileNameTop1 = new LinkLabel();
             navigation_groupBox = new GroupBox();
+            label15 = new Label();
+            pictureBox5 = new PictureBox();
+            label14 = new Label();
+            pictureBox4 = new PictureBox();
+            lblSocial = new Label();
+            pictureBox3 = new PictureBox();
+            label12 = new Label();
+            pictureBox2 = new PictureBox();
+            label10 = new Label();
+            pictureBox1 = new PictureBox();
             exit_navbar = new Button();
             button2 = new Button();
             LongReport_navbar = new Button();
@@ -46,26 +56,16 @@
             btnPost = new Button();
             pbPostPicture = new PictureBox();
             flpPosts = new FlowLayoutPanel();
-            label15 = new Label();
-            pictureBox5 = new PictureBox();
-            label14 = new Label();
-            pictureBox4 = new PictureBox();
-            lblSocial = new Label();
-            pictureBox3 = new PictureBox();
-            label12 = new Label();
-            pictureBox2 = new PictureBox();
-            label10 = new Label();
-            pictureBox1 = new PictureBox();
             topBar_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbProfilePictureTop).BeginInit();
             navigation_groupBox.SuspendLayout();
-            groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pbPostPicture).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pbPostPicture).BeginInit();
             SuspendLayout();
             // 
             // topBar_groupBox
@@ -156,6 +156,116 @@
             navigation_groupBox.TabIndex = 3;
             navigation_groupBox.TabStop = false;
             // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label15.Location = new Point(25, 679);
+            label15.Name = "label15";
+            label15.Size = new Size(80, 19);
+            label15.TabIndex = 24;
+            label15.Text = "Çıkış Yap";
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Enabled = false;
+            pictureBox5.Image = Properties.Resources.navLogout;
+            pictureBox5.Location = new Point(40, 617);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(51, 57);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 23;
+            pictureBox5.TabStop = false;
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.BackColor = Color.Transparent;
+            label14.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label14.Location = new Point(20, 103);
+            label14.Name = "label14";
+            label14.Size = new Size(90, 19);
+            label14.TabIndex = 22;
+            label14.Text = "Ana Menü";
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.Transparent;
+            pictureBox4.Enabled = false;
+            pictureBox4.Image = Properties.Resources.navMain;
+            pictureBox4.Location = new Point(39, 40);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(51, 57);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 21;
+            pictureBox4.TabStop = false;
+            // 
+            // lblSocial
+            // 
+            lblSocial.AutoSize = true;
+            lblSocial.BackColor = Color.Transparent;
+            lblSocial.Enabled = false;
+            lblSocial.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSocial.Location = new Point(35, 441);
+            lblSocial.Name = "lblSocial";
+            lblSocial.Size = new Size(57, 19);
+            lblSocial.TabIndex = 20;
+            lblSocial.Text = "Sosyal";
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.Enabled = false;
+            pictureBox3.Image = Properties.Resources.navSoical;
+            pictureBox3.Location = new Point(40, 377);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(51, 57);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 19;
+            pictureBox3.TabStop = false;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label12.Location = new Point(28, 327);
+            label12.Name = "label12";
+            label12.Size = new Size(74, 19);
+            label12.TabIndex = 18;
+            label12.Text = "Grafikler";
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Enabled = false;
+            pictureBox2.Image = Properties.Resources.navGraphs;
+            pictureBox2.Location = new Point(38, 263);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(51, 57);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 17;
+            pictureBox2.TabStop = false;
+            // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.Location = new Point(14, 214);
+            label10.Name = "label10";
+            label10.Size = new Size(102, 19);
+            label10.TabIndex = 16;
+            label10.Text = "Gün Raporu";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Enabled = false;
+            pictureBox1.Image = Properties.Resources.navReports;
+            pictureBox1.Location = new Point(38, 151);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(58, 57);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 15;
+            pictureBox1.TabStop = false;
+            // 
             // exit_navbar
             // 
             exit_navbar.BackColor = SystemColors.ButtonFace;
@@ -172,6 +282,7 @@
             // button2
             // 
             button2.BackColor = SystemColors.ButtonFace;
+            button2.Enabled = false;
             button2.Font = new Font("Century Gothic", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button2.ForeColor = Color.DarkBlue;
             button2.Location = new Point(8, 361);
@@ -288,116 +399,6 @@
             flpPosts.Size = new Size(667, 570);
             flpPosts.TabIndex = 6;
             // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label15.Location = new Point(25, 679);
-            label15.Name = "label15";
-            label15.Size = new Size(80, 19);
-            label15.TabIndex = 24;
-            label15.Text = "Çıkış Yap";
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Enabled = false;
-            pictureBox5.Image = Properties.Resources.navLogout;
-            pictureBox5.Location = new Point(40, 617);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(51, 57);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 23;
-            pictureBox5.TabStop = false;
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.BackColor = Color.Transparent;
-            label14.Enabled = false;
-            label14.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label14.Location = new Point(20, 103);
-            label14.Name = "label14";
-            label14.Size = new Size(90, 19);
-            label14.TabIndex = 22;
-            label14.Text = "Ana Menü";
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.BackColor = Color.Transparent;
-            pictureBox4.Enabled = false;
-            pictureBox4.Image = Properties.Resources.navMain;
-            pictureBox4.Location = new Point(39, 40);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(51, 57);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 21;
-            pictureBox4.TabStop = false;
-            // 
-            // lblSocial
-            // 
-            lblSocial.AutoSize = true;
-            lblSocial.BackColor = Color.Transparent;
-            lblSocial.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSocial.Location = new Point(35, 441);
-            lblSocial.Name = "lblSocial";
-            lblSocial.Size = new Size(57, 19);
-            lblSocial.TabIndex = 20;
-            lblSocial.Text = "Sosyal";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.Transparent;
-            pictureBox3.Enabled = false;
-            pictureBox3.Image = Properties.Resources.navSoical;
-            pictureBox3.Location = new Point(40, 377);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(51, 57);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 19;
-            pictureBox3.TabStop = false;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label12.Location = new Point(28, 327);
-            label12.Name = "label12";
-            label12.Size = new Size(74, 19);
-            label12.TabIndex = 18;
-            label12.Text = "Grafikler";
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Enabled = false;
-            pictureBox2.Image = Properties.Resources.navGraphs;
-            pictureBox2.Location = new Point(38, 263);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(51, 57);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 17;
-            pictureBox2.TabStop = false;
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Century Gothic", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label10.Location = new Point(14, 214);
-            label10.Name = "label10";
-            label10.Size = new Size(102, 19);
-            label10.TabIndex = 16;
-            label10.Text = "Gün Raporu";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Enabled = false;
-            pictureBox1.Image = Properties.Resources.navReports;
-            pictureBox1.Location = new Point(38, 151);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(58, 57);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 15;
-            pictureBox1.TabStop = false;
-            // 
             // Soical
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
@@ -416,13 +417,13 @@
             ((System.ComponentModel.ISupportInitialize)pbProfilePictureTop).EndInit();
             navigation_groupBox.ResumeLayout(false);
             navigation_groupBox.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pbPostPicture).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pbPostPicture).EndInit();
             ResumeLayout(false);
         }
 
