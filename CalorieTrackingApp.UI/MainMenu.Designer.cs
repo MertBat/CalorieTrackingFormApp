@@ -896,7 +896,7 @@
             // pictureBox9
             // 
             pictureBox9.Image = Properties.Resources.addIcon;
-            pictureBox9.Location = new Point(30, 245);
+            pictureBox9.Location = new Point(514, 245);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(29, 28);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -907,7 +907,7 @@
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.addIcon;
-            pictureBox8.Location = new Point(30, 166);
+            pictureBox8.Location = new Point(514, 165);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(29, 28);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -918,7 +918,7 @@
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.addIcon;
-            pictureBox7.Location = new Point(30, 87);
+            pictureBox7.Location = new Point(514, 87);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(29, 28);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -1163,10 +1163,10 @@
             // 
             waterIntake_progressBar.BackColor = Color.Blue;
             waterIntake_progressBar.ForeColor = Color.Blue;
-            waterIntake_progressBar.Location = new Point(43, 186);
+            waterIntake_progressBar.Location = new Point(30, 186);
             waterIntake_progressBar.MarqueeAnimationSpeed = 50;
             waterIntake_progressBar.Name = "waterIntake_progressBar";
-            waterIntake_progressBar.Size = new Size(485, 55);
+            waterIntake_progressBar.Size = new Size(498, 55);
             waterIntake_progressBar.Style = ProgressBarStyle.Continuous;
             waterIntake_progressBar.TabIndex = 0;
             // 

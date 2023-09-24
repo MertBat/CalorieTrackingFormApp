@@ -45,6 +45,7 @@
             reports_navBtn = new Button();
             mainMenu_navBtn = new Button();
             topBar_groupBox = new GroupBox();
+            pictureBox14 = new PictureBox();
             dtpConsumeDate = new DateTimePicker();
             pbProfilePictureTop = new PictureBox();
             lblProfileNameTop1 = new LinkLabel();
@@ -80,7 +81,6 @@
             label8 = new Label();
             lblFoodName = new Label();
             label6 = new Label();
-            pictureBox14 = new PictureBox();
             navigation_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -88,6 +88,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             topBar_groupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbProfilePictureTop).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)nudPortionNumber).BeginInit();
@@ -98,7 +99,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // navigation_groupBox
@@ -316,6 +316,18 @@
             topBar_groupBox.TabIndex = 2;
             topBar_groupBox.TabStop = false;
             topBar_groupBox.Enter += topBar_groupBox_Enter;
+            // 
+            // pictureBox14
+            // 
+            pictureBox14.BackColor = Color.Transparent;
+            pictureBox14.Enabled = false;
+            pictureBox14.Image = Properties.Resources.addFood2;
+            pictureBox14.Location = new Point(13, 28);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(40, 43);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 46;
+            pictureBox14.TabStop = false;
             // 
             // dtpConsumeDate
             // 
@@ -577,10 +589,11 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(256, 97);
+            pictureBox1.Image = Properties.Resources.DefaultFood;
+            pictureBox1.Location = new Point(272, 97);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(138, 123);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.Size = new Size(93, 101);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 40;
             pictureBox1.TabStop = false;
             // 
@@ -692,18 +705,6 @@
             label6.TabIndex = 27;
             label6.Text = "Yemek Adı:";
             // 
-            // pictureBox14
-            // 
-            pictureBox14.BackColor = Color.Transparent;
-            pictureBox14.Enabled = false;
-            pictureBox14.Image = Properties.Resources.addFood2;
-            pictureBox14.Location = new Point(13, 28);
-            pictureBox14.Name = "pictureBox14";
-            pictureBox14.Size = new Size(40, 43);
-            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox14.TabIndex = 46;
-            pictureBox14.TabStop = false;
-            // 
             // AddConsumedFood
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
@@ -731,6 +732,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             topBar_groupBox.ResumeLayout(false);
             topBar_groupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbProfilePictureTop).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
@@ -744,7 +746,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

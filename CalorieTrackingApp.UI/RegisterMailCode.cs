@@ -33,7 +33,7 @@ namespace CalorieTrackingApp.UI
         {
 
             random = new Random();
-            second = 60;
+            second = 600;
             btnConfirmation.Enabled = false;
 
             for (int i = 0; i < 5; i++)
