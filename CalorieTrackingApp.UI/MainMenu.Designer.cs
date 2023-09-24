@@ -62,6 +62,9 @@
             label5 = new Label();
             label4 = new Label();
             groupBox3 = new GroupBox();
+            pictureBox12 = new PictureBox();
+            pictureBox11 = new PictureBox();
+            pictureBox10 = new PictureBox();
             lblYag = new Label();
             lblProtein = new Label();
             lblKarbonhidrat = new Label();
@@ -122,6 +125,9 @@
             groupBox1.SuspendLayout();
             groupBox4.SuspendLayout();
             groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             groupBox2.SuspendLayout();
             groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
@@ -524,6 +530,9 @@
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(pictureBox12);
+            groupBox3.Controls.Add(pictureBox11);
+            groupBox3.Controls.Add(pictureBox10);
             groupBox3.Controls.Add(lblYag);
             groupBox3.Controls.Add(lblProtein);
             groupBox3.Controls.Add(lblKarbonhidrat);
@@ -538,11 +547,44 @@
             groupBox3.TabStop = false;
             groupBox3.Text = "Makrolar";
             // 
+            // pictureBox12
+            // 
+            pictureBox12.Enabled = false;
+            pictureBox12.Image = Properties.Resources.fat;
+            pictureBox12.Location = new Point(365, 24);
+            pictureBox12.Name = "pictureBox12";
+            pictureBox12.Size = new Size(44, 40);
+            pictureBox12.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox12.TabIndex = 20;
+            pictureBox12.TabStop = false;
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Enabled = false;
+            pictureBox11.Image = Properties.Resources.protein;
+            pictureBox11.Location = new Point(228, 24);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(44, 40);
+            pictureBox11.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox11.TabIndex = 19;
+            pictureBox11.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Enabled = false;
+            pictureBox10.Image = Properties.Resources.carbohydrate;
+            pictureBox10.Location = new Point(74, 23);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(44, 40);
+            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox10.TabIndex = 18;
+            pictureBox10.TabStop = false;
+            // 
             // lblYag
             // 
             lblYag.AutoSize = true;
             lblYag.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblYag.Location = new Point(347, 66);
+            lblYag.Location = new Point(362, 89);
             lblYag.Name = "lblYag";
             lblYag.Size = new Size(57, 25);
             lblYag.TabIndex = 17;
@@ -552,7 +594,7 @@
             // 
             lblProtein.AutoSize = true;
             lblProtein.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProtein.Location = new Point(217, 66);
+            lblProtein.Location = new Point(221, 88);
             lblProtein.Name = "lblProtein";
             lblProtein.Size = new Size(69, 25);
             lblProtein.TabIndex = 16;
@@ -562,7 +604,7 @@
             // 
             lblKarbonhidrat.AutoSize = true;
             lblKarbonhidrat.Font = new Font("Century Gothic", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKarbonhidrat.Location = new Point(68, 66);
+            lblKarbonhidrat.Location = new Point(70, 87);
             lblKarbonhidrat.Name = "lblKarbonhidrat";
             lblKarbonhidrat.Size = new Size(57, 25);
             lblKarbonhidrat.TabIndex = 15;
@@ -572,7 +614,7 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label9.Location = new Point(352, 31);
+            label9.Location = new Point(365, 67);
             label9.Name = "label9";
             label9.Size = new Size(47, 22);
             label9.TabIndex = 14;
@@ -582,7 +624,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(213, 31);
+            label8.Location = new Point(216, 67);
             label8.Name = "label8";
             label8.Size = new Size(73, 22);
             label8.TabIndex = 13;
@@ -592,7 +634,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Century Gothic", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(37, 31);
+            label7.Location = new Point(32, 66);
             label7.Name = "label7";
             label7.Size = new Size(131, 22);
             label7.TabIndex = 12;
@@ -1094,6 +1136,9 @@
             groupBox4.PerformLayout();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             groupBox5.ResumeLayout(false);
@@ -1192,5 +1237,8 @@
         private PictureBox pictureBox7;
         private PictureBox pictureBox9;
         private PictureBox pictureBox8;
+        private PictureBox pictureBox10;
+        private PictureBox pictureBox12;
+        private PictureBox pictureBox11;
     }
 }
