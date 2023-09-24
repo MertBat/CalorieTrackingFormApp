@@ -97,6 +97,10 @@
             label33 = new Label();
             lblKalori = new Label();
             label35 = new Label();
+            pictureBox6 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            pictureBox9 = new PictureBox();
             navigation_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -111,6 +115,10 @@
             groupBox2.SuspendLayout();
             groupBox4.SuspendLayout();
             groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             SuspendLayout();
             // 
             // navigation_groupBox
@@ -507,6 +515,7 @@
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(pictureBox6);
             groupBox3.Controls.Add(lblYagKahvalti);
             groupBox3.Controls.Add(label15);
             groupBox3.Controls.Add(lblProteinKahvalti);
@@ -527,7 +536,7 @@
             // 
             lblYagKahvalti.AutoSize = true;
             lblYagKahvalti.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblYagKahvalti.Location = new Point(480, 80);
+            lblYagKahvalti.Location = new Point(512, 95);
             lblYagKahvalti.Name = "lblYagKahvalti";
             lblYagKahvalti.Size = new Size(76, 26);
             lblYagKahvalti.TabIndex = 52;
@@ -537,7 +546,7 @@
             // 
             label15.AutoSize = true;
             label15.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label15.Location = new Point(499, 40);
+            label15.Location = new Point(527, 65);
             label15.Name = "label15";
             label15.Size = new Size(47, 22);
             label15.TabIndex = 51;
@@ -547,7 +556,7 @@
             // 
             lblProteinKahvalti.AutoSize = true;
             lblProteinKahvalti.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProteinKahvalti.Location = new Point(361, 80);
+            lblProteinKahvalti.Location = new Point(406, 96);
             lblProteinKahvalti.Name = "lblProteinKahvalti";
             lblProteinKahvalti.Size = new Size(76, 26);
             lblProteinKahvalti.TabIndex = 50;
@@ -557,7 +566,7 @@
             // 
             label13.AutoSize = true;
             label13.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label13.Location = new Point(355, 40);
+            label13.Location = new Point(406, 65);
             label13.Name = "label13";
             label13.Size = new Size(73, 22);
             label13.TabIndex = 49;
@@ -567,7 +576,7 @@
             // 
             lblKarbonhidratKahvalti.AutoSize = true;
             lblKarbonhidratKahvalti.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKarbonhidratKahvalti.Location = new Point(178, 80);
+            lblKarbonhidratKahvalti.Location = new Point(280, 95);
             lblKarbonhidratKahvalti.Name = "lblKarbonhidratKahvalti";
             lblKarbonhidratKahvalti.Size = new Size(76, 26);
             lblKarbonhidratKahvalti.TabIndex = 48;
@@ -577,7 +586,7 @@
             // 
             label11.AutoSize = true;
             label11.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label11.Location = new Point(157, 41);
+            label11.Location = new Point(249, 65);
             label11.Name = "label11";
             label11.Size = new Size(131, 22);
             label11.TabIndex = 47;
@@ -587,7 +596,7 @@
             // 
             lblKaloriKahvalti.AutoSize = true;
             lblKaloriKahvalti.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKaloriKahvalti.Location = new Point(17, 80);
+            lblKaloriKahvalti.Location = new Point(137, 89);
             lblKaloriKahvalti.Name = "lblKaloriKahvalti";
             lblKaloriKahvalti.Size = new Size(83, 26);
             lblKaloriKahvalti.TabIndex = 46;
@@ -597,7 +606,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label8.Location = new Point(36, 40);
+            label8.Location = new Point(149, 65);
             label8.Name = "label8";
             label8.Size = new Size(58, 22);
             label8.TabIndex = 45;
@@ -605,6 +614,7 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(pictureBox7);
             groupBox2.Controls.Add(lblYagOgleYemegi);
             groupBox2.Controls.Add(label5);
             groupBox2.Controls.Add(lblProteinOgleYemegi);
@@ -624,7 +634,7 @@
             // 
             lblYagOgleYemegi.AutoSize = true;
             lblYagOgleYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblYagOgleYemegi.Location = new Point(480, 80);
+            lblYagOgleYemegi.Location = new Point(512, 91);
             lblYagOgleYemegi.Name = "lblYagOgleYemegi";
             lblYagOgleYemegi.Size = new Size(76, 26);
             lblYagOgleYemegi.TabIndex = 52;
@@ -634,7 +644,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.Location = new Point(499, 40);
+            label5.Location = new Point(527, 64);
             label5.Name = "label5";
             label5.Size = new Size(47, 22);
             label5.TabIndex = 51;
@@ -644,7 +654,7 @@
             // 
             lblProteinOgleYemegi.AutoSize = true;
             lblProteinOgleYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProteinOgleYemegi.Location = new Point(361, 81);
+            lblProteinOgleYemegi.Location = new Point(406, 90);
             lblProteinOgleYemegi.Name = "lblProteinOgleYemegi";
             lblProteinOgleYemegi.Size = new Size(76, 26);
             lblProteinOgleYemegi.TabIndex = 50;
@@ -654,7 +664,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.Location = new Point(368, 41);
+            label7.Location = new Point(409, 63);
             label7.Name = "label7";
             label7.Size = new Size(73, 22);
             label7.TabIndex = 49;
@@ -664,7 +674,7 @@
             // 
             lblKarbonhidratOgleYemegi.AutoSize = true;
             lblKarbonhidratOgleYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKarbonhidratOgleYemegi.Location = new Point(221, 80);
+            lblKarbonhidratOgleYemegi.Location = new Point(280, 90);
             lblKarbonhidratOgleYemegi.Name = "lblKarbonhidratOgleYemegi";
             lblKarbonhidratOgleYemegi.Size = new Size(76, 26);
             lblKarbonhidratOgleYemegi.TabIndex = 48;
@@ -674,7 +684,7 @@
             // 
             label17.AutoSize = true;
             label17.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label17.Location = new Point(197, 40);
+            label17.Location = new Point(249, 63);
             label17.Name = "label17";
             label17.Size = new Size(131, 22);
             label17.TabIndex = 47;
@@ -684,7 +694,7 @@
             // 
             lblKaloriOgleYemegi.AutoSize = true;
             lblKaloriOgleYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKaloriOgleYemegi.Location = new Point(17, 80);
+            lblKaloriOgleYemegi.Location = new Point(137, 90);
             lblKaloriOgleYemegi.Name = "lblKaloriOgleYemegi";
             lblKaloriOgleYemegi.Size = new Size(83, 26);
             lblKaloriOgleYemegi.TabIndex = 46;
@@ -694,7 +704,7 @@
             // 
             label19.AutoSize = true;
             label19.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label19.Location = new Point(36, 40);
+            label19.Location = new Point(149, 64);
             label19.Name = "label19";
             label19.Size = new Size(58, 22);
             label19.TabIndex = 45;
@@ -702,6 +712,7 @@
             // 
             // groupBox4
             // 
+            groupBox4.Controls.Add(pictureBox8);
             groupBox4.Controls.Add(lblYagAksamYemegi);
             groupBox4.Controls.Add(label21);
             groupBox4.Controls.Add(lblProteinAksamYemegi);
@@ -721,7 +732,7 @@
             // 
             lblYagAksamYemegi.AutoSize = true;
             lblYagAksamYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblYagAksamYemegi.Location = new Point(480, 80);
+            lblYagAksamYemegi.Location = new Point(512, 90);
             lblYagAksamYemegi.Name = "lblYagAksamYemegi";
             lblYagAksamYemegi.Size = new Size(76, 26);
             lblYagAksamYemegi.TabIndex = 52;
@@ -731,7 +742,7 @@
             // 
             label21.AutoSize = true;
             label21.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label21.Location = new Point(499, 40);
+            label21.Location = new Point(527, 58);
             label21.Name = "label21";
             label21.Size = new Size(47, 22);
             label21.TabIndex = 51;
@@ -741,7 +752,7 @@
             // 
             lblProteinAksamYemegi.AutoSize = true;
             lblProteinAksamYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProteinAksamYemegi.Location = new Point(361, 81);
+            lblProteinAksamYemegi.Location = new Point(409, 90);
             lblProteinAksamYemegi.Name = "lblProteinAksamYemegi";
             lblProteinAksamYemegi.Size = new Size(76, 26);
             lblProteinAksamYemegi.TabIndex = 50;
@@ -751,7 +762,7 @@
             // 
             label23.AutoSize = true;
             label23.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label23.Location = new Point(368, 41);
+            label23.Location = new Point(409, 58);
             label23.Name = "label23";
             label23.Size = new Size(73, 22);
             label23.TabIndex = 49;
@@ -761,7 +772,7 @@
             // 
             lblKarbonhidratAksamYemegi.AutoSize = true;
             lblKarbonhidratAksamYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKarbonhidratAksamYemegi.Location = new Point(221, 80);
+            lblKarbonhidratAksamYemegi.Location = new Point(280, 90);
             lblKarbonhidratAksamYemegi.Name = "lblKarbonhidratAksamYemegi";
             lblKarbonhidratAksamYemegi.Size = new Size(76, 26);
             lblKarbonhidratAksamYemegi.TabIndex = 48;
@@ -771,7 +782,7 @@
             // 
             label25.AutoSize = true;
             label25.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label25.Location = new Point(197, 40);
+            label25.Location = new Point(249, 58);
             label25.Name = "label25";
             label25.Size = new Size(131, 22);
             label25.TabIndex = 47;
@@ -781,7 +792,7 @@
             // 
             lblKaloriAksamYemegi.AutoSize = true;
             lblKaloriAksamYemegi.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKaloriAksamYemegi.Location = new Point(17, 80);
+            lblKaloriAksamYemegi.Location = new Point(137, 90);
             lblKaloriAksamYemegi.Name = "lblKaloriAksamYemegi";
             lblKaloriAksamYemegi.Size = new Size(83, 26);
             lblKaloriAksamYemegi.TabIndex = 46;
@@ -791,7 +802,7 @@
             // 
             label27.AutoSize = true;
             label27.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label27.Location = new Point(36, 40);
+            label27.Location = new Point(149, 58);
             label27.Name = "label27";
             label27.Size = new Size(58, 22);
             label27.TabIndex = 45;
@@ -799,6 +810,7 @@
             // 
             // groupBox5
             // 
+            groupBox5.Controls.Add(pictureBox9);
             groupBox5.Controls.Add(lblYag);
             groupBox5.Controls.Add(label29);
             groupBox5.Controls.Add(lblProtein);
@@ -818,7 +830,7 @@
             // 
             lblYag.AutoSize = true;
             lblYag.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblYag.Location = new Point(480, 80);
+            lblYag.Location = new Point(512, 86);
             lblYag.Name = "lblYag";
             lblYag.Size = new Size(76, 26);
             lblYag.TabIndex = 52;
@@ -828,7 +840,7 @@
             // 
             label29.AutoSize = true;
             label29.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label29.Location = new Point(499, 40);
+            label29.Location = new Point(527, 55);
             label29.Name = "label29";
             label29.Size = new Size(47, 22);
             label29.TabIndex = 51;
@@ -838,7 +850,7 @@
             // 
             lblProtein.AutoSize = true;
             lblProtein.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProtein.Location = new Point(361, 81);
+            lblProtein.Location = new Point(409, 86);
             lblProtein.Name = "lblProtein";
             lblProtein.Size = new Size(76, 26);
             lblProtein.TabIndex = 50;
@@ -848,7 +860,7 @@
             // 
             label31.AutoSize = true;
             label31.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label31.Location = new Point(368, 41);
+            label31.Location = new Point(412, 55);
             label31.Name = "label31";
             label31.Size = new Size(73, 22);
             label31.TabIndex = 49;
@@ -858,7 +870,7 @@
             // 
             lblKarbonhidrat.AutoSize = true;
             lblKarbonhidrat.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKarbonhidrat.Location = new Point(221, 80);
+            lblKarbonhidrat.Location = new Point(280, 86);
             lblKarbonhidrat.Name = "lblKarbonhidrat";
             lblKarbonhidrat.Size = new Size(76, 26);
             lblKarbonhidrat.TabIndex = 48;
@@ -868,7 +880,7 @@
             // 
             label33.AutoSize = true;
             label33.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label33.Location = new Point(197, 40);
+            label33.Location = new Point(249, 55);
             label33.Name = "label33";
             label33.Size = new Size(131, 22);
             label33.TabIndex = 47;
@@ -878,7 +890,7 @@
             // 
             lblKalori.AutoSize = true;
             lblKalori.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
-            lblKalori.Location = new Point(17, 80);
+            lblKalori.Location = new Point(137, 84);
             lblKalori.Name = "lblKalori";
             lblKalori.Size = new Size(83, 26);
             lblKalori.TabIndex = 46;
@@ -888,11 +900,55 @@
             // 
             label35.AutoSize = true;
             label35.Font = new Font("Century Gothic", 13.8F, FontStyle.Regular, GraphicsUnit.Point);
-            label35.Location = new Point(36, 40);
+            label35.Location = new Point(149, 55);
             label35.Name = "label35";
             label35.Size = new Size(58, 22);
             label35.TabIndex = 45;
             label35.Text = "Kalori";
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Enabled = false;
+            pictureBox6.Image = Properties.Resources.morning;
+            pictureBox6.Location = new Point(30, 49);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(64, 69);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 53;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Enabled = false;
+            pictureBox7.Image = Properties.Resources.noon;
+            pictureBox7.Location = new Point(29, 50);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(64, 66);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 54;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Enabled = false;
+            pictureBox8.Image = Properties.Resources.night;
+            pictureBox8.Location = new Point(31, 48);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(64, 63);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 55;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Enabled = false;
+            pictureBox9.Image = Properties.Resources.allDay;
+            pictureBox9.Location = new Point(31, 47);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(64, 63);
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox9.TabIndex = 56;
+            pictureBox9.TabStop = false;
             // 
             // DailyReport
             // 
@@ -932,6 +988,10 @@
             groupBox4.PerformLayout();
             groupBox5.ResumeLayout(false);
             groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ResumeLayout(false);
         }
 
@@ -1008,5 +1068,9 @@
         private PictureBox pictureBox2;
         private Label label10;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
+        private PictureBox pictureBox8;
+        private PictureBox pictureBox9;
     }
 }

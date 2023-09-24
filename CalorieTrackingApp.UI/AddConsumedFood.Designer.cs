@@ -232,6 +232,7 @@
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 15;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // button3
             // 

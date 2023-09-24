@@ -123,6 +123,16 @@ namespace CalorieTrackingApp.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap allDay {
+            get {
+                object obj = ResourceManager.GetObject("allDay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bacgroundv1 {
             get {
                 object obj = ResourceManager.GetObject("bacgroundv1", resourceCulture);
@@ -243,6 +253,16 @@ namespace CalorieTrackingApp.UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap morning {
+            get {
+                object obj = ResourceManager.GetObject("morning", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap navGraphs {
             get {
                 object obj = ResourceManager.GetObject("navGraphs", resourceCulture);
@@ -286,6 +306,26 @@ namespace CalorieTrackingApp.UI.Properties {
         internal static System.Drawing.Bitmap navSoical {
             get {
                 object obj = ResourceManager.GetObject("navSoical", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap night {
+            get {
+                object obj = ResourceManager.GetObject("night", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap noon {
+            get {
+                object obj = ResourceManager.GetObject("noon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
