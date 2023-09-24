@@ -83,6 +83,7 @@
             label28 = new Label();
             label29 = new Label();
             sqlCommand1 = new Microsoft.Data.SqlClient.SqlCommand();
+            pictureBox14 = new PictureBox();
             topBar_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbProfilePictureTop).BeginInit();
             groupBox1.SuspendLayout();
@@ -95,10 +96,12 @@
             gbfoodGraph.SuspendLayout();
             gbWaterGraph.SuspendLayout();
             gbWeight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // topBar_groupBox
             // 
+            topBar_groupBox.Controls.Add(pictureBox14);
             topBar_groupBox.Controls.Add(pbProfilePictureTop);
             topBar_groupBox.Controls.Add(lblProfileNameTop2);
             topBar_groupBox.Controls.Add(label2);
@@ -173,7 +176,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 19.8000011F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(9, 36);
+            label1.Location = new Point(49, 26);
             label1.Name = "label1";
             label1.Size = new Size(273, 33);
             label1.TabIndex = 4;
@@ -699,6 +702,18 @@
             sqlCommand1.Notification = null;
             sqlCommand1.Transaction = null;
             // 
+            // pictureBox14
+            // 
+            pictureBox14.BackColor = Color.Transparent;
+            pictureBox14.Enabled = false;
+            pictureBox14.Image = Properties.Resources.navGraphs;
+            pictureBox14.Location = new Point(11, 17);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(40, 43);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 45;
+            pictureBox14.TabStop = false;
+            // 
             // LongReports
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
@@ -731,6 +746,7 @@
             gbWaterGraph.PerformLayout();
             gbWeight.ResumeLayout(false);
             gbWeight.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 
@@ -791,5 +807,6 @@
         private PictureBox pictureBox2;
         private Label label32;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox14;
     }
 }

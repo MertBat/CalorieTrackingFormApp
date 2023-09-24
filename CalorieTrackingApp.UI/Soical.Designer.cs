@@ -56,6 +56,7 @@
             btnPost = new Button();
             pbPostPicture = new PictureBox();
             flpPosts = new FlowLayoutPanel();
+            pictureBox14 = new PictureBox();
             topBar_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbProfilePictureTop).BeginInit();
             navigation_groupBox.SuspendLayout();
@@ -66,10 +67,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbPostPicture).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // topBar_groupBox
             // 
+            topBar_groupBox.Controls.Add(pictureBox14);
             topBar_groupBox.Controls.Add(pbProfilePictureTop);
             topBar_groupBox.Controls.Add(lblProfileNameTop2);
             topBar_groupBox.Controls.Add(label2);
@@ -112,7 +115,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(31, 34);
+            label1.Location = new Point(54, 22);
             label1.Name = "label1";
             label1.Size = new Size(111, 39);
             label1.TabIndex = 4;
@@ -399,6 +402,18 @@
             flpPosts.Size = new Size(667, 570);
             flpPosts.TabIndex = 6;
             // 
+            // pictureBox14
+            // 
+            pictureBox14.BackColor = Color.Transparent;
+            pictureBox14.Enabled = false;
+            pictureBox14.Image = Properties.Resources.navSoical;
+            pictureBox14.Location = new Point(16, 19);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(40, 43);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 45;
+            pictureBox14.TabStop = false;
+            // 
             // Soical
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
@@ -424,6 +439,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbPostPicture).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 
@@ -457,5 +473,6 @@
         private PictureBox pictureBox2;
         private Label label10;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox14;
     }
 }

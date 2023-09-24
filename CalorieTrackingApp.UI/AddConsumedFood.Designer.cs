@@ -80,6 +80,7 @@
             label8 = new Label();
             lblFoodName = new Label();
             label6 = new Label();
+            pictureBox14 = new PictureBox();
             navigation_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -97,6 +98,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // navigation_groupBox
@@ -301,6 +303,7 @@
             // 
             // topBar_groupBox
             // 
+            topBar_groupBox.Controls.Add(pictureBox14);
             topBar_groupBox.Controls.Add(dtpConsumeDate);
             topBar_groupBox.Controls.Add(pbProfilePictureTop);
             topBar_groupBox.Controls.Add(lblProfileNameTop1);
@@ -366,7 +369,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(31, 34);
+            label1.Location = new Point(57, 32);
             label1.Name = "label1";
             label1.Size = new Size(365, 39);
             label1.TabIndex = 4;
@@ -689,6 +692,18 @@
             label6.TabIndex = 27;
             label6.Text = "Yemek Adı:";
             // 
+            // pictureBox14
+            // 
+            pictureBox14.BackColor = Color.Transparent;
+            pictureBox14.Enabled = false;
+            pictureBox14.Image = Properties.Resources.addFood2;
+            pictureBox14.Location = new Point(13, 28);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(40, 43);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 46;
+            pictureBox14.TabStop = false;
+            // 
             // AddConsumedFood
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
@@ -729,6 +744,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -787,5 +803,6 @@
         private PictureBox pictureBox11;
         private PictureBox pictureBox12;
         private PictureBox pictureBox7;
+        private PictureBox pictureBox14;
     }
 }

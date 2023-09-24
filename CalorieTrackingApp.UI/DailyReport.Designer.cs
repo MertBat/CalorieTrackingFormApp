@@ -105,6 +105,7 @@
             pictureBox11 = new PictureBox();
             pictureBox12 = new PictureBox();
             pictureBox13 = new PictureBox();
+            pictureBox14 = new PictureBox();
             navigation_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -127,6 +128,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).BeginInit();
             SuspendLayout();
             // 
             // navigation_groupBox
@@ -331,6 +333,7 @@
             // 
             // topBar_groupBox
             // 
+            topBar_groupBox.Controls.Add(pictureBox14);
             topBar_groupBox.Controls.Add(pbProfilePictureTop);
             topBar_groupBox.Controls.Add(lblProfileNameTop1);
             topBar_groupBox.Controls.Add(btnForward);
@@ -369,7 +372,7 @@
             // 
             // btnForward
             // 
-            btnForward.Location = new Point(694, 52);
+            btnForward.Location = new Point(735, 67);
             btnForward.Name = "btnForward";
             btnForward.Size = new Size(35, 33);
             btnForward.TabIndex = 44;
@@ -379,7 +382,7 @@
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(322, 52);
+            btnBack.Location = new Point(363, 67);
             btnBack.Name = "btnBack";
             btnBack.Size = new Size(35, 35);
             btnBack.TabIndex = 43;
@@ -389,7 +392,7 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(363, 52);
+            dateTimePicker1.Location = new Point(404, 67);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(325, 33);
             dateTimePicker1.TabIndex = 41;
@@ -398,7 +401,7 @@
             // lblProfileNameTop2
             // 
             lblProfileNameTop2.AutoSize = true;
-            lblProfileNameTop2.Location = new Point(134, 88);
+            lblProfileNameTop2.Location = new Point(143, 101);
             lblProfileNameTop2.Name = "lblProfileNameTop2";
             lblProfileNameTop2.Size = new Size(136, 24);
             lblProfileNameTop2.TabIndex = 6;
@@ -407,7 +410,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(7, 88);
+            label2.Location = new Point(15, 100);
             label2.Name = "label2";
             label2.Size = new Size(132, 24);
             label2.TabIndex = 5;
@@ -417,7 +420,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(14, 34);
+            label1.Location = new Point(54, 34);
             label1.Name = "label1";
             label1.Size = new Size(206, 39);
             label1.TabIndex = 4;
@@ -1006,6 +1009,17 @@
             pictureBox13.TabIndex = 60;
             pictureBox13.TabStop = false;
             // 
+            // pictureBox14
+            // 
+            pictureBox14.Enabled = false;
+            pictureBox14.Image = Properties.Resources.navReports;
+            pictureBox14.Location = new Point(14, 29);
+            pictureBox14.Name = "pictureBox14";
+            pictureBox14.Size = new Size(44, 42);
+            pictureBox14.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox14.TabIndex = 47;
+            pictureBox14.TabStop = false;
+            // 
             // DailyReport
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
@@ -1052,6 +1066,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox13).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox14).EndInit();
             ResumeLayout(false);
         }
 
@@ -1136,5 +1151,6 @@
         private PictureBox pictureBox11;
         private PictureBox pictureBox10;
         private PictureBox pictureBox13;
+        private PictureBox pictureBox14;
     }
 }

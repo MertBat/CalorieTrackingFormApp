@@ -117,6 +117,7 @@
             lblGunlukSuHedef = new Label();
             label39 = new Label();
             waterIntake_progressBar = new ProgressBar();
+            pictureBox16 = new PictureBox();
             navigation_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
@@ -141,6 +142,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).BeginInit();
             SuspendLayout();
             // 
             // navigation_groupBox
@@ -346,6 +348,7 @@
             // 
             // topBar_groupBox
             // 
+            topBar_groupBox.Controls.Add(pictureBox16);
             topBar_groupBox.Controls.Add(pictureBox15);
             topBar_groupBox.Controls.Add(pictureBox14);
             topBar_groupBox.Controls.Add(pictureBox13);
@@ -411,7 +414,7 @@
             // lblProfileNameTop2
             // 
             lblProfileNameTop2.AutoSize = true;
-            lblProfileNameTop2.Location = new Point(146, 87);
+            lblProfileNameTop2.Location = new Point(146, 98);
             lblProfileNameTop2.Name = "lblProfileNameTop2";
             lblProfileNameTop2.Size = new Size(136, 24);
             lblProfileNameTop2.TabIndex = 6;
@@ -420,7 +423,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(19, 87);
+            label2.Location = new Point(19, 98);
             label2.Name = "label2";
             label2.Size = new Size(132, 24);
             label2.TabIndex = 5;
@@ -430,7 +433,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Century Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(45, 31);
+            label1.Location = new Point(45, 26);
             label1.Name = "label1";
             label1.Size = new Size(180, 39);
             label1.TabIndex = 4;
@@ -1150,6 +1153,17 @@
             waterIntake_progressBar.Style = ProgressBarStyle.Continuous;
             waterIntake_progressBar.TabIndex = 0;
             // 
+            // pictureBox16
+            // 
+            pictureBox16.Enabled = false;
+            pictureBox16.Image = Properties.Resources.navMain;
+            pictureBox16.Location = new Point(6, 24);
+            pictureBox16.Name = "pictureBox16";
+            pictureBox16.Size = new Size(44, 45);
+            pictureBox16.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox16.TabIndex = 48;
+            pictureBox16.TabStop = false;
+            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(12F, 24F);
@@ -1197,6 +1211,7 @@
             groupBox6.ResumeLayout(false);
             groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox16).EndInit();
             ResumeLayout(false);
         }
 
@@ -1291,5 +1306,6 @@
         private PictureBox pictureBox13;
         private PictureBox pictureBox14;
         private PictureBox pictureBox15;
+        private PictureBox pictureBox16;
     }
 }
