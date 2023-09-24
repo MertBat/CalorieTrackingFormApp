@@ -30,26 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PPasswordChange));
             groupBox1 = new GroupBox();
-            label4 = new Label();
-            pictureBox1 = new PictureBox();
             groupBox2 = new GroupBox();
             pbNewPass2 = new PictureBox();
-            pbNewPass = new PictureBox();
-            pbpass = new PictureBox();
-            label3 = new Label();
-            label2 = new Label();
             label1 = new Label();
-            txtNewPass2 = new TextBox();
-            txtNewPass = new TextBox();
-            txtPass = new TextBox();
-            btnBack = new Button();
+            pbNewPass = new PictureBox();
             btnSave = new Button();
+            pbpass = new PictureBox();
+            btnBack = new Button();
+            label3 = new Label();
+            txtPass = new TextBox();
+            label2 = new Label();
+            txtNewPass = new TextBox();
+            txtNewPass2 = new TextBox();
+            label4 = new Label();
+            pictureBox1 = new PictureBox();
             groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbNewPass2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbNewPass).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pbpass).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -62,26 +62,6 @@
             groupBox1.Size = new Size(405, 565);
             groupBox1.TabIndex = 13;
             groupBox1.TabStop = false;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Century Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(108, 149);
-            label4.Name = "label4";
-            label4.Size = new Size(193, 39);
-            label4.TabIndex = 25;
-            label4.Text = "Şifreni Sıfırla";
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(150, 42);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(96, 92);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 24;
-            pictureBox1.TabStop = false;
             // 
             // groupBox2
             // 
@@ -115,6 +95,16 @@
             pbNewPass2.TabIndex = 34;
             pbNewPass2.TabStop = false;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(14, 39);
+            label1.Margin = new Padding(5, 0, 5, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(94, 24);
+            label1.TabIndex = 29;
+            label1.Text = "Eski Şifre:";
+            // 
             // pbNewPass
             // 
             pbNewPass.BackColor = Color.White;
@@ -127,6 +117,17 @@
             pbNewPass.SizeMode = PictureBoxSizeMode.StretchImage;
             pbNewPass.TabIndex = 33;
             pbNewPass.TabStop = false;
+            // 
+            // btnSave
+            // 
+            btnSave.Location = new Point(245, 293);
+            btnSave.Margin = new Padding(5, 3, 5, 3);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(111, 35);
+            btnSave.TabIndex = 24;
+            btnSave.Text = "Değiştir";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
             // 
             // pbpass
             // 
@@ -141,6 +142,17 @@
             pbpass.TabIndex = 32;
             pbpass.TabStop = false;
             // 
+            // btnBack
+            // 
+            btnBack.Location = new Point(14, 293);
+            btnBack.Margin = new Padding(5, 3, 5, 3);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(111, 35);
+            btnBack.TabIndex = 25;
+            btnBack.Text = "Geri";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -150,6 +162,15 @@
             label3.Size = new Size(169, 24);
             label3.TabIndex = 31;
             label3.Text = "Yeni Şifre Tekrar:";
+            // 
+            // txtPass
+            // 
+            txtPass.Location = new Point(14, 66);
+            txtPass.Margin = new Padding(5, 3, 5, 3);
+            txtPass.Name = "txtPass";
+            txtPass.Size = new Size(342, 33);
+            txtPass.TabIndex = 26;
+            txtPass.UseSystemPasswordChar = true;
             // 
             // label2
             // 
@@ -161,15 +182,14 @@
             label2.TabIndex = 30;
             label2.Text = "Yeni Şifre:";
             // 
-            // label1
+            // txtNewPass
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(14, 39);
-            label1.Margin = new Padding(5, 0, 5, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(94, 24);
-            label1.TabIndex = 29;
-            label1.Text = "Eski Şifre:";
+            txtNewPass.Location = new Point(14, 146);
+            txtNewPass.Margin = new Padding(5, 3, 5, 3);
+            txtNewPass.Name = "txtNewPass";
+            txtNewPass.Size = new Size(342, 33);
+            txtNewPass.TabIndex = 27;
+            txtNewPass.UseSystemPasswordChar = true;
             // 
             // txtNewPass2
             // 
@@ -180,43 +200,25 @@
             txtNewPass2.TabIndex = 28;
             txtNewPass2.UseSystemPasswordChar = true;
             // 
-            // txtNewPass
+            // label4
             // 
-            txtNewPass.Location = new Point(14, 146);
-            txtNewPass.Margin = new Padding(5, 3, 5, 3);
-            txtNewPass.Name = "txtNewPass";
-            txtNewPass.Size = new Size(342, 33);
-            txtNewPass.TabIndex = 27;
-            txtNewPass.UseSystemPasswordChar = true;
+            label4.AutoSize = true;
+            label4.Font = new Font("Century Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.Location = new Point(108, 149);
+            label4.Name = "label4";
+            label4.Size = new Size(193, 39);
+            label4.TabIndex = 25;
+            label4.Text = "Şifreni Sıfırla";
             // 
-            // txtPass
+            // pictureBox1
             // 
-            txtPass.Location = new Point(14, 66);
-            txtPass.Margin = new Padding(5, 3, 5, 3);
-            txtPass.Name = "txtPass";
-            txtPass.Size = new Size(342, 33);
-            txtPass.TabIndex = 26;
-            txtPass.UseSystemPasswordChar = true;
-            // 
-            // btnBack
-            // 
-            btnBack.Location = new Point(14, 293);
-            btnBack.Margin = new Padding(5, 3, 5, 3);
-            btnBack.Name = "btnBack";
-            btnBack.Size = new Size(111, 35);
-            btnBack.TabIndex = 25;
-            btnBack.Text = "Geri";
-            btnBack.UseVisualStyleBackColor = true;
-            // 
-            // btnSave
-            // 
-            btnSave.Location = new Point(245, 293);
-            btnSave.Margin = new Padding(5, 3, 5, 3);
-            btnSave.Name = "btnSave";
-            btnSave.Size = new Size(111, 35);
-            btnSave.TabIndex = 24;
-            btnSave.Text = "Değiştir";
-            btnSave.UseVisualStyleBackColor = true;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(150, 42);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(96, 92);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 24;
+            pictureBox1.TabStop = false;
             // 
             // PPasswordChange
             // 
@@ -233,12 +235,12 @@
             Load += PPasswordChange_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             groupBox2.ResumeLayout(false);
             groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pbNewPass2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbNewPass).EndInit();
             ((System.ComponentModel.ISupportInitialize)pbpass).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
