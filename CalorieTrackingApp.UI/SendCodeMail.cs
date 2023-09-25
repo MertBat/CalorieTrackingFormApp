@@ -111,7 +111,7 @@ namespace CalorieTrackingApp.UI
                 MailMessage mail = new MailMessage();
                 mail.From = new MailAddress(senderEmail);
                 mail.To.Add(recipientEmail);
-                mail.Subject = "Hesap Doğrulama"; //E-posta konusu
+                mail.Subject = "CalorieWiz Hesap Doğrulama"; //E-posta konusu
 
                 // E-posta içeriği HTML formatında
                 mail.IsBodyHtml = true;
@@ -123,9 +123,9 @@ namespace CalorieTrackingApp.UI
                             <title>Hesap Doğrulama</title>
                         </head>
                         <body style='font-family: Arial, sans-serif;'>
-                            <h2 style='color: #333;'>Hesap Doğrulama</h2>
+                            <h2 style='color: #333;'>CalorieWiz Hesap Doğrulama</h2>
                             <p style='color: #666;'>Merhaba,</p>
-                            <p style='color: #666;'>Hesabınızı doğrulamak için aşağıdaki doğrulama kodunu kullanın:</p>
+                            <p style='color: #666;'>CalorieWiz hesabınızı doğrulamak için aşağıdaki doğrulama kodunu kullanın:</p>
                             <p style='background-color: #f4f4f4; padding: 10px; font-size: 20px; border: 1px solid #ddd; display: inline-block;'>" + code + @"</p>
                             <p style='color: #666;'>Bu kod sadece 1 dakika boyunca geçerlidir.</p>
                             <p style='color: #666;'>İyi günler dileriz.</p>

@@ -92,7 +92,7 @@ namespace CalorieTrackingApp.UI
                         <head>
                             <meta charset='UTF-8'>
                             <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                            <title>Hesap Doğrulama</title>
+                            <title>CalorieWiz Hesap Doğrulama</title>
                             <style>
                                 body {
                                     font-family: Arial, sans-serif;
@@ -114,9 +114,9 @@ namespace CalorieTrackingApp.UI
                         </head>
                         <body>
                             <div class='container'>
-                                <h2>Hesap Doğrulama</h2>
+                                <h2>CalorieWiz Hesap Doğrulama</h2>
                                 <p>Merhaba,</p>
-                                <p>Hesabınızı doğrulamak için aşağıdaki doğrulama kodunu kullanın:</p>
+                                <p>CalorieWiz hesabınızı doğrulamak için aşağıdaki doğrulama kodunu kullanın:</p>
                                 <div class='code'>" + code + @"</div>
                                 <p>Bu kod sadece 1 dakika boyunca geçerlidir.</p>
                                 <p>İyi günler dileriz.</p>
