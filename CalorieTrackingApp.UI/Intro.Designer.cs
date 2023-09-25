@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Intro1));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
-            label4 = new Label();
             timer1 = new System.Windows.Forms.Timer(components);
+            pbLogo = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbLogo).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -50,7 +52,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.witch_hat;
-            pictureBox2.Location = new Point(928, 425);
+            pictureBox2.Location = new Point(970, 423);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(100, 100);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -58,21 +60,22 @@
             pictureBox2.TabStop = false;
             pictureBox2.Visible = false;
             // 
-            // label4
-            // 
-            label4.Font = new Font("Chiller", 48F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.SandyBrown;
-            label4.Location = new Point(649, 449);
-            label4.Name = "label4";
-            label4.Size = new Size(438, 76);
-            label4.TabIndex = 13;
-            label4.Text = " CalorieWiz    ";
-            label4.Visible = false;
-            // 
             // timer1
             // 
             timer1.Interval = 5000;
             timer1.Tick += timer1_Tick;
+            // 
+            // pbLogo
+            // 
+            pbLogo.BackColor = Color.Transparent;
+            pbLogo.Image = (Image)resources.GetObject("pbLogo.Image");
+            pbLogo.Location = new Point(695, 441);
+            pbLogo.Name = "pbLogo";
+            pbLogo.Size = new Size(272, 65);
+            pbLogo.SizeMode = PictureBoxSizeMode.AutoSize;
+            pbLogo.TabIndex = 15;
+            pbLogo.TabStop = false;
+            pbLogo.Visible = false;
             // 
             // Intro1
             // 
@@ -81,8 +84,8 @@
             BackColor = Color.White;
             ClientSize = new Size(1208, 792);
             ControlBox = false;
+            Controls.Add(pbLogo);
             Controls.Add(pictureBox2);
-            Controls.Add(label4);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Intro1";
@@ -90,14 +93,16 @@
             Load += Intro1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
-        private Label label4;
         private System.Windows.Forms.Timer timer1;
+        private PictureBox pbLogo;
     }
 }

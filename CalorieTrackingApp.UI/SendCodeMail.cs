@@ -104,7 +104,7 @@ namespace CalorieTrackingApp.UI
                 label4.Text = code;
                 string smtpServer = "smtp.office365.com"; //SMTP sunucusu adresi
                 int port = 587; //SMTP sunucusu port numarası
-                string senderEmail = "calorietracking@hotmail.com"; //Gönderen e-posta adresi
+                string senderEmail = "caloriewiz@hotmail.com"; //Gönderen e-posta adresi
                 string password = "Calorie01"; //Gönderen e-posta hesabının şifresi
                 string recipientEmail = account.EMail.Trim(); //Alıcı e-posta adresi
 
@@ -154,6 +154,13 @@ namespace CalorieTrackingApp.UI
             btnSend.Enabled = false;
             btnConfirmation.Enabled = true;
 
+        }
+
+
+
+        private void label2_MouseHover(object sender, EventArgs e)
+        {
+            label4.Visible = true;
         }
     }
 }

@@ -29,33 +29,25 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Outro));
             pictureBox2 = new PictureBox();
-            label4 = new Label();
             pictureBox1 = new PictureBox();
             timer1 = new System.Windows.Forms.Timer(components);
+            pbLogo = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pbLogo).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.witch_hat;
-            pictureBox2.Location = new Point(846, 425);
+            pictureBox2.Location = new Point(889, 437);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(100, 100);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 17;
             pictureBox2.TabStop = false;
-            // 
-            // label4
-            // 
-            label4.Font = new Font("Chiller", 48F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.SandyBrown;
-            label4.Location = new Point(567, 449);
-            label4.Name = "label4";
-            label4.Size = new Size(438, 76);
-            label4.TabIndex = 16;
-            label4.Text = " CalorieWiz    ";
             // 
             // pictureBox1
             // 
@@ -71,6 +63,17 @@
             // 
             timer1.Tick += timer1_Tick;
             // 
+            // pbLogo
+            // 
+            pbLogo.BackColor = Color.Transparent;
+            pbLogo.Image = (Image)resources.GetObject("pbLogo.Image");
+            pbLogo.Location = new Point(611, 459);
+            pbLogo.Name = "pbLogo";
+            pbLogo.Size = new Size(272, 65);
+            pbLogo.SizeMode = PictureBoxSizeMode.AutoSize;
+            pbLogo.TabIndex = 18;
+            pbLogo.TabStop = false;
+            // 
             // Outro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -78,8 +81,8 @@
             BackColor = Color.White;
             ClientSize = new Size(1208, 792);
             ControlBox = false;
+            Controls.Add(pbLogo);
             Controls.Add(pictureBox2);
-            Controls.Add(label4);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Outro";
@@ -87,14 +90,16 @@
             Load += Outro_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
         private PictureBox pictureBox2;
-        private Label label4;
         private PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
+        private PictureBox pbLogo;
     }
 }

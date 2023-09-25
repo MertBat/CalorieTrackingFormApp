@@ -24,7 +24,7 @@ namespace CalorieTrackingApp.DAL.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-IJ5TVSC;Database=CalorieTrackingAppDB2;User Id=sa;Password=123");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-SHSEDEJ\MSSQLSERVER2;Database=CalorieTrackingAppDB2;User Id=sa;Password=4713");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

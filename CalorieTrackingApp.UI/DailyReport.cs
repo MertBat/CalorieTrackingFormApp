@@ -63,6 +63,7 @@ namespace CalorieTrackingApp.UI
                                   join f in db.Foods on cf.FoodID equals f.Id
                                   where cf.ConsumedDate.Day == selectedDate.Day &&
                                         cf.ConsumedDate.Month == selectedDate.Month &&
+                                        cf.AccountID == account.Id &&
                                         cf.MealCategory == DATA.Enums.MealCategory.Breakfast
                                   select string.Concat(f.Name, " - ", cf.MealCategory, " - ", f.PortionCalorie * cf.ConsumedCount, "cal")).ToList();
                 listBox1.DataSource = cfoodNames;
@@ -80,6 +81,7 @@ namespace CalorieTrackingApp.UI
                                   join f in db.Foods on cf.FoodID equals f.Id
                                   where cf.ConsumedDate.Day == selectedDate.Day &&
                                         cf.ConsumedDate.Month == selectedDate.Month &&
+                                        cf.AccountID == account.Id &&
                                         cf.MealCategory == DATA.Enums.MealCategory.Lunch
                                   select string.Concat(f.Name, " - ", cf.MealCategory, " - ", f.PortionCalorie * cf.ConsumedCount, "cal")).ToList();
                 listBox1.DataSource = cfoodNames;
@@ -97,6 +99,7 @@ namespace CalorieTrackingApp.UI
                                   join f in db.Foods on cf.FoodID equals f.Id
                                   where cf.ConsumedDate.Day == selectedDate.Day &&
                                         cf.ConsumedDate.Month == selectedDate.Month &&
+                                        cf.AccountID == account.Id &&
                                         cf.MealCategory == DATA.Enums.MealCategory.Dinner
                                   select string.Concat(f.Name, " - ", cf.MealCategory, " - ", f.PortionCalorie * cf.ConsumedCount, "cal")).ToList();
 
@@ -115,6 +118,7 @@ namespace CalorieTrackingApp.UI
                 var cfoodNames = (from cf in db.ConsumedFoods
                                   join f in db.Foods on cf.FoodID equals f.Id
                                   where cf.ConsumedDate.Day == selectedDate.Day &&
+                                        cf.AccountID == account.Id &&
                                         cf.ConsumedDate.Month == selectedDate.Month
                                   select string.Concat(f.Name, " - ", cf.MealCategory, " - ", f.PortionCalorie * cf.ConsumedCount, "cal")).ToList();
                 listBox1.DataSource = cfoodNames;
@@ -260,7 +264,7 @@ namespace CalorieTrackingApp.UI
         {
             _food = new Food();
             FoodRepository = new FoodRepository();
-            consumedFoods = cFoodRepository.GetAll().Where(a => a.ConsumedDate.Day == dateTimePicker1.Value.Day && a.ConsumedDate.Month == dateTimePicker1.Value.Month && a.AccountID == 1).ToList(); // --account.Id
+            consumedFoods = cFoodRepository.GetAll().Where(a => a.ConsumedDate.Day == dateTimePicker1.Value.Day && a.ConsumedDate.Month == dateTimePicker1.Value.Month && a.AccountID == account.Id).ToList(); // --account.Id
             double gunlukKarbonhidrat = 0;
             double gunlukProtein = 0;
             double gunlukYag = 0;
@@ -285,7 +289,7 @@ namespace CalorieTrackingApp.UI
         {
             _food = new Food();
             FoodRepository = new FoodRepository();
-            consumedFoods = cFoodRepository.GetAll().Where(a => a.ConsumedDate.Day == dateTimePicker1.Value.Day && a.ConsumedDate.Month == dateTimePicker1.Value.Month && a.AccountID == 1).ToList(); // Tarih kısmı değişecek   --account.Id
+            consumedFoods = cFoodRepository.GetAll().Where(a => a.ConsumedDate.Day == dateTimePicker1.Value.Day && a.ConsumedDate.Month == dateTimePicker1.Value.Month && a.AccountID == account.Id).ToList(); // Tarih kısmı değişecek   --account.Id
             double gunlukKarbonhidrat = 0;
             double gunlukProtein = 0;
             double gunlukYag = 0;
@@ -310,7 +314,7 @@ namespace CalorieTrackingApp.UI
         {
             _food = new Food();
             FoodRepository = new FoodRepository();
-            consumedFoods = cFoodRepository.GetAll().Where(a => a.ConsumedDate.Day == dateTimePicker1.Value.Day && a.ConsumedDate.Month == dateTimePicker1.Value.Month && a.AccountID == 1).ToList(); // Tarih kısmı değişecek   --account.Id
+            consumedFoods = cFoodRepository.GetAll().Where(a => a.ConsumedDate.Day == dateTimePicker1.Value.Day && a.ConsumedDate.Month == dateTimePicker1.Value.Month && a.AccountID == account.Id).ToList(); // Tarih kısmı değişecek   --account.Id
             double gunlukKarbonhidrat = 0;
             double gunlukProtein = 0;
             double gunlukYag = 0;
@@ -335,7 +339,7 @@ namespace CalorieTrackingApp.UI
         {
             _food = new Food();
             FoodRepository = new FoodRepository();
-            consumedFoods = cFoodRepository.GetAll().Where(a => a.ConsumedDate.Day == dateTimePicker1.Value.Day && a.ConsumedDate.Month == dateTimePicker1.Value.Month && a.AccountID == 1).ToList(); // Tarih kısmı değişecek   --account.Id
+            consumedFoods = cFoodRepository.GetAll().Where(a => a.ConsumedDate.Day == dateTimePicker1.Value.Day && a.ConsumedDate.Month == dateTimePicker1.Value.Month && a.AccountID == account.Id).ToList(); // Tarih kısmı değişecek   --account.Id
             double gunlukKarbonhidrat = 0;
             double gunlukProtein = 0;
             double gunlukYag = 0;

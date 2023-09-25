@@ -35,7 +35,7 @@ namespace CalorieTrackingApp.UI
                 this.Close();
             }
 
-            label4.Visible = true;
+            pbLogo.Visible = true;
             pictureBox2.BringToFront();
             pictureBox2.Visible = true;
             timer1.Interval = 1100;

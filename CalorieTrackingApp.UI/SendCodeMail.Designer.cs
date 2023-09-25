@@ -119,6 +119,7 @@
             label4.Size = new Size(15, 21);
             label4.TabIndex = 16;
             label4.Text = "-";
+            label4.Visible = false;
             // 
             // label2
             // 
@@ -130,6 +131,7 @@
             label2.Size = new Size(74, 32);
             label2.TabIndex = 18;
             label2.Text = "Kod:";
+            label2.MouseHover += label2_MouseHover;
             // 
             // pictureBox1
             // 

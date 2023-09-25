@@ -113,7 +113,7 @@ namespace CalorieTrackingApp.UI
             foreach (var food in consumedFoods.Where(a => a.MealCategory == DATA.Enums.MealCategory.Breakfast))
             {
                 _food = FoodRepository.GetAll().Where(a => a.Id == food.FoodID).FirstOrDefault();
-                kahvaltidaAlinanKalori += _food.PortionCalorie;
+                kahvaltidaAlinanKalori += _food.PortionCalorie * food.Portion;
             }
             lblKahvalti.Text = Math.Round((userDetail.TargetCalorieIntake * 50 / 100), 1).ToString() + "/" + Math.Round(kahvaltidaAlinanKalori, 1).ToString();
             lblKahvaltiYuzde.Text = Math.Round(((kahvaltidaAlinanKalori / (userDetail.TargetCalorieIntake * 50 / 100)) * 100), 1) > 100 ? "100" + "%" : Math.Round(((kahvaltidaAlinanKalori / (userDetail.TargetCalorieIntake * 50 / 100)) * 100), 1).ToString() + "%";
@@ -125,7 +125,7 @@ namespace CalorieTrackingApp.UI
             foreach (var food in consumedFoods.Where(a => a.MealCategory == DATA.Enums.MealCategory.Lunch))
             {
                 _food = FoodRepository.GetAll().Where(a => a.Id == food.FoodID).FirstOrDefault();
-                ogleYemegindeAlinanKalori += _food.PortionCalorie;
+                ogleYemegindeAlinanKalori += _food.PortionCalorie * food.Portion;
             }
             lblOgleYemegi.Text = Math.Round((userDetail.TargetCalorieIntake * 30 / 100), 1).ToString() + "/" + Math.Round(ogleYemegindeAlinanKalori, 1).ToString();
             lblOgleYemegiYuzde.Text = Math.Round(((ogleYemegindeAlinanKalori / (userDetail.TargetCalorieIntake * 30 / 100)) * 100), 1) > 100 ? "100" + "%" : Math.Round(((ogleYemegindeAlinanKalori / (userDetail.TargetCalorieIntake * 30 / 100)) * 100), 1).ToString() + "%";
@@ -137,7 +137,7 @@ namespace CalorieTrackingApp.UI
             foreach (var food in consumedFoods.Where(a => a.MealCategory == DATA.Enums.MealCategory.Dinner))
             {
                 _food = FoodRepository.GetAll().Where(a => a.Id == food.FoodID).FirstOrDefault();
-                aksamYemegindeAlinanKalori += _food.PortionCalorie;
+                aksamYemegindeAlinanKalori += _food.PortionCalorie * food.Portion;
             }
             lblAksamYemegi.Text = Math.Round((userDetail.TargetCalorieIntake * 20 / 100), 1).ToString() + "/" + Math.Round(aksamYemegindeAlinanKalori, 1).ToString();
             lblAksamYemegiYuzde.Text = Math.Round(((aksamYemegindeAlinanKalori / (userDetail.TargetCalorieIntake * 20 / 100)) * 100), 1) > 100 ? "100" + "%" : Math.Round(((aksamYemegindeAlinanKalori / (userDetail.TargetCalorieIntake * 20 / 100)) * 100), 1).ToString() + "%";

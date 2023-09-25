@@ -6,7 +6,12 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>witch-hat.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="witch-hat.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <None Include="bin\Debug\net6.0-windows\default.jpg" />
