@@ -175,7 +175,7 @@ namespace CalorieTrackingApp.UI
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             ofd = new OpenFileDialog();
-            ofd.Filter = "Image(png,jpg,gif)|*.png;*.jpg;*.gif";
+            ofd.Filter = "Image(png,jpg,jpeg)|*.jpeg;*.png;*.jpg;";
             DialogResult dr = ofd.ShowDialog();
 
             if (dr == DialogResult.OK)

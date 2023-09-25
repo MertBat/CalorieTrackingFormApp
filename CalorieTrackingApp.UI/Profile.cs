@@ -210,7 +210,7 @@ namespace CalorieTrackingApp.UI
         private void pbProfilePicture_Click_1(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Resim Dosyaları|*.jpg;*.jpeg;*.png;*.gif;*.bmp|Tüm Dosyalar|*.*";
+            ofd.Filter = "Resim Dosyaları|*.jpg;*.jpeg;*.png;*.gif;*.bmp";
             DialogResult dr = ofd.ShowDialog();
 
             if (dr == DialogResult.OK)

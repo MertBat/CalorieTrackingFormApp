@@ -48,9 +48,11 @@
             btnLoginScreen = new Button();
             lblUserName = new Label();
             pbUserPhoto = new PictureBox();
+            pictureBox1 = new PictureBox();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbUserPhoto).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -58,6 +60,7 @@
             groupBox1.BackColor = Color.Transparent;
             groupBox1.BackgroundImage = Properties.Resources.output_onlinepngtools;
             groupBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            groupBox1.Controls.Add(pictureBox1);
             groupBox1.Controls.Add(label16);
             groupBox1.Controls.Add(groupBox2);
             groupBox1.Controls.Add(btnLoginScreen);
@@ -73,7 +76,7 @@
             // 
             label16.AutoSize = true;
             label16.ForeColor = Color.Green;
-            label16.Location = new Point(91, 198);
+            label16.Location = new Point(119, 194);
             label16.Name = "label16";
             label16.Size = new Size(313, 24);
             label16.TabIndex = 54;
@@ -278,6 +281,16 @@
             pbUserPhoto.TabStop = false;
             pbUserPhoto.Click += pictureBox1_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.tick;
+            pictureBox1.Location = new Point(64, 183);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(45, 44);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 55;
+            pictureBox1.TabStop = false;
+            // 
             // SignUpSuccess
             // 
             AcceptButton = btnLoginScreen;
@@ -297,6 +310,7 @@
             groupBox1.PerformLayout();
             groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbUserPhoto).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -323,5 +337,6 @@
         private Label label15;
         private Label label16;
         private Label lblUserName;
+        private PictureBox pictureBox1;
     }
 }

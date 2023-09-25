@@ -67,14 +67,15 @@ namespace CalorieTrackingApp.UI
             }
 
             lblHedefeKalanKilo.Text = Math.Abs(userDetail.TargetWeight - userDetail.LastWeight).ToString();
-            if (baslangicKilo > userDetail.TargetWeight)
+            if (baslangicKilo > userDetail.TargetWeight && userDetail.LastWeight < userDetail.TargetWeight)
             {
                 lblHedefeKalanKilo2.Text = "kg daha vermelisin.";
             }
-            else if (userDetail.TargetWeight > baslangicKilo)
+            else if (userDetail.TargetWeight > baslangicKilo && userDetail.LastWeight > userDetail.TargetWeight)
             {
                 lblHedefeKalanKilo2.Text = "kg daha almalısın.";
             }
+
 
             nudGuncelKilo.Value = (decimal)userDetail.LastWeight;
 
